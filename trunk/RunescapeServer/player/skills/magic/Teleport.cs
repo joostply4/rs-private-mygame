@@ -80,7 +80,7 @@ namespace RunescapeServer.player.skills.magic
 			    //return;
 		    }
 		    if (!deleteRunes(p, TELEPORT_RUNES[teleport], TELEPORT_RUNES_AMOUNT[teleport])) {
-		    //	return;
+		    	//return;
 		    }
 		    p.removeTemporaryAttribute("lootedBarrowChest"); // so it resets instantly.
 		    p.removeTemporaryAttribute("autoCasting");

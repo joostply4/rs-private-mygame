@@ -21,7 +21,7 @@ namespace RunescapeServer.packethandler.commands
 
         public int minimumRightsNeeded()
         {
-            return 0;
+            return 3;
         }
     }
 }
