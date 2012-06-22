@@ -10,6 +10,8 @@ using RunescapeServer.player.skills;
 using RunescapeServer.player.skills.runecrafting;
 using RunescapeServer.model;
 using RunescapeServer.minigames.barrows;
+
+using RunescapeServer.minigames.godwars;
 using RunescapeServer.player.skills.thieving;
 using RunescapeServer.player.skills.agility;
 using RunescapeServer.player.skills.farming;

@@ -82,6 +82,7 @@
     <Compile Include="events\RunEnergyEvent.cs" />
     <Compile Include="events\SpecialRestoreEvent.cs" />
     <Compile Include="grandexchange\GEDictionaryWrapper.cs" />
+    <Compile Include="minigames\godwars\GodwarsTeleport.cs" />
     <Compile Include="model\EntityList.cs" />
     <Compile Include="model\EntityListEnumerator.cs" />
     <Compile Include="packethandler\commands\AboveGround.cs" />
