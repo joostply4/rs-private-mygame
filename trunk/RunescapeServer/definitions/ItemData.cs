@@ -57,6 +57,16 @@ namespace RunescapeServer.definitions
 		    }
 	    }
 
+        public class Requirements {
+            public SerializableDictionary<string, int> _Requirements = new SerializableDictionary<string, int>();
+
+            public Requirements() {
+                foreach (string s in Skills.SKILL_NAME) {
+                    _Requirements.Add(s, 0);
+                }
+            }
+        }
+
         public class Item
         {
                 public int id;
@@ -69,6 +79,15 @@ namespace RunescapeServer.definitions
                 public int animation = 1426;
             	public ItemPrice price;
                 public int[] bonus = new int[13];
+                public Requirements requirements = new Requirements();
+
+                public Requirements getReqs() {
+                    return requirements;
+                }
+
+                public void setRequirements(Requirements r) {
+                    this.requirements = r;
+                }
 	
 	            public ItemPrice getPrice() {
 		            return price;
@@ -160,11 +179,582 @@ namespace RunescapeServer.definitions
                 }
         }
 
+        public static Requirements getRequirements(Item i) {
+            String itemName = i.getName().ToLower();
+            int itemId = i.getId();
+
+            Requirements c = new Requirements();
+
+
+
+            if (itemName.Contains("mystic") || itemName.Contains("nchanted")) {
+                if (itemName.Contains("staff")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 20;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 40;
+                } else {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 20;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 20;
+                }
+            }
+            if (itemName.Contains("infinity")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 50;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 25;
+            }
+            if (itemName.Contains("splitbark")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 40;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+            }
+
+            if (itemName.Contains("proselyte")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+            }
+
+            if (itemName.Contains("Proselyte")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+            }
+
+            if (itemName.Contains("bronze")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 1;
+                }
+            }
+
+            if (itemName.Contains("bronze")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 1;
+                }
+            }
+
+            if (itemName.Contains("bronze")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 1;
+                }
+            }
+
+            if (itemName.Contains("iron")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 1;
+                }
+            }
+
+            if (itemName.Contains("iron")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 1;
+                }
+            }
+
+            if (itemName.Contains("iron")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 1;
+                }
+            }
+
+            if (itemName.Contains("steel")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 5;
+                }
+            }
+
+            if (itemName.Contains("steel")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 5;
+                }
+            }
+
+            if (itemName.Contains("steel")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 5;
+                }
+            }
+
+            if (itemName.Contains("black")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe") && !itemName.Contains("black d'")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 10;
+                }
+            }
+
+            if (itemName.Contains("black")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("black d'")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 10;
+                }
+            }
+
+            if (itemName.Contains("black")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("black d'") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 10;
+                }
+            }
+
+            if (itemName.Contains("mith") || itemName.Contains("mithril")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 20;
+                }
+            }
+
+            if (itemName.Contains("mith") || itemName.Contains("mithril")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 20;
+                }
+            }
+
+            if (itemName.Contains("mith") || itemName.Contains("mithril")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 20;
+                }
+            }
+
+            if (itemName.Contains("adamant") || itemName.Contains("adamantite")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+                }
+            }
+
+            if (itemName.Contains("adamant") || itemName.Contains("adamantite")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 30;
+                }
+            }
+
+            if (itemName.Contains("adamant") || itemName.Contains("adamantite")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 30;
+                }
+            }
+
+            if (itemName.Contains("rune") || itemName.Contains("runite")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                }
+            }
+
+            if (itemName.Contains("rune") || itemName.Contains("runite")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 40;
+                }
+            }
+
+            if (itemName.Contains("rune") || itemName.Contains("runite")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 40;
+                }
+            }
+
+            if (itemName.Contains("dragon")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("nti-") && !itemName.Contains("fire")
+                && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 60;
+                }
+            }
+
+            if (itemName.Contains("dragon")) {
+                if (!itemName.Contains("c'bow") && !itemName.Contains("crossbow") && !itemName.Contains("dart")
+                && !itemName.Contains("javelin") && !itemName.Contains("thrown axe") && !itemName.Contains("thrownaxe") && !itemName.Contains("kinfe")
+                && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm") && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("nti-") && !itemName.Contains("fire")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 60;
+                }
+            }
+
+            if (itemName.Contains("dragon")) {
+                if (!itemName.Contains("hachet") && !itemName.Contains("mace") && !itemName.Contains("claw") && !itemName.Contains("longsword")
+                && !itemName.Contains("scimitar") && !itemName.Contains("spear") && !itemName.Contains("warhammer") && !itemName.Contains("battleaxe")
+                && !itemName.Contains("2h") && !itemName.Contains("halberd") && !itemName.Contains("pickaxe") && !itemName.Contains("hasta")
+                && !itemName.Contains("sword") && !itemName.Contains("med helm") && !itemName.Contains("medhelm") && !itemName.Contains("fullhelm")
+                && !itemName.Contains("full helm")
+                && !itemName.Contains("sq shield") && !itemName.Contains("sqshield") && !itemName.Contains("kiteshield") && !itemName.Contains("chainbody")
+                && !itemName.Contains("platebody") && !itemName.Contains("plateleg") && !itemName.Contains("plateskirt") && !itemName.Contains("boots")
+                && !itemName.Contains("defender") && !itemName.Contains("nti-") && !itemName.Contains("fire") && !itemName.Contains("dagger")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 60;
+                }
+            }
+
+            if (itemName.Contains("crystal")) {
+                if (itemName.Contains("shield")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 70;
+                } else {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                }
+            }
+            if (itemName.Contains("ahrim")) {
+                if (itemName.Contains("staff")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                } else {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 70;
+                }
+            }
+            if (itemName.Contains("karil")) {
+                if (itemName.Contains("crossbow")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                } else {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 70;
+                }
+            }
+            if (itemName.Contains("godsword")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 75;
+            }
+            if (itemName.Contains("ava's")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 50;
+            }
+            if (itemName.Contains("rune c'bow")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 61;
+            }
+            if (itemName.Contains("3rd age") && !itemName.Contains("amulet")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 60;
+            }
+
+            if (itemName.Contains("Initiate cuisse") || itemName.Contains("Initiate hauberk")
+            || itemName.Contains("Initiate sallet")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 20;
+            }
+            if (itemName.Contains("initiate cuisse") || itemName.Contains("initiate hauberk")
+            || itemName.Contains("initiate sallet")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 20;
+            }
+
+            if (itemName.Contains("void knight")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.HITPOINTS]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.PRAYER]] = 22;
+            }
+
+            if (itemName.Contains("void mage")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.HITPOINTS]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.PRAYER]] = 22;
+            }
+
+            if (itemName.Contains("void ranger")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.HITPOINTS]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.PRAYER]] = 22;
+            }
+
+            if (itemName.Contains("void melee")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.HITPOINTS]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 42;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.PRAYER]] = 22;
+            }
+
+            if (itemName.Contains("zamorak staff") || itemName.Contains("saradomin staff") || itemName.Contains("guthix staff")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 60;
+            }
+
+            if (itemName.Contains("slayer's staff")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 50;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.SLAYER]] = 50;
+            }
+
+            if (itemName.Contains("ancient staff")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 50;
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 50;
+            }
+
+            if (itemName.Contains("berserker helm")
+            || itemName.Contains("farseer helm")
+            || itemName.Contains("warrior helm")
+            || itemName.Contains("archer helm")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 45;
+            }
+
+            if (itemName.Contains("ranger boots")
+            || itemName.Contains("robin hood hat")) {
+                c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 40;
+            }
+
+            if (itemName.Contains("verac") || itemName.Contains("guthan") || itemName.Contains("dharok") || itemName.Contains("torag")) {
+
+                if (itemName.Contains("hammers")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 70;
+                } else if (itemName.Contains("axe")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 70;
+                } else if (itemName.Contains("warspear")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 70;
+                } else if (itemName.Contains("flail")) {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 70;
+                } else {
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 70;
+                }
+            }
+
+            switch (itemId) {
+                case 1135:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 40;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 2499:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 50;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 2501:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 60;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 2503:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 1065:
+                case 1099:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 40;
+                    break;
+                case 2487:
+                case 2493:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 50;
+                    break;
+                case 2489:
+                case 2495:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 60;
+                    break;
+                case 2491:
+                case 2497:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                    break;
+                case 857:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 40;
+                    break;
+                case 4153:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.STRENGTH]] = 50;
+                    break;
+                case 11730:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    break;
+                case 11722:
+                case 11720:
+                case 11718:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 70;
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 70;
+                    break;
+                case 9672:
+                case 9674:
+                case 9676:
+                case 9678:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+                    break;
+                case 10551:
+                case 10548:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 11235:
+                case 6522:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 60;
+                    break;
+                case 6524:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 60;
+                    break;
+                case 11284:
+                case 11283:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 75;
+                    break;
+                case 6889:
+                case 6914:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.MAGIC]] = 60;
+                    break;
+                case 861:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 50;
+                    break;
+                case 10828:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 55;
+                    break;
+                case 11724:
+                case 11726:
+                case 11728:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 65;
+                    break;
+
+                case 7462:
+                case 7461:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+                case 8846:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 5;
+                    break;
+                case 8847:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 10;
+                    break;
+                case 8848:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 20;
+                    break;
+                case 8849:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+                    break;
+                case 8850:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 40;
+                    break;
+
+
+                case 7460:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.DEFENCE]] = 30;
+                    break;
+
+
+                case 837:
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 61;
+                    break;
+
+                case 4151: // if you don't want to use names 
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.ATTACK]] = 70;
+                    break;
+
+                case 6724: // seercull
+                    c._Requirements[Skills.SKILL_NAME[(int)Skills.SKILL.RANGE]] = 60; // idk if that is correct
+                    break;
+            }
+
+            return c;
+        }
+
         /**
          * Items which contains a Item class for a single item.
          */
         public static Dictionary<int, Item> items;
-
+        public static List <Item> items_R;
         public static void load() {
             if (!File.Exists(misc.getServerPath() + @"\data\itemData.xml"))
             {
@@ -174,13 +764,17 @@ namespace RunescapeServer.definitions
             try
             {
                 //Deserialize text file to a new object.
-                StreamReader objStreamReader = new StreamReader(misc.getServerPath() + @"\data\itemData.xml");
+                StreamReader objStreamReader = new StreamReader(misc.getServerPath() + @"\data\itemDataWithCompletedReqs.xml");
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
                 List<Item> list = (List<Item>)serializer.Deserialize(objStreamReader);
-
+                items_R = new List<Item>();
                 items = new Dictionary<int, Item>();
-                foreach (Item def in list)
+                foreach (Item def in list) {
+                    //Requirements r = getRequirements(def);
+                    //def.setRequirements(r);
                     items.Add(def.getId(), def);
+                    //items_R.Add(def);
+                }
 
                 Console.WriteLine("Loaded " + items.Count + " item definitions.");
             }
@@ -188,6 +782,13 @@ namespace RunescapeServer.definitions
             {
                 misc.WriteError((e.InnerException == null ? e.ToString() : e.InnerException.ToString()));
             }
+        }
+
+        public static void save() {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
+            TextWriter textWriter = new StreamWriter(misc.getServerPath() + @"\data\itemDataWithCompletedReqs.xml");
+            serializer.Serialize(textWriter, items_R);
+            textWriter.Close();
         }
 
 	    public static void setNotedItemPrices() {
@@ -432,4 +1033,46 @@ namespace RunescapeServer.definitions
 		    8851, // Warrior guild token.
 	    };
     }
+}
+
+[XmlRoot("dictionary")]
+public class SerializableDictionary<TKey, TValue>
+    : Dictionary<TKey, TValue>, IXmlSerializable {
+    #region IXmlSerializable Members
+    public System.Xml.Schema.XmlSchema GetSchema() {
+        return null;
+    }
+
+    public void ReadXml(System.Xml.XmlReader reader) {
+        XmlSerializer keySerializer = new XmlSerializer(typeof(TKey));
+        XmlSerializer valueSerializer = new XmlSerializer(typeof(TValue));
+
+        bool wasEmpty = reader.IsEmptyElement;
+        reader.Read();
+
+        if (wasEmpty)
+            return;
+
+        while (reader.NodeType != System.Xml.XmlNodeType.EndElement) {
+            TKey key = (TKey)keySerializer.Deserialize(reader);
+            TValue value = (TValue)valueSerializer.Deserialize(reader);
+            this.Add(key, value);
+
+            reader.MoveToContent();
+        }
+        reader.ReadEndElement();
+    }
+
+    public void WriteXml(System.Xml.XmlWriter writer) {
+        XmlSerializer keySerializer = new XmlSerializer(typeof(TKey));
+        XmlSerializer valueSerializer = new XmlSerializer(typeof(TValue));
+
+        foreach (TKey key in this.Keys) {
+            keySerializer.Serialize(writer, key);
+
+            TValue value = this[key];
+            valueSerializer.Serialize(writer, value);
+        }
+    }
+    #endregion
 }

@@ -53,6 +53,7 @@ namespace RunescapeServer
             MapData.load(); //this has to be packed once all mapdata is gotten.
             ObjectData.load();
             ItemData.load(); //this has to be first because npcDrops use itemData.. i think.
+
             NpcData.load(); //first load the npc data.
             NpcDrop.load(); //second load the npc drops. [order does matter here, as it binds to npcData].
             NpcSpawn.load(); //finally you can spawn the npcs.

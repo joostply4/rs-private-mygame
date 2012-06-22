@@ -85,6 +85,28 @@ namespace RunescapeServer.packethandler
 		    }
 	    }
 
+        private bool canEquip(Player p, int i) {
+            bool canI = false, ohCanI = true;
+            foreach (Skills.SKILL skill in Enum.GetValues(typeof(Skills.SKILL))) {
+                //player.getSkills().setCurLevel(skill, 99);
+                //player.getSkills().setXp(skill, Skills.getXpForLevel(99));
+                ItemData.Requirements r = ItemData.items[i].getReqs();
+                if (r._Requirements[Skills.SKILL_NAME[(int)skill]] != 0) {
+                    if (p.getSkills().getCurLevel(skill) >= r._Requirements[Skills.SKILL_NAME[(int)skill]]) {
+                        canI = true;
+                    } else {
+                        canI = false;
+                        ohCanI = false;
+
+                        p.getPackets().sendMessage("You need a " + Skills.SKILL_NAME[(int)skill] + " level of " + r._Requirements[Skills.SKILL_NAME[(int)skill]] + " to wear this item.");
+
+                    }
+                }
+            }
+
+            return !(canI == ohCanI);
+        }
+
 	    private void handleEquipItem(Player player, Packet packet) {
 		    int item = packet.readLEShort();
 		    int slot = packet.readShortA();
@@ -98,7 +120,11 @@ namespace RunescapeServer.packethandler
 			    if (RuneCraft.emptyPouch(player, (RuneCraftData.POUCHES)player.getInventory().getItemInSlot(slot))) {
 				    return;
 			    }
-			    player.getEquipment().equipItem(player.getInventory().getItemInSlot(slot), slot);
+
+                //LEVEL REQ
+                if (canEquip(player, item)) {
+                    player.getEquipment().equipItem(player.getInventory().getItemInSlot(slot), slot);
+                }
 		    }
 	    }
 	
