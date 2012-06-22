@@ -14,6 +14,6 @@ namespace RunescapeServer
         public const bool WRITE_LOG = true;
         public const int SERVER_PORT = 43594;  //default 43594
         public const int MAX_ITEMS = 14630; //maximum item.
-        public static Location HOME_SPAWN_LOCATION = new Location(2341, 3162, 0);
+        public static Location HOME_SPAWN_LOCATION = new Location(2964, 3381, 0);
     }
 }
