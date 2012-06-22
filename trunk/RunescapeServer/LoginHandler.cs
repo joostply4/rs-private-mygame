@@ -190,8 +190,8 @@ namespace RunescapeServer
             createdPlayer.setLoginDetails(loginDetails);
 
             if (!File.Exists(misc.getServerPath() + @"\accounts\" +  loginDetails.getUsername() + ".xml")) {
-
-                createdPlayer.setRights(2); //all new users admins atm (change later).
+                //RSSERVER -- BOBBY
+                createdPlayer.setRights(0); //all new users admins atm (change later).
                 createdPlayer.setLocation(new Location(2323, 3174, 0));
                 return ReturnCode.LOGIN_OK; //new user.
             }
