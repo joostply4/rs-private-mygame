@@ -54,6 +54,7 @@ namespace RunescapeServer.definitions
             ATTACK_PLAYER = 68,
 	        FOLLOW = 71,
 	        TRADE = 180,
+            //KICK = 200,
 	        MAGIC_ON_PLAYER = 195,
             NPC_FIRST_CLICK = 3,
             NPC_SECOND_CLICK = 78,

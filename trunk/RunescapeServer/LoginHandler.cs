@@ -563,6 +563,10 @@ namespace RunescapeServer
                         writer.WriteEndElement();
                     }
                     writer.WriteEndElement();
+                    
+                    //writer.WriteStartElement("Attributes");
+                    //    writer.WriteElementString("PrayerPoints", p.getSkills().getCurLevel(Skills.SKILL.PRAYER).ToString());
+                    //writer.WriteEndElement();
                 writer.WriteEndElement();
                 //Write the XML to file and close the writer    
                 writer.Close();

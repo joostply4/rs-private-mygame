@@ -1049,7 +1049,7 @@ namespace RunescapeServer.player
 	    }
 	
 	    public void setPrayerPoints(double p) {
-		    this.prayerPoints = p;
+            this.prayerPoints = p;
 	    }
 	
 	    public void decreasePrayerPoints(double modification) {

@@ -30,13 +30,14 @@ namespace RunescapeServer.net
         {
             sendWindowPane(548);
             sendSkillLevels();
-            sendMessage("Welcome to C# 530 Runescape 2 Server.");
+            sendMessage("Welcome to NAME TBD.");
             sendEnergy();
             sendConfig(173, 0);
             refreshInventory();
             refreshEquipment();
             sendPlayerOption("Follow", 3, 0);
             sendPlayerOption("Trade with", 4, 0);
+            //sendPlayerOption("Kick", 5, 0);
             player.getFriends().refresh();
             player.refresh();
             player.getEquipment().setWeapon();

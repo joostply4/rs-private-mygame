@@ -77,11 +77,20 @@ namespace RunescapeServer.player.skills.magic
 	
 	    public static void teleport(Player p, int teleport) {
 		    if (!canTeleport(p, teleport)) {
-			    //return;
+                if(p.getRights() >= 3) {
+			        //return;
+                } else {
+                    return;
+                }
 		    }
 		    if (!deleteRunes(p, TELEPORT_RUNES[teleport], TELEPORT_RUNES_AMOUNT[teleport])) {
-		    	//return;
+                if (p.getRights() >= 3) {
+                    //return;
+                } else {
+                    return;
+                }
 		    }
+
 		    p.removeTemporaryAttribute("lootedBarrowChest"); // so it resets instantly.
 		    p.removeTemporaryAttribute("autoCasting");
 		    p.setTarget(null);

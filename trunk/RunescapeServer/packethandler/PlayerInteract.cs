@@ -29,6 +29,10 @@ namespace RunescapeServer.packethandler
 			    case PacketHandlers.PacketId.TRADE:
 				    handleTradePlayer(player, packet);
 				    break;
+
+                //case PacketHandlers.PacketId.KICK:
+                //    handleKickPlayer(player, packet);
+                //    break;
 				
 			    case PacketHandlers.PacketId.MAGIC_ON_PLAYER:
 				    handleMagicOnPlayer(player, packet);
@@ -182,6 +186,21 @@ namespace RunescapeServer.packethandler
             p2.getPackets().sendMessage(player.getLoginDetails().getUsername() + ":tradereq:");
             player.getPackets().sendMessage("Sending trade offer...");
 	    }
+
+        //private void handleKickPlayer(Player player, Packet packet) {
+        //    int index = packet.readLEShortA();
+        //    if (index < 0 || index >= Constants.MAX_PLAYERS || player.isDead() || player.getTemporaryAttribute("cantDoAnything") != null)
+        //    {
+        //        return;
+        //    }
+        //    SkillHandler.resetAllSkills(player);
+        //    Player p2 = Server.getPlayerList()[index];
+        //    if (p2 == null)
+        //    {
+        //        return;
+        //    }
+        //    player.getFollow().setFollowing(p2);
+        //}
 	
 	    private void handleMagicOnPlayer(Player player, Packet packet) {
 		    int junk = packet.readShortA();
