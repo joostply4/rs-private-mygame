@@ -18,41 +18,41 @@ namespace RunescapeServer
     class LoginHandler
     {
 
-    /**
-	 * Players to load, at this point they are just connections.
-	 */
-     private Queue<Connection> playersToLoad;
-	
-	/**
-	 * Players to save.
-	 */
-	private Queue<Player> playersToSave;
-
-    public enum ReturnCode
-    {
-        DISPLAY_ADVERTISEMENT = 1,
-        LOGIN_OK = 2,
-        INVALID_PASSWORD = 3,
-        BANNED = 4,
-        ALREADY_ONLINE = 5,
-        GAME_UPDATED_RELOAD = 6,
-        WORLD_FULL = 7,
-        LOGIN_SERVER_OFFLINE = 8,
-        LOGIN_LIMIT_EXCEEDED = 9,
-        BAD_SESSION_ID = 10,
-        FORCE_CHANGE_PASSWORD = 11,
-        MEMBERS_WORLD = 12,
-        COULD_NOT_COMPLETE = 13,
-        UPDATE_IN_PROGRESS = 14
-        /*
-         * Anything else is 'unexpected response, please try again'.
+        /**
+         * Players to load, at this point they are just connections.
          */
-    }
+        private Queue<Connection> playersToLoad;
 
-        public LoginHandler() 
+        /**
+         * Players to save.
+         */
+        private Queue<Player> playersToSave;
+
+        public enum ReturnCode
+        {
+            DISPLAY_ADVERTISEMENT = 1,
+            LOGIN_OK = 2,
+            INVALID_PASSWORD = 3,
+            BANNED = 4,
+            ALREADY_ONLINE = 5,
+            GAME_UPDATED_RELOAD = 6,
+            WORLD_FULL = 7,
+            LOGIN_SERVER_OFFLINE = 8,
+            LOGIN_LIMIT_EXCEEDED = 9,
+            BAD_SESSION_ID = 10,
+            FORCE_CHANGE_PASSWORD = 11,
+            MEMBERS_WORLD = 12,
+            COULD_NOT_COMPLETE = 13,
+            UPDATE_IN_PROGRESS = 14
+            /*
+             * Anything else is 'unexpected response, please try again'.
+             */
+        }
+
+        public LoginHandler()
         {
             this.playersToLoad = new Queue<Connection>();
-		    this.playersToSave = new Queue<Player>();
+            this.playersToSave = new Queue<Player>();
             new Thread(loadSaveThread).Start();
         }
 
@@ -90,25 +90,31 @@ namespace RunescapeServer
                     break;
                 }
 
-                lock(playersToLoad) {
-				    if(playersToLoad.Count > 0) {
+                lock (playersToLoad)
+                {
+                    if (playersToLoad.Count > 0)
+                    {
 
                         Connection connection = null;
-					    while(playersToLoad.Count > 0) {
+                        while (playersToLoad.Count > 0)
+                        {
                             connection = playersToLoad.Dequeue();
-                            if (connection != null) {
+                            if (connection != null)
+                            {
                                 ReturnCode returnCode = loadPlayer(connection);
-						        PacketBuilder pb = new PacketBuilder().setSize(Packet.Size.Bare);
-						        int slot = -1;
+                                PacketBuilder pb = new PacketBuilder().setSize(Packet.Size.Bare);
+                                int slot = -1;
                                 if (returnCode == ReturnCode.LOGIN_OK)
                                 {
                                     slot = Server.register(connection);
-							        if(slot == -1) {
+                                    if (slot == -1)
+                                    {
                                         returnCode = ReturnCode.WORLD_FULL;
-							        }
-						        }
-						        pb.addByte((byte) returnCode);
-                                if (returnCode == ReturnCode.LOGIN_OK) {
+                                    }
+                                }
+                                pb.addByte((byte)returnCode);
+                                if (returnCode == ReturnCode.LOGIN_OK)
+                                {
                                     pb.addByte((byte)connection.getPlayer().getRights()); // rights
                                     pb.addByte((byte)0); //1
                                     pb.addByte((byte)0);//Flagged, will genrate mouse packets
@@ -123,50 +129,62 @@ namespace RunescapeServer
                                     connection.getPlayer().getPackets().sendMapRegion();
                                     connection.getPlayer().setActive(true);
                                     Console.WriteLine("Loaded " + connection.getPlayer().getLoginDetails().getUsername() + "'s game: returncode = " + returnCode + ".");
-                                } else {
+                                }
+                                else
+                                {
                                     connection.SendPacket(pb.toPacket());
                                 }
-				            }
-					    }
-				    }
-			    }
-			    lock(playersToSave) {
-				    if(playersToSave.Count > 0) {
-					    Player p = null;
-					    while(playersToSave.Count > 0) {
-                            p = playersToSave.Dequeue();
-                            if(p != null) {
-						        if(savePlayer(p)) {
-							        Console.WriteLine("Saved " + p.getLoginDetails().getUsername() + "'s game.");
-						        } else {
-							        Console.WriteLine("Could not save " +  p.getLoginDetails().getUsername() + "'s game.");
-						        }
                             }
-					    }
-				    }
-			    }
+                        }
+                    }
+                }
+                lock (playersToSave)
+                {
+                    if (playersToSave.Count > 0)
+                    {
+                        Player p = null;
+                        while (playersToSave.Count > 0)
+                        {
+                            p = playersToSave.Dequeue();
+                            if (p != null)
+                            {
+                                if (savePlayer(p))
+                                {
+                                    Console.WriteLine("Saved " + p.getLoginDetails().getUsername() + "'s game.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Could not save " + p.getLoginDetails().getUsername() + "'s game.");
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
         public void forceSaveAllPlayers()
         {
             // save ALL games
-		    Console.WriteLine("Saving all games...");
-		    int saved = 0;
-		    int total = 0;
+            Console.WriteLine("Saving all games...");
+            int saved = 0;
+            int total = 0;
             foreach (Player p in Server.players)
             {
-			    total++;
-			    if(savePlayer(p)) {
+                total++;
+                if (savePlayer(p))
+                {
                     Console.WriteLine("Saved " + p.getLoginDetails().getUsername() + "'s game.");
-				    saved++;
-			    } else {
+                    saved++;
+                }
+                else
+                {
                     Console.WriteLine("Could not save " + p.getLoginDetails().getUsername() + "'s game.");
-			    }
-		    }
-		    if(total == 0)
+                }
+            }
+            if (total == 0)
                 Console.WriteLine("No games to save.");
-		    else
+            else
                 Console.WriteLine("Saved " + (saved / total * 100) + "% of games (" + saved + "/" + total + ").");
         }
 
@@ -483,90 +501,89 @@ namespace RunescapeServer
                 XmlTextWriter writer = new XmlTextWriter(misc.getServerPath() + @"\accounts\" + username + ".xml", null);
                 writer.Formatting = Formatting.Indented;
                 writer.WriteStartElement("Player");
-                    writer.WriteStartElement("Login"); 
-                        writer.WriteElementString("Password", p.getLoginDetails().getPassword());
-                        writer.WriteElementString("Rights", p.getRights().ToString());
-                        writer.WriteElementString("BankPin", p.getBank().getBankPin());
+                writer.WriteStartElement("Login");
+                writer.WriteElementString("Password", p.getLoginDetails().getPassword());
+                writer.WriteElementString("Rights", p.getRights().ToString());
+                writer.WriteElementString("BankPin", p.getBank().getBankPin());
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("Position");
+                writer.WriteElementString("X", p.getLocation().getX().ToString());
+                writer.WriteElementString("Y", p.getLocation().getY().ToString());
+                writer.WriteElementString("Z", p.getLocation().getZ().ToString());
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("Settings");
+                writer.WriteElementString("RunEnergy", p.getRunEnergy().ToString());
+                writer.WriteStartElement("PrivacySettings");
+                writer.WriteElementString("Public", p.getFriends().getPrivacyOption(0).ToString());
+                writer.WriteElementString("Private", p.getFriends().getPrivacyOption(1).ToString());
+                writer.WriteElementString("Trade", p.getFriends().getPrivacyOption(2).ToString());
+                writer.WriteEndElement();
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("Friends");
+                foreach (long friend in p.getFriends().getFriendsList())
+                    writer.WriteElementString("Friend", friend.ToString());
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("Ignores");
+                foreach (long ignore in p.getFriends().getIgnoresList())
+                    writer.WriteElementString("Ignore", ignore.ToString());
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("Stats");
+                foreach (Skills.SKILL skill in Enum.GetValues(typeof(Skills.SKILL)))
+                {
+                    writer.WriteStartElement(skill.ToString()); //skill name.
+                    writer.WriteElementString("CurrentLevel", p.getSkills().getCurLevel(skill).ToString());
+                    writer.WriteElementString("XP", p.getSkills().getXp(skill).ToString());
                     writer.WriteEndElement();
+                }
+                writer.WriteEndElement();
 
-                    writer.WriteStartElement("Position");
-                        writer.WriteElementString("X", p.getLocation().getX().ToString());
-                        writer.WriteElementString("Y", p.getLocation().getY().ToString());
-                        writer.WriteElementString("Z", p.getLocation().getZ().ToString());
+                Item item;
+                writer.WriteStartElement("EquipmentItems");
+                foreach (ItemData.EQUIP equip in Enum.GetValues(typeof(ItemData.EQUIP)))
+                {
+                    if (equip == ItemData.EQUIP.NOTHING) continue;
+                    item = p.getEquipment().getSlot(equip);
+                    if (item.getItemId() == -1) continue; //empty slot.
+
+                    writer.WriteStartElement(equip.ToString());
+                    writer.WriteElementString("Id", item.getItemId().ToString());
+                    writer.WriteElementString("Amount", item.getItemAmount().ToString());
                     writer.WriteEndElement();
+                }
+                writer.WriteEndElement();
 
-                    writer.WriteStartElement("Settings");
-                        writer.WriteElementString("RunEnergy", p.getRunEnergy().ToString());
-                        writer.WriteStartElement("PrivacySettings"); 
-                            writer.WriteElementString("Public", p.getFriends().getPrivacyOption(0).ToString());
-                            writer.WriteElementString("Private", p.getFriends().getPrivacyOption(1).ToString());
-                            writer.WriteElementString("Trade", p.getFriends().getPrivacyOption(2).ToString());
-                        writer.WriteEndElement();
+                writer.WriteStartElement("InventoryItems");
+                for (int i = 0; i < Inventory.MAX_INVENTORY_SLOTS; i++)
+                {
+                    item = p.getInventory().getSlot(i);
+                    if (item.getItemId() == -1) continue; //empty slot.
+
+                    writer.WriteStartElement("Item");
+                    writer.WriteElementString("Slot", i.ToString());
+                    writer.WriteElementString("Id", item.getItemId().ToString());
+                    writer.WriteElementString("Amount", item.getItemAmount().ToString());
                     writer.WriteEndElement();
+                }
+                writer.WriteEndElement();
 
-                    writer.WriteStartElement("Friends");
-                        foreach(long friend in p.getFriends().getFriendsList())
-                            writer.WriteElementString("Friend", friend.ToString());
+                writer.WriteStartElement("BankItems");
+                for (int i = 0; i < Bank.MAX_BANK_SLOTS; i++)
+                {
+                    item = p.getBank().getSlot(i);
+                    if (item.getItemId() == -1) continue; //empty slot.
+
+                    writer.WriteStartElement("Item");
+                    writer.WriteElementString("Slot", i.ToString());
+                    writer.WriteElementString("Id", item.getItemId().ToString());
+                    writer.WriteElementString("Amount", item.getItemAmount().ToString());
                     writer.WriteEndElement();
-
-                    writer.WriteStartElement("Ignores");
-                        foreach (long ignore in p.getFriends().getIgnoresList())
-                            writer.WriteElementString("Ignore", ignore.ToString());
-                    writer.WriteEndElement();
-
-                    writer.WriteStartElement("Stats");
-                        foreach (Skills.SKILL skill in Enum.GetValues(typeof(Skills.SKILL))) {
-                             writer.WriteStartElement(skill.ToString()); //skill name.
-                                writer.WriteElementString("CurrentLevel", p.getSkills().getCurLevel(skill).ToString());
-                                writer.WriteElementString("XP", p.getSkills().getXp(skill).ToString());
-                            writer.WriteEndElement();
-                        }
-                    writer.WriteEndElement();
-
-                    Item item;
-                    writer.WriteStartElement("EquipmentItems");
-                    foreach (ItemData.EQUIP equip in Enum.GetValues(typeof(ItemData.EQUIP))) {
-                        if (equip == ItemData.EQUIP.NOTHING) continue;
-                        item = p.getEquipment().getSlot(equip);
-                        if (item.getItemId() == -1) continue; //empty slot.
-
-                        writer.WriteStartElement(equip.ToString());
-                            writer.WriteElementString("Id", item.getItemId().ToString());
-                            writer.WriteElementString("Amount", item.getItemAmount().ToString());
-                        writer.WriteEndElement();
-                    }
-                    writer.WriteEndElement();
-
-                    writer.WriteStartElement("InventoryItems");
-                        for (int i = 0; i < Inventory.MAX_INVENTORY_SLOTS; i++) {
-                            item = p.getInventory().getSlot(i);
-                            if (item.getItemId() == -1) continue; //empty slot.
-
-                            writer.WriteStartElement("Item");
-                                writer.WriteElementString("Slot", i.ToString());
-                                writer.WriteElementString("Id", item.getItemId().ToString());
-                                writer.WriteElementString("Amount", item.getItemAmount().ToString());
-                            writer.WriteEndElement();
-                        }
-                    writer.WriteEndElement();
-
-                    writer.WriteStartElement("BankItems");
-                    for (int i = 0; i < Bank.MAX_BANK_SLOTS; i++)
-                    {
-                        item = p.getBank().getSlot(i);
-                        if (item.getItemId() == -1) continue; //empty slot.
-
-                        writer.WriteStartElement("Item");
-                            writer.WriteElementString("Slot", i.ToString());
-                            writer.WriteElementString("Id", item.getItemId().ToString());
-                            writer.WriteElementString("Amount", item.getItemAmount().ToString());
-                        writer.WriteEndElement();
-                    }
-                    writer.WriteEndElement();
-                    
-                    //writer.WriteStartElement("Attributes");
-                    //    writer.WriteElementString("PrayerPoints", p.getSkills().getCurLevel(Skills.SKILL.PRAYER).ToString());
-                    //writer.WriteEndElement();
+                }
+                writer.WriteEndElement();
                 writer.WriteEndElement();
                 //Write the XML to file and close the writer    
                 writer.Close();
@@ -575,7 +592,7 @@ namespace RunescapeServer
             {
                 return false;
             }
- 
+
             return true;
         }
 
@@ -695,7 +712,7 @@ namespace RunescapeServer
                 byte b1 = fill_loginPacketSize.readByte();
                 ushort s1 = fill_loginPacketSize.readUShort();
                 ushort s2 = fill_loginPacketSize.readUShort();
-                byte b2 = fill_loginPacketSize.readByte(); 
+                byte b2 = fill_loginPacketSize.readByte();
 
                 for (int i = 0; i < 24; i++)
                 {
@@ -780,8 +797,9 @@ namespace RunescapeServer
                     connection.loginStage = 255;
                 }
             }
-            catch (Exception exception) {
-                misc.WriteError(exception.Message); 
+            catch (Exception exception)
+            {
+                misc.WriteError(exception.Message);
             }
         }
 
