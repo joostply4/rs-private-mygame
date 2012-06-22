@@ -101,6 +101,7 @@ namespace RunescapeServer.player
             split = false;
             mouse = true;
             aid = false;
+            playerRights = 0;
             magicType = 1;
             achievementDiaryTab = false;
             forgeCharge = 40;
@@ -135,6 +136,7 @@ namespace RunescapeServer.player
             antifireCycles = 0;
             tradeRequests = new List<Player>();
             duelRequests = new List<Player>();
+            runEnergy = 100;
         }
 
         /**
