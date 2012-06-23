@@ -147,6 +147,7 @@
     <Compile Include="model\EnterVariable.cs" />
     <Compile Include="model\ShopSession.cs" />
     <Compile Include="player\GESession.cs" />
+    <Compile Include="player\Player.cs" />
     <Compile Include="player\skills\agility\Agility.cs" />
     <Compile Include="player\skills\agility\AgilityData.cs" />
     <Compile Include="definitions\AttackInterface.cs" />
@@ -268,7 +269,7 @@
     <Compile Include="player\Friends.cs" />
     <Compile Include="player\Inventory.cs" />
     <Compile Include="player\LoginDetails.cs" />
-    <Compile Include="player\Player.cs" />
+    <Compile Include="player\DPlayer.cs" />
     <Compile Include="net\Cryption.cs" />
     <Compile Include="LoginHandler.cs" />
     <Compile Include="player\AppearanceUpdateFlags.cs" />
