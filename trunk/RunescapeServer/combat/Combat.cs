@@ -300,7 +300,7 @@ public class Combat
 				string message = null;
 				int fireDamage = 55;
 				bool wearingShield = ((Player)target).getEquipment().getItemInSlot(ItemData.EQUIP.SHIELD) == 1540 || ((Player)target).getEquipment().getItemInSlot(ItemData.EQUIP.SHIELD) == 11283 || ((Player)target).getEquipment().getItemInSlot(ItemData.EQUIP.SHIELD) == 11284;
-				if (((Player)target).getAntifireCycles() > 0) {
+				if (!((Player)target).PlayerAttributes.AntiFirePotionCycle.isStopped()) {
 					if (wearingShield) {
 						message = "Your shield and potion combine to fully protect you from the dragon's breath.";
 						fireDamage = 0;

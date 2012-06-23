@@ -86,6 +86,8 @@
     <Compile Include="events\RunEnergyEvent.cs" />
     <Compile Include="events\SpecialRestoreEvent.cs" />
     <Compile Include="grandexchange\GEDictionaryWrapper.cs" />
+    <Compile Include="minigames\agilityarena\AgilityArenaPlayerInformation.cs" />
+    <Compile Include="minigames\barrows\BarrowsPlayerInformation.cs" />
     <Compile Include="minigames\godwars\GodwarsTeleport.cs" />
     <Compile Include="model\EntityList.cs" />
     <Compile Include="model\EntityListEnumerator.cs" />
@@ -207,8 +209,10 @@
     <Compile Include="player\skills\prayer\PrayerData.cs" />
     <Compile Include="player\skills\runecrafting\AbyssObstacles.cs" />
     <Compile Include="player\skills\runecrafting\RuneCraftData.cs" />
+    <Compile Include="player\skills\runecrafting\RunecraftPouchManager.cs" />
     <Compile Include="player\skills\slayer\Slayer.cs" />
     <Compile Include="player\skills\slayer\SlayerData.cs" />
+    <Compile Include="player\skills\slayer\SlayerPointsHandler.cs" />
     <Compile Include="player\skills\smithing\BarToSmelt.cs" />
     <Compile Include="player\skills\smithing\Smelting.cs" />
     <Compile Include="player\skills\smithing\SmithBar.cs" />

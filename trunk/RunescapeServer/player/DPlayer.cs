@@ -27,27 +27,7 @@ namespace RunescapeServer.player
 public class DPlayer : Entity
     {
         //Not redone
-        private bool achievementDiaryTab;
-
-        //Runecraft Skill Object -- Pouch Manager?
-        private int smallPouchAmount, mediumPouchAmount, largePouchAmount, giantPouchAmount;
         
-        //Mini Game -- Getting Defenders from those giants
-        //Slayer variables should be contained in a Slayer object of sorts
-        private int defenderWave, slayerPoints;
-        private string[] removedSlayerTasks;
-
-        //Barrows information should be stored in a barrows Mini Game
-        private int barrowTunnel, barrowKillCount;
-        private bool[] barrowBrothersKilled;
-
-        //Teleblock and Vengeance [EVENTS] need to be made
-        private long teleblockTime, lastVengeanceTime;
-
-        //Agility arena variables should also be stored in Agility Arena stats object
-        private int agilityArenaStatus;
-        private bool taggedLastAgilityPillar;
-        private bool paidAgilityArena;
 
         //Done
         private LoginDetails loginDetails;
@@ -67,6 +47,16 @@ public class DPlayer : Entity
         private Skills skills;
         private AttackStyle attackStyle;
         private Appearance appearance;
+        private int smallPouchAmount, mediumPouchAmount, largePouchAmount, giantPouchAmount;
+        private long teleblockTime, lastVengeanceTime;
+        private int defenderWave;
+        private int barrowTunnel, barrowKillCount;
+        private bool[] barrowBrothersKilled;
+        private int agilityArenaStatus;
+        private bool taggedLastAgilityPillar;
+        private bool paidAgilityArena;
+        private int slayerPoints;
+        private string[] removedSlayerTasks;
 
         //These items DO NOT get parsed into XML
         //Although I am not sure about the CLAN object yet
@@ -95,6 +85,7 @@ public class DPlayer : Entity
         private bool hd; //high definition game.
         private bool disconnected;
         private double lastHit;
+        private bool achievementDiaryTab;
 
         public DPlayer(Connection connection)
         {

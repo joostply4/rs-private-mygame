@@ -126,6 +126,7 @@ public class LoginHandler
                                     pb.addByte((byte)1); // membership flag #1?..this one enables all GE boxes
                                     pb.addByte((byte)1); // membership flag #2?
                                     connection.SendPacket(pb.toPacket());
+                                    Console.WriteLine(pb.toPacket());
                                     connection.getPlayer().getPackets().sendMapRegion();
                                     connection.getPlayer().setActive(true);
                                     Console.WriteLine("Loaded " + connection.getPlayer().getLoginDetails().getUsername() + "'s game: returncode = " + returnCode + ".");
@@ -291,7 +292,7 @@ public class LoginHandler
                     if (!int.TryParse(xmlNode.InnerText, out temp))
                         temp = 100;
                 }
-                createdPlayer.setRunEnergyLoad(temp);
+                //createdPlayer.setRunEnergyLoad(temp);
 
                 loginElement = xmlDocument.SelectSingleNode("/Player/Settings/PrivacySettings");
                 if (loginElement != null && loginElement.HasChildNodes)

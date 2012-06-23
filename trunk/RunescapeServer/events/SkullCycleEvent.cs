@@ -37,6 +37,7 @@ namespace RunescapeServer.events {
                     TimeLeft--;
                 } else {
                     TimeLeft = 0;
+                    this.Player.removeSkull();
                     stop();
                     return;
                 }

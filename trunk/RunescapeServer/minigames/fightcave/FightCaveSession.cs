@@ -129,7 +129,8 @@ public class FightCaveSession
 				p.setAttacker(null);
                 p.getSkills().setCurLevel(Skills.SKILL.HITPOINTS, p.getSkills().getMaxLevel(Skills.SKILL.HITPOINTS));
                 p.getPackets().sendSkillLevel(Skills.SKILL.HITPOINTS);
-				p.setSkullCycles(0);
+				//p.removeSkull();
+                p.removeSkull();
 				p.setEntityFocus(65535);
 				p.getSpecialAttack().resetSpecial();
 				p.getEquipment().setWeapon();
@@ -141,8 +142,10 @@ public class FightCaveSession
 				p.removeTemporaryAttribute("willDie");
 				p.setFrozen(false);
 				p.removeTemporaryAttribute("unmovable");
-				p.setAntifireCycles(0);
-				p.setSuperAntipoisonCycles(0);
+				//p.PlayerAttributes.AntiFirePotionCycle.stop();
+				//p.PlayerAttributes.SuperAntiPoisonPotionCycle.stop();
+                p.PlayerAttributes.AntiFirePotionCycle.stop();
+                p.PlayerAttributes.SuperAntiPoisonPotionCycle.stop();
 				Prayer.deactivateAllPrayers(p);
 				p.setTeleblockTime(0);
 				p.removeTemporaryAttribute("teleblocked");

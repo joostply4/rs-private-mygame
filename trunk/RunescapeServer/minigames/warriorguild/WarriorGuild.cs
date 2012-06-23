@@ -13,6 +13,7 @@ namespace RunescapeServer.minigames.warriorguild
 public class WarriorGuild : WarriorGuildData
     {
         public WarriorGuild() {
+
 	    }
 	
 	    public static bool useAnimator(Player p, int itemId, int objectId, int objectX, int objectY) {

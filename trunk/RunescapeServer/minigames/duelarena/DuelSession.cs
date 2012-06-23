@@ -444,7 +444,7 @@ public class DuelSession
 		    player.clearKillersHits();
             player.setVengeance(false);
             player.setFrozen(false);
-            player.setSkullCycles(0);
+            player.removeSkull();
 		    player.setLastVengeanceTime(0);
             player.setTeleblockTime(0);
             player.setPoisonAmount(0);
@@ -465,7 +465,7 @@ public class DuelSession
 			    p2.clearKillersHits();
                 p2.setVengeance(false);
                 p2.setFrozen(false);
-                p2.setSkullCycles(0);
+                p2.removeSkull();
                 p2.setLastVengeanceTime(0);
                 p2.setTeleblockTime(0);
                 p2.setPoisonAmount(0);

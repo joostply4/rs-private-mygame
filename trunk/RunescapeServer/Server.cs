@@ -70,10 +70,10 @@ public class Server
             registerEvent(new RunEnergyEvent());
             registerEvent(new LevelChangeEvent());
             registerEvent(new SpecialRestoreEvent());
-            registerEvent(new SkullCycleEvent());
+            //registerEvent(new SkullCycleEvent());
             registerEvent(new AreaVariables());
             registerEvent(new AggressiveNpcEvent());
-            registerEvent(new LowerPotionCyclesEvent());
+            //registerEvent(new LowerPotionCyclesEvent());
             objectManager.getFarmingPatches().processPatches();
             isRunning = true;
             new Thread(new ThreadStart(Server.eventProcessingThread)).Start();

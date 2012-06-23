@@ -195,7 +195,12 @@ public class Consumables
 						
 					case 11: // super antipoison
 						p.setPoisonAmount(0);
-						p.setSuperAntipoisonCycles(20);
+                        //p.setSuperAntipoisonCycles(20);
+                        SuperAntiPoisonPotionCycleEvent sapc = new SuperAntiPoisonPotionCycleEvent();
+                        sapc.Player = p;
+                        sapc.PotionTimeLength = 20;
+                        p.PlayerAttributes.SuperAntiPoisonPotionCycle = sapc;
+                        Server.registerEvent(p.PlayerAttributes.SuperAntiPoisonPotionCycle);
 						break;
 						
 					case 12: //Fishing potion [fishing +3]
@@ -229,7 +234,12 @@ public class Consumables
 						break;
 						
 					case 18: // Antifire potion
-						p.setAntifireCycles(20);
+						//p.setAntifireCycles(20);
+                        AntifirePoitionCycleEvent apce = new AntifirePoitionCycleEvent();
+                        apce.Player = p;
+                        apce.PotionTimeLength = 20;
+                        p.PlayerAttributes.AntiFirePotionCycle = apce;
+                        Server.registerEvent(p.PlayerAttributes.AntiFirePotionCycle);
 						break;
 
                     case 19: //Ranging potions

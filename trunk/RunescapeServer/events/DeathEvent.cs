@@ -155,7 +155,7 @@ public class DeathEvent : Event
 					    }
 					    p.getInventory().setProtectedItems(null);
 				    }
-				    p.setSkullCycles(0);
+				    p.removeSkull();
 				    p.getSpecialAttack().resetSpecial();
 				    p.getAttackStyle().setDefault();
 				    p.getEquipment().setWeapon();
@@ -164,8 +164,8 @@ public class DeathEvent : Event
 				    entity.setDead(false);
 				    p.setLastVengeanceTime(0);
 				    p.setVengeance(false);
-				    p.setAntifireCycles(0);
-				    p.setSuperAntipoisonCycles(0);
+				    p.PlayerAttributes.AntiFirePotionCycle.stop();
+				    p.PlayerAttributes.SuperAntiPoisonPotionCycle.stop();
 				    p.removeTemporaryAttribute("willDie");
 				    p.setFrozen(false);
 				    p.removeTemporaryAttribute("unmovable");

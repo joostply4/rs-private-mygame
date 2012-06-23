@@ -34,9 +34,11 @@ namespace RunescapeServer.events {
             PoisonAmount = poisonAmount;
 
             if (target is Player) {
-                if (!((Player)target).PlayerAttributes.SuperAntiPoisonPotionCycle.isStopped()) {
-                    stop();
-                    return;
+                if (((Player)target).PlayerAttributes.SuperAntiPoisonPotionCycle != null) {
+                    if (!((Player)target).PlayerAttributes.SuperAntiPoisonPotionCycle.isStopped()) {
+                        stop();
+                        return;
+                    }
                 }
 
                 ((Player)target).getPackets().sendMessage("You have been poisoned!");

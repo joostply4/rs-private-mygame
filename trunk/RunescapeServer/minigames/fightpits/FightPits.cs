@@ -229,7 +229,7 @@ public class FightPits
 	    }
 
 	    private void resetVariables(Player p) {
-		    p.setSkullCycles(0);
+		    p.removeSkull();
 		    p.getSpecialAttack().resetSpecial();
 		    p.setLastkiller(null);
 		    p.setDead(false);
@@ -241,8 +241,8 @@ public class FightPits
 		    p.removeTemporaryAttribute("willDie");
 		    p.setFrozen(false);
 		    p.removeTemporaryAttribute("unmovable");
-		    p.setAntifireCycles(0);
-		    p.setSuperAntipoisonCycles(0);
+		    p.PlayerAttributes.AntiFirePotionCycle.stop();
+		    p.PlayerAttributes.SuperAntiPoisonPotionCycle.stop();
 		    p.setTeleblockTime(0);
 		    p.removeTemporaryAttribute("teleblocked");
 		    p.setTarget(null);

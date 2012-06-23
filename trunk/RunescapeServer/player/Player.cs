@@ -18,6 +18,7 @@ using RunescapeServer.npc;
 using RunescapeServer.minigames.barrows;
 using RunescapeServer.player.skills.runecrafting;
 using RunescapeServer.player.skills.farming;
+using RunescapeServer.minigames.agilityarena;
 
 namespace RunescapeServer.player {
     //Player Attributes
@@ -173,6 +174,46 @@ namespace RunescapeServer.player {
             set;
             get;
         }
+
+        public RunecraftPouchManager RunecraftPouchManager {
+            set;
+            get;
+        }
+
+        public bool Vengeance {
+            set;
+            get;
+        }
+
+        public long TeleportBlockedTime {
+            set;
+            get;
+        }
+
+        public long LastVengeanceCallTime {
+            set;
+            get;
+        }
+
+        public int CurrentDefender {
+            set;
+            get;
+        }
+
+        public BarrowsPlayerInformation BarrowsPlayerInformation {
+            set;
+            get;
+        }
+
+        public AgilityArenaPlayerInformation AgilityArenaPlayerInformation {
+            set;
+            get;
+        }
+
+        public SlayerPointsHandler SlayerPointsHandler {
+            set;
+            get;
+        }
     }
 
     public class Player : Entity {
@@ -202,6 +243,7 @@ namespace RunescapeServer.player {
         private bool hd; //high definition game.
         private bool disconnected;
         private double lastHit;
+        private bool achievementDiaryTab;
 
         public PlayerAttributes PlayerAttributes {
             set;
@@ -234,34 +276,23 @@ namespace RunescapeServer.player {
             PlayerAttributes.AcceptAid = false;
             PlayerAttributes.PlayerRights = 0;
             PlayerAttributes.CurrentMagicInterface = 1;
-            //achievementDiaryTab = false;
+            achievementDiaryTab = false;
             PlayerAttributes.RingOfForgingCharge = 40;
-            //smallPouchAmount = 0;
-            //mediumPouchAmount = 0;
-            //largePouchAmount = 0;
-            //giantPouchAmount = 0;
-            //defenderWave = 0;
+            PlayerAttributes.RunecraftPouchManager = new RunecraftPouchManager();
+            PlayerAttributes.CurrentDefender = 0;
             PlayerAttributes.AutoRetaliate = false;
-            //vengeance = false;
-            //lastVengeanceTime = 0;
-            PlayerAttributes.PoisonEvent = new PoisonEvent(this, 0);
+            PlayerAttributes.Vengeance = false;
+            PlayerAttributes.LastVengeanceCallTime = 0;
+            //PlayerAttributes.PoisonEvent = new PoisonEvent(this, 0);
             PlayerAttributes.SkullCycleEvent = new SkullCycleEvent();
             PlayerAttributes.CurrentPrayerPoints = 1;
-            //barrowTunnel = -1;
-            //barrowKillCount = 0;
-            //barrowBrothersKilled = new bool[6];
-            //slayerPoints = 0;
-            //removedSlayerTasks = new string[4];
-            //for (int i = 0; i < removedSlayerTasks.Length; i++) {
-            //    removedSlayerTasks[i] = "-";
-            //}
-            //agilityArenaStatus = 0;
-            //taggedLastAgilityPillar = false;
-            //paidAgilityArena = false;
-            //teleblockTime = 0;
+            PlayerAttributes.BarrowsPlayerInformation = new BarrowsPlayerInformation();
+            PlayerAttributes.SlayerPointsHandler = new SlayerPointsHandler();
+            PlayerAttributes.AgilityArenaPlayerInformation = new AgilityArenaPlayerInformation();
+            PlayerAttributes.TeleportBlockedTime = 0;
             lastHit = -1;
-            PlayerAttributes.SuperAntiPoisonPotionCycle = new SuperAntiPoisonPotionCycleEvent();
-            PlayerAttributes.AntiFirePotionCycle = new AntifirePoitionCycleEvent();
+            //PlayerAttributes.SuperAntiPoisonPotionCycle = new SuperAntiPoisonPotionCycleEvent();
+            //PlayerAttributes.AntiFirePotionCycle = new AntifirePoitionCycleEvent();
             tradeRequests = new List<Player>();
             duelRequests = new List<Player>();
             PlayerAttributes.RunEnergy = 100;
@@ -781,9 +812,9 @@ namespace RunescapeServer.player {
             if (this.PlayerAttributes.CurrentMagicInterface != 1) {
                 getPackets().sendTab(isHd() ? 99 : 89, this.PlayerAttributes.CurrentMagicInterface == 2 ? 193 : 430);
             }
-            //if (achievementDiaryTab) {
-            //    getPackets().sendTab(isHd() ? 95 : 85, 259);
-            //}
+            if (achievementDiaryTab) {
+                getPackets().sendTab(isHd() ? 95 : 85, 259);
+            }
             RuneCraft.toggleRuin(this, getEquipment().getItemInSlot(ItemData.EQUIP.HAT), RuneCraft.wearingTiara(this));
             //getSpecialAttack().setSpecialAmount(specialAmount);
             //setPoisonAmount(poisonAmount);
@@ -812,17 +843,17 @@ namespace RunescapeServer.player {
             //setSkullCycles(skullCycles); // This method updates the appearance, so have this last.
         }
 
-        //public int getAgilityArenaStatus() {
-        //    return agilityArenaStatus;
-        //}
+        public int getAgilityArenaStatus() {
+            return this.PlayerAttributes.AgilityArenaPlayerInformation.AgilityArenaStatus;
+        }
 
-        //public void setAgilityArenaStatus(int agilityArenaStatus) {
-        //    this.agilityArenaStatus = agilityArenaStatus;
-        //}
+        public void setAgilityArenaStatus(int agilityArenaStatus) {
+            this.PlayerAttributes.AgilityArenaPlayerInformation.AgilityArenaStatus = agilityArenaStatus;
+        }
 
-        //public bool isAchievementDiaryTab() {
-        //    return achievementDiaryTab;
-        //}
+        public bool isAchievementDiaryTab() {
+            return achievementDiaryTab;
+        }
 
         public bool isMouseTwoButtons() {
             return this.PlayerAttributes.MouseTwoButtons;
@@ -867,66 +898,53 @@ namespace RunescapeServer.player {
             this.PlayerAttributes.CurrentMagicInterface = magicType;
         }
 
-        //public int getDefenderWave() {
-        //    return defenderWave;
-        //}
+        public int getDefenderWave() {
+            return this.PlayerAttributes.CurrentDefender;
+        }
 
-        //public void setDefenderWave(int defenderWave) {
-        //    this.defenderWave = defenderWave;
-        //}
+        public void setDefenderWave(int defenderWave) {
+            this.PlayerAttributes.CurrentDefender = defenderWave;
+        }
 
-        //public void setAchievementDiaryTab(bool b) {
-        //    this.achievementDiaryTab = b;
-        //}
+        public void setAchievementDiaryTab(bool b) {
+            this.achievementDiaryTab = b;
+        }
 
-        //public int getSmallPouchAmount() {
-        //    return smallPouchAmount;
-        //}
+        public int getSmallPouchAmount() {
+            return this.PlayerAttributes.RunecraftPouchManager.SmallPouchAmount;
+        }
 
-        //public void setSmallPouchAmount(int smallPouchAmount) {
-        //    this.smallPouchAmount = smallPouchAmount;
-        //}
+        public void setSmallPouchAmount(int smallPouchAmount) {
+            this.PlayerAttributes.RunecraftPouchManager.SmallPouchAmount = smallPouchAmount;
+        }
 
-        //public int getMediumPouchAmount() {
-        //    return mediumPouchAmount;
-        //}
+        public int getMediumPouchAmount() {
+            return this.PlayerAttributes.RunecraftPouchManager.MediumPouchAmount;
+        }
 
-        //public void setMediumPouchAmount(int mediumPouchAmount) {
-        //    this.mediumPouchAmount = mediumPouchAmount;
-        //}
+        public void setMediumPouchAmount(int mediumPouchAmount) {
+            this.PlayerAttributes.RunecraftPouchManager.MediumPouchAmount = mediumPouchAmount;
+        }
 
-        //public int getLargePouchAmount() {
-        //    return largePouchAmount;
-        //}
+        public int getLargePouchAmount() {
+            return this.PlayerAttributes.RunecraftPouchManager.LargePouchAmount;
+        }
 
-        //public void setLargePouchAmount(int largePouchAmount) {
-        //    this.largePouchAmount = largePouchAmount;
-        //}
+        public void setLargePouchAmount(int largePouchAmount) {
+            this.PlayerAttributes.RunecraftPouchManager.LargePouchAmount = largePouchAmount;
+        }
 
-        //public int getGiantPouchAmount() {
-        //    return giantPouchAmount;
-        //}
+        public int getGiantPouchAmount() {
+            return this.PlayerAttributes.RunecraftPouchManager.GiantPouchAmount;
+        }
 
-        //public void setGiantPouchAmount(int giantPouchAmount) {
-        //    this.giantPouchAmount = giantPouchAmount;
-        //}
-
-        //public int getSkullCycles() {
-        //    return skullCycles;
-        //}
-
-        //public void renewSkull() {
-        //    setSkullCycles(20);
-        //}
+        public void setGiantPouchAmount(int giantPouchAmount) {
+            this.PlayerAttributes.RunecraftPouchManager.GiantPouchAmount = giantPouchAmount;
+        }
 
         public bool isSkulled() {
             return this.PlayerAttributes.IsSkulled;
         }
-
-        //public void setSkullCycles(int amt) {
-        //    this.skullCycles = amt;
-        //    getPrayers().setPkIcon(isSkulled() ? 0 : -1);
-        //}
 
         public void setAutoRetaliate(bool autoRetaliate) {
             this.PlayerAttributes.AutoRetaliate = autoRetaliate;
@@ -945,32 +963,32 @@ namespace RunescapeServer.player {
             this.PlayerAttributes.SpecialAttack.setSpecialAmount(specialAmount);
         }
 
-        //public void setBarrowTunnel(int barrowTunnel) {
-        //    this.barrowTunnel = barrowTunnel;
-        //}
+        public void setBarrowTunnel(int barrowTunnel) {
+            this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowTunnel = barrowTunnel;
+        }
 
-        //public int getBarrowTunnel() {
-        //    return barrowTunnel;
-        //}
+        public int getBarrowTunnel() {
+            return this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowTunnel;
+        }
 
-        //public void setBarrowKillCount(int i) {
-        //    this.barrowKillCount = i;
-        //    if (barrowKillCount > 9999) {
-        //        barrowKillCount = 9999;
-        //    }
-        //}
+        public void setBarrowKillCount(int i) {
+            this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowKillCount = i;
+            if (this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowKillCount > 9999) {
+                this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowKillCount = 9999;
+            }
+        }
 
-        //public int getBarrowKillCount() {
-        //    return barrowKillCount;
-        //}
+        public int getBarrowKillCount() {
+            return this.PlayerAttributes.BarrowsPlayerInformation.CurrentBarrowKillCount;
+        }
 
-        //public void setBarrowBrothersKilled(int i, bool b) {
-        //    this.barrowBrothersKilled[i] = b;
-        //}
+        public void setBarrowBrothersKilled(int i, bool b) {
+            this.PlayerAttributes.BarrowsPlayerInformation.BarrowsBrothersKilled[i] = b;
+        }
 
-        //public bool getBarrowBrothersKilled(int i) {
-        //    return barrowBrothersKilled[i];
-        //}
+        public bool getBarrowBrothersKilled(int i) {
+            return this.PlayerAttributes.BarrowsPlayerInformation.BarrowsBrothersKilled[i];
+        }
 
         public void setRecoilCharges(int i) {
             this.PlayerAttributes.RingOfRecoilCharges = i;
@@ -980,13 +998,13 @@ namespace RunescapeServer.player {
             return this.PlayerAttributes.RingOfRecoilCharges;
         }
 
-        //public void setVengeance(bool vengeance) {
-        //    this.vengeance = vengeance;
-        //}
+        public void setVengeance(bool vengeance) {
+            this.PlayerAttributes.Vengeance = vengeance;
+        }
 
-        //public bool hasVengeance() {
-        //    return vengeance;
-        //}
+        public bool hasVengeance() {
+            return this.PlayerAttributes.Vengeance;
+        }
 
         public void setCannon(DwarfCannon cannon) {
             this.cannon = cannon;
@@ -1004,41 +1022,41 @@ namespace RunescapeServer.player {
             return this.PlayerAttributes.SlayerTask;
         }
 
-        //public int getSlayerPoints() {
-        //    return slayerPoints;
-        //}
+        public int getSlayerPoints() {
+            return this.PlayerAttributes.SlayerPointsHandler.SlayerPoints;
+        }
 
-        //public void setSlayerPoints(int i) {
-        //    this.slayerPoints = i;
-        //}
+        public void setSlayerPoints(int i) {
+            this.PlayerAttributes.SlayerPointsHandler.SlayerPoints = i;
+        }
 
-        //public void setRemovedSlayerTask(int index, string monster) {
-        //    this.removedSlayerTasks[index] = monster;
-        //}
+        public void setRemovedSlayerTask(int index, string monster) {
+            this.PlayerAttributes.SlayerPointsHandler.RemovedSlayerTasks[index] = monster;
+        }
 
-        //public string[] getRemovedSlayerTasks() {
-        //    return removedSlayerTasks;
-        //}
+        public string[] getRemovedSlayerTasks() {
+            return this.PlayerAttributes.SlayerPointsHandler.RemovedSlayerTasks;
+        }
 
-        //public void setRemovedSlayerTask(string[] tasks) {
-        //    removedSlayerTasks = tasks;
-        //}
+        public void setRemovedSlayerTask(string[] tasks) {
+            this.PlayerAttributes.SlayerPointsHandler.RemovedSlayerTasks = tasks;
+        }
 
-        //public bool isTaggedLastAgilityPillar() {
-        //    return taggedLastAgilityPillar;
-        //}
+        public bool isTaggedLastAgilityPillar() {
+            return this.PlayerAttributes.AgilityArenaPlayerInformation.TaggedLastAgilityPillar;
+        }
 
-        //public void setTaggedLastAgilityPillar(bool b) {
-        //    taggedLastAgilityPillar = b;
-        //}
+        public void setTaggedLastAgilityPillar(bool b) {
+            this.PlayerAttributes.AgilityArenaPlayerInformation.TaggedLastAgilityPillar = b;
+        }
 
-        //public void setPaidAgilityArena(bool paidAgilityArena) {
-        //    this.paidAgilityArena = paidAgilityArena;
-        //}
+        public void setPaidAgilityArena(bool paidAgilityArena) {
+            this.PlayerAttributes.AgilityArenaPlayerInformation.PaidAgilityArena = paidAgilityArena;
+        }
 
-        //public bool hasPaidAgilityArena() {
-        //    return paidAgilityArena;
-        //}
+        public bool hasPaidAgilityArena() {
+            return this.PlayerAttributes.AgilityArenaPlayerInformation.PaidAgilityArena;
+        }
 
         public double getLastHit() {
             return lastHit;
@@ -1048,13 +1066,13 @@ namespace RunescapeServer.player {
             this.lastHit = hit;
         }
 
-        //public long getTeleblockTime() {
-        //    return teleblockTime;
-        //}
+        public long getTeleblockTime() {
+            return this.PlayerAttributes.TeleportBlockedTime;
+        }
 
-        //public void setTeleblockTime(long l) {
-        //    teleblockTime = l;
-        //}
+        public void setTeleblockTime(long l) {
+            this.PlayerAttributes.TeleportBlockedTime = l;
+        }
 
         public int getForgeCharge() {
             return this.PlayerAttributes.RingOfForgingCharge;
@@ -1068,13 +1086,13 @@ namespace RunescapeServer.player {
             getPrayers().setPkIcon(1);
         }
 
-        //public long getLastVengeanceTime() {
-        //    return lastVengeanceTime;
-        //}
+        public long getLastVengeanceTime() {
+            return this.PlayerAttributes.LastVengeanceCallTime;
+        }
 
-        //public void setLastVengeanceTime(long time) {
-        //    this.lastVengeanceTime = time;
-        //}
+        public void setLastVengeanceTime(long time) {
+            this.PlayerAttributes.LastVengeanceCallTime = time;
+        }
 
         public double getPrayerPoints() {
             return this.PlayerAttributes.CurrentPrayerPoints;
@@ -1087,7 +1105,7 @@ namespace RunescapeServer.player {
         public void decreasePrayerPoints(double modification) {
             int lvlBefore = (int)Math.Ceiling(getPrayerPoints());
             if (getPrayerPoints() > 0) {
-                setPrayerPoints( (getPrayerPoints() - modification <= 0 ? 0 : getPrayerPoints() - modification) );
+                setPrayerPoints((getPrayerPoints() - modification <= 0 ? 0 : getPrayerPoints() - modification));
             }
             int lvlAfter = (int)Math.Ceiling(getPrayerPoints());
             if (lvlBefore - lvlAfter >= 1) {
@@ -1096,28 +1114,28 @@ namespace RunescapeServer.player {
             }
         }
 
-        //public void setSuperAntipoisonCycles(int superAntipoisonCycles) {
-        //    this.superAntipoisonCycles = superAntipoisonCycles;
-        //}
-
-        //public int getSuperAntipoisonCycles() {
-        //    return superAntipoisonCycles;
-        //}
-
-        //public void setAntifireCycles(int antifireCycles) {
-        //    this.antifireCycles = antifireCycles;
-        //}
-
-        //public int getAntifireCycles() {
-        //    return antifireCycles;
-        //}
-
         public object getDistanceEvent() {
             return distanceEvent;
         }
 
         public void setDistanceEvent(object distanceEvent) {
             this.distanceEvent = distanceEvent;
+        }
+
+        public void removeSkull() {
+            this.PlayerAttributes.SkullCycleEvent.stop();
+            this.getPrayers().setPkIcon(-1);
+        }
+
+        public void renewSkull() {
+            SkullCycleEvent sce = new SkullCycleEvent();
+            sce.Player = this;
+            sce.TimeLeft = 20;
+            this.PlayerAttributes.SkullCycleEvent = sce;
+
+            this.getPrayers().setPkIcon(0);
+
+            Server.registerEvent(this.PlayerAttributes.SkullCycleEvent);
         }
     }
 }
