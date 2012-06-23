@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class Leather : CraftingData
+public class Leather : CraftingData
     {
         public Leather() {
 	    }

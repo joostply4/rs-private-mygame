@@ -19,7 +19,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler
 {
-    class NPCInteract : PacketHandler
+public class NPCInteract : PacketHandler
     {
 	    public void handlePacket(Player player,  Packet packet) {
 		    switch(packet.getPacketId()) {

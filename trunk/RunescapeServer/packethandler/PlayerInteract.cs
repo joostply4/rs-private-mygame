@@ -14,7 +14,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.packethandler
 {
-    class PlayerInteract : PacketHandler
+public class PlayerInteract : PacketHandler
     {
 	    public void handlePacket(Player player, Packet packet) {
 		    switch(packet.getPacketId()) {

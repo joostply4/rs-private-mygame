@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.agility
 {
-    class BarbarianCourse
+public class BarbarianCourse
     {
         public BarbarianCourse() {
 	    }

@@ -1,6 +1,6 @@
 namespace RunescapeServer.net
 {
-    class Cryption
+public class Cryption
     {
         public Cryption(int[] ai)
         {

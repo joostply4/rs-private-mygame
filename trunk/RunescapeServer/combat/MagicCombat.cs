@@ -14,7 +14,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.combat
 {
-    class MagicCombat : MagicData
+public class MagicCombat : MagicData
     {
         public MagicCombat() {	
 	    }

@@ -8,7 +8,7 @@ namespace RunescapeServer.model
     /**
      * Holds data for a single animation request.
      */
-    class Animation
+public class Animation
     {
         private int id, delay;
 

@@ -7,7 +7,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class WorldObject
+public class WorldObject
     {
         private bool spawnedObject;
         private ushort originalId;

@@ -11,7 +11,7 @@ using RunescapeServer.minigames.godwars;
 
 namespace RunescapeServer.combat
 {
-    class NPCAttack
+public class NPCAttack
     {
         
 	    public NPCAttack() {

@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.woodcutting
 {
-    class Woodcutting : WoodcuttingData
+public class Woodcutting : WoodcuttingData
     {
         public Woodcutting() {
 	    }

@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.model
 {
-    class Follow
+public class Follow
     {
 
         private Entity entity;

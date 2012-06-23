@@ -7,7 +7,7 @@ using RunescapeServer.player.skills.prayer;
 
 namespace RunescapeServer.player
 {
-    class Prayers : PrayerData
+public class Prayers : PrayerData
     {
         private int headIcon = -1;
         private int pkIcon = -1;

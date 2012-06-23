@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.smithing
 {
-    class SmithingData
+public class SmithingData
     {
         public SmithingData() {
 	    }

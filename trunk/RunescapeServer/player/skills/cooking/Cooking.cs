@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.cooking
 {
-    class Cooking : CookingData
+public class Cooking : CookingData
     {
         public Cooking() {
 	    }

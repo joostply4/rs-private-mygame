@@ -6,7 +6,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class Fletching : FletchingData
+public class Fletching : FletchingData
     {
         public Fletching()
         {

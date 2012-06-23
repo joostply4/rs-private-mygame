@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.godwars
 {
-    class GodwarsTeleport
+public class GodwarsTeleport
     {
         public void teleportToGodwars()
         {

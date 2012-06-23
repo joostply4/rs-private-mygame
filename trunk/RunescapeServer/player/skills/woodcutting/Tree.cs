@@ -6,7 +6,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.woodcutting
 {
-    class Tree
+public class Tree
     {
         private int treeIndex;
         private Location treeLocation;

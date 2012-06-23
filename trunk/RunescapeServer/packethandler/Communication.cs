@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.packethandler
 {
-    class Communication : PacketHandler
+public class Communication : PacketHandler
     {
 	    public void handlePacket(Player player, Packet packet) {
 		    switch(packet.getPacketId()) {

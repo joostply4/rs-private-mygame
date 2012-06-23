@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class ClientSideObjectDump : Command
+public class ClientSideObjectDump : Command
     {
         public void execute(Player player, string[] arguments)
         {

@@ -26,7 +26,7 @@ using RunescapeServer.player.skills.farming;
 
 namespace RunescapeServer.packethandler
 {
-    class ActionButton : PacketHandler
+public class ActionButton : PacketHandler
     {
 	    public void handlePacket(Player player, Packet packet) {
             switch (packet.getPacketId())

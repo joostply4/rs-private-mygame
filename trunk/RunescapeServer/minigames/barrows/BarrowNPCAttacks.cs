@@ -11,7 +11,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.barrows
 {
-    class BarrowNPCAttacks
+public class BarrowNPCAttacks
     {
 	    public BarrowNPCAttacks() {
 		

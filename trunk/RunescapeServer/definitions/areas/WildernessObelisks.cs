@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions.areas
 {
-    class WildernessObelisks
+public class WildernessObelisks
     {
         private static int ACTIVATED_ID = 14825;
 	

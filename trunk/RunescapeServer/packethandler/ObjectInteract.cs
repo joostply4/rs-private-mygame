@@ -25,7 +25,7 @@ using RunescapeServer.player.skills.smithing;
 
 namespace RunescapeServer.packethandler
 {
-    class ObjectInteract : PacketHandler
+public class ObjectInteract : PacketHandler
     {
 	    public void handlePacket(Player player, Packet packet) {
 		    switch(packet.getPacketId()) {

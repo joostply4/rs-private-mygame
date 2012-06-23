@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.herblore
 {
-    class Potion
+public class Potion
     {
         private int unfinished;
         private int finished;

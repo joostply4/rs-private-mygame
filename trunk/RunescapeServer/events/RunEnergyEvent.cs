@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.events
 {
-    class RunEnergyEvent : Event
+public class RunEnergyEvent : Event
     {
         public RunEnergyEvent()
             : base(2000) {}

@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Uptime : Command
+public class Uptime : Command
     {
         public void execute(Player player, string[] arguments)
         {

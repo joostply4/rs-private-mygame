@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions
 {
-    class DoorControl
+public class DoorControl
     {
         private List<Door> doors;
 	    private static int PLAYER_CHANGE_DELAY = 1200;

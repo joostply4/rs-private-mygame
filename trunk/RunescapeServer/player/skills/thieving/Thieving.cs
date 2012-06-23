@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.thieving
 {
-    class Thieving : ThievingData
+public class Thieving : ThievingData
     {
         public Thieving() {
 	    }

@@ -7,7 +7,7 @@ using RunescapeServer.player;
 using RunescapeServer.definitions;
 namespace RunescapeServer.net
 {
-    class Packet
+public class Packet
     {
     
     public enum Size : int {Bare, Fixed, VariableByte, VariableShort};

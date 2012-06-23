@@ -15,7 +15,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.combat
 {
-    class Combat
+public class Combat
     {
         public Combat() {
 	    }

@@ -6,7 +6,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.net
 {
-    class PacketBuilder
+public class PacketBuilder
     {
         /**
 	     * Default capacity

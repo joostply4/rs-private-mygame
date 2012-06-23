@@ -7,7 +7,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class Emotes
+public class Emotes
     {
         /**
          * Handles a player emote: does the appropriate animation.

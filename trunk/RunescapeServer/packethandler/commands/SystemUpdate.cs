@@ -7,7 +7,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class SystemUpdate : Command
+public class SystemUpdate : Command
     {
         public void execute(Player player, string[] arguments)
         {

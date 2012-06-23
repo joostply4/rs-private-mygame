@@ -13,7 +13,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions
 {
-    class WorldObjectManager
+public class WorldObjectManager
     {
 	    private List<WorldObject> objects;
 	    private static int FIRE = 1;

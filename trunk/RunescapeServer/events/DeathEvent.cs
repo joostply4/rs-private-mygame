@@ -14,7 +14,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.events
 {
-    class DeathEvent : Event
+public class DeathEvent : Event
     {
         private Entity lastAttacker;
 	    private Entity entity;

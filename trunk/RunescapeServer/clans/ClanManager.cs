@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.clans
 {
-    class ClanManager
+public class ClanManager
     {
         	//TODO coinshare/lootshare
 	    private List<Clan> clans;

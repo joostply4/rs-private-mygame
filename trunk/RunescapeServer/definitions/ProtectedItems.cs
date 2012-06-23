@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class ProtectedItems
+public class ProtectedItems
     {
 
 	

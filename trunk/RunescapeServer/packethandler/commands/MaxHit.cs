@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class MaxHit : Command
+public class MaxHit : Command
     {
         public void execute(Player player, string[] arguments)
         {

@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.model
 {
-    abstract class Entity
+    public abstract class Entity
     {
 
         private Animation lastAnimation;

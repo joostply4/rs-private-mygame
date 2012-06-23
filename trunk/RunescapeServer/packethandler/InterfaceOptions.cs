@@ -17,7 +17,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.packethandler
 {
-    class InterfaceOptions : PacketHandler
+public class InterfaceOptions : PacketHandler
     {
 	    public void handlePacket(Player player, Packet packet) {
             switch (packet.getPacketId())

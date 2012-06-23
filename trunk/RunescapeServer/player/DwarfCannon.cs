@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player
 {
-    class DwarfCannon
+public class DwarfCannon
     {
 	    private Player p;
 	    private Location cannonLocation;

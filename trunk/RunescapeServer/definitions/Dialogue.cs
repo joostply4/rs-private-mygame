@@ -10,7 +10,7 @@ using RunescapeServer.definitions.areas;
 
 namespace RunescapeServer.definitions
 {
-    class Dialogue
+public class Dialogue
     {
         public Dialogue() {
 	    }

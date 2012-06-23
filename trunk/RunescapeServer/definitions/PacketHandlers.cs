@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions
 {
-    class PacketHandlers
+public class PacketHandlers
     {
 
         private static Dictionary<PacketId, PacketHandler> handlers = new Dictionary<PacketId, PacketHandler>();

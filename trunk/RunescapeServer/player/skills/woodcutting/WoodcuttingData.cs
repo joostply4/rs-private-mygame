@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.woodcutting
 {
-    class WoodcuttingData
+public class WoodcuttingData
     {
         public WoodcuttingData() {
 	    }

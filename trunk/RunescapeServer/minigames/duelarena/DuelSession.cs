@@ -13,7 +13,7 @@ using System.Collections;
 
 namespace RunescapeServer.minigames.duelarena
 {
-    class DuelSession
+public class DuelSession
     {
         /**
 	     * STATUSES :

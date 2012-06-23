@@ -8,7 +8,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class OpenShop : Command
+public class OpenShop : Command
     {
         public void execute(Player player, string[] arguments)
         {

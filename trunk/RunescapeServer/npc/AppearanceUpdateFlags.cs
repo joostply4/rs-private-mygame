@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.npc
 {
-    class AppearanceUpdateFlags
+public class AppearanceUpdateFlags
     {
         private bool animationUpdateRequired;
         private bool entityFocusUpdateRequired;

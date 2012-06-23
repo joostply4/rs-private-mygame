@@ -18,7 +18,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer
 {
-    class Server
+public class Server
     {
         private static bool isRunning;                  // signals listener to shut down
         private static bool updateInProgress;           //triggers a system update.

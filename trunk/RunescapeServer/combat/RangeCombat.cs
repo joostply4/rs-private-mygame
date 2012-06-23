@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.combat
 {
-    class RangeCombat
+public class RangeCombat
     {
         /*
 	     * Current range weapons

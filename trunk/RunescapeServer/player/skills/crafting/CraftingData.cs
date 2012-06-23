@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class CraftingData
+public class CraftingData
     {
         public CraftingData() {
 	    }

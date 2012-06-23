@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.model
 {
-    class ForceMovement
+public class ForceMovement
     {
         private int speed1;
         private int speed2;

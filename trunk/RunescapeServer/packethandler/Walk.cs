@@ -14,7 +14,7 @@ using RunescapeServer.minigames.duelarena;
 namespace RunescapeServer.packethandler
 {
     //This class handles 3 walking packets just so you know.
-    class Walk : PacketHandler
+public class Walk : PacketHandler
     {
         public void handlePacket(Player player, Packet packet) {
 		    int size = packet.getLength();

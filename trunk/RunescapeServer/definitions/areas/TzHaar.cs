@@ -9,7 +9,7 @@ using RunescapeServer.npc;
 
 namespace RunescapeServer.definitions.areas
 {
-    class TzHaar
+public class TzHaar
     {
         public TzHaar() {
 	    }

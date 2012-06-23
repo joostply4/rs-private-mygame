@@ -6,7 +6,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.fishing
 {
-    class Spot
+public class Spot
     {
         private int[] fish;
         private int[] level;

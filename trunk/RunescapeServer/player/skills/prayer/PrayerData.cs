@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.prayer
 {
-    class PrayerData
+public class PrayerData
     {
         public PrayerData() {
 	    }

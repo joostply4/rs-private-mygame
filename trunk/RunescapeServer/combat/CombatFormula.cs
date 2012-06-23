@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.combat
 {
-    class CombatFormula
+public class CombatFormula
     {
         public static double getPlayerMaxHit(Player player, int strBonusIncrease)
         {

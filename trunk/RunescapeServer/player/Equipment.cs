@@ -12,7 +12,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.player
 {
-    class Equipment
+    public class Equipment
     {
 	    private Item[] slots = new Item[14];
 	    private Player player;

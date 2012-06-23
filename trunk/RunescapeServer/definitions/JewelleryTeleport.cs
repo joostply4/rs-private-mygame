@@ -10,7 +10,7 @@ using RunescapeServer.minigames.fightcave;
 
 namespace RunescapeServer.definitions
 {
-    class JewelleryTeleport
+public class JewelleryTeleport
     {
         public JewelleryTeleport() {
 	    }

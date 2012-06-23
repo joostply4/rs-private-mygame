@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class Spinning : CraftingData
+public class Spinning : CraftingData
     {
         public Spinning() {
 	    }

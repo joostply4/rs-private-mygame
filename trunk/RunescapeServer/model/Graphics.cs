@@ -8,7 +8,7 @@ namespace RunescapeServer.model
     /**
      * Represents still graphics.
      */
-    class Graphics
+public class Graphics
     {
         private int id, delay, height;
 

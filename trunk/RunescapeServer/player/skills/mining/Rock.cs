@@ -6,7 +6,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.mining
 {
-    class Rock
+public class Rock
     {
         private int rockIndex;
         private Location rockLocation;

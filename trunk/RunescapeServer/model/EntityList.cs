@@ -6,7 +6,7 @@ using System.Collections;
 
 namespace RunescapeServer.model
 {
-    class EntityList<T> : ICollection<T> where T : Entity
+public class EntityList<T> : ICollection<T> where T : Entity
     {
         private const int DEFAULT_CAPACITY = 1600, MIN_VALUE = 1;
         private T[] entities;

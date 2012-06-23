@@ -9,7 +9,7 @@ using RunescapeServer.player.skills.woodcutting;
 
 namespace RunescapeServer.player.skills.runecrafting
 {
-    class AbyssObstacles
+public class AbyssObstacles
     {
 	    public AbyssObstacles() {
 		

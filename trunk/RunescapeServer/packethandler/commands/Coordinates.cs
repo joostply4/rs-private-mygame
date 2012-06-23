@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Coordinates : Command
+public class Coordinates : Command
     {
         public void execute(Player player, string[] arguments)
         {

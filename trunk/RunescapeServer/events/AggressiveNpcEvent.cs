@@ -8,7 +8,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.events
 {
-    class AggressiveNpcEvent : Event
+public class AggressiveNpcEvent : Event
     {
         public AggressiveNpcEvent() 
             :base(750) {}

@@ -8,7 +8,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.model
 {
-    class Appearance
+public class Appearance
     {
         private bool invisible = false;
 	    private Appearance temporaryAppearance; // Used when designing character.

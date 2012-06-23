@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Config : Command
+public class Config : Command
     {
         public void execute(Player player, string[] arguments)
         {

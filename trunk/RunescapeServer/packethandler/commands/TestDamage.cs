@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class TestDamage : Command
+public class TestDamage : Command
     {
         public void execute(Player player, string[] arguments)
         {

@@ -14,7 +14,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.grandexchange
 {
-    class GrandExchange
+public class GrandExchange
     {
         /*
           1109: item id

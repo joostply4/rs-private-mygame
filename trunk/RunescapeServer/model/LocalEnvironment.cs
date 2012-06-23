@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.model
 {
-    class LocalEnvironment
+public class LocalEnvironment
     {
         private Player player;
         private List<Player> newPlayers = new List<Player>(); //first here.. (draw new player packet to you)

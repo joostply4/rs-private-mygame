@@ -11,7 +11,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.godwars
 {
-    class GodwarsAttacks
+public class GodwarsAttacks
     {
         public GodwarsAttacks() {
 	    }

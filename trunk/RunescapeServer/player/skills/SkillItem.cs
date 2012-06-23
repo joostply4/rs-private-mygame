@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills
 {
-    class SkillItem
+public class SkillItem
     {
         private int finishedItem;
         private int itemOne;

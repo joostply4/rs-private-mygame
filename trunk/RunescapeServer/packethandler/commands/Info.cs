@@ -9,7 +9,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Info : Command
+public class Info : Command
     {
         public void execute(Player player, string[] arguments)
         {

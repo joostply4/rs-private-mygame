@@ -7,7 +7,7 @@ using RunescapeServer.minigames.agilityarena;
 
 namespace RunescapeServer.player.skills.agility
 {
-    class Agility : AgilityData
+public class Agility : AgilityData
     {
         public Agility() {
 	    }

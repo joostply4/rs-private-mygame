@@ -9,7 +9,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.net
 {
-    class PlayerUpdate
+public class PlayerUpdate
     {
         /**
          * Prevent instance creation.

@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class SwitchMagic : Command
+public class SwitchMagic : Command
     {
         public void execute(Player player, string[] arguments)
         {

@@ -5,11 +5,15 @@ using System.Text;
 
 namespace RunescapeServer.player
 {
-    class LoginDetails
+    public class LoginDetails
     {
-        private string username;
+        public string username;
         private long longName;
-        private string password;
+        public string password;
+
+        public LoginDetails() {
+
+        }
 
         public long getLongName()
         {

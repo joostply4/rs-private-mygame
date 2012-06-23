@@ -11,7 +11,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.player
 {
-    class Skills
+public class Skills
     {
         public static int SKILL_COUNT = 24;
 	    public static double MAXIMUM_EXP = 200000000;

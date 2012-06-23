@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.mining
 {
-    class Mining : MiningData
+public class Mining : MiningData
     {
         public Mining() {
 	    }

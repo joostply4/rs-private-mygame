@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.model
 {
-    class ChatMessage
+public class ChatMessage
     {
 
         private int colour;

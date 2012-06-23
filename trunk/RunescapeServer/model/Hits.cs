@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.model
 {
-    class Hits
+public class Hits
     {
         public enum HitType {
 		    NO_DAMAGE = 0,			// blue

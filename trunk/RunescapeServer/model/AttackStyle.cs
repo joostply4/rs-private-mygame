@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.model
 {
-    class AttackStyle
+public class AttackStyle
     {
         public enum CombatSkill {ACCURATE, DEFENSIVE, AGGRESSIVE, RANGE, CONTROLLED};
 	    public enum CombatStyle {STAB, SLASH, CRUSH, MAGIC, RANGE_ACCURATE, RANGE_RAPID, RANGE_DEFENSIVE};

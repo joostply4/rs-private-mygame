@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Teleport : Command
+public class Teleport : Command
     {
         public void execute(Player player, string[] arguments) {
             if (arguments.Length < 2)

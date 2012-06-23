@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions
 {
-    class ShopManager
+public class ShopManager
     {
         	
 	    private Dictionary<int, Shop> shops;

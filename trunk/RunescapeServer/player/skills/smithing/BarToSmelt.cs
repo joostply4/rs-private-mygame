@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.smithing
 {
-    class BarToSmelt
+public class BarToSmelt
     {
         private int index;
         private int barId;

@@ -9,7 +9,7 @@ using RunescapeServer.packethandler.commands;
 
 namespace RunescapeServer.packethandler
 {
-    class Command : PacketHandler
+public class Command : PacketHandler
     {
         public void handlePacket(Player player, Packet p)
         {

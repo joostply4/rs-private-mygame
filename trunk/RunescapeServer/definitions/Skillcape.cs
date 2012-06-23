@@ -7,7 +7,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class Skillcape
+public class Skillcape
     {
         /**
  * Handles a skill cape emote: checks appropriate levels,

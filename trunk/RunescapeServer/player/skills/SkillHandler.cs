@@ -13,7 +13,7 @@ using RunescapeServer.player.skills.crafting;
 
 namespace RunescapeServer.player.skills
 {
-    class SkillHandler
+public class SkillHandler
     {
         public static int SKILLCAPE_PRICE = 250000;
 

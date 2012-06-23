@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.barrows
 {
-    class Barrows : BarrowsData
+public class Barrows : BarrowsData
     {
         public Barrows() {
 	    }

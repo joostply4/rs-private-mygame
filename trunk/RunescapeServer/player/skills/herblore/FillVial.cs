@@ -7,7 +7,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.herblore
 {
-    class FillVial : HerbloreData
+public class FillVial : HerbloreData
     {
 	    public FillVial() {
 	    }

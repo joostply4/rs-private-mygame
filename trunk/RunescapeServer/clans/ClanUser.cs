@@ -7,7 +7,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.clans
 {
-    class ClanUser
+public class ClanUser
     {
         private Player p;
         private Clan clan;

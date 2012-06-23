@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.model
 {
-    class GroundItem : Item
+public class GroundItem : Item
     {
         private Location location;
         private Player owner;

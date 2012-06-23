@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class EmptyInventory : Command
+public class EmptyInventory : Command
     {
         public void execute(Player player, string[] arguments)
         {

@@ -9,7 +9,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player
 {
-    class GESession
+public class GESession
     {
         private Player p;
 	    private GEItem currentOffer;

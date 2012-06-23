@@ -7,7 +7,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.clans
 {
-    class Clan
+public class Clan
     {
         private string name;
 	    private string owner;

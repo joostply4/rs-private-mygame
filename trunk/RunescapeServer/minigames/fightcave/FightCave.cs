@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.fightcave
 {
-    class FightCave
+public class FightCave
     {
         public FightCave() {
 	    }

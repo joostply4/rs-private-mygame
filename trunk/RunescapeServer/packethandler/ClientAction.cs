@@ -9,7 +9,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler
 {
-    class ClientAction : PacketHandler
+public class ClientAction : PacketHandler
     {	
 	    public void handlePacket(Player player, Packet packet) {
 		    switch(packet.getPacketId()) {

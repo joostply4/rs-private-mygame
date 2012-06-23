@@ -8,7 +8,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.herblore
 {
-    class Herblore : HerbloreData
+public class Herblore : HerbloreData
     {
         public Herblore() {
         }

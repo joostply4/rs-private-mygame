@@ -7,7 +7,7 @@ using RunescapeServer.npc;
 
 namespace RunescapeServer.definitions
 {
-    class Animations
+public class Animations
     {
         public Animations()
         {

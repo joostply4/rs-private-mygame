@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class CraftItem
+public class CraftItem
     {
         private int craftType;
         private int craftItem;

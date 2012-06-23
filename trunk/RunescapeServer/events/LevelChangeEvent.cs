@@ -7,7 +7,7 @@ using RunescapeServer.npc;
 
 namespace RunescapeServer.events
 {
-    class LevelChangeEvent : Event
+public class LevelChangeEvent : Event
     {
         private int status;
         public LevelChangeEvent()

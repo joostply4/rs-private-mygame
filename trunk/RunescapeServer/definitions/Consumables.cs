@@ -11,7 +11,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.definitions
 {
-    class Consumables
+public class Consumables
     {
         public Consumables() {
 	    }

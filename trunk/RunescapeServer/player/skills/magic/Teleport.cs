@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.magic
 {
-    class Teleport : MagicData
+public class Teleport : MagicData
     {
         public Teleport() {
 	    }

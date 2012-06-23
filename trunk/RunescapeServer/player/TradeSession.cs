@@ -8,7 +8,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player
 {
-    class TradeSession
+public class TradeSession
     {
         private Player player;
         private Player player2;

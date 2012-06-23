@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class Clay : CraftingData
+public class Clay : CraftingData
     {
 	    public Clay() {
 	    }

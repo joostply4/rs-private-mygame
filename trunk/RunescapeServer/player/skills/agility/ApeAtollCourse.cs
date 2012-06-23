@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.agility
 {
-    class ApeAtollCourse
+public class ApeAtollCourse
     {
         public ApeAtollCourse()
         {

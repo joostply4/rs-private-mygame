@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.model
 {
-    class Sprite
+public class Sprite
     {
         private int dir1 = -1, dir2 = -1;
 

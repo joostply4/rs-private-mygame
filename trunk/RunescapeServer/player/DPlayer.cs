@@ -24,59 +24,77 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player
 {
-    class DPlayer : Entity
+public class DPlayer : Entity
     {
-        private Connection connection;
+        //Not redone
+        private bool achievementDiaryTab;
+
+        //Runecraft Skill Object -- Pouch Manager?
+        private int smallPouchAmount, mediumPouchAmount, largePouchAmount, giantPouchAmount;
+        
+        //Mini Game -- Getting Defenders from those giants
+        //Slayer variables should be contained in a Slayer object of sorts
+        private int defenderWave, slayerPoints;
+        private string[] removedSlayerTasks;
+
+        //Barrows information should be stored in a barrows Mini Game
+        private int barrowTunnel, barrowKillCount;
+        private bool[] barrowBrothersKilled;
+
+        //Teleblock and Vengeance [EVENTS] need to be made
+        private long teleblockTime, lastVengeanceTime;
+
+        //Agility arena variables should also be stored in Agility Arena stats object
+        private int agilityArenaStatus;
+        private bool taggedLastAgilityPillar;
+        private bool paidAgilityArena;
+
+        //Done
         private LoginDetails loginDetails;
         private int playerRights;
-        private bool hd; //high definition game.
         private int runEnergy;
-        private bool disconnected;
-
-
-
-	    private bool chat, split, mouse, aid, achievementDiaryTab, autoRetaliate, vengeance, paidAgilityArena;
-	    private int magicType, forgeCharge, superAntipoisonCycles, antifireCycles;
-	    private long teleblockTime, lastVengeanceTime;
-        private double prayerPoints, lastHit;
-	    private int smallPouchAmount, mediumPouchAmount, largePouchAmount, giantPouchAmount;
-	    private int poisonAmount, specialAmount, skullCycles, recoilCharges, slayerPoints, defenderWave;
-	    private int barrowTunnel, barrowKillCount;
-	    private bool[] barrowBrothersKilled;
-	    private string[] removedSlayerTasks;
-	    private DwarfCannon cannon;
-	    private SlayerTask slayerTask;
-        private GESession grandExchangeSession;
-        private TradeSession tradeSession;
-        private ShopSession shopSession;
-	    private FightCaveSession fightCave;
-        private DuelSession duelSession;
-	    private int agilityArenaStatus;
-	    private bool taggedLastAgilityPillar;
-
-        private object distanceEvent;
-        private List<Player> tradeRequests;
-	    private List<Player> duelRequests;
-
-        private Clan clan;
+        private bool chat, split, mouse, aid, autoRetaliate, vengeance;
+	    private int magicType, forgeCharge;
+        private double prayerPoints;
+	    private int recoilCharges;
+        private int superAntipoisonCycles, antifireCycles;
+        private int poisonAmount, specialAmount, skullCycles;
+        private SlayerTask slayerTask;
         private Bank bank;
         private Inventory inventory;
         private Equipment equipment;
         private Friends friends;
-        private ForceMovement forceMovement;
-        private Prayers prayers;
         private Skills skills;
         private AttackStyle attackStyle;
+        private Appearance appearance;
+
+        //These items DO NOT get parsed into XML
+        //Although I am not sure about the CLAN object yet
+        private Clan clan;
+        //These are for the server to create on the fly
+        private DwarfCannon cannon;
+        private GESession grandExchangeSession;
+        private TradeSession tradeSession;
+        private ShopSession shopSession;
+        private FightCaveSession fightCave;
+        private DuelSession duelSession;
+        private object distanceEvent;
+        private List<Player> tradeRequests;
+	    private List<Player> duelRequests;
+        private ForceMovement forceMovement;
+        private Prayers prayers;
         private Combat.CombatType lastCombatType;
         private Packets packets;
         private LocalEnvironment localEnvironment;
-        private Appearance appearance;
 	    private AppearanceUpdateFlags updateFlags;
         private ChatMessage lastChatMessage;
         private WalkingQueue walkingQueue;
         private SpecialAttack specialAttack;
-
         private bool clientActive = false;
+        private Connection connection;
+        private bool hd; //high definition game.
+        private bool disconnected;
+        private double lastHit;
 
         public DPlayer(Connection connection)
         {

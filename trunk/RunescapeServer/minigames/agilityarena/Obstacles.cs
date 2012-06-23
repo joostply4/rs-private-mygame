@@ -9,7 +9,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.minigames.agilityarena
 {
-    class Obstacles : AgilityData
+public class Obstacles : AgilityData
     {
         public Obstacles() {
 	    }

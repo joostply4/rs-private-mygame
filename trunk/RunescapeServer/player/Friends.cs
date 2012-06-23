@@ -7,7 +7,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player
 {
-    class Friends
+public class Friends
     {
         private Player player;
 	    private List<long> friends;

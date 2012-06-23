@@ -11,7 +11,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions.areas
 {
-    class HomeArea
+public class HomeArea
     {
         public HomeArea() {
 	    }

@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.fishing
 {
-    class Fishing : FishingData
+public class Fishing : FishingData
     {
         public Fishing() {
 	    }

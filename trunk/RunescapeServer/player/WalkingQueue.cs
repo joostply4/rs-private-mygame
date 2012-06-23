@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player
 {
-    class WalkingQueue
+public class WalkingQueue
     {
         public struct Waypoint
         {

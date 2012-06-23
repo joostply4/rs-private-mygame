@@ -7,7 +7,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.model
 {
-    class ShopSession
+public class ShopSession
     {
         private Shop shop;
         private Player player;

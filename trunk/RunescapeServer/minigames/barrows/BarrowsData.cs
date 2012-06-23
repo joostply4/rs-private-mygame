@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.minigames.barrows
 {
-    class BarrowsData
+public class BarrowsData
     {
         public BarrowsData() {
 	    }

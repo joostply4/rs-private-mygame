@@ -216,7 +216,7 @@ namespace RunescapeServer.definitions
         }
     }
 
-    class LaddersAndStairs
+public class LaddersAndStairs
     {
         private static LoadedLaddersAndStairs instance = null;
 

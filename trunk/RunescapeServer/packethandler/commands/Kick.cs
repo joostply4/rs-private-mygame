@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Kick : Command
+public class Kick : Command
     {
         public void execute(Player player, string[] arguments)
         {

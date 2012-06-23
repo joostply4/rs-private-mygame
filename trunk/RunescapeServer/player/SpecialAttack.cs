@@ -13,7 +13,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer.player
 {
-    class SpecialAttack
+public class SpecialAttack
     {
         //TODO add all variations of weapons (p, p+, p++ etc)
 	    private static int POISON_AMOUNT = 6;

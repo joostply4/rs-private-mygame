@@ -7,7 +7,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.firemaking
 {
-    class Firemaking : FiremakingData
+public class Firemaking : FiremakingData
     {
         public Firemaking() {
 	    }

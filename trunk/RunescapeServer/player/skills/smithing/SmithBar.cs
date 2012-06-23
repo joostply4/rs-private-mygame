@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.smithing
 {
-    class SmithBar
+public class SmithBar
     {
         private int barType;
         private int barAmount;

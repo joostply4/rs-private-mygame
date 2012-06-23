@@ -8,7 +8,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class MakeBows : FletchingData
+public class MakeBows : FletchingData
     {
         public MakeBows() {
 	    }

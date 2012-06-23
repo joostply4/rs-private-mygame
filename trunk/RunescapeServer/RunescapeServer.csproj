@@ -273,7 +273,7 @@
     <Compile Include="player\Friends.cs" />
     <Compile Include="player\Inventory.cs" />
     <Compile Include="player\LoginDetails.cs" />
-    <Compile Include="player\DPlayer.cs" />
+    <Content Include="player\DPlayer.cs" />
     <Compile Include="net\Cryption.cs" />
     <Compile Include="LoginHandler.cs" />
     <Compile Include="player\AppearanceUpdateFlags.cs" />

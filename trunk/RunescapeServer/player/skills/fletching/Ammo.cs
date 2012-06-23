@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class Ammo
+public class Ammo
     {
         private int finishedItem;
         private int itemOne;

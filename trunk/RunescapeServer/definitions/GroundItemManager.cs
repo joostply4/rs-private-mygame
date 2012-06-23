@@ -8,7 +8,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class GroundItemManager
+public class GroundItemManager
     {
 	    private List<GroundItem> items;
 	

@@ -7,7 +7,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.player.skills.magic
 {
-    class MagicData
+public class MagicData
     {
         public MagicData() {
 	    }

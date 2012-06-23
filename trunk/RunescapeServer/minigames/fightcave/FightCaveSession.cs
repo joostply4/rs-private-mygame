@@ -14,7 +14,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.fightcave
 {
-    class FightCaveSession
+public class FightCaveSession
     {
         private Player p;
 	    private byte currentWave;

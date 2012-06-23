@@ -8,7 +8,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.minigames
 {
-    class MinigamesHandler
+public class MinigamesHandler
     {
         private AgilityArena agilityArena;
 	    private FightPits fightPits;

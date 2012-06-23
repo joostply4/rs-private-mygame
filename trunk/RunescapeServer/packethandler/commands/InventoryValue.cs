@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class InventoryValue : Command
+public class InventoryValue : Command
     {
         public void execute(Player player, string[] arguments)
         {

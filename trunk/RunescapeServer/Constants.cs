@@ -6,7 +6,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer
 {
-    class Constants
+public class Constants
     {
         public const int WORLD = 25;
         public const int MAX_PLAYERS = 2000;

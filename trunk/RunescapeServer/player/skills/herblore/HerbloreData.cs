@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.herblore
 {
-    class HerbloreData
+public class HerbloreData
     {
         public HerbloreData() {
 	    }

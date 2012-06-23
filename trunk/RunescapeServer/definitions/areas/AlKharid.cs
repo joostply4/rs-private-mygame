@@ -9,7 +9,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.definitions.areas
 {
-    class AlKharid
+public class AlKharid
     {
         public AlKharid() {
 	    }

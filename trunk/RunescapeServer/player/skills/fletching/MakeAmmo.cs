@@ -9,7 +9,7 @@ using RunescapeServer.player.skills.crafting;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class MakeAmmo : FletchingData
+public class MakeAmmo : FletchingData
     {
     	public MakeAmmo() {
 	    }

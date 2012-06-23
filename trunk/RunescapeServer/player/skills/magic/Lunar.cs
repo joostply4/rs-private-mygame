@@ -6,7 +6,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.magic
 {
-    class Lunar
+public class Lunar
     {
 	    public Lunar() {
 	    }
@@ -43,8 +43,8 @@ namespace RunescapeServer.player.skills.magic
 			    p.getInventory().deleteItem(9075, 4);
 			    p.setLastAnimation(new Animation(4410));
 			    p.setLastGraphics(new Graphics(726, 0, 80));
-			    p.setLastVengeanceTime(Environment.TickCount);
-			    p.setVengeance(true);
+                p.setLastVengeanceTime(Environment.TickCount);
+                p.setVengeance(true);
 		    }
 	    }
     }

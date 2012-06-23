@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.firemaking
 {
-    class FiremakingData
+public class FiremakingData
     {
         public FiremakingData() {
 	    }

@@ -8,7 +8,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.prayer
 {
-    class Prayer : PrayerData
+public class Prayer : PrayerData
     {
         public static bool wantToBury(Player p, int item, int slot) {
 	        for (int i = 0; i < BONES.Length; i++) {

@@ -15,7 +15,7 @@ using RunescapeServer.minigames.duelarena;
 
 namespace RunescapeServer
 {
-    class LoginHandler
+public class LoginHandler
     {
 
         /**

@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.net
 {
-    class Connection
+public class Connection
     {
         public byte[] buffer;
         private object chuckedPackets_lock = new object(); //for thread safety

@@ -8,7 +8,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class MakeXbow : FletchingData
+public class MakeXbow : FletchingData
     {
         public static void displayOptionInterface(Player p, int type, bool stringing) {
 		    string s = "<br><br><br><br>";

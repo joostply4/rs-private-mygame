@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player
 {
-    class ConfigureAppearance
+public class ConfigureAppearance
     {
         /*
          * colours

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.cooking
 {
-    class CookingData
+public class CookingData
     {
         public CookingData() {	
 	    }

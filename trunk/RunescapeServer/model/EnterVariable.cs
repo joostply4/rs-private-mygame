@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.model
 {
-    class EnterVariable
+public class EnterVariable
     {
         private int interfaceId;
         private int slot;

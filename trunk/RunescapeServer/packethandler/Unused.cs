@@ -8,7 +8,7 @@ using RunescapeServer.net;
 
 namespace RunescapeServer.packethandler
 {
-    class Unused : PacketHandler
+public class Unused : PacketHandler
     {
         public void handlePacket(Player player, Packet p)
         {

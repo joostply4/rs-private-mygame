@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.agility
 {
-    class WildernessCourse
+public class WildernessCourse
     {
         public WildernessCourse() {
 	    }

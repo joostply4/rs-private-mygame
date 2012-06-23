@@ -11,7 +11,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.net
 {
-    class NpcUpdate
+public class NpcUpdate
     {
         /**
          * Prevent instance creation.

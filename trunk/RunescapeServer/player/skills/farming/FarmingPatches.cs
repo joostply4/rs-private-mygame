@@ -8,7 +8,7 @@ using RunescapeServer.player.skills;
 
 namespace RunescapeServer.player.skills.farming
 {
-    class FarmingPatches
+public class FarmingPatches
     {
         private List<Patch> patches;
 	    private List<Patch> removedPatches;

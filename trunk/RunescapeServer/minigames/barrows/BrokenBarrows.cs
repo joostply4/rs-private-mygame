@@ -9,7 +9,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.minigames.barrows
 {
-    class BrokenBarrows
+public class BrokenBarrows
     {
         public BrokenBarrows() {
 	    }

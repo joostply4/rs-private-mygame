@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class AboveGround : Command
+public class AboveGround : Command
     {
         public void execute(Player player, string[] arguments)
         {

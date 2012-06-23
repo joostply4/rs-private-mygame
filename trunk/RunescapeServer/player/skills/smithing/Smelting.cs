@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.smithing
 {
-    class Smelting : SmithingData
+public class Smelting : SmithingData
     {
         public Smelting() {
         }

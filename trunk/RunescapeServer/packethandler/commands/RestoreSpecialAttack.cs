@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class RestoreSpecialAttack : Command
+public class RestoreSpecialAttack : Command
     {
         public void execute(Player player, string[] arguments)
         {

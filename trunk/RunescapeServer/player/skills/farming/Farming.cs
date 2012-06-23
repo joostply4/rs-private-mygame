@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.farming
 {
-    class Farming : FarmingData
+public class Farming : FarmingData
     {
 
 	    public Farming() {

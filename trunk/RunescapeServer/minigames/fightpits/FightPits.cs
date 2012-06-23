@@ -12,7 +12,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.fightpits
 {
-    class FightPits
+public class FightPits
     {
         private List<Player> playersWaiting = new List<Player>();
 	    private List<Player> playersPlaying = new List<Player>();

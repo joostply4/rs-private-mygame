@@ -10,7 +10,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.runecrafting
 {
-    class RuneCraft : RuneCraftData
+public class RuneCraft : RuneCraftData
     {
         public RuneCraft() {
 	    }

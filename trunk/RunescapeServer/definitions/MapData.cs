@@ -4,7 +4,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.definitions
 {
-    class MapData
+public class MapData
     {
 
         public class MapList

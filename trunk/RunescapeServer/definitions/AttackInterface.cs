@@ -8,7 +8,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class AttackInterface
+public class AttackInterface
     {
         public static void configureButton(Player p, int interfaceId, int button)
         {

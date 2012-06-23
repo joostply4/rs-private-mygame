@@ -7,7 +7,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Pickup : Command
+public class Pickup : Command
     {
         	public void execute(Player player, string[] arguments) {
                 if (arguments.Length == 0)

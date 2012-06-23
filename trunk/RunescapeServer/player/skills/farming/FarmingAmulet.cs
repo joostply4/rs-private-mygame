@@ -8,7 +8,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.farming
 {
-    class FarmingAmulet
+public class FarmingAmulet
     {
         public FarmingAmulet() {
 	    }

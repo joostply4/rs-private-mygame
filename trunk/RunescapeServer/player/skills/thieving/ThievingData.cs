@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.thieving
 {
-    class ThievingData
+public class ThievingData
     {
         public ThievingData() {
 	    }

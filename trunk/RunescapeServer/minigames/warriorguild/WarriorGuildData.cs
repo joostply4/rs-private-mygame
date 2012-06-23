@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.minigames.warriorguild
 {
-    class WarriorGuildData
+public class WarriorGuildData
     {
         public WarriorGuildData() {
 	    }

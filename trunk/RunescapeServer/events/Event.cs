@@ -5,13 +5,13 @@ using System.Text;
 
 namespace RunescapeServer.events
 {
-	class Event
+	public class Event
 	{
         	
 	    /**
 	     * How many ms the event should wait between each cycle.
 	     */
-	    private long tick;
+	    public long tick;
 	
 	    /**
 	     * How long it was since the event was last run.
@@ -32,6 +32,11 @@ namespace RunescapeServer.events
 	     * Create an event with the specified tick time.
 	     * @param tick
 	     */
+
+        public Event() {
+
+        }
+
         public Event(long tick)
         {
 		    this.tick = tick;

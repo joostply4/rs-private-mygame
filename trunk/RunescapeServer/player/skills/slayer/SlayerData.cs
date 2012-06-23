@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.slayer
 {
-    class SlayerData
+public class SlayerData
     {
         public SlayerData() {
 	    }

@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.definitions
 {
-    class SkillMenu
+public class SkillMenu
     {
         public SkillMenu() {
 	    }

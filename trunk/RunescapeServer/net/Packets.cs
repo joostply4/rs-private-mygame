@@ -14,7 +14,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.net
 {
-    class Packets
+public class Packets
     {
         private Player player;
         private Connection connection;

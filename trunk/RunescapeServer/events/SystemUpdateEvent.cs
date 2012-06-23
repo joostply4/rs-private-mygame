@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.events
 {
-    class SystemUpdateEvent : Event
+public class SystemUpdateEvent : Event
     {
         private int time = 180;
 	

@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class Graphic : Command
+public class Graphic : Command
     {
         public void execute(Player player, string[] arguments) {
             if (arguments.Length == 0)

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.fletching
 {
-    class FletchingData
+public class FletchingData
     {
         public FletchingData()
         {

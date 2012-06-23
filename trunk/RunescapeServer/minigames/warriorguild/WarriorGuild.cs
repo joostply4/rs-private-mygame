@@ -10,7 +10,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.minigames.warriorguild
 {
-    class WarriorGuild : WarriorGuildData
+public class WarriorGuild : WarriorGuildData
     {
         public WarriorGuild() {
 	    }

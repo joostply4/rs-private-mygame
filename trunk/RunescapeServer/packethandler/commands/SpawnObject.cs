@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class SpawnObject : Command
+public class SpawnObject : Command
     {
         public void execute(Player player, string[] arguments)
         {

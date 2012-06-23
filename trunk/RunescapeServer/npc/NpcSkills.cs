@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.npc
 {
-    class NpcSkills
+public class NpcSkills
     {
         public static int SKILL_COUNT = 4; //Npc has 4 skills I guess.
 

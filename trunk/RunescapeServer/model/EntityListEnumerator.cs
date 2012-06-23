@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace RunescapeServer.model
 {
-    class EntityListEnumerator<T> : IEnumerator<T> where T : Entity
+public class EntityListEnumerator<T> : IEnumerator<T> where T : Entity
     {
         private int[] indicies;
         private T[] entities;

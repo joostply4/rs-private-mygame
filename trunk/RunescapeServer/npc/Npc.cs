@@ -26,7 +26,7 @@ namespace RunescapeServer.npc
 		RANGE
     };
 
-    class Npc : Entity {
+public class Npc : Entity {
     
         private int id;
         private Player owner;

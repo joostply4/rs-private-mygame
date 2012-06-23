@@ -13,7 +13,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.minigames.agilityarena
 {
-    class AgilityArena : AgilityData
+public class AgilityArena : AgilityData
     {
         private static int currentPillar;
 	

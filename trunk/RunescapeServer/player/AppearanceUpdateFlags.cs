@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player
 {
-    class AppearanceUpdateFlags
+public class AppearanceUpdateFlags
     {
         private Player player;
         private Location lastRegion;

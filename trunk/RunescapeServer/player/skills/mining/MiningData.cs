@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.mining
 {
-    class MiningData
+public class MiningData
     {
 	    public MiningData() {
 		

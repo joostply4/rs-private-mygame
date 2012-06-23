@@ -9,7 +9,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.definitions.areas
 {
-    class BoatOptions
+public class BoatOptions
     {
         private static int[][] LOCATIONS = {
 		    new int[] {3508, 3471, 0}, //Canifis

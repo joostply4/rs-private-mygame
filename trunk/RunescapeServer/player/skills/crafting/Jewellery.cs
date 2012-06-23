@@ -7,7 +7,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.crafting
 {
-    class Jewellery : CraftingData
+public class Jewellery : CraftingData
     {
         public Jewellery() {
 	    }

@@ -8,7 +8,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.player.skills.agility
 {
-    class GnomeCourse
+public class GnomeCourse
     {
         private static List<Npc> shoutNPCs = new List<Npc>();
 	    private static string[] SHOUT_MESSAGES = {

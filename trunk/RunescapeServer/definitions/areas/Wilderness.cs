@@ -10,7 +10,7 @@ using RunescapeServer.player.skills.magic;
 
 namespace RunescapeServer.definitions.areas
 {
-    class Wilderness
+public class Wilderness
     {
         private static int[][] LEVER_COORDINATES = {
 		    new int[] {2538, 2832, 0}, // neitiznot lever

@@ -8,7 +8,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class SpawnNpc : Command
+public class SpawnNpc : Command
     {
         public void execute(Player player, string[] arguments)
         {

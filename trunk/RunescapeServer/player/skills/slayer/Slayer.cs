@@ -9,7 +9,7 @@ using RunescapeServer.util;
 
 namespace RunescapeServer.player.skills.slayer
 {
-    class Slayer : SlayerData
+public class Slayer : SlayerData
     {
         public Slayer() {
 	    }

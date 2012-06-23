@@ -7,7 +7,7 @@ using RunescapeServer.events;
 
 namespace RunescapeServer.player.skills.smithing
 {
-    class Smithing : SmithingData
+public class Smithing : SmithingData
     {
         public Smithing() {
 	    }

@@ -6,7 +6,7 @@ using RunescapeServer.player;
 
 namespace RunescapeServer.events
 {
-    class AreaEvent : Event
+public class AreaEvent : Event
     {
         private int x;
         private int y;

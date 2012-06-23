@@ -7,7 +7,7 @@ using RunescapeServer.model;
 
 namespace RunescapeServer.events
 {
-    class CoordinateEvent : Event
+public class CoordinateEvent : Event
     {
         private Player player;
         private Location location;

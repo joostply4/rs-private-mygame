@@ -9,7 +9,7 @@ using RunescapeServer.minigames.agilityarena;
 
 namespace RunescapeServer.events
 {
-    class AreaVariables : Event
+public class AreaVariables : Event
     {
 
         public AreaVariables()

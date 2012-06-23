@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RunescapeServer.player.skills.fishing
 {
-    class FishingData
+public class FishingData
     {
 	    public FishingData() {
 	    }

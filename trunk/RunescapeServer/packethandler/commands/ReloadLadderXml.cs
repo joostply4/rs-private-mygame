@@ -7,7 +7,7 @@ using RunescapeServer.definitions;
 
 namespace RunescapeServer.packethandler.commands
 {
-    class ReloadLadderXml : Command
+public class ReloadLadderXml : Command
     {
         public void execute(Player player, string[] arguments)
         {
