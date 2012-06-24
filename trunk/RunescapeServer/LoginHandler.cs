@@ -222,6 +222,7 @@ namespace RunescapeServer {
                 Server.registerEvent(createdPlayer.PlayerAttributes.SkullCycleEvent);
             }
 
+            createdPlayer.setLocation(createdPlayer.PlayerAttributes.LastKnownLocation);
             createdPlayer.setLoginDetails(loginDetails);
             connection.setPlayer(createdPlayer);
 

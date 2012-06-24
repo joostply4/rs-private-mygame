@@ -35,6 +35,11 @@ namespace RunescapeServer.player {
             get;
         }
 
+        public Location LastKnownLocation {
+            set;
+            get;
+        }
+
         public int PlayerRights {
             set;
             get;
@@ -306,6 +311,8 @@ namespace RunescapeServer.player {
             if (getFollow().getFollowing() != null) {
                 getFollow().followEntity();
             }
+
+            this.PlayerAttributes.LastKnownLocation = this.getLocation();
         }
 
         public void setConnection(Connection connection) {

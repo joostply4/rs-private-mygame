@@ -174,11 +174,12 @@ public class Connection
                         if (packet == null)
                             return;
 
-                        StackFrame frame = new StackFrame(1);
-                        string methodName = frame.GetMethod().Name;
-                        string className = frame.GetMethod().DeclaringType.Name;
+                        //Debugging purposes
+                        //StackFrame frame = new StackFrame(1);
+                        //string methodName = frame.GetMethod().Name;
+                        //string className = frame.GetMethod().DeclaringType.Name;
 
-                        Console.WriteLine("[" + className + "] -> currently calling -> [" + methodName + "]");
+                        //Console.WriteLine("[" + className + "] -> currently calling -> [" + methodName + "]");
 
                         int dataLength = packet.getLength();
                         //This is where ISSAC encryption would have been applied to each packet, so it won't ever mess up.                        }
