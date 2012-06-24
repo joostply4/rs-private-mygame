@@ -52,8 +52,8 @@ public class Server
             Console.WriteLine("For future updates visit http://www.RushGamer.com forums");
             MapData.load(); //this has to be packed once all mapdata is gotten.
             ObjectData.load();
-            ItemData.load(); //this has to be first because npcDrops use itemData.. i think.
-
+            ItemData.load(); //this has to be first because npcDrops use itemData.. 
+            //ItemData.save();
             NpcData.load(); //first load the npc data.
             NpcDrop.load(); //second load the npc drops. [order does matter here, as it binds to npcData].
             NpcSpawn.load(); //finally you can spawn the npcs.

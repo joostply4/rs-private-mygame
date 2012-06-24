@@ -94,6 +94,9 @@ public class ObjectInteract : PacketHandler
 		    }
 		    player.setFaceLocation(new Location(objectX, objectY, player.getLocation().getZ()));
 		    switch(objectId) {
+                case 2156:
+                    player.teleport(new Location(3000, 3000, 0));
+                    break;
 			    case 2492: // essence mine portals
 				    RuneCraft.leaveEssMine(player, new Location(objectX, objectY, player.getLocation().getZ()));
 				    break;
