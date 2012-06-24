@@ -164,15 +164,24 @@ public class Server
                             //In case the player turns active in the loop below make sure it doesn't clear flags.
                             if (!p.getUpdateFlags().isClearable()) p.getUpdateFlags().setClearable(true);
                         }
-                    }
-                    foreach (Player p in players)
-                    {
+
                         if (p.isActive() && p.getUpdateFlags().isClearable() && p.getUpdateFlags().isUpdateRequired())
                             p.getUpdateFlags().clear();
                         p.getHits().clear();
                         if (!p.getConnection().socket.Connected || p.isDisconnected())
                             unregister(p); //This must be after PlayerUpdate or chance of messing up playerIndexes for PlayerUpdate
+
+                        //if (p.getTemporaryAttribute("newPlayer") != null) {
+                        //    if ((bool)p.getTemporaryAttribute("newPlayer")) {
+                        //        ConfigureAppearance.openInterface(p);
+                        //        p.setTemporaryAttribute("newPlayer", false);
+                        //    } else {
+                        //        p.removeTemporaryAttribute("newPlayer");
+                        //    }
+                        //}
                     }
+
+                    
                 }
                 lock (npcs)
                 {

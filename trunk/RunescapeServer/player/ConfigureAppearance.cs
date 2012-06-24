@@ -44,7 +44,7 @@ public class ConfigureAppearance
             Appearance temp = p.getAppearance().getTemporaryAppearance();
             if (button == 362)
             {
-                p.setAppearance(p.getAppearance().getTemporaryAppearance());
+                p.setAppearance(temp);
                 p.getPackets().closeInterfaces();
                 return;
             }
@@ -86,7 +86,13 @@ public class ConfigureAppearance
                 return 0;
             }
             newHair = (int)p.getTemporaryAttribute("hairToggle");
+
+            Console.WriteLine("New Hair: " + newHair);
+
             newHair = decrease ? -1 : +1;
+
+            Console.WriteLine("New Hair With modifier???: " + newHair);
+
             if (newHair == 11)
             {
                 newHair = 186;//

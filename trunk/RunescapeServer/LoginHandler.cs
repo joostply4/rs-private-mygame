@@ -179,8 +179,8 @@ namespace RunescapeServer {
             //If file doesnt exist -- create new character
             if (!File.Exists(misc.getServerPath() + @"\accounts\" + loginDetails.getUsername() + ".xml")) {
                 createdPlayer.setRights(0);
-                
 
+                createdPlayer.setTemporaryAttribute("newPlayer", true);
                 connection.setPlayer(createdPlayer);
                 return ReturnCode.LOGIN_OK;
             }

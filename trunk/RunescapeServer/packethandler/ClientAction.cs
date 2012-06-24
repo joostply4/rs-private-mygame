@@ -25,6 +25,8 @@ public class ClientAction : PacketHandler
 
                 case PacketHandlers.PacketId.WINDOW_TYPE:
 				    handleScreenSettings(player, packet);
+
+
 				    break;
 		    }
 		

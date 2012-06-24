@@ -249,6 +249,9 @@ namespace RunescapeServer.player {
         private bool disconnected;
         private double lastHit;
         private bool achievementDiaryTab;
+        
+        //RSServ Items
+        private bool _NewPlayer;
 
         public PlayerAttributes PlayerAttributes {
             set;
@@ -302,6 +305,16 @@ namespace RunescapeServer.player {
             duelRequests = new List<Player>();
             PlayerAttributes.RunEnergy = 100;
 
+            //RSServ Items
+            _NewPlayer = false;
+        }
+
+        public bool isNewPlayer() {
+            return _NewPlayer;
+        }
+
+        public void setNewPlayer(bool b) {
+            _NewPlayer = b;
         }
 
         public void tick() {
