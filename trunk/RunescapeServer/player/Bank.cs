@@ -6,26 +6,27 @@ using RunescapeServer.model;
 using RunescapeServer.events;
 using RunescapeServer.definitions;
 using RunescapeServer.util;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player {
     public class Bank {
-        private Player player;
+        [XmlIgnore] public Player player;
         public static int MAX_BANK_SLOTS = 496;
         private bool banking = false;
-        private Item[] bank = new Item[MAX_BANK_SLOTS];
-        private bool withdrawAsNote = false;
-        private int setNewPinAttempt = 0;
-        private int[] pinSeq;
+        public Item[] bank = new Item[MAX_BANK_SLOTS];
+        public bool withdrawAsNote = false;
+        public int setNewPinAttempt = 0;
+        public int[] pinSeq;
         private int pinStatus = 0;
         private int[] tempPin1 = new int[4];
         private int[] tempPin2 = new int[4];
-        private bool pinCorrect;
-        private int[] bankPin;
-        private int recoveryDaysRequired = 3;
-        private bool bankPinRemoved;
+        public bool pinCorrect;
+        public int[] bankPin;
+        public int recoveryDaysRequired = 3;
+        public bool bankPinRemoved;
         public bool changingPin = false;
-        private long lastPinChange;
-        private long lastDeletionRequest;
+        public long lastPinChange;
+        public long lastDeletionRequest;
         public int openStatus = 0;
         private int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         //private int[] tabAmounts = new int[11];
@@ -33,6 +34,10 @@ namespace RunescapeServer.player {
         private int lastXAmount = 1;
         public static string[] MESSAGES = { "Now click the SECOND digit.", "Time for the THIRD digit.", "Finally, the FOURTH digit.", "Finally, the FOURTH digit." };
         public static int[] ASTERIK = { 21, 22, 23, 24 };
+
+        public Bank() {
+
+        }
 
         public Bank(Player player) {
             for (int i = 0; i < MAX_BANK_SLOTS; i++) {

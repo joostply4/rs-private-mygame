@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 
 using RunescapeServer.model;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
 public class AppearanceUpdateFlags
     {
-        private Player player;
+        [XmlIgnore] public Player player;
         private Location lastRegion;
         private bool appearanceUpdateRequired;
         private bool forceMovementRequired;

@@ -9,6 +9,10 @@ namespace RunescapeServer.player.skills.slayer {
         public int masterIndex;
         public int monsterIndex;
 
+        public SlayerTask() {
+
+        }
+
         public SlayerTask(int masterIndex, int monsterIndex, int amount) {
             this.masterIndex = masterIndex;
             this.amount = amount;

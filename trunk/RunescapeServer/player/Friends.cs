@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using RunescapeServer.clans;
 using RunescapeServer.util;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
 public class Friends
     {
-        private Player player;
-	    private List<long> friends;
-	    private List<long> ignores;
+        [XmlIgnore] public Player player;
+        public List<long> friends;
+        public List<long> ignores;
 	    private Dictionary<long, int> clanRanks;
         public enum STATUS {
             ON = 0,
@@ -23,6 +24,10 @@ public class Friends
         private STATUS tradeStatus = STATUS.ON;
 
 	    private int messageCounter = 0;
+
+        public Friends() {
+
+        }
 	
 	    public Friends(Player player) {
             this.player = player;

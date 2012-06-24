@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using RunescapeServer.player;
+using System.Xml.Serialization;
 using RunescapeServer.model;
+using RunescapeServer.player;
 
 namespace RunescapeServer.events
 {
 public class CoordinateEvent : Event
     {
-        private Player player;
+        [XmlIgnore] public Player player;
         private Location location;
         private Location oldLocation;
         private int failedAttempts = 0;

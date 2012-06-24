@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RunescapeServer.player;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.model
 {
@@ -11,7 +12,7 @@ public class ChatMessage
 
         private int colour;
         private string chatText;
-        private Player player;
+        [XmlIgnore] public Player player;
         private int effect;
         private byte[] packed;
 

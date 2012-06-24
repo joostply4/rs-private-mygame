@@ -9,9 +9,9 @@ public class AttackStyle
     {
         public enum CombatSkill {ACCURATE, DEFENSIVE, AGGRESSIVE, RANGE, CONTROLLED};
 	    public enum CombatStyle {STAB, SLASH, CRUSH, MAGIC, RANGE_ACCURATE, RANGE_RAPID, RANGE_DEFENSIVE};
-        	
-	    private CombatSkill skill;
-	    private CombatStyle style;
+
+        public CombatSkill skill;
+        public CombatStyle style;
 	    private int slot;
 
 	    public AttackStyle() {

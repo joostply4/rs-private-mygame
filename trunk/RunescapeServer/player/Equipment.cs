@@ -9,13 +9,14 @@ using RunescapeServer.player.skills;
 using RunescapeServer.player.skills.runecrafting;
 using RunescapeServer.player.skills.magic;
 using RunescapeServer.minigames.duelarena;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
     public class Equipment
     {
-	    private Item[] slots = new Item[14];
-	    private Player player;
+        public Item[] slots = new Item[14];
+	    [XmlIgnore] public Player player;
 
         public enum BONUS
         {
@@ -35,6 +36,10 @@ namespace RunescapeServer.player
         }
         private string[] BONUS_NAMES = new string[] { "Stab", "Slash", "Crush", "Magic", "Ranged", "Stab", "Slash", "Crush", "Magic", "Ranged", "Summoning", "Strength", "Prayer" };
         private int[] bonuses = new int[13]; //equipment bonuses
+
+        public Equipment() {
+
+        }
 
 	    public Equipment(Player player) {
 		    for (int i = 0; i < slots.Length; i++) {

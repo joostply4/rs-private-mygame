@@ -5,14 +5,20 @@ using System.Text;
 
 using RunescapeServer.definitions;
 using RunescapeServer.model;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player {
     public class Inventory {
         public const int MAX_INVENTORY_SLOTS = 28;
-        private Item[] slots = new Item[MAX_INVENTORY_SLOTS];
+        public Item[] slots = new Item[MAX_INVENTORY_SLOTS];
         private int[] protectedItems;
         private static int MAX_AMOUNT = int.MaxValue;
-        private Player p;
+        [XmlIgnore]
+        public Player p;
+
+        public Inventory() {
+
+        }
 
         public Inventory(Player p) {
             this.p = p;

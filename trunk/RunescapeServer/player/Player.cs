@@ -284,7 +284,7 @@ namespace RunescapeServer.player {
             PlayerAttributes.Vengeance = false;
             PlayerAttributes.LastVengeanceCallTime = 0;
             //PlayerAttributes.PoisonEvent = new PoisonEvent(this, 0);
-            PlayerAttributes.SkullCycleEvent = new SkullCycleEvent();
+            //PlayerAttributes.SkullCycleEvent = new SkullCycleEvent();
             PlayerAttributes.CurrentPrayerPoints = 1;
             PlayerAttributes.BarrowsPlayerInformation = new BarrowsPlayerInformation();
             PlayerAttributes.SlayerPointsHandler = new SlayerPointsHandler();
@@ -296,6 +296,7 @@ namespace RunescapeServer.player {
             tradeRequests = new List<Player>();
             duelRequests = new List<Player>();
             PlayerAttributes.RunEnergy = 100;
+
         }
 
         public void tick() {
@@ -1123,8 +1124,12 @@ namespace RunescapeServer.player {
         }
 
         public void removeSkull() {
-            this.PlayerAttributes.SkullCycleEvent.stop();
-            this.getPrayers().setPkIcon(-1);
+            if (this.PlayerAttributes.SkullCycleEvent != null) {
+                this.PlayerAttributes.SkullCycleEvent.stop();
+                this.PlayerAttributes.SkullCycleEvent = null;
+            }
+
+            this.getPrayers().setPkIcon(-1);            
         }
 
         public void renewSkull() {

@@ -7,6 +7,8 @@ using RunescapeServer.definitions;
 using RunescapeServer.net;
 using RunescapeServer.player;
 using RunescapeServer.util;
+using System.Xml.Serialization;
+using System.Diagnostics;
 
 namespace RunescapeServer.net
 {
@@ -20,7 +22,7 @@ public class Connection
         public byte loginStage = 0;
         private int pingCount = 0;
         private LoginDetails loginDetails;
-        private Player player;
+        [XmlIgnore] public Player player;
 
         //public Cryption inStreamDecryption = null, outStreamDecryption = null;
 
@@ -172,6 +174,12 @@ public class Connection
                         if (packet == null)
                             return;
 
+                        StackFrame frame = new StackFrame(1);
+                        string methodName = frame.GetMethod().Name;
+                        string className = frame.GetMethod().DeclaringType.Name;
+
+                        Console.WriteLine("[" + className + "] -> currently calling -> [" + methodName + "]");
+
                         int dataLength = packet.getLength();
                         //This is where ISSAC encryption would have been applied to each packet, so it won't ever mess up.                        }
                         byte[] buffer = new byte[dataLength + (int)packet.getSize()];
@@ -194,6 +202,7 @@ public class Connection
                         //we use a blocking mode send, no async on the outgoing
                         //since this is primarily a multithreaded application, shouldn't cause problems to send in blocking mode
                         socket.Send(buffer, SocketFlags.None);
+                        misc.WriteError(packet.ToString());
                     }
                 }
             }

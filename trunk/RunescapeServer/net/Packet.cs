@@ -5,6 +5,7 @@ using System.Text;
 
 using RunescapeServer.player;
 using RunescapeServer.definitions;
+using System.Xml.Serialization;
 namespace RunescapeServer.net
 {
 public class Packet
@@ -15,7 +16,7 @@ public class Packet
 	/**
 	 * The associated IO session
 	 */
-	private Player player;
+	[XmlIgnore] public Player player;
 	/**
 	 * The ID of the packet
 	 */

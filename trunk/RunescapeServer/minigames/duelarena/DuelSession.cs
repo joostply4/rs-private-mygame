@@ -10,6 +10,7 @@ using RunescapeServer.definitions;
 using RunescapeServer.player.skills.prayer;
 using RunescapeServer.util;
 using System.Collections;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.minigames.duelarena
 {
@@ -28,7 +29,7 @@ public class DuelSession
 	     * 8 - displayed winning screen
 	     */
 	
-	    private Player player;
+	    [XmlIgnore] public Player player;
 	    private Player p2;
 	    private Player winner;
 	    private Item[] items = new Item[28];

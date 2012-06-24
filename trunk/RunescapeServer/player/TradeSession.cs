@@ -5,12 +5,13 @@ using System.Text;
 using RunescapeServer.model;
 using RunescapeServer.definitions;
 using RunescapeServer.util;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
 public class TradeSession
     {
-        private Player player;
+        [XmlIgnore] public Player player;
         private Player player2;
         private Item[] items = new Item[Inventory.MAX_INVENTORY_SLOTS];
         private Item loanItem;

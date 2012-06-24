@@ -15,9 +15,9 @@ public class Appearance
 	    private int walkAnimation;
         private bool asNpc = false; //player appears as npc. [staff command]
         private int npcId = -1; //player appears as npc. [staff command]
-        private int gender = 0;
-	    private int[]   look    = new int[7];
-	    private int[]   colour  = new int[5];
+        public int gender = 0;
+        public int[] look = new int[7];
+        public int[] colour = new int[5];
 	
 	    public Appearance() {
 		    look[1] = 10;

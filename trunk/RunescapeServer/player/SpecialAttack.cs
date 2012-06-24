@@ -10,6 +10,7 @@ using RunescapeServer.combat;
 using RunescapeServer.player.skills.prayer;
 using RunescapeServer.util;
 using RunescapeServer.minigames.duelarena;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
@@ -17,9 +18,13 @@ public class SpecialAttack
     {
         //TODO add all variations of weapons (p, p+, p++ etc)
 	    private static int POISON_AMOUNT = 6;
-	    private int specialAmount;
-	    private bool usingSpecial;
-	    private Player p;
+        public int specialAmount;
+        public bool usingSpecial;
+	    [XmlIgnore] public Player p;
+
+        public SpecialAttack() {
+
+        }
 
         public SpecialAttack(Player p)
         {

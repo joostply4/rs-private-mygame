@@ -11,12 +11,13 @@ using RunescapeServer.clans;
 using RunescapeServer.combat;
 using RunescapeServer.grandexchange;
 using RunescapeServer.util;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.net
 {
 public class Packets
     {
-        private Player player;
+        [XmlIgnore] public Player player;
         private Connection connection;
 	    private int count = 0;
 

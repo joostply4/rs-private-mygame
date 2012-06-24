@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using RunescapeServer.definitions;
 using RunescapeServer.player;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.model
 {
 public class ShopSession
     {
         private Shop shop;
-        private Player player;
+        [XmlIgnore] public Player player;
         private int shopId;
         private bool inMainStock;
 

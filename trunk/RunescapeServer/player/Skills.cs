@@ -8,6 +8,7 @@ using RunescapeServer.player.skills;
 using RunescapeServer.player.skills.prayer;
 using RunescapeServer.model;
 using RunescapeServer.definitions;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
@@ -44,10 +45,14 @@ public class Skills
             0x50000000, 0x54000000, 0x30000000, 0x5C000000, 0x58000000, 0x60000000
         };
 
-	    private int[] curLevel = new int[SKILL_COUNT];
-        private int[] maxLevel = new int[SKILL_COUNT];
-	    private double[] xp = new double[SKILL_COUNT];
-        private Player player;
+        public int[] curLevel = new int[SKILL_COUNT];
+        public int[] maxLevel = new int[SKILL_COUNT];
+        public double[] xp = new double[SKILL_COUNT];
+        [XmlIgnore] public Player player;
+
+        public Skills() {
+
+        }
 
 	    public Skills(Player player) {
             this.player = player;

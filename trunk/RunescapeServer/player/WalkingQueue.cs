@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using RunescapeServer.model;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.player
 {
@@ -30,7 +31,7 @@ public class WalkingQueue
         public Waypoint[] walkingQueue = new Waypoint[MAX_WALKING_WAYPOINTS];
         private int waypointWriteOffset = 0; //location where it can write next waypoint in array.
         private int waypointReadOffset = 0; //location where it is currently reading the waypoint in array.
-        private Player player;
+        [XmlIgnore] public Player player;
 
         private bool running = false;
         private bool runToggled = false;

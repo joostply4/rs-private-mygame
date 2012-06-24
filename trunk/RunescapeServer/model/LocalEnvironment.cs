@@ -6,12 +6,13 @@ using System.Text;
 using RunescapeServer.player;
 using RunescapeServer.npc;
 using RunescapeServer.util;
+using System.Xml.Serialization;
 
 namespace RunescapeServer.model
 {
 public class LocalEnvironment
     {
-        private Player player;
+        [XmlIgnore] public Player player;
         private List<Player> newPlayers = new List<Player>(); //first here.. (draw new player packet to you)
         private List<Player> seenPlayers = new List<Player>(); //second here. (possible update packet to you)
         private HashSet<Player> removedPlayers = new HashSet<Player>(); //third here. (remove player packet to you)
