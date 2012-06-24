@@ -929,7 +929,7 @@ namespace RunescapeServer.definitions
 	    private static string[] BODY = {"hauberk","platebody","chainbody","robetop","leathertop","platemail","top","brassard","Robe top","body","platebody (t)","platebody (g)","body(g)","body_(g)","chestplate","torso","shirt","Runecrafter robe",};
 	    private static string[] LEGS = {"cuisse","knight robe", "platelegs","plateskirt","skirt","bottoms","chaps","platelegs (t)","platelegs (g)","bottom","skirt","skirt (g)","skirt (t)","chaps (g)","chaps (t)","tassets","legs"};
 	    private static string[] WEAPONS = {"sceptre", "Tzhaar-Ket-Om","Excalibur","dark bow", "Pharaoh's","wand", "adze", "Karil's x-bow","warhammer","claws","scimitar","longsword","sword","longbow","shortbow","dagger","mace","halberd","spear",
-	    "whip","axe","flail","crossbow","Torags hammer's","dagger(p)", "dagger(p+)","dagger(p++)","dagger(+)","dagger(s)","spear(p)","spear(+)",
+	    "whip","axe","flail","crossbow","Torags hammer's","dagger (p)", "dagger (p+)","dagger (p++)","dagger (+)","dagger (s)","spear(p)","spear(+)",
 	    "spear(s)","spear(kp)","maul","dart","dart(p)","javelin","javelin(p)","knife","knife(p)","Longbow","Shortbow",
 	    "Crossbow","Toktz-xil","Toktz-mej","Tzhaar-ket","staff","Staff","godsword","c'bow","Crystal bow","Dark bow", "anchor"};
 	    /* Fullbody is an item that covers your arms. */

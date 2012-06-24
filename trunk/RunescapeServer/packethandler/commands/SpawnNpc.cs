@@ -26,6 +26,7 @@ public class SpawnNpc : Command
             }
 
             Npc npc = new Npc(npcId, player.getLocation());
+            npc.setOwner(player);
             npc.setMinimumCoords(new Location(player.getLocation().getX() - 5, player.getLocation().getY() - 5, player.getLocation().getZ()));
             npc.setMaximumCoords(new Location(player.getLocation().getX() + 5, player.getLocation().getY() + 5, player.getLocation().getZ()));
             Server.getNpcList().Add(npc);

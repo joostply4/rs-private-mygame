@@ -203,7 +203,6 @@ public class Connection
                         //we use a blocking mode send, no async on the outgoing
                         //since this is primarily a multithreaded application, shouldn't cause problems to send in blocking mode
                         socket.Send(buffer, SocketFlags.None);
-                        misc.WriteError(packet.ToString());
                     }
                 }
             }

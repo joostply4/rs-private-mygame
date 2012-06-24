@@ -25,7 +25,7 @@ namespace RunescapeServer.events {
         }
 
         public PoisonEvent(Entity target, int poisonAmount)
-            : base(30000 + misc.random(30000)) {
+            : base(1000) {
             this.target = target;
             initialize(poisonAmount);
         }
@@ -50,6 +50,11 @@ namespace RunescapeServer.events {
         public override void runAction() {
             if (!target.isPoisoned() || target.isDead()) {
                 stop();
+
+                if (target is Player) {
+                    ((Player)target).PlayerAttributes.PoisonEvent = null;
+                }
+
                 return;
             }
 
@@ -76,7 +81,7 @@ namespace RunescapeServer.events {
 
             //Soo...
             //It goes for 30 seconds + random(30 seconds)? -- looks to me like thats too much
-            setTick(30000 + misc.random(30000));
+            //setTick(30000 + misc.random(30000));
         }
     }
 }

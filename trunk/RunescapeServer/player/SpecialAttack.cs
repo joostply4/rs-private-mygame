@@ -17,7 +17,7 @@ namespace RunescapeServer.player
 public class SpecialAttack
     {
         //TODO add all variations of weapons (p, p+, p++ etc)
-	    private static int POISON_AMOUNT = 6;
+	    private static int POISON_AMOUNT = 60;
         public int specialAmount;
         public bool usingSpecial;
 	    [XmlIgnore] public Player p;

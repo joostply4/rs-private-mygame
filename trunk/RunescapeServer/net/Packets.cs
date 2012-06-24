@@ -400,6 +400,23 @@ public class Packets
 			    }
 		    }
 		    connection.SendPacket(new PacketBuilder().setId(86).toPacket());
+
+            if (player.PlayerAttributes.SkullCycleEvent != null) {
+                player.PlayerAttributes.SkullCycleEvent.stop();
+            }
+
+            if (player.PlayerAttributes.PoisonEvent != null) {
+                player.PlayerAttributes.PoisonEvent.stop();
+            }
+
+            if (player.PlayerAttributes.AntiFirePotionCycle != null) {
+                player.PlayerAttributes.AntiFirePotionCycle.stop();
+            }
+
+            if (player.PlayerAttributes.SuperAntiPoisonPotionCycle != null) {
+                player.PlayerAttributes.SuperAntiPoisonPotionCycle.stop();
+            }
+
             player.setDisconnected(true);
 	    }
 	

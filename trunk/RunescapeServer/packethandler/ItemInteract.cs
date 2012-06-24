@@ -101,10 +101,12 @@ public class ItemInteract : PacketHandler
                         p.getPackets().sendMessage("You need a " + Skills.SKILL_NAME[(int)skill] + " level of " + r._Requirements[Skills.SKILL_NAME[(int)skill]] + " to wear this item.");
 
                     }
+                } else {
+                    canI = true;
                 }
             }
 
-            return !(canI == ohCanI);
+            return (canI ? (canI == ohCanI) : false);
         }
 
 	    private void handleEquipItem(Player player, Packet packet) {

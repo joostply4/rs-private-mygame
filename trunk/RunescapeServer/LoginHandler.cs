@@ -110,7 +110,6 @@ namespace RunescapeServer {
                                     pb.addByte((byte)1); // membership flag #1?..this one enables all GE boxes
                                     pb.addByte((byte)1); // membership flag #2?
                                     connection.SendPacket(pb.toPacket());
-                                    Console.WriteLine(pb.toPacket());
                                     connection.getPlayer().getPackets().sendMapRegion();
                                     connection.getPlayer().setActive(true);
                                     Console.WriteLine("Loaded " + connection.getPlayer().getLoginDetails().getUsername() + "'s game: returncode = " + returnCode + ".");
@@ -220,6 +219,43 @@ namespace RunescapeServer {
                 createdPlayer.PlayerAttributes.SkullCycleEvent.TimeLeft = sce.TimeLeft;
 
                 Server.registerEvent(createdPlayer.PlayerAttributes.SkullCycleEvent);
+            }
+
+            if (createdPlayer.PlayerAttributes.PoisonEvent != null) {
+                PoisonEvent pe = new PoisonEvent();
+
+                pe.PoisonAmount = createdPlayer.PlayerAttributes.PoisonEvent.PoisonAmount;
+                pe.tick = createdPlayer.PlayerAttributes.PoisonEvent.tick;
+                pe.target = createdPlayer;
+
+                createdPlayer.PlayerAttributes.PoisonEvent = pe;
+                createdPlayer.setPoisonAmount(pe.PoisonAmount);
+
+                Server.registerEvent(createdPlayer.PlayerAttributes.PoisonEvent);
+            }
+
+            if (createdPlayer.PlayerAttributes.AntiFirePotionCycle != null) {
+                AntifirePoitionCycleEvent apce = new AntifirePoitionCycleEvent();
+
+                apce.Player = createdPlayer;
+                apce.PotionTimeLength = createdPlayer.PlayerAttributes.AntiFirePotionCycle.PotionTimeLength;
+                apce.tick = createdPlayer.PlayerAttributes.AntiFirePotionCycle.tick;
+
+                createdPlayer.PlayerAttributes.AntiFirePotionCycle = apce;
+
+                Server.registerEvent(createdPlayer.PlayerAttributes.AntiFirePotionCycle);
+            }
+
+            if (createdPlayer.PlayerAttributes.SuperAntiPoisonPotionCycle != null) {
+                SuperAntiPoisonPotionCycleEvent apce = new SuperAntiPoisonPotionCycleEvent();
+
+                apce.Player = createdPlayer;
+                apce.PotionTimeLength = createdPlayer.PlayerAttributes.SuperAntiPoisonPotionCycle.PotionTimeLength;
+                apce.tick = createdPlayer.PlayerAttributes.SuperAntiPoisonPotionCycle.tick;
+
+                createdPlayer.PlayerAttributes.SuperAntiPoisonPotionCycle = apce;
+
+                Server.registerEvent(createdPlayer.PlayerAttributes.SuperAntiPoisonPotionCycle);
             }
 
             createdPlayer.setLocation(createdPlayer.PlayerAttributes.LastKnownLocation);

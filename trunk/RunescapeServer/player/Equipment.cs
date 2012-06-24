@@ -245,7 +245,7 @@ namespace RunescapeServer.player
 			    player.getPackets().sendTab(player.isHd() ? 93 : 83, 91);
 			    player.getPackets().modifyText(weapon, 91, 0);
 			    interfaceId = 91;
-		    } else if(weapon.EndsWith("dagger") || weapon.EndsWith("dagger(s)") || weapon.EndsWith("dagger(+)") || weapon.EndsWith("dagger(p)")  || weapon.EndsWith("dagger(p++)")) {
+            } else if (weapon.EndsWith("dagger") || weapon.EndsWith("dagger(s)") || weapon.EndsWith("dagger(+)") || weapon.EndsWith("dagger (p)") || weapon.EndsWith("dagger (p+)") || weapon.EndsWith("dagger (p++)")) {
 			    player.getPackets().sendTab(player.isHd() ? 93 : 83, 89);
 			    player.getPackets().modifyText(weapon, 89, 0);
 			    interfaceId = 89;
