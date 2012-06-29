@@ -19,28 +19,39 @@ public class Starter {
 		if (count >= MAX_STARTER_COUNT) {
 			return;
 		}
-
-		player.getInventory().addItem(4151, 1); // whip
-		player.getInventory().addItem(23256, 100); // attack flask
-		player.getInventory().addItem(23280, 100); // str flask
-		player.getInventory().addItem(23292, 100); // def flask
-		player.getInventory().addItem(386, 1000); // shark
-		player.getInventory().addItem(542, 1); // monk
-		player.getInventory().addItem(544, 1); // monk
-		player.getInventory().addItem(995, 10000000); // 10m gp
-		player.getInventory().addItem(1215, 1); // dragon dagger
+		
+		player.getInventory().addItem(995, 5000000); //5m cash
+		player.getInventory().addItem(1323, 1); //iron scim
+		player.getInventory().addItem(1333, 1); //rune scim
+		player.getInventory().addItem(841, 1); //short bow
+		player.getInventory().addItem(861, 1); //magic shortbow
 		player.getInventory().addItem(884, 10000); // iron arrows
-		player.getInventory().addItem(841, 1); // short bow
-		player.getInventory().addItem(556, 1000); // air rune
-		player.getInventory().addItem(1323, 1); // iron scim
-		player.getInventory().addItem(1333, 1); // rune scim
-		player.getInventory().addItem(558, 1000); // mind rune
-		player.getInventory().addItem(554, 1000); // fire rune
-		player.getInventory().addItem(24157, 50); // tokens
+		player.getInventory().addItem(386, 1000); // sharks
+		player.getInventory().addItem(554, 10000); // fire rune
+		player.getInventory().addItem(555, 10000); // water rune
+		player.getInventory().addItem(556, 10000); // air rune
+		player.getInventory().addItem(557, 10000); // earth rune
+		player.getInventory().addItem(558, 10000); // mind rune
+		player.getInventory().addItem(562, 10000); // chaos rune
+		player.getInventory().addItem(560, 10000); // death rune
+		player.getInventory().addItem(565, 10000); // blood rune
+		player.getInventory().addItem(1381, 10000); //staff of air
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
+		//player.getInventory().addItem(0, 0); //
 
 		player.getHintIconsManager().removeUnsavedHintIcon();
 		player.getMusicsManager().reset();
-		player.getCombatDefinitions().setAutoRelatie(false);
+		player.getCombatDefinitions().setAutoRelatie(true);
 		player.getCombatDefinitions().refreshAutoRelatie();
 		StarterMap.getSingleton().addIP(ip);
 	}

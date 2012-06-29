@@ -16,7 +16,7 @@ public class QuestGuide extends Dialogue {
 		sendEntityDialogue(SEND_2_TEXT_CHAT,
 				new String[] { NPCDefinitions.getNPCDefinitions(npcId).name,
 						"Hello, I can teleport you all around RsCalifornia,",
-						" would you like to?" }, IS_NPC, npcId, 9827);
+						" would you like to travel?" }, IS_NPC, npcId, 9827);
 	}
 
 	@Override
