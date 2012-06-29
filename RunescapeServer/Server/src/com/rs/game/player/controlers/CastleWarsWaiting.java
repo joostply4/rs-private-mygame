@@ -40,6 +40,7 @@ public class CastleWarsWaiting extends Controler {
 		return true;
 	}
 
+	@Override
 	public boolean canEquip(int slotId, int itemId) {
 		if (slotId == Equipment.SLOT_CAPE || slotId == Equipment.SLOT_HAT) {
 			player.getPackets().sendGameMessage(

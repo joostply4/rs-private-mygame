@@ -71,6 +71,7 @@ public class DungControler extends Controler {
 		return false;
 	}
 
+	@Override
 	public boolean processMagicTeleport(WorldTile toTile) {
 		if (dungeon == null
 				|| !player.getCombatDefinitions().isDungeonneringSpellBook()
@@ -79,6 +80,7 @@ public class DungControler extends Controler {
 		return true;
 	}
 
+	@Override
 	public boolean processItemTeleport(WorldTile toTile) {
 		return false;
 	}

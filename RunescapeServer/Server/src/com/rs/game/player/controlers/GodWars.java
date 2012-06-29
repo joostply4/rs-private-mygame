@@ -11,10 +11,12 @@ public class GodWars extends Controler {
 		sendInterfaces();
 	}
 
+	@Override
 	public boolean logout() {
 		return false; // so doesnt remove script
 	}
 
+	@Override
 	public boolean login() {
 		sendInterfaces();
 		return false; // so doesnt remove script

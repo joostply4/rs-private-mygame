@@ -370,6 +370,7 @@ public final class TutorialIsland extends Controler {
 	/*
 	 * return can use
 	 */
+	@Override
 	public boolean canUseItemOnItem(Item itemUsed, Item usedWith) {
 		if (getStage() == 8) {
 			if ((itemUsed.getId() == 590 || usedWith.getId() == 590)

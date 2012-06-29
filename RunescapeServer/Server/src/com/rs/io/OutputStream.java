@@ -76,7 +76,7 @@ public final class OutputStream extends Stream {
 
 	public void addBytes_Reverse(byte[] data, int offset, int len) {
 		for (int i = len - 1; i >= 0; i--) {
-			writeByte((byte) (data[i]));
+			writeByte((data[i]));
 		}
 	}
 

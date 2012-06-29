@@ -34,8 +34,6 @@ import com.rs.game.player.actions.Woodcutting.TreeDefinitions;
 import com.rs.game.player.content.Magic;
 import com.rs.game.player.content.Runecrafting;
 import com.rs.game.player.content.Thieving;
-import com.rs.game.player.content.Burying;
-import com.rs.game.player.content.Burying.Bone;
 import com.rs.game.player.controlers.TowersPkControler;
 import com.rs.game.player.controlers.Wilderness;
 import com.rs.game.tasks.WorldTask;

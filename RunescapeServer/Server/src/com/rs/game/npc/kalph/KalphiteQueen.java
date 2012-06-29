@@ -54,7 +54,7 @@ public class KalphiteQueen extends NPC {
 	@Override
 	public void sendDeath(final Entity source) {
 		// TODO Finish up first & second death
-		final NPC n = (NPC) this;
+		final NPC n = this;
 		final NPCCombatDefinitions defs = getCombatDefinitions();
 		resetWalkSteps();
 		getCombat().removeTarget();

@@ -1,7 +1,5 @@
 package com.rs.net.encoders;
 
-import java.util.ArrayList;
-
 public class WorldList {
 	/**
 	 * The activity (What type of World it is)

@@ -121,7 +121,8 @@ public class dropEditor extends javax.swing.JFrame {
         dropsTree.setModel(dropsTreeModel);
         dropsTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
  
-            public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
+            @Override
+			public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
                 dropsTreeValueChanged(evt);
             }
         });
@@ -129,7 +130,8 @@ public class dropEditor extends javax.swing.JFrame {
  
         searchField.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchFieldActionPerformed(evt);
             }
         });
@@ -204,7 +206,8 @@ public class dropEditor extends javax.swing.JFrame {
         deleteSelected.setText("Delete Selected Drop");
         deleteSelected.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteSelectedActionPerformed(evt);
             }
         });
@@ -212,7 +215,8 @@ public class dropEditor extends javax.swing.JFrame {
         repackDrop.setText("Repack");
         repackDrop.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 repackDropActionPerformed(evt);
             }
         });
@@ -227,7 +231,8 @@ public class dropEditor extends javax.swing.JFrame {
         addNewButton.setText("Add New NPC Drop");
         addNewButton.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addNewButtonActionPerformed(evt);
             }
         });
@@ -236,7 +241,8 @@ public class dropEditor extends javax.swing.JFrame {
         removeDrop.setToolTipText("Removes the currently Selected NPC Drop");
         removeDrop.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removeDropActionPerformed(evt);
             }
         });
@@ -246,7 +252,8 @@ public class dropEditor extends javax.swing.JFrame {
         dumpDropMenuItem.setText("Dump all monster drops");
         dumpDropMenuItem.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dumpDropMenuItemActionPerformed(evt);
             }
         });
@@ -254,7 +261,8 @@ public class dropEditor extends javax.swing.JFrame {
         dumpSpecificDropMenuItem.setText("Dump specific monster drop");
         dumpSpecificDropMenuItem.addActionListener(new java.awt.event.ActionListener() {
  
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dumpSpecificDropMenuItemActionPerformed(evt);
             }
         });
@@ -322,7 +330,8 @@ public class dropEditor extends javax.swing.JFrame {
  
             int index = -1;
  
-            public void run() {
+            @Override
+			public void run() {
                 while (index < Utils.getNPCDefinitionsSize()) {
                     try {
                         progressBar.setString(NPCDefinitions.getNPCDefinitions(index).name);
@@ -607,7 +616,8 @@ public class dropEditor extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
  
-            public void run() {
+            @Override
+			public void run() {
                 new dropEditor().setVisible(true);
             }
         });
@@ -640,7 +650,8 @@ public class dropEditor extends javax.swing.JFrame {
         DefaultTableModel model = new DefaultTableModel();
         model.addTableModelListener(new TableModelListener() {
  
-            public void tableChanged(TableModelEvent e) {
+            @Override
+			public void tableChanged(TableModelEvent e) {
                 try {
                     if (e.getColumn() != -1) {
                         if (dropTable.getValueAt(dropTable.getSelectedRow(), 0).equals("Rare")) {
@@ -651,8 +662,8 @@ public class dropEditor extends javax.swing.JFrame {
                             loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setMaxAmount(1);
  
                         } else {
-                            loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setItemId(Short.parseShort((String) dropTable.getValueAt(dropTable.getSelectedRow(), 0).toString()));
-                            loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setRate(Double.parseDouble((String) dropTable.getValueAt(dropTable.getSelectedRow(), 1).toString()));
+                            loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setItemId(Short.parseShort(dropTable.getValueAt(dropTable.getSelectedRow(), 0).toString()));
+                            loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setRate(Double.parseDouble(dropTable.getValueAt(dropTable.getSelectedRow(), 1).toString()));
                             String amount = (String) dropTable.getValueAt(dropTable.getSelectedRow(), 2);
                             if (amount.contains("-")) {
                                 loader.getDropArray().get(npcId).get(dropTable.getSelectedRow()).setMinAmount(Integer.parseInt(amount.substring(0, amount.indexOf("-"))));

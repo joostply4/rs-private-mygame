@@ -9,13 +9,10 @@ import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.wguild.AnimatedArmour;
-import com.rs.game.player.HintIcon;
 import com.rs.game.player.Player;
-import com.rs.game.player.actions.PlayerCombat;
 import com.rs.game.player.controlers.Controler;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
-import com.rs.utils.Utils;
 
 public class WGuildControler extends Controler {
 	
@@ -277,6 +274,7 @@ public class WGuildControler extends Controler {
 		player.setNextWorldTile(new WorldTile(player.getX()-1, player.getY(), player.getPlane()));
 	}
 	
+	@Override
 	public void sendInterfaces() {
 		player.getInterfaceManager().sendTab(player.getInterfaceManager().hasRezizableScreen() ? 10 : 8, 1057);
 		player.getPackets().sendConfig(2030, player.getWGuildTokens());

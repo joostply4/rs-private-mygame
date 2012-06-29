@@ -38,6 +38,7 @@ public class Steeltitan extends Familiar {
 		return SpecialAttack.ENTITY;
 	}
 
+	@Override
 	public int getBOBSize() {
 		return 0;
 	}

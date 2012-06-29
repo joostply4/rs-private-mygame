@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import com.rs.Settings;
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.Animation;
-import com.rs.game.ForceTalk;
 import com.rs.game.Graphics;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
@@ -14,7 +13,6 @@ import com.rs.game.npc.NPC;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.Utils;
-import com.rs.net.decoders.handlers.ButtonHandler;
 
 public final class EmotesManager implements Serializable {
 

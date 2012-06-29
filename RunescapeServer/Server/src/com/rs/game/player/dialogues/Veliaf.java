@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.WorldTile;
-import com.rs.game.minigames.CastleWars;
 import com.rs.game.player.content.Magic;
 import com.rs.utils.ShopsHandler;
 

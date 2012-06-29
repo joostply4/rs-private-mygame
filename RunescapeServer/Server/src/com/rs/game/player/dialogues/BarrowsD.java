@@ -10,6 +10,7 @@ public class BarrowsD extends Dialogue {
 				"You've found a hidden tunnel, do you want to enter?");
 	}
 
+	@Override
 	public void run(int interfaceId, int componentId) {
 		if (stage == -1) {
 			stage = 0;

@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import com.rs.cores.CoresManager;
 import com.rs.game.Animation;
 import com.rs.game.Entity;
-import com.rs.game.Graphics;
 import com.rs.game.Hit;
 import com.rs.game.Hit.HitLook;
 import com.rs.game.World;

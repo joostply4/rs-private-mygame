@@ -17,7 +17,8 @@ import com.rs.utils.Utils;
  */
 public class JadCombat extends CombatScript {
 
-	  public Object[] getKeys()
+	  @Override
+	public Object[] getKeys()
 	    {
 	        return (new Object[] {
 	            Integer.valueOf(14221), Integer.valueOf(2745), Integer.valueOf(15208)
@@ -27,6 +28,7 @@ public class JadCombat extends CombatScript {
 	//Melee Emote-9277
 	//Mage Emote-9300
 	//Range Gfx-451
+	@Override
 	public int attack(NPC npc, Entity target) {
 		int jadAttack = Utils.getRandom(2);
 		int jadHit = Utils.getRandom(500);

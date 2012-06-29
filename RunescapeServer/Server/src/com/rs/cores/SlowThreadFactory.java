@@ -17,6 +17,7 @@ public class SlowThreadFactory implements ThreadFactory {
 		namePrefix = "Slow Pool-" + poolNumber.getAndIncrement() + "-thread-";
 	}
 
+	@Override
 	public Thread newThread(Runnable r) {
 		Thread t = new Thread(group, r, namePrefix
 				+ threadNumber.getAndIncrement(), 0);

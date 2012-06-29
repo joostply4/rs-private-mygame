@@ -17,6 +17,7 @@ public class TeleportBosses extends Dialogue {
 				"Chaos Elemental");
 	}
 
+	@Override
 	public void run(int interfaceId, int componentId) {
 		if (componentId == 1) {
 			Magic.sendNormalTeleportSpell(player, 0, 0,

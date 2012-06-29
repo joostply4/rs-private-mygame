@@ -127,8 +127,8 @@ public final class Skills implements Serializable {
 		int points = 0;
 		int output = 0;
 		for (int lvl = 1; lvl <= level; lvl++) {
-			points += Math.floor((double) lvl + 300.0
-					* Math.pow(2.0, (double) lvl / 7.0));
+			points += Math.floor(lvl + 300.0
+					* Math.pow(2.0, lvl / 7.0));
 			if (lvl >= level) {
 				return output;
 			}
@@ -142,8 +142,8 @@ public final class Skills implements Serializable {
 		int points = 0;
 		int output = 0;
 		for (int lvl = 1; lvl <= (skill == DUNGEONEERING ? 120 : 99); lvl++) {
-			points += Math.floor((double) lvl + 300.0
-					* Math.pow(2.0, (double) lvl / 7.0));
+			points += Math.floor(lvl + 300.0
+					* Math.pow(2.0, lvl / 7.0));
 			output = (int) Math.floor(points / 4);
 			if ((output - 1) >= exp) {
 				return lvl;

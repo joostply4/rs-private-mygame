@@ -12,6 +12,7 @@ public class ZarosAltar extends Dialogue {
 					"Yes, replace my curses with prayers.", "Never mind.");
 	}
 
+	@Override
 	public void run(int interfaceId, int componentId) {
 		if (interfaceId == SEND_2_OPTIONS && componentId == 1) {
 			if (!player.getPrayer().isAncientCurses()) {

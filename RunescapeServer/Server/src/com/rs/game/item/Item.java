@@ -22,6 +22,7 @@ public class Item implements Serializable {
 		return id;
 	}
 
+	@Override
 	public Item clone() {
 		return new Item(id, amount);
 	}
