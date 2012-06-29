@@ -68,6 +68,7 @@ public class NPC extends Entity implements Serializable {
 		this(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea, false);
 	}
 
+	@Override
 	public boolean isFamiliar() {
 		return this instanceof Familiar;
 	}

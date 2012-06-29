@@ -23,7 +23,6 @@ import com.rs.game.WorldTile;
 import com.rs.game.item.FloorItem;
 import com.rs.game.item.Item;
 import com.rs.game.minigames.ClanWars;
-import com.rs.game.minigames.CommenceWar;
 import com.rs.game.minigames.PestControl;
 import com.rs.game.minigames.War;
 import com.rs.game.npc.NPC;
@@ -1602,8 +1601,8 @@ public class Player extends Entity {
 											continue;
 										player.applyHit(new Hit(
 												target,
-												Utils.getRandom((int) (skills
-														.getLevelForXp(Skills.PRAYER) * 3)),
+												Utils.getRandom(skills
+														.getLevelForXp(Skills.PRAYER) * 3),
 												HitLook.REGULAR_DAMAGE));
 									}
 								}
@@ -1625,8 +1624,8 @@ public class Player extends Entity {
 											continue;
 										npc.applyHit(new Hit(
 												target,
-												Utils.getRandom((int) (skills
-														.getLevelForXp(Skills.PRAYER) * 3)),
+												Utils.getRandom(skills
+														.getLevelForXp(Skills.PRAYER) * 3),
 												HitLook.REGULAR_DAMAGE));
 									}
 								}
@@ -1638,8 +1637,8 @@ public class Player extends Entity {
 									&& source.withinDistance(target, 2))
 								source.applyHit(new Hit(
 										target,
-										Utils.getRandom((int) (skills
-												.getLevelForXp(Skills.PRAYER) * 3)),
+										Utils.getRandom(skills
+												.getLevelForXp(Skills.PRAYER) * 3),
 										HitLook.REGULAR_DAMAGE));
 						}
 

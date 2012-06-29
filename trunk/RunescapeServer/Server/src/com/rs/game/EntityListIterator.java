@@ -33,18 +33,21 @@ public class EntityListIterator<E extends Entity> implements Iterator<E> {
         this.entityList = entityList;
     }
 
-    public boolean hasNext() {
+    @Override
+	public boolean hasNext() {
         return indicies.length != curIndex;
     }
 
-    @SuppressWarnings("unchecked")
+    @Override
+	@SuppressWarnings("unchecked")
 	public E next() {
         Object temp = entities[indicies[curIndex]];
         curIndex++;
         return (E) temp;
     }
 
-    public void remove() {
+    @Override
+	public void remove() {
         if (curIndex >= 1) {
             entityList.remove(indicies[curIndex - 1]);
         }

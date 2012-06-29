@@ -3,7 +3,6 @@ package com.rs.game.npc.combat.impl;
 import com.rs.game.Animation;
 import com.rs.game.Entity;
 import com.rs.game.Hit;
-import com.rs.game.World;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.combat.CombatScript;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
@@ -16,7 +15,8 @@ import com.rs.utils.Utils;
  */
 public class NomadCombat extends CombatScript {
 
-	  public Object[] getKeys()
+	  @Override
+	public Object[] getKeys()
 	    {
 	        return (new Object[] {
 	            Integer.valueOf(8528)
@@ -25,6 +25,7 @@ public class NomadCombat extends CombatScript {
 	//Melee Emote-12696
 	//Mage Emote-9300
 	//Range Gfx-451
+	@Override
 	public int attack(NPC npc, Entity target) {
 		int nomadAttack = Utils.getRandom(2);
 		int nomadHit = Utils.getRandom(500);

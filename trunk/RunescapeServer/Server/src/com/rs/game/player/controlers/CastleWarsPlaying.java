@@ -97,6 +97,7 @@ public class CastleWarsPlaying extends Controler {
 		player.getInventory().deleteItem(item);
 	}
 
+	@Override
 	public boolean canEquip(int slotId, int itemId) {
 		if (slotId == Equipment.SLOT_CAPE || slotId == Equipment.SLOT_HAT) {
 			player.getPackets().sendGameMessage(

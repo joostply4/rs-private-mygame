@@ -10,6 +10,7 @@ public class Crate extends Dialogue {
 				"Yes, please, I'd love to go.", "No thanks"); //Change options maybe?
 	}
 
+	@Override
 	public void run(int interfaceId, int componentId) {
 		if (interfaceId == SEND_2_OPTIONS && componentId == 1) {
 			player.setNextWorldTile(new WorldTile(4188, 5720, 0)); //Coordinates you can change

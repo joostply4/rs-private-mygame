@@ -839,7 +839,7 @@ public final class World {
 		if (exiting_start != 0)
 			return;
 		exiting_start = Utils.currentTimeMillis();
-		exiting_delay = (int) delay;
+		exiting_delay = delay;
 		for (Player player : World.getPlayers()) {
 			if (player == null || !player.hasStarted() || player.hasFinished())
 				continue;

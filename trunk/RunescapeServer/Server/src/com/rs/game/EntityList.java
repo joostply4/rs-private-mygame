@@ -18,7 +18,8 @@ public class EntityList<T extends Entity> extends AbstractCollection<T> {
         this.capacity = capacity;
     }
 
-    public boolean add(T entity) {
+    @Override
+	public boolean add(T entity) {
     	synchronized(lock) {
         add(entity, curIndex);
         return true;
@@ -65,7 +66,8 @@ public class EntityList<T extends Entity> extends AbstractCollection<T> {
         }
     }
 
-    public Iterator<T> iterator() {
+    @Override
+	public Iterator<T> iterator() {
     	synchronized(lock) {
     		return new EntityListIterator<T>(entities, indicies, this);
     	}
@@ -97,7 +99,8 @@ public class EntityList<T extends Entity> extends AbstractCollection<T> {
         return -1;
     }
 
-    public int size() {
+    @Override
+	public int size() {
         return indicies.size();
     }
 }

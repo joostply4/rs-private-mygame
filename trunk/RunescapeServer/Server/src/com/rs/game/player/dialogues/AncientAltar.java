@@ -8,6 +8,7 @@ public class AncientAltar extends Dialogue {
 				"Yes, replace my spellbook.", "Never mind.");
 	}
 
+	@Override
 	public void run(int interfaceId, int componentId) {
 		if (interfaceId == SEND_2_OPTIONS && componentId == 1) {
 			if (player.getCombatDefinitions().getSpellBook() != 193) {

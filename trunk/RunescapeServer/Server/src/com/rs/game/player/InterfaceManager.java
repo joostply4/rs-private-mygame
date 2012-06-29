@@ -77,7 +77,7 @@ public class InterfaceManager {
 	public void closeReplacedRealChatBoxInterface() {
 		player.getPackets().closeInterface(752, 12);
 	}
-	
+
 	public void sendFullScreenInterfaces() {
 		player.getPackets().sendWindowsPane(746, 0);
 		sendTab(15, 745);
@@ -112,30 +112,43 @@ public class InterfaceManager {
 	}
 
 	public void sendMsPortal() {
-                sendTab(resizableScreen ? 93 : 207, 506);
-                player.getPackets().sendIComponentText(506, 0,  "RsCalifornia");
-                player.getPackets().sendIComponentText(506, 4, "Commands");
-                player.getPackets().sendIComponentText(506, 6, "Teleports");
-                player.getPackets().sendIComponentText(506, 8, "Updates");
-                player.getPackets().sendIComponentText(506, 10, "Vote");
-                player.getPackets().sendIComponentText(506, 12, "Infomation");
-                player.getPackets().sendIComponentText(506, 14, "Donate<img=10>   ");
-                if (player.getRights() == 2) {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <img=1><shad=FFFF00>Admin</shad>");
- 	} else if (player.getRights() == 1) {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <img=0><shad=D8D8D8>Mod</shad>");
- 	} else if (player.getRights() == 4) {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
- 	} else if (player.getRights() == 5) {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
- 	} else if (player.getRights() == 6) {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
- 	} else if (player.getRights() == 3) {
-                player.getPackets().sendIComponentText(506, 2, "       In-Game Ranks     Rank: <img=1><col=ff0000>Hidden Admin</col>");
-                } else {
-                player.getPackets().sendIComponentText(506, 2, "        In-Game Ranks       Rank: <col=ffffff>Player");
-                }
-        }
+		sendTab(resizableScreen ? 93 : 207, 506);
+		player.getPackets().sendIComponentText(506, 0, "Holy Shit");
+		player.getPackets().sendIComponentText(506, 4, "Commands");
+		player.getPackets().sendIComponentText(506, 6, "Teleports");
+		player.getPackets().sendIComponentText(506, 8, "Updates");
+		player.getPackets().sendIComponentText(506, 10, "Vote");
+		player.getPackets().sendIComponentText(506, 12, "Infomation");
+		player.getPackets().sendIComponentText(506, 14, "Donate<img=10>   ");
+		if (player.getRights() == 2) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"        In-Game Ranks       Rank: <img=1><shad=FFFF00>Admin</shad>");
+		} else if (player.getRights() == 1) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"        In-Game Ranks       Rank: <img=0><shad=D8D8D8>Mod</shad>");
+		} else if (player.getRights() == 4) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
+		} else if (player.getRights() == 5) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
+		} else if (player.getRights() == 6) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"        In-Game Ranks       Rank: <shad=D8D8D8>Donator</shad>");
+		} else if (player.getRights() == 3) {
+			player.getPackets()
+					.sendIComponentText(506, 2,
+							"       In-Game Ranks     Rank: <img=1><col=ff0000>Hidden Admin</col>");
+		} else {
+			player.getPackets().sendIComponentText(506, 2,
+					"        In-Game Ranks       Rank: <col=ffffff>Player");
+		}
+	}
 
 	public void closeEquipment() {
 		player.getPackets().closeInterface(resizableScreen ? 95 : 209);
@@ -169,7 +182,7 @@ public class InterfaceManager {
 		sendTab(resizableScreen ? 97 : 211, player.getCombatDefinitions()
 				.getSpellBook());
 	}
-	
+
 	public void sendFixedInterfaces() {
 		player.getPackets().sendWindowsPane(548, 0);
 		sendTab(15, 745);
@@ -310,7 +323,7 @@ public class InterfaceManager {
 	public int getWindowsPane() {
 		return windowsPane;
 	}
-	
+
 	/*
 	 * returns lastGameTab
 	 */

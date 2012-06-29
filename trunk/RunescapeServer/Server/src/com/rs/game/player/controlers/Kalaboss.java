@@ -36,6 +36,7 @@ public class Kalaboss extends Controler {
 		return true;
 	}
 
+	@Override
 	public boolean logout() {
 		return false; // so doesnt remove script
 	}

@@ -15,6 +15,7 @@ public class FloorItem extends Item {
 		super(id);
 	}
 
+	@Override
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}

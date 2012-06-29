@@ -590,7 +590,7 @@ public class PlayerCombat extends Action {
 					+ p2.getPrayer().getDefenceMultiplier() + p2style == Skills.DEFENCE ? 3
 					: p2style == CombatDefinitions.SHARED ? 1 : 0);
 			defBonus = p2.getCombatDefinitions().getBonuses()[CombatDefinitions.MAGIC_DEF];
-			effectiveMagicDefence = Math.floor((double) p2.getSkills()
+			effectiveMagicDefence = Math.floor(p2.getSkills()
 					.getLevel(Skills.MAGIC));
 		} else {
 			NPC n = (NPC) target;
@@ -617,7 +617,7 @@ public class PlayerCombat extends Action {
              return 0;
 
 		double extraDamage = player.getCombatDefinitions().getBonuses()[CombatDefinitions.MAGIC_DAMAGE];
-		max_hit = (int) (baseDamage * ((double) (1.0 + extraDamage / 100)));
+		max_hit = (int) (baseDamage * (1.0 + extraDamage / 100));
 		// max_hit *= player.getPrayer().getMageMultiplier();
 		double boost = 1 + ((player.getSkills().getLevel(Skills.MAGIC) - player
 				.getSkills().getLevelForXp(Skills.MAGIC)) * 0.03);

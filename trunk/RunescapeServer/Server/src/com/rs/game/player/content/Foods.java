@@ -392,6 +392,7 @@ public class Foods {
 	public static enum Effect {
 		SUMMER_PIE {
 
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				player.setRunEnergy((int) (player.getRunEnergy() + (player
@@ -407,6 +408,7 @@ public class Foods {
 
 		GARDEN_PIE {
 
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				int level = player.getSkills().getLevel(Skills.FARMING);
@@ -420,6 +422,7 @@ public class Foods {
 
 		FISH_PIE {
 
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				int level = player.getSkills().getLevel(Skills.FISHING);
@@ -431,6 +434,7 @@ public class Foods {
 		},
 
 		ADMIRAL_PIE {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				int level = player.getSkills().getLevel(Skills.FISHING);
@@ -442,6 +446,7 @@ public class Foods {
 		},
 
 		WILD_PIE {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				int level = player.getSkills().getLevel(Skills.SLAYER);
@@ -456,6 +461,7 @@ public class Foods {
 		},
 
 		SPICY_STEW_EFFECT {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				if (Utils.random(100) > 5) {
@@ -474,6 +480,7 @@ public class Foods {
 		},
 
 		CABAGE_MESSAGE {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				player.getPackets().sendGameMessage(
@@ -482,6 +489,7 @@ public class Foods {
 		},
 
 		ONION_MESSAGE {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				player.getPackets()
@@ -493,6 +501,7 @@ public class Foods {
 		},
 
 		POISION_KARMAMWANNJI_EFFECT {
+			@Override
 			public void effect(Object object) {
 				Player player = (Player) object;
 				player.applyHit(new Hit(player, 50, HitLook.POISON_DAMAGE));

@@ -20,6 +20,7 @@ public class DuelControler extends Controler {
 		return false;
 	}
 
+	@Override
 	public boolean logout() {
 		return false;
 	}
@@ -29,10 +30,12 @@ public class DuelControler extends Controler {
 		remove();
 	}
 
+	@Override
 	public boolean processMagicTeleport(WorldTile toTile) {
 		return true;
 	}
 
+	@Override
 	public boolean processItemTeleport(WorldTile toTile) {
 		return true;
 	}

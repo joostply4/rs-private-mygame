@@ -308,7 +308,7 @@ public final class Misc {
 	}
 
 	public static final int random(int maxValue) {
-		return (int) new Random().nextInt(maxValue);
+		return new Random().nextInt(maxValue);
 	}
 
 	public static final String longToString(long l) {

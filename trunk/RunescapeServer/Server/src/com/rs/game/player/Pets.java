@@ -76,6 +76,7 @@ public class Pets extends NPC {
 		owner.setPet(this);
 	}
 
+	@Override
 	public void processNPC() {
 		if (isDead())
 			return;
@@ -135,6 +136,7 @@ public class Pets extends NPC {
 		if (login || teleTile != null)
 			WorldTasksManager.schedule(new WorldTask() {
 
+				@Override
 				public void run() {
 					setNextGraphics(new Graphics(
 							getDefinitions().size <= 1 ? 1314 : 1315));

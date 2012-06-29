@@ -20,6 +20,7 @@ public class DynamicRegion extends Region {
 	}
 
 	// override by static region to empty
+	@Override
 	public void checkLoadMap() {
 		if (getLoadMapStage() == 0) {
 			setLoadMapStage(1);
@@ -94,6 +95,7 @@ public class DynamicRegion extends Region {
 	}
 
 	// overrided by static region to get mask from needed region
+	@Override
 	public int getMaskClipedOnly(int plane, int localX, int localY) {
 		int currentChunkX = localX / 8;
 		int currentChunkY = localY / 8;

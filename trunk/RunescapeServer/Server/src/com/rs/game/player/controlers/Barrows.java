@@ -160,6 +160,7 @@ public class Barrows extends Controler {
 		return true;
 	}
 
+	@Override
 	public void magicTeleported(int type) {
 		teleport();
 	}

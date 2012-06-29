@@ -24,6 +24,7 @@ import com.rs.game.player.content.FriendChatsManager;
 import com.rs.game.player.content.Magic;
 import com.rs.game.player.content.SkillCapeCustomizer;
 import com.rs.game.player.content.Trade;
+import com.rs.game.player.content.Trade.TradeState;
 import com.rs.io.InputStream;
 import com.rs.net.Session;
 import com.rs.net.decoders.handlers.ButtonHandler;
@@ -895,7 +896,7 @@ public final class WorldPacketsDecoder extends Decoder {
 			long currentTime = System.currentTimeMillis();
 			boolean unknown2 = stream.readByte() == 1;
 			int playerIndex = stream.readUnsignedShort();
-			Player other = (Player) World.getPlayers().get(playerIndex);
+			Player other = World.getPlayers().get(playerIndex);
 			int total = 0;
 			int reqTotal = 250;
 			for (int i = 0; i < 25; i++) {
@@ -956,7 +957,7 @@ public final class WorldPacketsDecoder extends Decoder {
 			long currentTime = System.currentTimeMillis();
 			boolean unknown2 = stream.readByte() == 1;
 			int playerIndex = stream.readUnsignedShort();
-			Player other = (Player) World.getPlayers().get(playerIndex);
+			Player other = World.getPlayers().get(playerIndex);
 			int total = 0;
 			int reqTotal = 250;
 			for (int i = 0; i < 25; i++) {
@@ -1240,25 +1241,31 @@ public final class WorldPacketsDecoder extends Decoder {
 				player.getSkills().setXp(skillId, Skills.getXPForLevel(value));
 				player.getAppearence().generateAppearenceData();
 				player.getDialogueManager().finishDialogue();
-	} else if (player.getTemporaryAttributtes().get("offerX") != null
-					&& player.getInterfaceManager().containsInterface(335)
-					&& player.getTrade().getState() == player.getTrade()
-							.getState().STATE_ONE) {
-				player.getTrade().addItem(
-						player,
-						(Integer) player.getTemporaryAttributtes()
-								.get("offerX"), value);
-				player.getTemporaryAttributtes().remove("offerX");
-			} else if (player.getTemporaryAttributtes().get("removeX") != null
-					&& player.getInterfaceManager().containsInterface(335)
-					&& player.getTrade().getState() == player.getTrade()
-							.getState().STATE_ONE) {
-				player.getTrade().removeItem(
-						player,
-						(Integer) player.getTemporaryAttributtes().get(
-								"removeX"), value);
-				player.getTemporaryAttributtes().remove("removeX");
+	} else {
+				player.getTrade()
+						.getState();
+				if (player.getTemporaryAttributtes().get("offerX") != null
+								&& player.getInterfaceManager().containsInterface(335)
+								&& player.getTrade().getState() == TradeState.STATE_ONE) {
+							player.getTrade().addItem(
+									player,
+									(Integer) player.getTemporaryAttributtes()
+											.get("offerX"), value);
+							player.getTemporaryAttributtes().remove("offerX");
+						} else {
+					player.getTrade()
+							.getState();
+					if (player.getTemporaryAttributtes().get("removeX") != null
+							&& player.getInterfaceManager().containsInterface(335)
+							&& player.getTrade().getState() == TradeState.STATE_ONE) {
+						player.getTrade().removeItem(
+								player,
+								(Integer) player.getTemporaryAttributtes().get(
+										"removeX"), value);
+						player.getTemporaryAttributtes().remove("removeX");
 
+					}
+				}
 			}
 		} else if (packetId == SWITCH_INTERFACE_ITEM_PACKET) {
 			stream.readUnsignedShort();

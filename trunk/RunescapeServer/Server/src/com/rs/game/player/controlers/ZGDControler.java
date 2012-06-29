@@ -10,11 +10,13 @@ public class ZGDControler extends Controler {
 		sendInterfaces();
 	}
 
+	@Override
 	public boolean logout() {
 		ZarosGodwars.removePlayer(player);
 		return false; // so doesnt remove script
 	}
 
+	@Override
 	public boolean login() {
 		ZarosGodwars.addPlayer(player);
 		sendInterfaces();
