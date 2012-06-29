@@ -918,8 +918,7 @@ public final class Commands {
 										.getUsername()), true);
 				return true;
 			}
-			if (cmd[0].equalsIgnoreCase("monthdonator")
-					&& (player.getUsername().equalsIgnoreCase("victoria"))) {
+			if (cmd[0].equalsIgnoreCase("monthdonator")) {
 				String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 				Player other = World.getPlayerByDisplayName(username);
 				if (other == null)
@@ -936,8 +935,7 @@ public final class Commands {
 										.getUsername()), true);
 				return true;
 			}
-			if (cmd[0].equalsIgnoreCase("takedonator")
-					&& (player.getUsername().equalsIgnoreCase("victoria"))) {
+			if (cmd[0].equalsIgnoreCase("takedonator")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
 					name += cmd[i] + ((i == cmd.length - 1) ? "" : " ");
@@ -966,14 +964,17 @@ public final class Commands {
 										.getUsername()), true);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("bank")) {
 				player.getBank().openBank();
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("check")) {
 				IPBanL.checkCurrent();
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("reloadfiles")) {
 				IPBanL.init();
 				PkRank.init();
@@ -1003,8 +1004,7 @@ public final class Commands {
 				return true;
 			}
 
-			if (cmd[0].equalsIgnoreCase("update")
-					&& (player.getUsername().equalsIgnoreCase("victoria"))) {
+			if (cmd[0].equalsIgnoreCase("update")) {
 				int delay = 60;
 				if (cmd.length >= 2) {
 					try {
@@ -1018,15 +1018,13 @@ public final class Commands {
 				World.safeShutdown(true, delay);
 				return true;
 			}
-			if (cmd[0].equalsIgnoreCase("updatewarn")
-					&& (player.getUsername().equalsIgnoreCase("Chris"))) {
+			if (cmd[0].equalsIgnoreCase("updatewarn")) {
 				for (Player players : World.getPlayers())
 					players.getPackets().sendGameMessage(
 							"<col=CC3300>The next " + Settings.SERVER_NAME
 									+ " update is here! Please log out now.");
 			}
-			if (cmd[0].equalsIgnoreCase("shutdown")
-					&& (player.getUsername().equalsIgnoreCase("victoria"))) {
+			if (cmd[0].equalsIgnoreCase("shutdown")) {
 				int delay = 60;
 				if (cmd.length >= 2) {
 					try {
@@ -1095,6 +1093,7 @@ public final class Commands {
 				}, 0, 1);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("tryinter")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 290;
@@ -1111,6 +1110,7 @@ public final class Commands {
 				}, 0, 1);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("tryanim")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 14600;
@@ -1134,6 +1134,7 @@ public final class Commands {
 				}, 0, 3);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("trygfx")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 1500;
@@ -1153,6 +1154,7 @@ public final class Commands {
 				}, 0, 3);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("gfx")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage("Use: ::gfx id");
@@ -1165,11 +1167,13 @@ public final class Commands {
 				}
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("mess")) {
 				player.getPackets().sendMessage(Integer.valueOf(cmd[1]), "",
 						player);
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("unpermban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1230,6 +1234,7 @@ public final class Commands {
 				}
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("ipban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1256,6 +1261,7 @@ public final class Commands {
 				}
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("unipban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1279,6 +1285,7 @@ public final class Commands {
 				}
 				return true;
 			}
+			
 			if (cmd[0].equalsIgnoreCase("staffmeeting")) {
 				for (Player other : World.getPlayers()) {
 					if (other.getRights() > 0) {
@@ -1641,7 +1648,7 @@ public final class Commands {
 									+ ".", true);
 				return;
 			}
-			if (player.getUsername().equalsIgnoreCase("victoria")) {
+			if (player.getUsername().equalsIgnoreCase("will") || (player.getUsername().equalsIgnoreCase("bobby"))) {
 				players.getPackets().sendGameMessage(
 						"<col=FF1EFF>[Owner] <img=1><col=000087F>"
 								+ player.getDisplayName()
