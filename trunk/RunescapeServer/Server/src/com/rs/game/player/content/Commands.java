@@ -43,7 +43,7 @@ import com.rs.utils.Utils;
 import com.rs.utils.DonationManager;
 
 public final class Commands {
-
+	//FUCK TEST
 	/*
 	 * all console commands only for admin, chat commands processed if they not
 	 * processed by console
