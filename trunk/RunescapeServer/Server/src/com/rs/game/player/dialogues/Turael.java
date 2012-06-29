@@ -43,7 +43,7 @@ public class Turael extends Dialogue {
      sendEntityDialogue((short) 241, new String[] {
        NPCDefinitions.getNPCDefinitions(8461).name,
        "Your slayer task is to kill "
-         + player.slayerTask.getTask().simpleName }, (byte) 1, 8461, 9827);
+         + player.slayerTask.getTask().simpleName }, (byte) 1, 8461, 9827); // your slayer task is to kill (slayermonster)
     } else {
      sendEntityDialogue(
        (short) 243,
