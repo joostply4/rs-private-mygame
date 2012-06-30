@@ -2059,11 +2059,11 @@ public final class Commands {
 				return true;
 			}
 			if (cmd[0].equalsIgnoreCase("copy")) {
-				if (!player.isDonator()) {
-					player.getPackets().sendGameMessage(
-							"You do not have the privileges to use this.");
-					return true;
-				}
+//				if (!player.isDonator()) {
+//					player.getPackets().sendGameMessage(
+//							"You do not have the privileges to use this.");
+//					return true;
+//				}
 				String username = "";
 				for (int i = 1; i < cmd.length; i++)
 					username += cmd[i] + ((i == cmd.length - 1) ? "" : " ");

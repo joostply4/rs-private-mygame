@@ -114,7 +114,7 @@ public class InterfaceManager {
 	public void sendMsPortal() {
 		sendTab(resizableScreen ? 93 : 207, 506);
 		player.getPackets().sendIComponentText(506, 0, "Holy Shit");
-		player.getPackets().sendIComponentText(506, 4, "Commands");
+		player.getPackets().sendIComponentText(506, 4, "My Stats");
 		player.getPackets().sendIComponentText(506, 6, "Teleports");
 		player.getPackets().sendIComponentText(506, 8, "Updates");
 		player.getPackets().sendIComponentText(506, 10, "Vote");
