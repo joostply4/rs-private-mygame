@@ -18,25 +18,29 @@ public class NPCSpawning {
 	public static void spawnNPCS() {
 		/**
 		 * NPCS
-		 */;
-		World.spawnNPC(2676, new WorldTile(3179, 5706, 0), -1, true, true);//makover mage
+		 */
+		npcSpawn();
+		World.spawnNPC(2676, new WorldTile(3179, 5706, 0), -1, true, true);// makover
+																			// mage
 		World.spawnNPC(14358, new WorldTile(3175, 5710, 0), -1, true, true);//
 
 		World.spawnNPC(8528, new WorldTile(3105, 3934, 0), -1, true, true);// nomad
 
-		World.spawnNPC(8461, new WorldTile(3087, 3502, 0), -1, true, true);//slayer
-		World.spawnNPC(550, new WorldTile(3093, 3485, 0), -1, true, true);//range
+		World.spawnNPC(8461, new WorldTile(3087, 3502, 0), -1, true, true);// slayer
+		World.spawnNPC(550, new WorldTile(3093, 3485, 0), -1, true, true);// range
 
-		World.spawnNPC(445, new WorldTile(3087, 3495, 0), -1, true, true);//frog runes
-		World.spawnNPC(519, new WorldTile(3094, 3500, 0), -1, true, true);//bob
+		World.spawnNPC(445, new WorldTile(3087, 3495, 0), -1, true, true);// frog
+																			// runes
+		World.spawnNPC(519, new WorldTile(3094, 3500, 0), -1, true, true);// bob
 
-		World.spawnNPC(576, new WorldTile(3088, 3494, 0), -1, true, true);//harry
+		World.spawnNPC(576, new WorldTile(3088, 3494, 0), -1, true, true);// harry
 
-		World.spawnNPC(2253, new WorldTile(3091, 3500, 0), -1, true, true);//skillcape
+		World.spawnNPC(2253, new WorldTile(3091, 3500, 0), -1, true, true);// skillcape
 
-		// World.spawnNPC(6537, new WorldTile(3087, 3500, 0), -1, true, true);  // mandrith
+		// World.spawnNPC(6537, new WorldTile(3087, 3500, 0), -1, true, true);
+		// // mandrith
 
-		/* ------------ Glacors ------------*/
+		/* ------------ Glacors ------------ */
 
 		World.spawnNPC(14301, new WorldTile(4194, 5716, 0), -1, true, true);
 		World.spawnNPC(14301, new WorldTile(4190, 5708, 0), -1, true, true);
@@ -50,20 +54,22 @@ public class NPCSpawning {
 		World.spawnNPC(14301, new WorldTile(4212, 5710, 0), -1, true, true);
 		World.spawnNPC(14301, new WorldTile(4212, 5718, 0), -1, true, true);
 
-		/*World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
-		World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
-		World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
-		World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);*/
+		/*
+		 * World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
+		 * World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
+		 * World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
+		 * World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
+		 */
 
-		/* ----------- End of Glacors ------*/
-
-
+		/* ----------- End of Glacors ------ */
 
 		/**
 		 * Object custom add
 		 */
-		//World.spawnObject(new WorldObject(17010, 10, 0, 3158, 5710, 0), true);//altar rune
-		World.spawnObject(new WorldObject(59463, 10, 0, 3083, 3486, 0), true);//moble thing
+		// World.spawnObject(new WorldObject(17010, 10, 0, 3158, 5710, 0),
+		// true);//altar rune
+		World.spawnObject(new WorldObject(59463, 10, 0, 3083, 3486, 0), true);// moble
+																				// thing
 	}
 
 	/**

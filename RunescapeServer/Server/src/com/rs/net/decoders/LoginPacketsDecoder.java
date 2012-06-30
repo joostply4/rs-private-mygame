@@ -21,7 +21,7 @@ public final class LoginPacketsDecoder extends Decoder {
 	public void decode(InputStream stream) {
 		session.setDecoder(-1);
 		int packetId = stream.readUnsignedByte();
-		if(packetId == 19)
+		if (packetId == 19)
 			decodeLobbyLogin(stream);
 		else if (packetId == 16) // 16 world login
 			decodeWorldLogin(stream);
@@ -32,15 +32,13 @@ public final class LoginPacketsDecoder extends Decoder {
 		}
 	}
 
-private void decodeLobbyLogin(InputStream buffer) {
+	private void decodeLobbyLogin(InputStream buffer) {
 
-		
-		
-		
 		int clientRev = buffer.readInt();
 		int rsaBlockSize = buffer.readShort(); // RSA block size
 		int rsaHeaderKey = buffer.readByte(); // RSA header key
-		System.out.println(" "+rsaBlockSize+" "+rsaHeaderKey+" "+clientRev);
+		System.out.println(" " + rsaBlockSize + " " + rsaHeaderKey + " "
+				+ clientRev);
 
 		int[] loginKeys = new int[4];
 		for (int data = 0; data < 4; data++) {
@@ -53,61 +51,53 @@ private void decodeLobbyLogin(InputStream buffer) {
 		@SuppressWarnings("unused")
 		long clientSeed = buffer.readLong();
 
-		buffer.decodeXTEA(loginKeys, buffer.getOffset(),
-				buffer.getLength());
+		buffer.decodeXTEA(loginKeys, buffer.getOffset(), buffer.getLength());
 		String name = buffer.readString();
 		boolean isHD = buffer.readByte() == 1;
 		boolean isResizable = buffer.readByte() == 1;
-		System.out.println("  Is resizable? "+isResizable);
+		System.out.println("  Is resizable? " + isResizable);
 		for (int i = 0; i < 24; i++)
 			buffer.readByte();
 		String settings = buffer.readString();
-		
+
 		@SuppressWarnings("unused")
 		int unknown = buffer.readInt();
 		int[] crcValues = new int[35];
 		for (int i = 0; i < crcValues.length; i++)
-			crcValues[i] = buffer.readInt(); 
-		System.out.println(name+", "+pass);
-		Player player; 
+			crcValues[i] = buffer.readInt();
+		System.out.println(name + ", " + pass);
+		Player player;
 
-		if (!SerializableFilesManager
-				.containsPlayer(name)) {
+		if (!SerializableFilesManager.containsPlayer(name)) {
 			player = new Player(name);
 			player.setPassword(pass);
-			
-			//session.getLoginPackets().sendClientPacket(2);
-			//return;
+
+			// session.getLoginPackets().sendClientPacket(2);
+			// return;
 		} else {
-			player = SerializableFilesManager
-					.loadPlayer(name);
+			player = SerializableFilesManager.loadPlayer(name);
 			if (player == null) {
-				session.getLoginPackets()
-				.sendClientPacket(20);
+				session.getLoginPackets().sendClientPacket(20);
 				return;
 			}
 			if (!player.getPassword().equals(pass)) {
-				session.getLoginPackets()
-				.sendClientPacket(3);
+				session.getLoginPackets().sendClientPacket(3);
 				return;
 			}
 		}
 		if (player.isPermBanned()
-				|| (player.getBanned()
-						> System.currentTimeMillis()))
-			session.getLoginPackets()
-			.sendClientPacket(4);
+				|| (player.getBanned() > System.currentTimeMillis()))
+			session.getLoginPackets().sendClientPacket(4);
 		else {
 			player.init(session, name);
-			session.getLoginPackets().sendLobbyDetails(player);//sendLoginDetails(player);
+			session.getLoginPackets().sendLobbyDetails(player);// sendLoginDetails(player);
 			session.setDecoder(3, player);
 			session.setEncoder(2, player);
 			SerializableFilesManager.savePlayer(player);
-			
-			//player.start();
+
+			// player.start();
 		}
 	}
-
 
 	public void decodeWorldLogin(InputStream stream) {
 		if (World.exiting_start != 0) {
