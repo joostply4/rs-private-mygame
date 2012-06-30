@@ -19,7 +19,7 @@ public class NPCSpawning {
 		/**
 		 * NPCS
 		 */
-		npcSpawn();
+		//npcSpawn();
 		World.spawnNPC(2676, new WorldTile(3179, 5706, 0), -1, true, true);// makover
 																			// mage
 		World.spawnNPC(14358, new WorldTile(3175, 5710, 0), -1, true, true);//
