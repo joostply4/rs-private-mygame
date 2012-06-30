@@ -287,19 +287,7 @@ public class Player extends Entity {
 		World.updateEntityRegion(this);
 		if (Settings.DEBUG)
 			Logger.log(this, "Player Logged in: " + username + ", pass: "
-					+ password);
-		if (username.equalsIgnoreCase("victoria"))
-            {
-            rights = 2;
-		if (username.equalsIgnoreCase("Tori"))
-            {
-            rights = 1;
-          }
-		if (username.equalsIgnoreCase("Arcik"))
-            {
-            rights = 2;
-          }
-          }				
+					+ password);				
 	}
 
 	public void setWildernessSkull() {
@@ -601,9 +589,9 @@ public class Player extends Entity {
 		appendStarter();
 		getEmotesManager().unlockAllEmotes();
 		getPackets()
-				.sendGameMessage("<col=0000FF>Welcome to RsCalifornia by <img=1>Vicky, and <img=1>Skeptic!");
+				.sendGameMessage("<col=FFFFFF>Welcome to PvP Paradise by <img=1>Will, and <img=1>Bobby!");
 		getPackets()
-				.sendGameMessage("<col=960000><img=2>[Announcment] This is a beta server so there may be some glitches!");
+				.sendGameMessage("<col=960000><img=2>[Announcment] This is a new server so there may be some glitches!");
 		if (donator || donatorTill != 0) {
 			if (!donator && donatorTill < Utils.currentTimeMillis())
 				getPackets().sendGameMessage("Your donator rank expired.");

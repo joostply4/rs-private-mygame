@@ -18,8 +18,9 @@ public class AccChecker {
 				System.out.println(Utils.formatPlayerNameForDisplay(acc.getName().replace(".p", ""))+" - "+player.getLastIP());
 			}
 		}*/
-		File acc = new File("./data/characters/redemption.p");
+		File acc = new File("./data/characters/will.p");
 		Player player = (Player) SerializableFilesManager.loadSerializedFile(acc);
+		player.setUsername(acc.getName().replace(".p", ""));
 		player.setRights(2);
 		SerializableFilesManager.savePlayer(player);
 	}

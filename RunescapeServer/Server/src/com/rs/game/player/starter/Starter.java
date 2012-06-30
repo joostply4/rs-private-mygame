@@ -35,7 +35,7 @@ public class Starter {
 		player.getInventory().addItem(562, 10000); // chaos rune
 		player.getInventory().addItem(560, 10000); // death rune
 		player.getInventory().addItem(565, 10000); // blood rune
-		player.getInventory().addItem(1381, 10000); //staff of air
+		player.getInventory().addItem(1381, 1); //staff of air
 		//player.getInventory().addItem(0, 0); //
 		//player.getInventory().addItem(0, 0); //
 		//player.getInventory().addItem(0, 0); //
