@@ -160,6 +160,10 @@ public class Player extends Entity {
 	private long banned;
 	private boolean permBanned;
 	private boolean filterGame;
+	private int armKillCount;
+	private int banKillCount;
+	private int zamKillCount;
+	private int sarKillCount;
 
 	private boolean donator;
 	private long donatorTill;
@@ -235,6 +239,10 @@ public class Player extends Entity {
 		mouseButtons = true;
 		pouches = new int[4];
 		killedBarrowBrothers = new boolean[6];
+		armKillCount = 0;
+		banKillCount = 0;
+		zamKillCount = 0;
+		sarKillCount = 0;
 		SkillCapeCustomizer.resetSkillCapes(this);
 		ownedObjectsManagerKeys = new LinkedList<String>();
 	}

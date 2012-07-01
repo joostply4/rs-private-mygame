@@ -1,10 +1,10 @@
 TODO:
 
--- Monster Areas -- (Make a teleport button with all these teleports in it)
+-- Monster Areas -- 
 -Rock Crabs (2694 3726)
 	- Rock Crabs
 	
--Hill Giants
+-Hill Giants (3105 9832)
 	- Hill Giants
 	- Skeletons
 	- Zombies

@@ -9,6 +9,7 @@ import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
 import com.rs.game.minigames.CastleWars;
+import com.rs.game.minigames.GodWars;
 import com.rs.game.minigames.PestControl;
 import com.rs.game.minigames.War;
 import com.rs.game.minigames.War.Stage;
@@ -110,6 +111,8 @@ public class ObjectHandler {
 					return;
 				if (CastleWars.handleObjects(player, id))
 					return;
+				if (GodWars.HandleObjects(player, objectDef))
+					return;
 				/*
 				 * if (!QuestHandler.handleObject(player, object)) return;
 				 */
@@ -135,7 +138,6 @@ public class ObjectHandler {
 					else
 						player.getPackets().sendGameMessage(
 								"You can't go in atm.");
-
 				} else if (id == HunterEquipment.BOX.getObjectId()) {
 					if (OwnedObjectManager.removeObject(player, object)) {
 						player.setNextAnimation(new Animation(19192));
@@ -624,6 +626,8 @@ public class ObjectHandler {
 							break;
 						}
 						break;
+					//godwars---------------------------------------------------
+					//godwars-----------------------------------------------------
 					case "web":
 						if (objectDef.containsOption(0, "Slash")) {
 							player.setNextAnimation(new Animation(PlayerCombat
