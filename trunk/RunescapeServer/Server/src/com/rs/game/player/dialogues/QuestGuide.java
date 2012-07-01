@@ -8,7 +8,8 @@ import com.rs.game.player.content.Magic;
 public class QuestGuide extends Dialogue {
 
 	int npcId;
-	//StartTutorial controler;
+
+	// StartTutorial controler;
 
 	@Override
 	public void start() {
