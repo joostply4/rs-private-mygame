@@ -57,7 +57,7 @@ public class NPC extends Entity implements Serializable {
 
 	// npc masks
 	private transient Transformation nextTransformation;
-	//name changing masks
+	// name changing masks
 	private String name;
 	private transient boolean changedName;
 	private int combatLevel;
@@ -104,7 +104,8 @@ public class NPC extends Entity implements Serializable {
 
 	@Override
 	public boolean needMasksUpdate() {
-		return super.needMasksUpdate() || nextTransformation != null || changedCombatLevel || changedName;
+		return super.needMasksUpdate() || nextTransformation != null
+				|| changedCombatLevel || changedName;
 	}
 
 	public void transformIntoNPC(int id) {
@@ -174,13 +175,16 @@ public class NPC extends Entity implements Serializable {
 										.round(Math.random() * 10.0 - 5.0);
 								resetWalkSteps();
 								if (getMapAreaNameHash() != -1) {
-									if (!MapAreas.isAtArea(getMapAreaNameHash(), this)) {
+									if (!MapAreas.isAtArea(
+											getMapAreaNameHash(), this)) {
 										forceWalkRespawnTile();
 										return;
 									}
-									addWalkSteps(getX() + moveX, getY() + moveY, 5);
-								}else 
-									addWalkSteps(respawnTile.getX() + moveX, respawnTile.getY() + moveY, 5);
+									addWalkSteps(getX() + moveX,
+											getY() + moveY, 5);
+								} else
+									addWalkSteps(respawnTile.getX() + moveX,
+											respawnTile.getY() + moveY, 5);
 							}
 						}
 					}
@@ -189,35 +193,35 @@ public class NPC extends Entity implements Serializable {
 		}
 		if (isForceWalking()) {
 			if (getFreezeDelay() < Utils.currentTimeMillis()) {
-				setRandomWalk(false);                         
-                             if(id == 519)
-                                    setRandomWalk(false);
-                             if(id == 550)
-                                    setRandomWalk(false);
-                             if(id == 546)
-                                    setRandomWalk(false);
-                             if(id == 549)
-                                    setRandomWalk(false);
-                             if(id == 683)
-                                    setRandomWalk(false);
-                             if(id == 2676)
-                                    setRandomWalk(false);
-                             if(id == 948)
-                                    setRandomWalk(false);
-	           if(id == 2676)
-                                    setRandomWalk(false);
-                             if(id == 948)
-                                    setRandomWalk(false);
-                             if(id == 445)
-                                    setRandomWalk(false);
-                             if(id == 3299)
-                                    setRandomWalk(false);
-                             if(id == 2732)
-                                    setRandomWalk(false);
-                             if(id == 4906)
-                                    setRandomWalk(false);
-                             if(id == 3706)
-                                    setRandomWalk(false);
+				setRandomWalk(false);
+				if (id == 519)
+					setRandomWalk(false);
+				if (id == 550)
+					setRandomWalk(false);
+				if (id == 546)
+					setRandomWalk(false);
+				if (id == 549)
+					setRandomWalk(false);
+				if (id == 683)
+					setRandomWalk(false);
+				if (id == 2676)
+					setRandomWalk(false);
+				if (id == 948)
+					setRandomWalk(false);
+				if (id == 2676)
+					setRandomWalk(false);
+				if (id == 948)
+					setRandomWalk(false);
+				if (id == 445)
+					setRandomWalk(false);
+				if (id == 3299)
+					setRandomWalk(false);
+				if (id == 2732)
+					setRandomWalk(false);
+				if (id == 4906)
+					setRandomWalk(false);
+				if (id == 3706)
+					setRandomWalk(false);
 				if (getX() != forceWalk.getX() || getY() != forceWalk.getY()) {
 					if (!hasWalkSteps())
 						addWalkSteps(forceWalk.getX(), forceWalk.getY(),
@@ -634,14 +638,14 @@ public class NPC extends Entity implements Serializable {
 			Player killer = getMostDamageReceivedSourcePlayer();
 			if (killer == null)
 				return;
-		if (killer.slayerTask.getTaskMonstersLeft() > 0) {
-			for (String m : killer.slayerTask.getTask().slayable) {
-				if (getDefinitions().name.equals(m)) {
-					killer.slayerTask.onMonsterDeath(killer, this);
-					break;
+			if (killer.slayerTask.getTaskMonstersLeft() > 0) {
+				for (String m : killer.slayerTask.getTask().slayable) {
+					if (getDefinitions().name.equals(m)) {
+						killer.slayerTask.onMonsterDeath(killer, this);
+						break;
+					}
 				}
 			}
-		}
 			Drop[] possibleDrops = new Drop[drops.length];
 			int possibleDropsCount = 0;
 			for (Drop drop : drops) {
@@ -896,39 +900,40 @@ public class NPC extends Entity implements Serializable {
 	public String getCustomName() {
 		return name;
 	}
-	
+
 	public void setName(String string) {
 		this.name = getDefinitions().name.equals(string) ? null : string;
 		changedName = true;
 	}
-	
+
 	public int getCustomCombatLevel() {
 		return combatLevel;
 	}
-	
+
 	public int getCombatLevel() {
 		return combatLevel >= 0 ? combatLevel : getDefinitions().combatLevel;
 	}
-	
+
 	public String getName() {
 		return name != null ? name : getDefinitions().name;
 	}
-	
+
 	public void setCombatLevel(int level) {
-		combatLevel  = getDefinitions().combatLevel == level ? -1 : level;
+		combatLevel = getDefinitions().combatLevel == level ? -1 : level;
 		changedCombatLevel = true;
 	}
-	
+
 	public boolean hasChangedName() {
 		return changedName;
 	}
-	
+
 	public boolean hasChangedCombatLevel() {
 		return changedCombatLevel;
 	}
-	
+
 	public WorldTile getMiddleWorldTile() {
 		int size = getSize();
-		return new WorldTile(getCoordFaceX(size),getCoordFaceY(size), getPlane());
+		return new WorldTile(getCoordFaceX(size), getCoordFaceY(size),
+				getPlane());
 	}
 }

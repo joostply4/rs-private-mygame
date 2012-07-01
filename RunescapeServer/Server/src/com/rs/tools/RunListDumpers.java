@@ -23,7 +23,7 @@ public class RunListDumpers {
 	}
 	public static void dumpnpcs() throws IOException {
 		Cache.init();
-		File file = new File("./lists/npcList.txt");
+		File file = new File("./data/lists/npcList.txt");
 		if (file.exists())
 			file.delete();
 		else
@@ -42,7 +42,7 @@ public class RunListDumpers {
 	}
 	public static void dumpobjects() throws IOException {
 		Cache.init();
-		File file = new File("./lists/objectList.txt");
+		File file = new File("./data/lists/objectList.txt");
 		if (file.exists())
 			file.delete();
 		else
@@ -62,7 +62,7 @@ public class RunListDumpers {
 
 	public static void dumpitems() throws IOException {
 		Cache.init();
-		File file = new File("./lists/itemlist.txt");
+		File file = new File("./data/lists/itemlist.txt");
 		if (file.exists())
 			file.delete();
 		else

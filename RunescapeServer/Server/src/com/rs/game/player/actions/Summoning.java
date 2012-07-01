@@ -321,11 +321,11 @@ public class Summoning {
 				|| player.getSkills().getLevel(Skills.SUMMONING) < pouch
 						.getSpawnCost())
 			return;
-		if (!player.isDonator()
-				&& (pouch == Pouches.PACK_YAK || pouch == Pouches.UNICORN_STALLION)) {
-			player.getPackets().sendGameMessage("You are not a donator.");
-			return;
-		}
+//		if (!player.isDonator()
+//				&& (pouch == Pouches.PACK_YAK || pouch == Pouches.UNICORN_STALLION)) {
+//			player.getPackets().sendGameMessage("You are not a donator.");
+//			return;
+//		}
 		final Familiar npc = createFamiliar(player, pouch);
 		if (npc == null) {
 			player.getPackets().sendGameMessage(

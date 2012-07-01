@@ -11840,7 +11840,7 @@
       <deathAnim>65535</deathAnim>
       <attackDelay>5</attackDelay>
       <deathDelay>1</deathDelay>
-      <respawnDelay>60</respawnDelay>
+      <respawnDelay>10</respawnDelay>
       <maxHit>15</maxHit>
       <attackStyle>0</attackStyle>
       <attackGfx>65535</attackGfx>

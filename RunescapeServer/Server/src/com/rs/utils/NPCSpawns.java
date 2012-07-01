@@ -1,30 +1,31 @@
 package com.rs.utils;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.RandomAccessFile;
+import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
 
+import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 
 public final class NPCSpawns {
 
 	public static final void init() {
-		if (!new File("data/npcs/packedSpawns").exists())
 			packNPCSpawns();
 	}
 
 	private static final void packNPCSpawns() {
 		Logger.log("NPCSpawns", "Packing npc spawns...");
-		if (!new File("data/npcs/packedSpawns").mkdir())
-			throw new RuntimeException(
-					"Couldn't create packedSpawns directory.");
+
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(
 					"data/npcs/unpackedSpawnsList.txt"));
@@ -84,6 +85,18 @@ public final class NPCSpawns {
 					mapAreaNameHash = buffer.getInt();
 					canBeAttackFromOutOfArea = buffer.get() == 1;
 				}
+				
+				NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcId);
+				
+				FileWriter fstream = new FileWriter("data/npcs/unpacked/unpackedSpawnsList.txt",true);
+				BufferedWriter output = new BufferedWriter(fstream);
+				output.write("//" + def.name);
+				output.newLine();
+				output.write(npcId + " " + x + " " + y + " 0");
+				output.newLine();
+				output.newLine();
+				output.close();
+
 				World.spawnNPC(npcId, new WorldTile(x, y, plane),
 						mapAreaNameHash, canBeAttackFromOutOfArea);
 			}
