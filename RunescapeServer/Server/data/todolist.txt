@@ -1,14 +1,66 @@
 TODO:
 
--- Training Areas -- (Make a teleport button with all these teleports in it)
-- Rock Crabs
-	- Make teleport to rock crabs
-2694, 3726
+-- Monster Areas -- (Make a teleport button with all these teleports in it)
+-Rock Crabs (2694 3726)
+	- Rock Crabs
+	
+-Hill Giants
+	- Hill Giants
+	- Skeletons
+	- Zombies
+	- Hobgoblins
+		
+-Taverly Dungeon (2884 9798) (Fix agility shortcuts)
+	- Baby Blue Dragons
+	- Scorpions
+	- Chaos Dwarves
+	- Hill Giants
+	- Lessar Demons
+	- Blue Dragons
+	- Black Demons
+	- Hellhounds
+	- Black Dragons
 
--- Slayer Spots --(Make a teleport button with all these teleports in it)
--Taverly Dungeon
+-Slayer Tower (3429 3538) (doors kind of work)
+	- First Floor
+		- Crawling Hands
+		- Banshees
+	- Second Floor
+		- Inferno Mages
+		- Bloodvelds
+		- Aberant Spectors
+	- Third Floor (Need to fix the position of player when entering third floor)
+		- Gargoyles
+		- Nechs
+		- Abbysal Demons
 
--Slayer Tower
+-Brimhaven Dungeon (2710 9466)
+	- Bronze Dragons
+	- Iron Dragons
+	- Steel Dragons
+	
+-Under Karamja (2863 9570) (fix wall - able to open)
+	- Lessar Demons
+	- Skeletons
+	
+-Green Dragons [Wildy Lv 13 West] (2979 3617)
+	- Green Dragons
 
--Brimhaven Dungeon
-	- Metal Dragons
+-Green Dragons [Wildy Lv 20 East] (3350 3675)
+	- Green Dragons
+	
+-- Bosses --
+-King Black Dragon
+
+-- MiniGames --
+-Godwars (2871 5279 2)
+	- Access Armadyl
+		- Spawn Armadyl
+	- Access Bandos
+		- Spawn Bandos
+	- Access Saradomin
+		- Spawn Saradomin
+	- Access Zamorak
+		- Spawn Zamorak
+	- Add Killcount Counter
+		- Spawn Creatures to gain kill count
