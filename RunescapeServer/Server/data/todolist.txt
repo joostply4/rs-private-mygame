@@ -1,0 +1,14 @@
+TODO:
+
+-- Training Areas -- (Make a teleport button with all these teleports in it)
+- Rock Crabs
+	- Make teleport to rock crabs
+2694, 3726
+
+-- Slayer Spots --(Make a teleport button with all these teleports in it)
+-Taverly Dungeon
+
+-Slayer Tower
+
+-Brimhaven Dungeon
+	- Metal Dragons
