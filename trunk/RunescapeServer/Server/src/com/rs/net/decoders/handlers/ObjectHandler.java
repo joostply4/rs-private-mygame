@@ -51,7 +51,7 @@ public class ObjectHandler {
 			return;
 		long currentTime = Utils.currentTimeMillis();
 		if (player.getStopDelay() >= currentTime
-				// || player.getFreezeDelay() >= currentTime
+		// || player.getFreezeDelay() >= currentTime
 				|| player.getEmotesManager().getNextEmoteEnd() >= currentTime)
 			return;
 		@SuppressWarnings("unused")
@@ -104,14 +104,15 @@ public class ObjectHandler {
 				player.setNextFaceWorldTile(new WorldTile(object.getCoordFaceX(
 						objectDef.getSizeX(), objectDef.getSizeY(),
 						object.getRotation()), object.getCoordFaceY(
-								objectDef.getSizeX(), objectDef.getSizeY(),
-								object.getRotation()), object.getPlane()));
+						objectDef.getSizeX(), objectDef.getSizeY(),
+						object.getRotation()), object.getPlane()));
 				if (!player.getControlerManager().processObjectClick1(object))
 					return;
 				if (CastleWars.handleObjects(player, id))
 					return;
-				/*if (!QuestHandler.handleObject(player, object))
-					return;*/
+				/*
+				 * if (!QuestHandler.handleObject(player, object)) return;
+				 */
 				HunterNPC hunterNpc = HunterNPC.forObjectId(id);
 				if (hunterNpc != null) {
 					if (OwnedObjectManager.removeObject(player, object)) {
@@ -132,7 +133,8 @@ public class ObjectHandler {
 					if (war != null && war.getStage() == Stage.STARTED)
 						war.startControler(player);
 					else
-						player.getPackets().sendGameMessage("You can't go in atm.");
+						player.getPackets().sendGameMessage(
+								"You can't go in atm.");
 
 				} else if (id == HunterEquipment.BOX.getObjectId()) {
 					if (OwnedObjectManager.removeObject(player, object)) {
@@ -144,15 +146,15 @@ public class ObjectHandler {
 						player.getPackets().sendGameMessage(
 								"This isn't your trap.");
 				} else if (id == 59463) { // works now
-						  player.getDialogueManager().startDialogue("Crate");
+					player.getDialogueManager().startDialogue("Crate");
 				} else if (id == 4277) {
-					//player.sendMessage("You successfully thieve from the stall");
+					// player.sendMessage("You successfully thieve from the stall");
 					player.addStopDelay(4);
-					player.getInventory().addItem(995, 1270); 
-                                        player.setNextAnimation(new Animation(881));
+					player.getInventory().addItem(995, 1270);
+					player.setNextAnimation(new Animation(881));
 					player.getSkills().addXp(17, 100);
 				} else if (id == 2878) { // works now
-						  player.getDialogueManager().startDialogue("Pool");
+					player.getDialogueManager().startDialogue("Pool");
 				} else if (id == HunterEquipment.BRID_SNARE.getObjectId()) {
 					if (OwnedObjectManager.removeObject(player, object)) {
 						player.setNextAnimation(new Animation(19192));
@@ -166,15 +168,17 @@ public class ObjectHandler {
 				} else if (id == 46935 && object.getX() == 3090
 						&& object.getY() == 3498) {
 					TowersPkControler.enter(player);
-				} else if (object.getDefinitions().name.equalsIgnoreCase("Obelisk") && object.getY() > 3527) {
-					player.getControlerManager().startControler("ObeliskControler", object);
+				} else if (object.getDefinitions().name
+						.equalsIgnoreCase("Obelisk") && object.getY() > 3527) {
+					player.getControlerManager().startControler(
+							"ObeliskControler", object);
 				} else if (id == 2350
 						&& (object.getX() == 3352 && object.getY() == 3417 && object
-						.getPlane() == 0))
+								.getPlane() == 0))
 					player.useStairs(832, new WorldTile(3177, 5731, 0), 1, 2);
 				else if (id == 2353
 						&& (object.getX() == 3177 && object.getY() == 5730 && object
-						.getPlane() == 0))
+								.getPlane() == 0))
 					player.useStairs(828, new WorldTile(3353, 3416, 0), 1, 2);
 				else if (id == 10949 || id == 18994 || id == 18995
 						|| id == 18996 || id == 3038 || id == 3245
@@ -228,13 +232,13 @@ public class ObjectHandler {
 							"That rock is currently unavailable.");
 				else if (id == 2491)
 					player.getActionManager()
-					.setSkill(
-							new EssenceMining(
-									object,
-									player.getSkills().getLevel(
-											Skills.MINING) < 30 ? EssenceDefinitions.Rune_Essence
-													: EssenceDefinitions.Pure_Essence));													
-			    else if (id == 2478)
+							.setSkill(
+									new EssenceMining(
+											object,
+											player.getSkills().getLevel(
+													Skills.MINING) < 30 ? EssenceDefinitions.Rune_Essence
+													: EssenceDefinitions.Pure_Essence));
+				else if (id == 2478)
 					Runecrafting.craftEssence(player, 556, 1, 5, false, 11, 2,
 							22, 3, 34, 4, 44, 5, 55, 6, 66, 7, 77, 88, 9, 99,
 							10);
@@ -257,10 +261,10 @@ public class ObjectHandler {
 					Runecrafting.craftEssence(player, 564, 27, 8, true, 59, 2);
 				else if (id == 2487)
 					Runecrafting
-					.craftEssence(player, 562, 35, 8.5, true, 74, 2);
+							.craftEssence(player, 562, 35, 8.5, true, 74, 2);
 				else if (id == 17010)
 					Runecrafting.craftEssence(player, 9075, 40, 8.7, true, 82,
-							2);		
+							2);
 				else if (id == 2486)
 					Runecrafting.craftEssence(player, 561, 45, 9, true, 91, 2);
 				else if (id == 2485)
@@ -300,17 +304,17 @@ public class ObjectHandler {
 							|| hatId == Runecrafting.OMNI_TIARA)
 						Runecrafting.enterMindAltar(player);
 				} else if (id == 36972) {
-						player.setNextAnimation(new Animation(712));
-						player.setNextGraphics(new com.rs.game.Graphics (624));
-						player.getPackets().sendGameMessage("You pray to the gods");
-						player.getInventory().deleteItem(536, 1);
-						player.getSkills().addXp(Skills.PRAYER, 300);
+					player.setNextAnimation(new Animation(712));
+					player.setNextGraphics(new com.rs.game.Graphics(624));
+					player.getPackets().sendGameMessage("You pray to the gods");
+					player.getInventory().deleteItem(536, 1);
+					player.getSkills().addXp(Skills.PRAYER, 300);
 				} else if (id == 36972) {
-						player.setNextAnimation(new Animation(712));
-						player.setNextGraphics(new com.rs.game.Graphics (624));
-						player.getPackets().sendGameMessage("You pray to the gods");
-						player.getInventory().deleteItem(18830, 1);
-						player.getSkills().addXp(Skills.PRAYER, 600);
+					player.setNextAnimation(new Animation(712));
+					player.setNextGraphics(new com.rs.game.Graphics(624));
+					player.getPackets().sendGameMessage("You pray to the gods");
+					player.getInventory().deleteItem(18830, 1);
+					player.getSkills().addXp(Skills.PRAYER, 600);
 				} else if (id == 47120) { // zaros altar
 					// recharge if needed
 					if (player.getPrayer().getPrayerpoints() < player
@@ -333,426 +337,426 @@ public class ObjectHandler {
 				 * player.getY() == 5175) player.addWalkSteps(2399, 5175, -1,
 				 * false); }
 				 */else if (id == 36786)
-					 player.getDialogueManager().startDialogue("Banker", 4907);
-				 else if (id == 42377 || id == 42378)
-					 player.getDialogueManager().startDialogue("Banker", 2759);
-				 else if (id == 42217 || id == 782 || id == 34752)
-					 player.getDialogueManager().startDialogue("Banker", 553);
-				 else if (id == 57437)
-					 player.getBank().openBank();
-				 else if (id == 42425 && object.getX() == 3220
-						 && object.getY() == 3222) { // zaros portal
-					 player.useStairs(10256, new WorldTile(3353, 3416, 0), 4, 5,
-							 "And you find yourself into a digsite.");
-					 player.addWalkSteps(3222, 3223, -1, false);
-					 player.getPackets().sendGameMessage(
-							 "You examine portal and it aborves you...");
-				 }/*
-				  * else if (id ==
-				  * HunterNPC.CRIMSON_SWIFT.getTransformObjectId()) {
-				  * player.getInventory
-				  * ().addItem(HunterNPC.CRIMSON_SWIFT.getItem(), 1);
-				  * player.getInventory
-				  * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
-				  * player.setNextAnimation
-				  * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
-				  * player.getSkills().addXp(Skills.HUNTER,
-				  * HunterNPC.CRIMSON_SWIFT.getXp());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.CERULEAN_TWITCH.getTransformObjectId()) {
-				  * player.getInventory
-				  * ().addItem(HunterNPC.CERULEAN_TWITCH.getItem(), 1);
-				  * player.getInventory
-				  * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
-				  * player.setNextAnimation
-				  * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.COPPER_LONGTAIL.getTransformObjectId()) {
-				  * player.getInventory
-				  * ().addItem(HunterNPC.COPPER_LONGTAIL.getItem(), 1);
-				  * player.getInventory
-				  * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
-				  * player.setNextAnimation
-				  * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.FERRT.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.FERRT.getItem(), 1);
-				  * player.getInventory().addItem(HunterEquipment.BOX.getId(),
-				  * 1);
-				  * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
-				  * ()); player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.GECKO.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.GECKO.getItem(), 1);
-				  * player.getInventory().addItem(HunterEquipment.BOX.getId(),
-				  * 1);
-				  * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
-				  * ()); player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.GOLDEN_WARBLER.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.FERRT.getItem(), 1);
-				  * player
-				  * .getInventory().addItem(HunterEquipment.BRID_SNARE.getId(),
-				  * 1); player.setNextAnimation(HunterEquipment.BRID_SNARE.
-				  * getPickUpAnimation());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.MONKEY.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.MONKEY.getItem(), 1);
-				  * player.getInventory().addItem(HunterEquipment.BOX.getId(),
-				  * 1);
-				  * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
-				  * ()); player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.RACCOON.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.RACCOON.getItem(),
-				  * 1);
-				  * player.getInventory().addItem(HunterEquipment.BOX.getId(),
-				  * 1);
-				  * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
-				  * ()); player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.TROPICAL_WAGTAIL.getTransformObjectId()) {
-				  * player.getInventory
-				  * ().addItem(HunterNPC.TROPICAL_WAGTAIL.getItem(), 1);
-				  * player.getInventory
-				  * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
-				  * player.setNextAnimation
-				  * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); } else if (id ==
-				  * HunterNPC.WIMPY_BIRD.getTransformObjectId()) {
-				  * player.getInventory().addItem(HunterNPC.WIMPY_BIRD.getItem(),
-				  * 1);
-				  * player.getInventory().addItem(HunterEquipment.BRID_SNARE.getId
-				  * (), 1); player.setNextAnimation(HunterEquipment.BRID_SNARE.
-				  * getPickUpAnimation());
-				  * player.setTrampAmount(player.getTrampAmount() - 1);
-				  * World.removeObject(object, true); }
-				  */else if (id == 46500 && object.getX() == 3351
-						  && object.getY() == 3415) { // zaros portal
-					  player.useStairs(-1, new WorldTile(
-							  Settings.RESPAWN_PLAYER_LOCATION.getX(),
-							  Settings.RESPAWN_PLAYER_LOCATION.getY(),
-							  Settings.RESPAWN_PLAYER_LOCATION.getPlane()), 2, 3,
-							  "You found your way back to home.");
-					  player.addWalkSteps(3351, 3415, -1, false);
-				  } else if (id == 9293) {
-					  if (player.getSkills().getLevel(Skills.AGILITY) < 70) {
-						  player.getPackets()
-						  .sendGameMessage(
-								  "You need an agility level of 70 to use this obstacle.",
-								  true);
-						  return;
-					  }
-					  int x = player.getX() == 2886 ? 2892 : 2886;
-					  WorldTasksManager.schedule(new WorldTask() {
-						  int count = 0;
+					player.getDialogueManager().startDialogue("Banker", 4907);
+				else if (id == 42377 || id == 42378)
+					player.getDialogueManager().startDialogue("Banker", 2759);
+				else if (id == 42217 || id == 782 || id == 34752)
+					player.getDialogueManager().startDialogue("Banker", 553);
+				else if (id == 57437)
+					player.getBank().openBank();
+				else if (id == 42425 && object.getX() == 3220
+						&& object.getY() == 3222) { // zaros portal
+					player.useStairs(10256, new WorldTile(3353, 3416, 0), 4, 5,
+							"And you find yourself into a digsite.");
+					player.addWalkSteps(3222, 3223, -1, false);
+					player.getPackets().sendGameMessage(
+							"You examine portal and it aborves you...");
+				}/*
+				 * else if (id ==
+				 * HunterNPC.CRIMSON_SWIFT.getTransformObjectId()) {
+				 * player.getInventory
+				 * ().addItem(HunterNPC.CRIMSON_SWIFT.getItem(), 1);
+				 * player.getInventory
+				 * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
+				 * player.setNextAnimation
+				 * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
+				 * player.getSkills().addXp(Skills.HUNTER,
+				 * HunterNPC.CRIMSON_SWIFT.getXp());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.CERULEAN_TWITCH.getTransformObjectId()) {
+				 * player.getInventory
+				 * ().addItem(HunterNPC.CERULEAN_TWITCH.getItem(), 1);
+				 * player.getInventory
+				 * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
+				 * player.setNextAnimation
+				 * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.COPPER_LONGTAIL.getTransformObjectId()) {
+				 * player.getInventory
+				 * ().addItem(HunterNPC.COPPER_LONGTAIL.getItem(), 1);
+				 * player.getInventory
+				 * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
+				 * player.setNextAnimation
+				 * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.FERRT.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.FERRT.getItem(), 1);
+				 * player.getInventory().addItem(HunterEquipment.BOX.getId(),
+				 * 1);
+				 * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
+				 * ()); player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.GECKO.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.GECKO.getItem(), 1);
+				 * player.getInventory().addItem(HunterEquipment.BOX.getId(),
+				 * 1);
+				 * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
+				 * ()); player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.GOLDEN_WARBLER.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.FERRT.getItem(), 1);
+				 * player
+				 * .getInventory().addItem(HunterEquipment.BRID_SNARE.getId(),
+				 * 1); player.setNextAnimation(HunterEquipment.BRID_SNARE.
+				 * getPickUpAnimation());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.MONKEY.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.MONKEY.getItem(), 1);
+				 * player.getInventory().addItem(HunterEquipment.BOX.getId(),
+				 * 1);
+				 * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
+				 * ()); player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.RACCOON.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.RACCOON.getItem(),
+				 * 1);
+				 * player.getInventory().addItem(HunterEquipment.BOX.getId(),
+				 * 1);
+				 * player.setNextAnimation(HunterEquipment.BOX.getPickUpAnimation
+				 * ()); player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.TROPICAL_WAGTAIL.getTransformObjectId()) {
+				 * player.getInventory
+				 * ().addItem(HunterNPC.TROPICAL_WAGTAIL.getItem(), 1);
+				 * player.getInventory
+				 * ().addItem(HunterEquipment.BRID_SNARE.getId(), 1);
+				 * player.setNextAnimation
+				 * (HunterEquipment.BRID_SNARE.getPickUpAnimation());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); } else if (id ==
+				 * HunterNPC.WIMPY_BIRD.getTransformObjectId()) {
+				 * player.getInventory().addItem(HunterNPC.WIMPY_BIRD.getItem(),
+				 * 1);
+				 * player.getInventory().addItem(HunterEquipment.BRID_SNARE.getId
+				 * (), 1); player.setNextAnimation(HunterEquipment.BRID_SNARE.
+				 * getPickUpAnimation());
+				 * player.setTrampAmount(player.getTrampAmount() - 1);
+				 * World.removeObject(object, true); }
+				 */else if (id == 46500 && object.getX() == 3351
+						&& object.getY() == 3415) { // zaros portal
+					player.useStairs(-1, new WorldTile(
+							Settings.RESPAWN_PLAYER_LOCATION.getX(),
+							Settings.RESPAWN_PLAYER_LOCATION.getY(),
+							Settings.RESPAWN_PLAYER_LOCATION.getPlane()), 2, 3,
+							"You found your way back to home.");
+					player.addWalkSteps(3351, 3415, -1, false);
+				} else if (id == 9293) {
+					if (player.getSkills().getLevel(Skills.AGILITY) < 70) {
+						player.getPackets()
+								.sendGameMessage(
+										"You need an agility level of 70 to use this obstacle.",
+										true);
+						return;
+					}
+					int x = player.getX() == 2886 ? 2892 : 2886;
+					WorldTasksManager.schedule(new WorldTask() {
+						int count = 0;
 
-						  @Override
-						  public void run() {
-							  player.setNextAnimation(new Animation(844));
-							  if (count++ == 1)
-								  stop();
-						  }
+						@Override
+						public void run() {
+							player.setNextAnimation(new Animation(844));
+							if (count++ == 1)
+								stop();
+						}
 
-					  }, 0, 0);
-					  player.setNextForceMovement(new ForceMovement(
-							  new WorldTile(x, 9799, 0), 3,
-							  player.getX() == 2886 ? 1 : 3));
-					  player.useStairs(-1, new WorldTile(x, 9799, 0), 3, 4);
-				  } else if (id == 2295)
-					  Agility.walkGnomeLog(player);
-				  else if (id == 2285)
-					  Agility.climbGnomeObstacleNet(player);
-				  else if (id == 35970)
-					  Agility.climbUpGnomeTreeBranch(player);
-				  else if (id == 2312)
-					  Agility.walkGnomeRope(player);
-				  else if (id == 4059)
-					  Agility.walkBackGnomeRope(player);
-				  else if (id == 2314)
-					  Agility.climbDownGnomeTreeBranch(player);
-				  else if (id == 2286)
-					  Agility.climbGnomeObstacleNet2(player);
-				  else if (id == 43543 || id == 43544)
-					  Agility.enterGnomePipe(player, object.getX(), object.getY());
-				  else if (Wilderness.isDitch(id)) {// wild ditch
-					  player.getDialogueManager().startDialogue(
-							  "WildernessDitch", object);
-				  } else if (id == 42611) {// Magic Portal
-					  player.getDialogueManager().startDialogue("MagicPortal");
-				  } else if (id == 27254) {// Edgeville portal
-					  player.getPackets().sendGameMessage(
-							  "You enter the portal...");
-					  player.useStairs(10584, new WorldTile(3087, 3488, 0), 2, 3,
-							  "..and are transported to Edgeville.");
-					  player.addWalkSteps(1598, 4506, -1, false);
-				  } else if (id == 15522) {// portal sign
-					  if (player.withinDistance(new WorldTile(1598, 4504, 0), 1)) {// PORTAL
-						  // 1
-						  player.getInterfaceManager().sendInterface(327);
-						  player.getPackets().sendIComponentText(327, 13,
-								  "Edgeville");
-						  player.getPackets()
-						  .sendIComponentText(
-								  327,
-								  14,
-								  "This portal will take you to edgeville. There "
-										  + "you can multi pk once past the wilderness ditch.");
-					  }
-					  if (player.withinDistance(new WorldTile(1598, 4508, 0), 1)) {// PORTAL
-						  // 2
-						  player.getInterfaceManager().sendInterface(327);
-						  player.getPackets().sendIComponentText(327, 13,
-								  "Mage Bank");
-						  player.getPackets()
-						  .sendIComponentText(
-								  327,
-								  14,
-								  "This portal will take you to the mage bank. "
-										  + "The mage bank is a 1v1 deep wilderness area.");
-					  }
-					  if (player.withinDistance(new WorldTile(1598, 4513, 0), 1)) {// PORTAL
-						  // 3
-						  player.getInterfaceManager().sendInterface(327);
-						  player.getPackets().sendIComponentText(327, 13,
-								  "Magic's Portal");
-						  player.getPackets()
-						  .sendIComponentText(
-								  327,
-								  14,
-								  "This portal will allow you to teleport to areas that "
-										  + "will allow you to change your magic spell book.");
-					  }
-				  } else if (id == 37929) {// corp beast
-					  if (object.getX() == 2971 && object.getY() == 4382
-							  && object.getPlane() == 0)
-						  player.getInterfaceManager().sendInterface(650);
-					  else if (object.getX() == 2918 && object.getY() == 4382
-							  && object.getPlane() == 0) {
-						  player.stopAll();
-						  player.setNextWorldTile(new WorldTile(
-								  player.getX() == 2921 ? 2917 : 2921, player
-										  .getY(), player.getPlane()));
-					  }
-				  } else if (id == 37928 && object.getX() == 2883
-						  && object.getY() == 4370 && object.getPlane() == 0) {
-					  player.stopAll();
-					  player.setNextWorldTile(new WorldTile(3214, 3782, 0));
-					  player.getControlerManager().startControler("Wilderness");
-				  } else if (id == 38815 && object.getX() == 3209
-						  && object.getY() == 3780 && object.getPlane() == 0) {
-					  if (player.getSkills().getLevelForXp(Skills.WOODCUTTING) < 37
-							  || player.getSkills().getLevelForXp(Skills.MINING) < 45
-							  || player.getSkills().getLevelForXp(
-									  Skills.SUMMONING) < 23
-									  || player.getSkills().getLevelForXp(
-											  Skills.FIREMAKING) < 47
-											  || player.getSkills().getLevelForXp(Skills.PRAYER) < 55) {
-						  player.getPackets()
-						  .sendGameMessage(
-								  "You need 23 Summoning, 37 Woodcutting, 45 Mining, 47 Firemaking and 55 Prayer to enter this dungeon.");
-						  return;
-					  }
-					  player.stopAll();
-					  player.setNextWorldTile(new WorldTile(2885, 4372, 0));
-					  player.getControlerManager().forceStop();
-					  // TODO all reqs, skills not added
-				  } else if (id == 9369) {
-					  player.getControlerManager().startControler("FightPits");
-				  } else if (id == 54019 || id == 54020 || id == 55301)
-					  PkRank.showRanks(player);
-				  else if (id == 1817 && object.getX() == 2273
-						  && object.getY() == 4680) { // kbd lever
-					  Magic.pushLeverTeleport(player, new WorldTile(3067, 10254,
-							  0));
-				  } else if (id == 1816 && object.getX() == 3067
-						  && object.getY() == 10252) { // kbd out lever
-					  Magic.pushLeverTeleport(player,
-							  new WorldTile(2273, 4681, 0));
-				  } else if (id == 32015 && object.getX() == 3069
-						  && object.getY() == 10256) { // kbd stairs
-					  player.useStairs(828, new WorldTile(3017, 3848, 0), 1, 2);
-					  player.getControlerManager().startControler("Wilderness");
-				  } else if (id == 1765 && object.getX() == 3017
-						  && object.getY() == 3849) { // kbd out stairs
-					  player.stopAll();
-					  player.setNextWorldTile(new WorldTile(3069, 10255, 0));
-					  player.getControlerManager().forceStop();
-				  } else if ((id == 14315) || (id == 14314)) {
-					  player.setPestControl(new PestControl(player));
-					  player.getPestControl().handleObjectClick1(player, object);
-				  } else if (id == 5959) {
-					  Magic.pushLeverTeleport(player,
-							  new WorldTile(2539, 4712, 0));
-				  } else if (id == 5960) {
-					  Magic.pushLeverTeleport(player,
-							  new WorldTile(3089, 3957, 0));
-				  } else if (id == 62675)
-					  player.getCutscenesManager().play("DTPreview");
-				  else if (id == 62681)
-					  player.getDominionTower().viewScoreBoard();
-				  else if (id == 62678 || id == 62679)
-					  player.getDominionTower().openModes();
-				  else if (id == 62688)
-					  player.getDialogueManager().startDialogue("DTClaimRewards");
-				  else if (id == 62677)
-					  player.getDominionTower().talkToFace();
-				  else if (id == 62680)
-					  player.getDominionTower().openBankChest();
-				  else if (id == 62676) { // dominion exit
-					  player.useStairs(-1, new WorldTile(3374, 3093, 0), 0, 1);
-				  } else if (id == 62674) { // dominion entrance
-					  player.useStairs(-1, new WorldTile(3744, 6405, 0), 0, 1);
+					}, 0, 0);
+					player.setNextForceMovement(new ForceMovement(
+							new WorldTile(x, 9799, 0), 3,
+							player.getX() == 2886 ? 1 : 3));
+					player.useStairs(-1, new WorldTile(x, 9799, 0), 3, 4);
+				} else if (id == 2295)
+					Agility.walkGnomeLog(player);
+				else if (id == 2285)
+					Agility.climbGnomeObstacleNet(player);
+				else if (id == 35970)
+					Agility.climbUpGnomeTreeBranch(player);
+				else if (id == 2312)
+					Agility.walkGnomeRope(player);
+				else if (id == 4059)
+					Agility.walkBackGnomeRope(player);
+				else if (id == 2314)
+					Agility.climbDownGnomeTreeBranch(player);
+				else if (id == 2286)
+					Agility.climbGnomeObstacleNet2(player);
+				else if (id == 43543 || id == 43544)
+					Agility.enterGnomePipe(player, object.getX(), object.getY());
+				else if (Wilderness.isDitch(id)) {// wild ditch
+					player.getDialogueManager().startDialogue(
+							"WildernessDitch", object);
+				} else if (id == 42611) {// Magic Portal
+					player.getDialogueManager().startDialogue("MagicPortal");
+				} else if (id == 27254) {// Edgeville portal
+					player.getPackets().sendGameMessage(
+							"You enter the portal...");
+					player.useStairs(10584, new WorldTile(3087, 3488, 0), 2, 3,
+							"..and are transported to Edgeville.");
+					player.addWalkSteps(1598, 4506, -1, false);
+				} else if (id == 15522) {// portal sign
+					if (player.withinDistance(new WorldTile(1598, 4504, 0), 1)) {// PORTAL
+						// 1
+						player.getInterfaceManager().sendInterface(327);
+						player.getPackets().sendIComponentText(327, 13,
+								"Edgeville");
+						player.getPackets()
+								.sendIComponentText(
+										327,
+										14,
+										"This portal will take you to edgeville. There "
+												+ "you can multi pk once past the wilderness ditch.");
+					}
+					if (player.withinDistance(new WorldTile(1598, 4508, 0), 1)) {// PORTAL
+						// 2
+						player.getInterfaceManager().sendInterface(327);
+						player.getPackets().sendIComponentText(327, 13,
+								"Mage Bank");
+						player.getPackets()
+								.sendIComponentText(
+										327,
+										14,
+										"This portal will take you to the mage bank. "
+												+ "The mage bank is a 1v1 deep wilderness area.");
+					}
+					if (player.withinDistance(new WorldTile(1598, 4513, 0), 1)) {// PORTAL
+						// 3
+						player.getInterfaceManager().sendInterface(327);
+						player.getPackets().sendIComponentText(327, 13,
+								"Magic's Portal");
+						player.getPackets()
+								.sendIComponentText(
+										327,
+										14,
+										"This portal will allow you to teleport to areas that "
+												+ "will allow you to change your magic spell book.");
+					}
+				} else if (id == 37929) {// corp beast
+					if (object.getX() == 2971 && object.getY() == 4382
+							&& object.getPlane() == 0)
+						player.getInterfaceManager().sendInterface(650);
+					else if (object.getX() == 2918 && object.getY() == 4382
+							&& object.getPlane() == 0) {
+						player.stopAll();
+						player.setNextWorldTile(new WorldTile(
+								player.getX() == 2921 ? 2917 : 2921, player
+										.getY(), player.getPlane()));
+					}
+				} else if (id == 37928 && object.getX() == 2883
+						&& object.getY() == 4370 && object.getPlane() == 0) {
+					player.stopAll();
+					player.setNextWorldTile(new WorldTile(3214, 3782, 0));
+					player.getControlerManager().startControler("Wilderness");
+				} else if (id == 38815 && object.getX() == 3209
+						&& object.getY() == 3780 && object.getPlane() == 0) {
+					if (player.getSkills().getLevelForXp(Skills.WOODCUTTING) < 37
+							|| player.getSkills().getLevelForXp(Skills.MINING) < 45
+							|| player.getSkills().getLevelForXp(
+									Skills.SUMMONING) < 23
+							|| player.getSkills().getLevelForXp(
+									Skills.FIREMAKING) < 47
+							|| player.getSkills().getLevelForXp(Skills.PRAYER) < 55) {
+						player.getPackets()
+								.sendGameMessage(
+										"You need 23 Summoning, 37 Woodcutting, 45 Mining, 47 Firemaking and 55 Prayer to enter this dungeon.");
+						return;
+					}
+					player.stopAll();
+					player.setNextWorldTile(new WorldTile(2885, 4372, 0));
+					player.getControlerManager().forceStop();
+					// TODO all reqs, skills not added
+				} else if (id == 9369) {
+					player.getControlerManager().startControler("FightPits");
+				} else if (id == 54019 || id == 54020 || id == 55301)
+					PkRank.showRanks(player);
+				else if (id == 1817 && object.getX() == 2273
+						&& object.getY() == 4680) { // kbd lever
+					Magic.pushLeverTeleport(player, new WorldTile(3067, 10254,
+							0));
+				} else if (id == 1816 && object.getX() == 3067
+						&& object.getY() == 10252) { // kbd out lever
+					Magic.pushLeverTeleport(player,
+							new WorldTile(2273, 4681, 0));
+				} else if (id == 32015 && object.getX() == 3069
+						&& object.getY() == 10256) { // kbd stairs
+					player.useStairs(828, new WorldTile(3017, 3848, 0), 1, 2);
+					player.getControlerManager().startControler("Wilderness");
+				} else if (id == 1765 && object.getX() == 3017
+						&& object.getY() == 3849) { // kbd out stairs
+					player.stopAll();
+					player.setNextWorldTile(new WorldTile(3069, 10255, 0));
+					player.getControlerManager().forceStop();
+				} else if ((id == 14315) || (id == 14314)) {
+					player.setPestControl(new PestControl(player));
+					player.getPestControl().handleObjectClick1(player, object);
+				} else if (id == 5959) {
+					Magic.pushLeverTeleport(player,
+							new WorldTile(2539, 4712, 0));
+				} else if (id == 5960) {
+					Magic.pushLeverTeleport(player,
+							new WorldTile(3089, 3957, 0));
+				} else if (id == 62675)
+					player.getCutscenesManager().play("DTPreview");
+				else if (id == 62681)
+					player.getDominionTower().viewScoreBoard();
+				else if (id == 62678 || id == 62679)
+					player.getDominionTower().openModes();
+				else if (id == 62688)
+					player.getDialogueManager().startDialogue("DTClaimRewards");
+				else if (id == 62677)
+					player.getDominionTower().talkToFace();
+				else if (id == 62680)
+					player.getDominionTower().openBankChest();
+				else if (id == 62676) { // dominion exit
+					player.useStairs(-1, new WorldTile(3374, 3093, 0), 0, 1);
+				} else if (id == 62674) { // dominion entrance
+					player.useStairs(-1, new WorldTile(3744, 6405, 0), 0, 1);
 
-				  } else {
-					  switch (objectDef.name.toLowerCase()) {
-					  case "underwall tunnel":
-						  if (id == 9311) { //entering GE
-							  player.setNextWorldTile(new WorldTile(3143, 3513, 0));
-							  break;
-						  } else if (id == 9312) { //leaving GE 
-							  player.setNextWorldTile(new WorldTile(3138, 3516, 0));
-							  break;
-						  }
-						  break;
-					  case "web":
-						  if (objectDef.containsOption(0, "Slash")) {
-							  player.setNextAnimation(new Animation(PlayerCombat
-									  .getWeaponAttackEmote(player.getEquipment()
-											  .getWeaponId(), player
-											  .getCombatDefinitions()
-											  .getAttackStyle())));
-							  slashWeb(player, object);
-						  }
-						  break;
-					  case "bank chest":
-						  if (objectDef.containsOption(0, "Use"))
-							  player.getBank().openBank();
-					  case "bank deposit box":
-						  if (objectDef.containsOption(0, "Deposit"))
-							  player.getBank().openDepositBox();
-						  break;
-					  case "bank":
-						  player.getBank().openBank();
-						  break;
-						  // Woodcutting start
-					  case "tree":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.NORMAL));
-						  break;
-					  case "dead tree":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.DEAD));
-						  break;
-					  case "oak":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager()
-							  .setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.OAK));
-						  break;
-					  case "willow":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.WILLOW));
-						  break;
-					  case "maple tree":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.MAPLE));
-						  break;
-					  case "ivy":
-						  if (objectDef.containsOption(0, "Chop"))
-							  player.getActionManager()
-							  .setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.IVY));
-						  break;
-					  case "yew":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager()
-							  .setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.YEW));
-						  break;
-					  case "magic tree":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.MAGIC));
-						  break;
-					  case "cursed magic tree":
-						  if (objectDef.containsOption(0, "Chop down"))
-							  player.getActionManager().setSkill(
-									  new Woodcutting(object,
-											  TreeDefinitions.CURSED_MAGIC));
-						  break;
-						  // Woodcutting end
-					  case "gate":
-					  case "large door":
-					  case "metal door":
-						  if (object.getType() == 0
-						  && objectDef.containsOption(0, "Open"))
-							  handleGate(player, object);
-						  break;
-					  case "door":
-						  if (object.getType() == 0
-						  && (objectDef.containsOption(0, "Open") || objectDef
-								  .containsOption(0, "Unlock")))
-							  handleDoor(player, object);
-						  break;
-					  case "ladder":
-						  handleLadder(player, object, 1);
-						  break;
-					  case "staircase":
-						  handleStaircases(player, object, 1);
-						  break;
-					  case "altar":
-						  if (objectDef.containsOption(0, "Pray-at")) {
-							  final int maxPrayer = player.getSkills()
-									  .getLevelForXp(Skills.PRAYER) * 10;
-							  if (player.getPrayer().getPrayerpoints() < maxPrayer) {
-								  player.addStopDelay(5);
-								  player.getPackets().sendGameMessage(
-										  "You pray to the gods...", true);
-								  player.setNextAnimation(new Animation(645));
-								  WorldTasksManager.schedule(new WorldTask() {
-									  @Override
-									  public void run() {
-										  player.getPrayer().restorePrayer(
-												  maxPrayer);
-										  player.getPackets()
-										  .sendGameMessage(
-												  "...and recharged your prayer.",
-												  true);
-									  }
-								  }, 2);
-							  } else {
-								  player.getPackets().sendGameMessage(
-										  "You already have full prayer.", true);
-							  }
-							  if (id == 6552)
-								  player.getDialogueManager().startDialogue(
-										  "AncientAltar");
-						  }
-						  break;
-					  default:
-						  player.getPackets().sendGameMessage(
-								  "Nothing interesting happens.");
-						  break;
-					  }
-				  }
+				} else {
+					switch (objectDef.name.toLowerCase()) {
+					case "underwall tunnel":
+						if (id == 9311) { // entering GE
+							player.setNextWorldTile(new WorldTile(3143, 3513, 0));
+							break;
+						} else if (id == 9312) { // leaving GE
+							player.setNextWorldTile(new WorldTile(3138, 3516, 0));
+							break;
+						}
+						break;
+					case "web":
+						if (objectDef.containsOption(0, "Slash")) {
+							player.setNextAnimation(new Animation(PlayerCombat
+									.getWeaponAttackEmote(player.getEquipment()
+											.getWeaponId(), player
+											.getCombatDefinitions()
+											.getAttackStyle())));
+							slashWeb(player, object);
+						}
+						break;
+					case "bank chest":
+						if (objectDef.containsOption(0, "Use"))
+							player.getBank().openBank();
+					case "bank deposit box":
+						if (objectDef.containsOption(0, "Deposit"))
+							player.getBank().openDepositBox();
+						break;
+					case "bank":
+						player.getBank().openBank();
+						break;
+					// Woodcutting start
+					case "tree":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.NORMAL));
+						break;
+					case "dead tree":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.DEAD));
+						break;
+					case "oak":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager()
+									.setSkill(
+											new Woodcutting(object,
+													TreeDefinitions.OAK));
+						break;
+					case "willow":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.WILLOW));
+						break;
+					case "maple tree":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.MAPLE));
+						break;
+					case "ivy":
+						if (objectDef.containsOption(0, "Chop"))
+							player.getActionManager()
+									.setSkill(
+											new Woodcutting(object,
+													TreeDefinitions.IVY));
+						break;
+					case "yew":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager()
+									.setSkill(
+											new Woodcutting(object,
+													TreeDefinitions.YEW));
+						break;
+					case "magic tree":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.MAGIC));
+						break;
+					case "cursed magic tree":
+						if (objectDef.containsOption(0, "Chop down"))
+							player.getActionManager().setSkill(
+									new Woodcutting(object,
+											TreeDefinitions.CURSED_MAGIC));
+						break;
+					// Woodcutting end
+					case "gate":
+					case "large door":
+					case "metal door":
+						if (object.getType() == 0
+								&& objectDef.containsOption(0, "Open"))
+							handleGate(player, object);
+						break;
+					case "door":
+						if (object.getType() == 0
+								&& (objectDef.containsOption(0, "Open") || objectDef
+										.containsOption(0, "Unlock")))
+							handleDoor(player, object);
+						break;
+					case "ladder":
+						handleLadder(player, object, 1);
+						break;
+					case "staircase":
+						handleStaircases(player, object, 1);
+						break;
+					case "altar":
+						if (objectDef.containsOption(0, "Pray-at")) {
+							final int maxPrayer = player.getSkills()
+									.getLevelForXp(Skills.PRAYER) * 10;
+							if (player.getPrayer().getPrayerpoints() < maxPrayer) {
+								player.addStopDelay(5);
+								player.getPackets().sendGameMessage(
+										"You pray to the gods...", true);
+								player.setNextAnimation(new Animation(645));
+								WorldTasksManager.schedule(new WorldTask() {
+									@Override
+									public void run() {
+										player.getPrayer().restorePrayer(
+												maxPrayer);
+										player.getPackets()
+												.sendGameMessage(
+														"...and recharged your prayer.",
+														true);
+									}
+								}, 2);
+							} else {
+								player.getPackets().sendGameMessage(
+										"You already have full prayer.", true);
+							}
+							if (id == 6552)
+								player.getDialogueManager().startDialogue(
+										"AncientAltar");
+						}
+						break;
+					default:
+						player.getPackets().sendGameMessage(
+								"Nothing interesting happens.");
+						break;
+					}
+				}
 				if (Settings.DEBUG)
 					Logger.log(
 							"ObjectHandler",
@@ -840,8 +844,8 @@ public class ObjectHandler {
 				player.setNextFaceWorldTile(new WorldTile(object.getCoordFaceX(
 						objectDef.getSizeX(), objectDef.getSizeY(),
 						object.getRotation()), object.getCoordFaceY(
-								objectDef.getSizeX(), objectDef.getSizeY(),
-								object.getRotation()), object.getPlane()));
+						objectDef.getSizeX(), objectDef.getSizeY(),
+						object.getRotation()), object.getPlane()));
 				if (!player.getControlerManager().processObjectClick2(object))
 					return;
 				if (id == 36786 || id == 42378 || id == 42377 || id == 42217
@@ -853,14 +857,14 @@ public class ObjectHandler {
 							object);
 				else if (id == 17010)
 					player.getDialogueManager().startDialogue("LunarAltar");
-			 	else if (id == 62677)
+				else if (id == 62677)
 					player.getDominionTower().openRewards();
 				/*------------ Theiving stalls ----------------------- 
 				else if (id == 4277)
-                                        player.setNextAnimation(new Animation(881));
+				                        player.setNextAnimation(new Animation(881));
 				else if (id == 4277)
-                            		player.getPackets().sendGameMessage(
-                                   			"You successfully thieve from the stall");
+				            		player.getPackets().sendGameMessage(
+				                   			"You successfully thieve from the stall");
 				else if (id == 4277)
 					player.getInventory().addItem(995, 5000); //The amount of GP it gives.
 				else if (id == 4277)
@@ -873,22 +877,22 @@ public class ObjectHandler {
 							"SimpleMessage",
 							"You have a Dominion Factor of "
 									+ player.getDominionTower()
-									.getDominionFactor() + ".");
+											.getDominionFactor() + ".");
 				else if (id == 34384 || id == 34383 || id == 14011
 						|| id == 7053 || id == 34387 || id == 34386
 						|| id == 34385)
-					Thieving.handleStalls(player, object);					
+					Thieving.handleStalls(player, object);
 				else {
 					switch (objectDef.name.toLowerCase()) {
 					case "gate":
 					case "metal door":
 						if (object.getType() == 0
-						&& objectDef.containsOption(1, "Open"))
+								&& objectDef.containsOption(1, "Open"))
 							handleGate(player, object);
 						break;
 					case "door":
 						if (object.getType() == 0
-						&& objectDef.containsOption(1, "Open"))
+								&& objectDef.containsOption(1, "Open"))
 							handleDoor(player, object);
 						break;
 					case "ladder":
@@ -942,7 +946,7 @@ public class ObjectHandler {
 			return;
 		long currentTime = Utils.currentTimeMillis();
 		if (player.getStopDelay() >= currentTime
-				// || player.getFreezeDelay() >= currentTime
+		// || player.getFreezeDelay() >= currentTime
 				|| player.getEmotesManager().getNextEmoteEnd() >= currentTime)
 			return;
 		@SuppressWarnings("unused")
@@ -995,8 +999,8 @@ public class ObjectHandler {
 				player.setNextFaceWorldTile(new WorldTile(object.getCoordFaceX(
 						objectDef.getSizeX(), objectDef.getSizeY(),
 						object.getRotation()), object.getCoordFaceY(
-								objectDef.getSizeX(), objectDef.getSizeY(),
-								object.getRotation()), object.getPlane()));
+						objectDef.getSizeX(), objectDef.getSizeY(),
+						object.getRotation()), object.getPlane()));
 				if (!player.getControlerManager().processObjectClick3(object))
 					return;
 				player.setNextFaceWorldTile(tile);
@@ -1004,12 +1008,12 @@ public class ObjectHandler {
 				case "gate":
 				case "metal door":
 					if (object.getType() == 0
-					&& objectDef.containsOption(2, "Open"))
+							&& objectDef.containsOption(2, "Open"))
 						handleGate(player, object);
 					break;
 				case "door":
 					if (object.getType() == 0
-					&& objectDef.containsOption(2, "Open"))
+							&& objectDef.containsOption(2, "Open"))
 						handleDoor(player, object);
 					break;
 				case "ladder":
@@ -1052,7 +1056,7 @@ public class ObjectHandler {
 						|| otherDoor.getRotation() != object.getRotation()
 						|| otherDoor.getType() != object.getType()
 						|| !otherDoor.getDefinitions().name
-						.equalsIgnoreCase(object.getDefinitions().name))
+								.equalsIgnoreCase(object.getDefinitions().name))
 					return false;
 				south = false;
 			}
@@ -1097,7 +1101,7 @@ public class ObjectHandler {
 						|| otherDoor.getRotation() != object.getRotation()
 						|| otherDoor.getType() != object.getType()
 						|| !otherDoor.getDefinitions().name
-						.equalsIgnoreCase(object.getDefinitions().name))
+								.equalsIgnoreCase(object.getDefinitions().name))
 					return false;
 				south = false;
 			}
@@ -1140,7 +1144,7 @@ public class ObjectHandler {
 						|| otherDoor.getRotation() != object.getRotation()
 						|| otherDoor.getType() != object.getType()
 						|| !otherDoor.getDefinitions().name
-						.equalsIgnoreCase(object.getDefinitions().name))
+								.equalsIgnoreCase(object.getDefinitions().name))
 					return false;
 				right = false;
 			}
@@ -1185,7 +1189,7 @@ public class ObjectHandler {
 						|| otherDoor.getRotation() != object.getRotation()
 						|| otherDoor.getType() != object.getType()
 						|| !otherDoor.getDefinitions().name
-						.equalsIgnoreCase(object.getDefinitions().name))
+								.equalsIgnoreCase(object.getDefinitions().name))
 					return false;
 				right = false;
 			}
@@ -1257,8 +1261,8 @@ public class ObjectHandler {
 					"ClimbNoEmoteStairs",
 					new WorldTile(player.getX(), player.getY(), player
 							.getPlane() + 1),
-							new WorldTile(player.getX(), player.getY(), player
-									.getPlane() - 1), "Go up the stairs.",
+					new WorldTile(player.getX(), player.getY(), player
+							.getPlane() - 1), "Go up the stairs.",
 					"Go down the stairs.");
 		} else
 			return false;
@@ -1285,9 +1289,9 @@ public class ObjectHandler {
 					"ClimbEmoteStairs",
 					new WorldTile(player.getX(), player.getY(), player
 							.getPlane() + 1),
-							new WorldTile(player.getX(), player.getY(), player
-									.getPlane() - 1), "Climb up the ladder.",
-									"Climb down the ladder.", 828);
+					new WorldTile(player.getX(), player.getY(), player
+							.getPlane() - 1), "Climb up the ladder.",
+					"Climb down the ladder.", 828);
 		} else
 			return false;
 		return true;
@@ -1300,7 +1304,7 @@ public class ObjectHandler {
 			return;
 		long currentTime = Utils.currentTimeMillis();
 		if (player.getStopDelay() >= currentTime
-				// || player.getFreezeDelay() >= currentTime
+		// || player.getFreezeDelay() >= currentTime
 				|| player.getEmotesManager().getNextEmoteEnd() >= currentTime)
 			return;
 
@@ -1348,12 +1352,12 @@ public class ObjectHandler {
 				player.setNextFaceWorldTile(new WorldTile(object.getCoordFaceX(
 						objectDef.getSizeX(), objectDef.getSizeY(),
 						object.getRotation()), object.getCoordFaceY(
-								objectDef.getSizeX(), objectDef.getSizeY(),
-								object.getRotation()), object.getPlane()));
+						objectDef.getSizeX(), objectDef.getSizeY(),
+						object.getRotation()), object.getPlane()));
 				if (interfaceId == Inventory.INVENTORY_INTERFACE) { // inventory
 					if (object.getDefinitions().name.equals("Anvil")) {
 						player.getTemporaryAttributtes()
-						.put("itemUsed", itemId);
+								.put("itemUsed", itemId);
 						ForgingBar bar = ForgingBar.forId(itemId);
 						if (bar != null)
 							ForgingInterface.sendSmithingInterface(player);
@@ -1392,5 +1396,4 @@ public class ObjectHandler {
 		}, objectDef.getSizeX(), objectDef.getSizeY(), object.getRotation()));
 	}
 
-	
 }
