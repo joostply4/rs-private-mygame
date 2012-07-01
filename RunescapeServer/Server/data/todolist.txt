@@ -1,56 +1,57 @@
 TODO:
 
--- Monster Areas -- 
+-- Monster Areas -- (Make a teleport button with all these teleports in it)
 -Rock Crabs (2694 3726)
 	- Rock Crabs
 	
 -Hill Giants (3105 9832)
-	- Hill Giants
-	- Skeletons
-	- Zombies
-	- Hobgoblins
+	- Hill Giants [4689 - 4693]
+	- Skeletons [5332 - 5341]
+	- Zombies [5293 - 5331]
+	- Hobgoblins [6275]
 		
 -Taverly Dungeon (2884 9798) (Fix agility shortcuts)
-	- Baby Blue Dragons
-	- Scorpions
-	- Chaos Dwarves
-	- Hill Giants
-	- Lessar Demons
-	- Blue Dragons
-	- Black Demons
-	- Hellhounds
-	- Black Dragons
+	- Baby Blue Dragons [52]
+	- Scorpions [107]
+	- Chaos Dwarves [119] 
+	- Hill Giants [4689 - 4693]
+	- Lessar Demons [10492 - 10495]
+	- Blue Dragons [4681 - 4684]
+	- Black Demons [4702 - 4705]
+	- Hellhounds [6210]
+	- Black Dragons [54]
 
 -Slayer Tower (3429 3538) (doors kind of work)
 	- First Floor
-		- Crawling Hands
-		- Banshees
+		- Crawling Hands [1648 - 1657]
+		- Banshees [1612]
 	- Second Floor
-		- Inferno Mages
-		- Bloodvelds
-		- Aberant Spectors
+		- Infernal Mages [1643 - 1647]
+		- Bloodvelds [1618, 1619]
+		- Aberant Spectors [1604 - 1607]
 	- Third Floor (Need to fix the position of player when entering third floor)
-		- Gargoyles
-		- Nechs
-		- Abbysal Demons
+		- Gargoyles [1610]
+		- Nechs [1613]
+		- Abbysal Demons [1615]
 
 -Brimhaven Dungeon (2710 9466)
-	- Bronze Dragons
-	- Iron Dragons
-	- Steel Dragons
+	- Bronze Dragons [1590]
+	- Iron Dragons [1591]
+	- Steel Dragons [1592]
 	
 -Under Karamja (2863 9570) (fix wall - able to open)
-	- Lessar Demons
-	- Skeletons
+	- Lessar Demons [10492 - 10495]
+	- Skeletons [5332 - 5341]
+	- Elvarg [742]
 	
 -Green Dragons [Wildy Lv 13 West] (2979 3617)
-	- Green Dragons
+	- Green Dragons [4677 - 4680]
 
 -Green Dragons [Wildy Lv 20 East] (3350 3675)
-	- Green Dragons
+	- Green Dragons [4677 - 4680]
 	
 -- Bosses --
--King Black Dragon
+-King Black Dragon [50]
 
 -- MiniGames --
 -Godwars (2871 5279 2)
