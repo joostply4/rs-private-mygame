@@ -8161,3 +8161,15 @@
 //Rock Crab
 1265 2706 3715 0
 
+//General Graardor
+6260 2870 5363 0
+
+//Sergeant Strongstack
+6261 2866 5359 0
+
+//Sergeant Steelwill
+6263 2866 5355 0
+
+//Sergeant Grimspike
+6265 2873 5355 0
+

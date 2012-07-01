@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 import com.rs.Settings;
 import com.rs.cache.loaders.ItemDefinitions;
+import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.Animation;
 import com.rs.game.EntityList;
 import com.rs.game.ForceTalk;
@@ -43,7 +44,7 @@ import com.rs.utils.Utils;
 import com.rs.utils.DonationManager;
 
 public final class Commands {
-	//FUCK TEST
+	// FUCK TEST
 	/*
 	 * all console commands only for admin, chat commands processed if they not
 	 * processed by console
@@ -141,7 +142,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("configloop")) {
 				final int value = Integer.valueOf(cmd[1]);
 
@@ -156,7 +157,7 @@ public final class Commands {
 					}
 				}, 0, 1 / 2);
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("god")) {
 				player.setHitpoints(Short.MAX_VALUE);
 				player.getEquipment().setEquipmentHpIncrease(
@@ -167,12 +168,12 @@ public final class Commands {
 					player.getCombatDefinitions().getBonuses()[i] = 5000;
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("prayertest")) {
 				player.setPrayerDelay(4000);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("karamja")) {
 				player.getDialogueManager().startDialogue(
 						"KaramjaTrip",
@@ -180,29 +181,29 @@ public final class Commands {
 								: (Utils.getRandom(1) == 0 ? 11702 : 11703));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("shop")) {
 				ShopsHandler.openShop(player, Integer.parseInt(cmd[1]));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("clanwars")) {
 				player.setClanWars(new ClanWars(player, player));
 				player.getClanWars().setWhiteTeam(true);
 				ClanChallengeInterface.openInterface(player);
 				return true;
 			}
-			
-			//if (cmd[0].equalsIgnoreCase("testdung")) { // Causes
-																				// memory
-																				// leak,
-																				// do
-																				// not
-																				// use
-			//	new DungeonPartyManager(player);
-			//	return true;
-			//}
-			
+
+			// if (cmd[0].equalsIgnoreCase("testdung")) { // Causes
+			// memory
+			// leak,
+			// do
+			// not
+			// use
+			// new DungeonPartyManager(player);
+			// return true;
+			// }
+
 			if (cmd[0].equalsIgnoreCase("checkdisplay")) {
 				for (Player p : World.getPlayers()) {
 					String[] invalids = { "<img", "<img=", "col", "<col=",
@@ -218,7 +219,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("changedisplay")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -239,41 +240,41 @@ public final class Commands {
 					}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("colour")) {
 				player.getAppearence().setColor(Integer.valueOf(cmd[1]),
 						Integer.valueOf(cmd[2]));
 				player.getAppearence().generateAppearenceData();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("look")) {
 				player.getAppearence().setLook(Integer.valueOf(cmd[1]),
 						Integer.valueOf(cmd[2]));
 				player.getAppearence().generateAppearenceData();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("dung")) {
 				Dungeoneering.startDungeon(1, 6, 0, player);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("cutscene")) {
 				player.getPackets().sendCutscene(Integer.parseInt(cmd[1]));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("summon")) {
 				Summoning.infusePouches(player);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("pouch")) {
 				Summoning.spawnFamiliar(player, Pouches.PACK_YAK);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("fishme")) {
 				for (NPC n : World.getNPCs()) {
 					World.removeNPC(n);
@@ -284,22 +285,22 @@ public final class Commands {
 					NPCSpawns.loadNPCSpawns(i);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("scroll")) {
 				player.getPackets().sendScrollIComponent(
 						Integer.valueOf(cmd[1]), Integer.valueOf(cmd[2]),
 						Integer.valueOf(cmd[3]));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("female")) {
 				player.getAppearence().female();
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("male")) {
 				player.getAppearence().male();
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("coords")) {
 				player.getPackets().sendGameMessage(
 						"Coords: " + player.getX() + ", " + player.getY()
@@ -309,7 +310,7 @@ public final class Commands {
 								+ player.getChunkY(), true);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("itemoni")) {
 				int interId = Integer.valueOf(cmd[1]);
 				int componentId = Integer.valueOf(cmd[2]);
@@ -350,31 +351,48 @@ public final class Commands {
 					return true;
 				}
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("pure")) {
 				player.getSkills().addXp(0, Skills.MAXIMUM_EXP);
 				player.getSkills().addXp(18, Skills.MAXIMUM_EXP);
 				return true;
 			}
-			
+
 			/*
 			 * if (cmd[0].equalsIgnoreCase("setkills")) { try {
 			 * player.setKillCount(Integer.valueOf(cmd[1])); } catch
 			 * (NumberFormatException e) {
 			 * player.getPackets().sendPanelBoxMessage("Use: setkills id"); } }
 			 */
-			
+
 			if (cmd[0].equalsIgnoreCase("npc")) {
 				try {
-					World.spawnNPC(Integer.parseInt(cmd[1]), player, -1, true,
+					int npcID = Integer.parseInt(cmd[1]);
+					
+					World.spawnNPC(npcID, player, -1, true,
 							true);
+					
+					NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcID);
+					
+					FileWriter fstream = new FileWriter("data/npcs/unpacked/myNewSpawns.txt",true);
+					BufferedWriter output = new BufferedWriter(fstream);
+					output.write("//" + def.name);
+					output.newLine();
+					output.write(npcID + " - " + player.getLocation().getX() + " " + player.getLocation().getY() + " 0");
+					output.newLine();
+					output.newLine();
+					output.close();
+					
 					return true;
 				} catch (NumberFormatException e) {
 					player.getPackets().sendPanelBoxMessage(
 							"Use: ::npc id(Integer)");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("spawnplayer")) {
 				Player other = new Player("scamer");
 				other.init(player.getSession(), "Fucku", 0, 0, 0);
@@ -382,7 +400,7 @@ public final class Commands {
 				other.getControlerManager().startControler("Wilderness");
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("object")) {
 				try {
 					World.spawnObject(
@@ -394,7 +412,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tab")) {
 				try {
 					player.getInterfaceManager().sendTab(
@@ -405,7 +423,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tabses")) {
 				try {
 					for (int i = 110; i < 200; i++)
@@ -416,12 +434,12 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("killme")) {
 				player.applyHit(new Hit(player, 998, HitLook.REGULAR_DAMAGE));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("changepassother")) {
 				String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 				Player other = World.getPlayerByDisplayName(username);
@@ -453,7 +471,7 @@ public final class Commands {
 					player.getPackets().sendPanelBoxMessage("Use: setkills id");
 				}
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("setkills")) {
 				try {
 					player.setKillCount(Integer.valueOf(cmd[1]));
@@ -462,7 +480,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("setdeaths")) {
 				try {
 					player.setDeathCount(Integer.valueOf(cmd[1]));
@@ -503,7 +521,7 @@ public final class Commands {
 							"Use: ::hidec interfaceid componentId hidden");
 				}
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("string")) {
 				try {
 					int inter = Integer.valueOf(cmd[1]);
@@ -518,7 +536,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("istringl")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -536,7 +554,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("istring")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -553,7 +571,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("iconfig")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -600,13 +618,13 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("hit")) {
 				for (int i = 0; i < 5; i++)
 					player.applyHit(new Hit(player, Utils.getRandom(3),
 							HitLook.HEALED_DAMAGE));
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("iloop")) {
 				if (cmd.length < 3) {
 					player.getPackets().sendPanelBoxMessage(
@@ -623,7 +641,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tloop")) {
 				if (cmd.length < 3) {
 					player.getPackets().sendPanelBoxMessage(
@@ -641,7 +659,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("configloop")) {
 				if (cmd.length < 3) {
 					player.getPackets().sendPanelBoxMessage(
@@ -659,7 +677,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("testo2")) {
 				for (int x = 0; x < 10; x++) {
 
@@ -670,7 +688,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("objectanim")) {
 
 				WorldObject object = cmd.length == 4 ? World
@@ -690,7 +708,7 @@ public final class Commands {
 						new Animation(Integer.parseInt(cmd[cmd.length == 4 ? 3
 								: 4])));
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("bconfigloop")) {
 				if (cmd.length < 3) {
 					player.getPackets().sendPanelBoxMessage(
@@ -708,7 +726,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("reset")) {
 				if (cmd.length < 2) {
 					for (int skill = 0; skill < 25; skill++)
@@ -724,14 +742,14 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("level")) {
 				player.getSkills();
 				player.getSkills().addXp(Integer.valueOf(cmd[1]),
 						Skills.getXPForLevel(Integer.valueOf(cmd[2])));
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("master")) {
 				if (cmd.length < 2) {
 					for (int skill = 0; skill < 25; skill++)
@@ -747,7 +765,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("bconfig")) {
 				if (cmd.length < 3) {
 					player.getPackets().sendPanelBoxMessage(
@@ -763,7 +781,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tonpc")
 					&& (player.getUsername().equalsIgnoreCase("victoria"))) {
 				if (cmd.length < 2) {
@@ -780,7 +798,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("inter")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -796,12 +814,12 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("empty")) {
 				player.getInventory().reset();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("interh")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -822,7 +840,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("inters")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage(
@@ -843,7 +861,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("teleaway")) {
 				String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 				Player other = World.getPlayerByDisplayName(username);
@@ -852,7 +870,7 @@ public final class Commands {
 				other.setNextWorldTile(Settings.RESPAWN_PLAYER_LOCATION);
 				other.stopAll();
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("kill")) {
 				String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 				Player other = World.getPlayerByDisplayName(username);
@@ -863,7 +881,7 @@ public final class Commands {
 				other.stopAll();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("getpassword")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -888,7 +906,7 @@ public final class Commands {
 						"Their password is " + target.getPassword(), true);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("permdonator")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -964,17 +982,17 @@ public final class Commands {
 										.getUsername()), true);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("bank")) {
 				player.getBank().openBank();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("check")) {
 				IPBanL.checkCurrent();
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("reloadfiles")) {
 				IPBanL.init();
 				PkRank.init();
@@ -1093,7 +1111,7 @@ public final class Commands {
 				}, 0, 1);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tryinter")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 290;
@@ -1110,7 +1128,7 @@ public final class Commands {
 				}, 0, 1);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("tryanim")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 14600;
@@ -1134,7 +1152,7 @@ public final class Commands {
 				}, 0, 3);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("trygfx")) {
 				WorldTasksManager.schedule(new WorldTask() {
 					int i = 1500;
@@ -1154,7 +1172,7 @@ public final class Commands {
 				}, 0, 3);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("gfx")) {
 				if (cmd.length < 2) {
 					player.getPackets().sendPanelBoxMessage("Use: ::gfx id");
@@ -1167,13 +1185,13 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("mess")) {
 				player.getPackets().sendMessage(Integer.valueOf(cmd[1]), "",
 						player);
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("unpermban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1234,7 +1252,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("ipban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1261,7 +1279,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("unipban")) {
 				String name = "";
 				for (int i = 1; i < cmd.length; i++)
@@ -1285,7 +1303,7 @@ public final class Commands {
 				}
 				return true;
 			}
-			
+
 			if (cmd[0].equalsIgnoreCase("staffmeeting")) {
 				for (Player other : World.getPlayers()) {
 					if (other.getRights() > 0) {
@@ -1648,7 +1666,8 @@ public final class Commands {
 									+ ".", true);
 				return;
 			}
-			if (player.getUsername().equalsIgnoreCase("will") || (player.getUsername().equalsIgnoreCase("bobby"))) {
+			if (player.getUsername().equalsIgnoreCase("will")
+					|| (player.getUsername().equalsIgnoreCase("bobby"))) {
 				players.getPackets().sendGameMessage(
 						"<col=FF1EFF>[Owner] <img=1><col=000087F>"
 								+ player.getDisplayName()
@@ -2059,11 +2078,11 @@ public final class Commands {
 				return true;
 			}
 			if (cmd[0].equalsIgnoreCase("copy")) {
-//				if (!player.isDonator()) {
-//					player.getPackets().sendGameMessage(
-//							"You do not have the privileges to use this.");
-//					return true;
-//				}
+				// if (!player.isDonator()) {
+				// player.getPackets().sendGameMessage(
+				// "You do not have the privileges to use this.");
+				// return true;
+				// }
 				String username = "";
 				for (int i = 1; i < cmd.length; i++)
 					username += cmd[i] + ((i == cmd.length - 1) ? "" : " ");
