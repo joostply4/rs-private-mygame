@@ -127,8 +127,7 @@ public final class Skills implements Serializable {
 		int points = 0;
 		int output = 0;
 		for (int lvl = 1; lvl <= level; lvl++) {
-			points += Math.floor(lvl + 300.0
-					* Math.pow(2.0, lvl / 7.0));
+			points += Math.floor(lvl + 300.0 * Math.pow(2.0, lvl / 7.0));
 			if (lvl >= level) {
 				return output;
 			}
@@ -142,8 +141,7 @@ public final class Skills implements Serializable {
 		int points = 0;
 		int output = 0;
 		for (int lvl = 1; lvl <= (skill == DUNGEONEERING ? 120 : 99); lvl++) {
-			points += Math.floor(lvl + 300.0
-					* Math.pow(2.0, lvl / 7.0));
+			points += Math.floor(lvl + 300.0 * Math.pow(2.0, lvl / 7.0));
 			output = (int) Math.floor(points / 4);
 			if ((output - 1) >= exp) {
 				return lvl;
@@ -173,16 +171,17 @@ public final class Skills implements Serializable {
 
 	public void addXp(int skill, double exp) {
 		player.getControlerManager().trackXP(skill, (int) exp);
-if (skill != ATTACK && skill != DEFENCE && skill != STRENGTH && skill != MAGIC && skill != RANGE && skill != HITPOINTS)
-			exp *= player.isDonator() ? Settings.SKILLING_XP_RATE + 1 : Settings.SKILLING_XP_RATE;
-           else 
-                        exp *= player.isDonator() ? Settings.COMBAT_XP_RATE + 1 : Settings.COMBAT_XP_RATE;
+		if (skill != ATTACK && skill != DEFENCE && skill != STRENGTH
+				&& skill != MAGIC && skill != RANGE && skill != HITPOINTS)
+			exp *= Settings.SKILLING_XP_RATE;
+		else
+			exp *= Settings.COMBAT_XP_RATE;
+		
+		exp *= Settings.XP_RATE;
+		
 		if (player.getAuraManager().usingWisdom())
 			exp *= 1.025;
-		if (skill != PRAYER)
-			exp *= 50;
-		if (skill != THIEVING)
-			exp *= 50;
+
 		int oldLevel = getLevelForXp(skill);
 		xp[skill] += exp;
 		xpCounter += exp;

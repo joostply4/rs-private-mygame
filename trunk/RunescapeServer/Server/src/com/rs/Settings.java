@@ -5,7 +5,7 @@ import com.rs.game.WorldTile;
 public final class Settings {
 
 	// client/server settings
-	public static final String SERVER_NAME = "rsCalifornia";
+	public static final String SERVER_NAME = "PvP Paradise";
 	public static final String WEBSITE_LINK = "http://rscalifornia.com";
 	public static final String ITEMLIST_LINK = "http://www.itemdb.biz/";
 	public static final String ITEMDB_LINK = "http://itemdb.biz/";
@@ -24,7 +24,7 @@ public final class Settings {
 	public static boolean HOSTED;
 
 	// GUI Settings
-	public static final String GUI_SIGN = "V 1.0 Alpha Built By Dragonkk";
+	public static final String GUI_SIGN = "V 1.1 Alpha Built By Bobby";
 	public static final String LINE_SEPARATOR = System
 			.getProperty("line.separator");
 	// world settings
@@ -35,15 +35,15 @@ public final class Settings {
 	public static final WorldTile RESPAWN_PLAYER_LOCATION = new WorldTile(3164,3488,0); //new WorldTile(2966, 3387, 0);// //
 	public static final long MAX_PACKETS_DECODER_PING_DELAY = 30000; // 30seconds
 	public static final int WORLD_CYCLE_TIME = 600; // the speed of world in ms
-	public static final int XP_RATE = 1; // x75 for combat, x50 for skills
-	public static final int SKILLING_XP_RATE = 1;
-	public static final int COMBAT_XP_RATE = 1;
+	public static final int XP_RATE = 4; // Use this for double exp weekends
+	public static final int SKILLING_XP_RATE = 5000;
+	public static final int COMBAT_XP_RATE = 5000;
 	public static final int AIR_GUITAR_MUSICS_COUNT = 50;
 	// mem settings
 	public static final int PLAYERS_LIMIT = 2000;
 	public static final int LOCAL_PLAYERS_LIMIT = 250;
 	public static final int NPCS_LIMIT = Short.MAX_VALUE;
-	public static final int LOCAL_NPCS_LIMIT = 1000;
+	public static final int LOCAL_NPCS_LIMIT = 6000;
 	public static final int MIN_FREE_MEM_ALLOWED = 30000000; // 30mb
 	// game constants
 	public static final int[] MAP_SIZES = { 104, 120, 136, 168 };
@@ -52,8 +52,7 @@ public final class Settings {
 			358294, 416732, 828327, 19517, 22963, 16769, 1244, 11976, 10, 15,
 			119, 817677, 1624243};
 
-	public static String[] DONATOR_ITEMS = { "primal", "pouch", /* "vitus", "pernix", */
-	"promethium", "(i)", "thok's", "trident" };
+	public static String[] DONATOR_ITEMS = { };
 
 	public static String[] EARNED_ITEMS = { "castle wars ticket", "(class",
 			"sacred clay", "dominion" };

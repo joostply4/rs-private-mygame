@@ -611,6 +611,15 @@ public class ObjectHandler {
 
 				  } else {
 					  switch (objectDef.name.toLowerCase()) {
+					  case "underwall tunnel":
+						  if (id == 9311) { //entering GE
+							  player.setNextWorldTile(new WorldTile(3143, 3513, 0));
+							  break;
+						  } else if (id == 9312) { //leaving GE 
+							  player.setNextWorldTile(new WorldTile(3138, 3516, 0));
+							  break;
+						  }
+						  break;
 					  case "web":
 						  if (objectDef.containsOption(0, "Slash")) {
 							  player.setNextAnimation(new Animation(PlayerCombat
