@@ -6,7 +6,7 @@ TODO:
 	- Create new shops for all the shop keepers
 
 -- MiniGames --
--Godwars (2871 5279 2)
+-Godwars (2882 5311 2) <-- correct coord for tele
 	- Access Armadyl
 		- Spawn Armadyl
 	- Access Bandos
@@ -44,6 +44,7 @@ TODO:
 	- Fix first task issue (cows? or w\e) was this an issue?
 	- When changing tasks the monsters that are chosen are the "Weak Monsters"
 	- When getting a NEW task the monsters chosen are slayer level based
+	- Add a slayer helm to the game, the blackmask, range one, and the mage one
 
 -Skills Teleport
 	- Add teleport locations to different skilling locations

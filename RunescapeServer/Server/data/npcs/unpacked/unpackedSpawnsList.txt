@@ -2818,3 +2818,390 @@
 //null
 8068 3234 3526 0
 
+//Fishing spot
+328 3110 3432 0
+
+//Quest guide
+949 3093 3505 0
+
+//Fishing spot
+328 3104 3425 0
+
+//Banker
+553 3096 3491 0
+
+//Sigurd
+3329 3112 3414 0
+
+//Banker
+2759 3096 3493 0
+
+//null
+1168 3098 3422 0
+
+//Doris
+3381 3081 3495 0
+
+//null
+2646 3083 3417 0
+
+//null
+637 3106 3500 0
+
+//Tassie Slipcast
+1793 3083 3409 0
+
+//Shop assistant
+529 3079 3507 0
+
+//Banker
+2759 3097 3494 0
+
+//null
+2864 3082 3415 0
+
+//null
+2866 3082 3417 0
+
+//Mandrith
+6537 3091 3495 0
+
+//Litara
+4376 3081 3425 0
+
+//Mr Ex
+3709 3088 3507 0
+
+//Banker
+553 3096 3489 0
+
+//null
+2872 3079 3414 0
+
+//Shopkeeper
+528 3078 3512 0
+
+//Peksa
+538 3076 3429 0
+
+//null
+2876 3078 3444 0
+
+//null
+8070 3089 3515 0
+
+//Hari
+3330 3132 3508 0
+
+//Raccoon
+3287 3073 3443 0
+
+//null
+8347 3125 3483 0
+
+//Student
+7153 3081 3453 0
+
+//Student
+7157 3077 3453 0
+
+//null
+8468 3129 3484 0
+
+//Student
+7155 3079 3455 0
+
+//Student
+7154 3079 3457 0
+
+//Student
+7156 3077 3457 0
+
+//Professor Henry
+7143 3082 3459 0
+
+//null
+2257 3110 3556 0
+
+//Grand Exchange clerk
+2241 3147 3505 0
+
+//Banker
+45 3148 3448 0
+
+//Banker
+3418 3148 3503 0
+
+//Banker
+2718 3149 3506 0
+
+//Banker
+44 3147 3448 0
+
+//Romily Weaklax
+3205 3139 3448 0
+
+//Musician
+3463 3145 3472 0
+
+//Head chef
+847 3143 3447 0
+
+//Raccoon
+6914 3147 3481 0
+
+//Banker
+3293 3148 3477 0
+
+//null
+7744 3149 3411 0
+
+//Gertrude
+780 3151 3410 0
+
+//Grand Exchange clerk
+1419 3147 3479 0
+
+//Banker
+3416 3149 3480 0
+
+//Musician
+8699 3153 3422 0
+
+//Grand Exchange clerk
+2593 3150 3478 0
+
+//Kanel
+784 3155 3406 0
+
+//null
+13482 3184 3488 0
+
+//Caleb
+666 3158 3405 0
+
+//null
+2648 3159 3434 0
+
+//null
+2869 3161 3433 0
+
+//Banker
+2759 3180 3438 0
+
+//Banker
+553 3180 3436 0
+
+//Banker
+553 3180 3440 0
+
+//Banker
+2759 3180 3442 0
+
+//Sani
+4905 3186 3423 0
+
+//Banker
+553 3180 3444 0
+
+//Banker
+553 3191 3443 0
+
+//Banker
+2759 3191 3441 0
+
+//Banker
+553 3191 3439 0
+
+//Banker
+2759 3191 3437 0
+
+//Banker
+553 3191 3435 0
+
+//Banker
+2759 3191 3445 0
+
+//Stray dog
+5917 3200 3399 0
+
+//Gypsy Aris
+9362 3202 3424 0
+
+//Shopkeeper
+551 3203 3397 0
+
+//Zaff
+546 3203 3433 0
+
+//Naff
+359 3203 3435 0
+
+//Thessalia
+548 3204 3417 0
+
+//Iffie
+2778 3204 3419 0
+
+//Shop assistant
+552 3205 3399 0
+
+//Dealga
+11475 3206 3400 0
+
+//Market guard
+11269 3214 3425 0
+
+//Shop assistant
+523 3217 3411 0
+
+//null
+8068 3234 3526 0
+
+//Baraek
+547 3217 3435 0
+
+//Shopkeeper
+522 3218 3415 0
+
+//Benny
+5925 3219 3432 0
+
+//Shilop
+781 3221 3434 0
+
+//Wilough
+783 3221 3435 0
+
+//Dr Harlow
+756 3222 3397 0
+
+//Urist Loric
+11270 3222 3424 0
+
+//Bartender
+733 3226 3399 0
+
+//Tramp
+2792 3228 3412 0
+
+//Horvik
+549 3229 3438 0
+
+//Cook
+5910 3230 3401 0
+
+//Lowe
+550 3232 3423 0
+
+//Stray dog
+5918 3233 3394 0
+
+//Tramp
+11 3235 3401 0
+
+//null
+8124 3238 3412 0
+
+//Cleaner
+5916 3250 3429 0
+
+//Banker
+553 3251 3418 0
+
+//Banker
+553 3252 3418 0
+
+//Aubury
+5913 3253 3402 0
+
+//Banker
+553 3253 3418 0
+
+//Town crier
+6135 3253 3429 0
+
+//Information clerk
+5938 3253 3454 0
+
+//Banker
+2759 3254 3418 0
+
+//Marius Giste
+5933 3254 3443 0
+
+//Banker
+2759 3255 3418 0
+
+//Barnabus Hurma
+5932 3255 3442 0
+
+//Banker
+2759 3256 3418 0
+
+//Circus barker
+8079 3256 3428 0
+
+//Curator Haig Halen
+646 3257 3447 0
+
+//Caden Azro
+5934 3259 3443 0
+
+//Thias Leacke
+5935 3260 3442 0
+
+//Museum guard
+5941 3260 3447 0
+
+//Teacher and pupil
+5947 3260 3452 0
+
+//Schoolboy
+5946 3261 3455 0
+
+//Stray dog
+5917 3262 3410 0
+
+//Guard
+368 3263 3407 0
+
+//Museum guard
+5943 3263 3441 0
+
+//Schoolgirl
+5984 3263 3452 0
+
+//Torrcs
+5939 3253 3453 0
+
+//Marfet
+5940 3262 3442 0
+
+//Ernie
+2414 3263 3400 0
+
+//Art Critic Jacques
+5930 3257 3454 0
+
+//Teacher and pupil
+5947 3261 3451 0
+
+//Museum guard
+4405 3262 3455 0
+
+//Sergeant Strongstack
+6261 2873 5357 0
+
+//Sergeant Steelwill
+6263 2873 5363 0
+
+//Sergeant Grimspike
+6265 2868 5354 0
+
+//General Graardor
+6260 2872 5356 0
+
+//Ashuelot Reis
+13455 2902 5206 0
+
