@@ -13,6 +13,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
 
+import com.rs.Settings;
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
@@ -20,7 +21,7 @@ import com.rs.game.WorldTile;
 public final class NPCSpawns {
 
 	public static final void init() {
-			packNPCSpawns();
+		packNPCSpawns();
 	}
 
 	private static final void packNPCSpawns() {
@@ -34,6 +35,8 @@ public final class NPCSpawns {
 				if (line == null)
 					break;
 				if (line.startsWith("//"))
+					continue;
+				if (line.isEmpty())
 					continue;
 				String[] splitedLine = line.split(" - ", 2);
 				if (splitedLine.length != 2)
@@ -85,10 +88,11 @@ public final class NPCSpawns {
 					mapAreaNameHash = buffer.getInt();
 					canBeAttackFromOutOfArea = buffer.get() == 1;
 				}
-				
+
 				NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcId);
-				
-				FileWriter fstream = new FileWriter("data/npcs/unpacked/unpackedSpawnsList.txt",true);
+
+				FileWriter fstream = new FileWriter(
+						"data/npcs/unpacked/unpackedSpawnsList.txt", true);
 				BufferedWriter output = new BufferedWriter(fstream);
 				output.write("//" + def.name);
 				output.newLine();
@@ -113,6 +117,8 @@ public final class NPCSpawns {
 		try {
 			DataOutputStream out = new DataOutputStream(new FileOutputStream(
 					"data/npcs/packedSpawns/" + regionId + ".ns", true));
+
+
 			out.writeShort(npcId);
 			out.writeByte(tile.getPlane());
 			out.writeShort(tile.getX());

@@ -626,8 +626,8 @@ public class ObjectHandler {
 							break;
 						}
 						break;
-					//godwars---------------------------------------------------
-					//godwars-----------------------------------------------------
+					// godwars---------------------------------------------------
+					// godwars-----------------------------------------------------
 					case "web":
 						if (objectDef.containsOption(0, "Slash")) {
 							player.setNextAnimation(new Animation(PlayerCombat
@@ -705,6 +705,29 @@ public class ObjectHandler {
 							player.getActionManager().setSkill(
 									new Woodcutting(object,
 											TreeDefinitions.CURSED_MAGIC));
+						break;
+					case "wall":
+						if (id == 2606) { // Under karamja Wall
+							if ((player.getLocation().getY() == 9599)
+									&& (player.getLocation().getX() == 2836)
+									&& (player.getPlane() == 0)) {
+								player.setNextWorldTile(new WorldTile(2836,
+										9600, 0));
+							} else {
+								player.setNextWorldTile(new WorldTile(2836,
+										9599, 0));
+							}
+						} else if (id == 25161) {
+							if ((player.getLocation().getX() == 2845)
+									&& (player.getLocation().getY() == 9636)
+									&& (player.getPlane() == 0)) {
+								player.setNextWorldTile(new WorldTile(2847,
+										9636, 0));
+							} else {
+								player.setNextWorldTile(new WorldTile(2845,
+										9636, 0));
+							}
+						}
 						break;
 					// Woodcutting end
 					case "gate":

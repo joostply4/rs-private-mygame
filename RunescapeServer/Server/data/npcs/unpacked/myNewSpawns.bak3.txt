@@ -1,0 +1,293 @@
+//Bronze dragon
+1590 - 2728 9485 0
+
+//Bronze dragon
+1590 - 2726 9487 0
+
+//Bronze dragon
+1590 - 2734 9492 0
+
+//Bronze dragon
+1590 - 2740 9493 0
+
+//Bronze dragon
+1590 - 2741 9490 0
+
+//Bronze dragon
+1590 - 2740 9487 0
+
+//Bronze dragon
+1590 - 2737 9485 0
+
+//Bronze dragon
+1590 - 2732 9482 0
+
+//Iron dragon
+1591 - 2713 9461 0
+
+//Iron dragon
+1591 - 2719 9461 0
+
+//Iron dragon
+1591 - 2725 9457 0
+
+//Iron dragon
+1591 - 2732 9456 0
+
+//Iron dragon
+1591 - 2736 9453 0
+
+//Iron dragon
+1591 - 2731 9447 0
+
+//Iron dragon
+1591 - 2728 9450 0
+
+//Iron dragon
+1591 - 2722 9450 0
+
+//Iron dragon
+1591 - 2716 9455 0
+
+//Iron dragon
+1591 - 2710 9455 0
+
+//Iron dragon
+1591 - 2704 9456 0
+
+//Iron dragon
+1591 - 2707 9451 0
+
+//Iron dragon
+1591 - 2707 9446 0
+
+//Iron dragon
+1591 - 2712 9447 0
+
+//Iron dragon
+1591 - 2718 9447 0
+
+//Iron dragon
+1591 - 2730 9445 0
+
+//Steel dragon
+1592 - 2734 9443 0
+
+//Steel dragon
+1592 - 2735 9439 0
+
+//Steel dragon
+1592 - 2739 9436 0
+
+//Steel dragon
+1592 - 2736 9429 0
+
+//Steel dragon
+1592 - 2733 9428 0
+
+//Steel dragon
+1592 - 2727 9426 0
+
+//Steel dragon
+1592 - 2725 9428 0
+
+//Steel dragon
+1592 - 2721 9427 0
+
+//Steel dragon
+1592 - 2723 9424 0
+
+//Steel dragon
+1592 - 2719 9424 0
+
+//Steel dragon
+1592 - 2715 9424 0
+
+//Steel dragon
+1592 - 2713 9428 0
+
+//Steel dragon
+1592 - 2712 9434 0
+
+//Steel dragon
+1592 - 2718 9439 0
+
+//Steel dragon
+1592 - 2720 9441 0
+
+//Steel dragon
+1592 - 2725 9441 0
+
+//Steel dragon
+1592 - 2712 9441 0
+
+//Steel dragon
+1592 - 2711 9436 0
+//Iron dragon
+1591 - 2704 9437 0
+
+//Iron dragon
+1591 - 2703 9435 0
+
+//Iron dragon
+1591 - 2703 9439 0
+
+//Iron dragon
+1591 - 2701 9453 0
+
+//Iron dragon
+1591 - 2713 9453 0
+
+//Bronze dragon
+1590 - 2717 9480 0
+
+//Bronze dragon
+1590 - 2718 9485 0
+
+//Bronze dragon
+1590 - 2712 9488 0
+
+//Bronze dragon
+1590 - 2706 9488 0
+
+//Bronze dragon
+1590 - 2703 9484 0
+
+//Bronze dragon
+1590 - 2701 9482 0
+
+//Giant skeleton
+5359 - 2865 9572 0
+
+//Giant skeleton
+5359 - 2865 9569 0
+
+//Giant skeleton
+5359 - 2862 9568 0
+
+//Giant skeleton
+5359 - 2861 9572 0
+
+//Giant skeleton
+5359 - 2861 9576 0
+
+//Giant skeleton
+5359 - 2859 9579 0
+
+//Giant skeleton
+5359 - 2857 9577 0
+
+//Giant skeleton
+5359 - 2855 9574 0
+
+//Giant skeleton
+5359 - 2857 9573 0
+
+//Giant skeleton
+5359 - 2859 9572 0
+
+//Giant skeleton
+5359 - 2861 9573 0
+
+//Giant skeleton
+5359 - 2862 9576 0
+
+//Giant skeleton
+5359 - 2861 9578 0
+
+//Giant skeleton
+5359 - 2855 9576 0
+
+//Giant skeleton
+5359 - 2855 9573 0
+
+//Giant skeleton
+5359 - 2852 9572 0
+
+//Deadly red spider
+63 - 2838 9584 0
+
+//Deadly red spider
+63 - 2839 9582 0
+
+//Deadly red spider
+63 - 2842 9581 0
+
+//Deadly red spider
+63 - 2841 9584 0
+
+//Deadly red spider
+63 - 2841 9582 0
+
+//Deadly red spider
+63 - 2840 9584 0
+
+//Deadly red spider
+63 - 2839 9581 0
+
+//Deadly red spider
+63 - 2838 9582 0
+
+//Deadly red spider
+63 - 2837 9580 0
+
+//Deadly red spider
+63 - 2838 9579 0
+
+//Deadly red spider
+63 - 2835 9580 0
+
+//Deadly red spider
+63 - 2833 9581 0
+
+//Deadly red spider
+63 - 2834 9583 0
+
+//Deadly red spider
+63 - 2835 9584 0
+
+//Deadly red spider
+63 - 2836 9584 0
+
+//Deadly red spider
+63 - 2833 9585 0
+
+//Deadly red spider
+63 - 2837 9582 0
+
+//Lesser demon
+4694 - 2837 9568 0
+
+//Lesser demon
+4694 - 2834 9565 0
+
+//Lesser demon
+4694 - 2839 9558 0
+
+//Lesser demon
+4695 - 2843 9559 0
+
+//Lesser demon
+4695 - 2838 9555 0
+
+//Lesser demon
+4696 - 2837 9559 0
+
+//Lesser demon
+4696 - 2836 9562 0
+
+//Lesser demon
+4697 - 2833 9562 0
+
+//Lesser demon
+4697 - 2835 9566 0
+
+//Lesser demon
+4697 - 2831 9564 0
+
+//Lesser demon
+4697 - 2839 9559 0
+
+//Lesser demon
+4697 - 2843 9559 0
+

@@ -1,0 +1,1115 @@
+//Hellhound
+6210 - 2870 9828 0
+
+//Hellhound
+6210 - 2869 9831 0
+
+//Hellhound
+6210 - 2868 9837 0
+
+//Hellhound
+6210 - 2867 9841 0
+
+//Hellhound
+6210 - 2866 9849 0
+
+//Hellhound
+6210 - 2862 9852 0
+
+//Hellhound
+6210 - 2857 9851 0
+
+//Hellhound
+6210 - 2855 9849 0
+
+//Hellhound
+6210 - 2856 9846 0
+
+//Hellhound
+6210 - 2860 9844 0
+
+//Hellhound
+6210 - 2859 9841 0
+
+//Hellhound
+6210 - 2856 9840 0
+
+//Hellhound
+6210 - 2862 9840 0
+
+//Hellhound
+6210 - 2862 9837 0
+
+//Hellhound
+6210 - 2859 9837 0
+
+//Hellhound
+6210 - 2855 9837 0
+
+//Hellhound
+6210 - 2856 9835 0
+
+//Hellhound
+6210 - 2858 9839 0
+
+//Black dragon
+54 - 2838 9824 0
+
+//Black dragon
+54 - 2835 9825 0
+
+//Black dragon
+54 - 2831 9826 0
+
+//Black dragon
+54 - 2830 9825 0
+
+//Skeleton
+5332 - 2882 9813 0
+
+//Skeleton
+5333 - 2883 9815 0
+
+//Skeleton
+5334 - 2886 9818 0
+
+//Skeleton
+5335 - 2883 9820 0
+
+//Skeleton
+5336 - 2881 9823 0
+
+//Skeleton
+5337 - 2884 9825 0
+
+//Skeleton
+5338 - 2887 9827 0
+
+//Skeleton
+5339 - 2883 9827 0
+
+//Skeleton
+5340 - 2884 9825 0
+
+//Skeleton
+5341 - 2886 9828 0
+
+//Chaos druid
+181 - 2910 9830 0
+
+//Chaos druid
+181 - 2908 9830 0
+
+//Chaos druid
+181 - 2905 9830 0
+
+//Chaos druid
+181 - 2904 9833 0
+
+//Chaos druid
+181 - 2904 9837 0
+
+//Chaos druid
+181 - 2906 9839 0
+
+//Chaos druid
+181 - 2909 9840 0
+
+//Chaos druid
+181 - 2912 9840 0
+
+//Chaos druid
+181 - 2914 9840 0
+
+//Chaos druid
+181 - 2917 9839 0
+
+//Chaos druid
+181 - 2920 9837 0
+
+//Chaos druid
+181 - 2921 9835 0
+
+//Chaos druid
+181 - 2924 9833 0
+
+//Chaos druid
+181 - 2927 9832 0
+
+//Chaos druid
+181 - 2927 9830 0
+
+//Chaos druid
+181 - 2927 9827 0
+
+//Chaos druid
+181 - 2926 9824 0
+
+//Chaos druid
+181 - 2922 9824 0
+
+//Chaos druid
+181 - 2919 9826 0
+
+//Chaos druid
+181 - 2917 9827 0
+
+//Chaos druid
+181 - 2913 9827 0
+
+//Chaos druid
+181 - 2911 9828 0
+
+//Chaos druid
+181 - 2907 9827 0
+
+//Chaos druid
+181 - 2905 9825 0
+
+//Chaos druid
+181 - 2904 9829 0
+
+//Chaos druid
+181 - 2907 9831 0
+
+//Chaos druid
+181 - 2909 9832 0
+
+//Chaos druid
+181 - 2907 9835 0
+
+//Chaos druid
+181 - 2910 9833 0
+
+//Chaos druid
+181 - 2912 9830 0
+
+//Chaos druid
+181 - 2915 9827 0
+
+//Magic axe
+127 - 2958 9786 0
+
+//Magic axe
+127 - 2956 9786 0
+
+//Magic axe
+127 - 2956 9790 0
+
+//Magic axe
+127 - 2954 9790 0
+
+//Magic axe
+127 - 2953 9786 0
+
+//Magic axe
+127 - 2954 9784 0
+
+//Magic axe
+127 - 2953 9781 0
+
+//Magic axe
+127 - 2954 9779 0
+
+//Magic axe
+127 - 2954 9776 0
+
+//Magic axe
+127 - 2955 9774 0
+
+//Magic axe
+127 - 2956 9772 0
+
+//Magic axe
+127 - 2959 9772 0
+
+//Magic axe
+127 - 2959 9774 0
+
+//Magic axe
+127 - 2957 9776 0
+
+//Magic axe
+127 - 2959 9778 0
+
+//Magic axe
+127 - 2961 9780 0
+
+//Magic axe
+127 - 2961 9782 0
+
+//Magic axe
+127 - 2960 9784 0
+
+//Magic axe
+127 - 2960 9787 0
+
+//Magic axe
+127 - 2959 9789 0
+
+//Magic axe
+127 - 2956 9791 0
+
+//Magic axe
+127 - 2954 9795 0
+
+//Magic axe
+127 - 2957 9796 0
+
+//Magic axe
+127 - 2959 9795 0
+
+//Magic axe
+127 - 2960 9794 0
+
+//Magic axe
+127 - 2961 9790 0
+
+//Scorpion
+107 - 2964 9791 0
+
+//Scorpion
+107 - 2964 9788 0
+
+//Scorpion
+107 - 2962 9786 0
+
+//Scorpion
+107 - 2961 9784 0
+
+//Scorpion
+107 - 2962 9780 0
+
+//Scorpion
+107 - 2964 9776 0
+
+//Scorpion
+107 - 2962 9776 0
+
+//Scorpion
+107 - 2965 9775 0
+
+//Scorpion
+107 - 2968 9776 0
+
+//Scorpion
+107 - 2967 9780 0
+
+//Scorpion
+107 - 2967 9784 0
+
+//Scorpion
+107 - 2968 9787 0
+
+//Scorpion
+107 - 2966 9791 0
+
+//Scorpion
+107 - 2963 9791 0
+
+//Scorpion
+107 - 2965 9794 0
+
+//Scorpion
+107 - 2968 9793 0
+
+//Scorpion
+107 - 2967 9788 0
+
+//Scorpion
+107 - 2963 9785 0
+
+//Chaos dwarf
+119 - 2924 9756 0
+
+//Chaos dwarf
+119 - 2921 9755 0
+
+//Chaos dwarf
+119 - 2918 9757 0
+
+//Chaos dwarf
+119 - 2916 9758 0
+
+//Chaos dwarf
+119 - 2918 9761 0
+
+//Chaos dwarf
+119 - 2920 9760 0
+
+//Chaos dwarf
+119 - 2922 9760 0
+
+//Chaos dwarf
+119 - 2924 9759 0
+
+//Chaos dwarf
+119 - 2925 9761 0
+
+//Chaos dwarf
+119 - 2927 9760 0
+
+//Chaos dwarf
+119 - 2927 9763 0
+
+//Chaos dwarf
+119 - 2924 9763 0
+
+//Chaos dwarf
+119 - 2923 9761 0
+
+//Chaos dwarf
+119 - 2924 9765 0
+
+//Chaos dwarf
+119 - 2924 9768 0
+
+//Chaos dwarf
+119 - 2926 9768 0
+
+//Chaos dwarf
+119 - 2925 9770 0
+
+//Chaos dwarf
+119 - 2925 9766 0
+
+//Lesser demon
+4694 - 2935 9789 0
+
+//Lesser demon
+4695 - 2933 9790 0
+
+//Lesser demon
+4696 - 2934 9793 0
+
+//Lesser demon
+4697 - 2931 9794 0
+
+//Lesser demon
+4694 - 2931 9798 0
+
+//Lesser demon
+4695 - 2935 9798 0
+
+//Lesser demon
+4696 - 2937 9796 0
+
+//Lesser demon
+4697 - 2937 9793 0
+
+//Lesser demon
+4694 - 2933 9790 0
+
+//Lesser demon
+4695 - 2930 9801 0
+
+//Lesser demon
+4696 - 2928 9802 0
+
+//Lesser demon
+4697 - 2926 9802 0
+
+//Lesser demon
+4694 - 2928 9805 0
+
+//Lesser demon
+4695 - 2931 9808 0
+
+//Lesser demon
+4696 - 2933 9809 0
+
+//Hill Giant
+4689 - 2909 9739 0
+
+//Hill Giant
+4690 - 2907 9739 0
+
+//Hill Giant
+4691 - 2905 9738 0
+
+//Hill Giant
+4692 - 2903 9737 0
+
+//Hill Giant
+4693 - 2901 9734 0
+
+//Hill Giant
+4689 - 2903 9733 0
+
+//Hill Giant
+4690 - 2906 9733 0
+
+//Hill Giant
+4691 - 2908 9733 0
+
+//Hill Giant
+4692 - 2912 9732 0
+
+//Hill Giant
+4693 - 2913 9735 0
+
+//Hill Giant
+4689 - 2911 9736 0
+
+//Hill Giant
+4690 - 2908 9735 0
+
+//Moss giant
+4688 - 2908 9735 0
+
+//Moss giant
+4688 - 2908 9732 0
+
+//Moss giant
+4688 - 2908 9729 0
+
+//Moss giant
+4688 - 2906 9727 0
+
+//Moss giant
+4688 - 2911 9726 0
+
+//Moss giant
+4688 - 2914 9728 0
+
+//Moss giant
+4688 - 2908 9725 0
+
+//Moss giant
+4688 - 2906 9726 0
+
+//Moss giant
+4688 - 2903 9728 0
+
+//Moss giant
+4688 - 2904 9730 0
+
+//Greater demon
+4698 - 2908 9691 0
+
+//Greater demon
+4698 - 2905 9692 0
+
+//Greater demon
+4698 - 2903 9689 0
+
+//Greater demon
+4698 - 2901 9686 0
+
+//Greater demon
+4698 - 2901 9681 0
+
+//Greater demon
+4698 - 2896 9682 0
+
+//Greater demon
+4698 - 2896 9678 0
+
+//Greater demon
+4698 - 2898 9676 0
+
+//Greater demon
+4699 - 2901 9675 0
+
+//Greater demon
+4699 - 2905 9674 0
+
+//Greater demon
+4699 - 2909 9676 0
+
+//Greater demon
+4699 - 2912 9675 0
+
+//Greater demon
+4699 - 2917 9678 0
+
+//Greater demon
+4700 - 2917 9680 0
+
+//Greater demon
+4700 - 2911 9683 0
+
+//Greater demon
+4700 - 2912 9688 0
+
+//Greater demon
+4700 - 2916 9692 0
+
+//Greater demon
+4701 - 2922 9693 0
+
+//Greater demon
+4701 - 2919 9691 0
+
+//Greater demon
+4701 - 2909 9689 0
+
+//Greater demon
+4701 - 2906 9687 0
+
+//Greater demon
+4701 - 2897 9692 0
+
+//Greater demon
+4701 - 2897 9687 0
+
+//Crawling Hand
+1648 - 3410 3535 0
+
+//Crawling Hand
+1648 - 3409 3534 0
+
+//Crawling Hand
+1648 - 3408 3536 0
+
+//Crawling Hand
+1648 - 3409 3539 0
+
+//Crawling Hand
+1649 - 3412 3539 0
+
+//Crawling Hand
+1649 - 3413 3535 0
+
+//Crawling Hand
+1649 - 3410 3536 0
+
+//Crawling Hand
+1649 - 3411 3545 0
+
+//Crawling Hand
+1648 - 3410 3547 0
+
+//Crawling Hand
+1648 - 3411 3550 0
+
+//Crawling Hand
+1648 - 3414 3550 0
+
+//Crawling Hand
+1648 - 3414 3546 0
+
+//Crawling Hand
+1649 - 3416 3544 0
+
+//Crawling Hand
+1649 - 3416 3545 0
+
+//Crawling Hand
+1650 - 3419 3543 0
+
+//Crawling Hand
+1650 - 3419 3545 0
+
+//Crawling Hand
+1650 - 3421 3542 0
+
+//Crawling Hand
+1650 - 3423 3546 0
+
+//Crawling Hand
+1651 - 3421 3549 0
+
+//Crawling Hand
+1651 - 3420 3552 0
+
+//Crawling Hand
+1652 - 3430 3544 0
+
+//Crawling Hand
+1652 - 3431 3542 0
+
+//Crawling Hand
+1653 - 3434 3543 0
+
+//Crawling Hand
+1653 - 3427 3548 0
+
+//Crawling Hand
+1654 - 3426 3552 0
+
+//Crawling Hand
+1654 - 3428 3554 0
+
+//Crawling Hand
+1655 - 3425 3555 0
+
+//Crawling Hand
+1655 - 3426 3558 0
+
+//Crawling Hand
+1655 - 3422 3557 0
+
+//Crawling Hand
+1656 - 3420 3555 0
+
+//Crawling Hand
+1657 - 3415 3558 0
+
+//Crawling Hand
+1655 - 3414 3555 0
+
+//Crawling Hand
+1656 - 3411 3556 0
+
+//Crawling Hand
+1656 - 3411 3560 0
+
+//Crawling Hand
+1657 - 3411 3563 0
+
+//Crawling Hand
+1657 - 3413 3564 0
+
+//Crawling Hand
+1655 - 3412 3559 0
+
+//Banshee
+1612 - 3440 3565 0
+
+//Banshee
+1612 - 3441 3563 0
+
+//Banshee
+1612 - 3440 3561 0
+
+//Banshee
+1612 - 3439 3563 0
+
+//Banshee
+1612 - 3438 3565 0
+
+//Banshee
+1612 - 3435 3563 0
+
+//Banshee
+1612 - 3437 3562 0
+
+//Banshee
+1612 - 3435 3560 0
+
+//Banshee
+1612 - 3431 3564 0
+
+//Banshee
+1612 - 3428 3564 0
+
+//Banshee
+1612 - 3434 3554 0
+
+//Banshee
+1612 - 3433 3551 0
+
+//Banshee
+1612 - 3436 3549 0
+
+//Banshee
+1612 - 3438 3546 0
+
+//Banshee
+1612 - 3441 3547 0
+
+//Banshee
+1612 - 3444 3550 0
+
+//Banshee
+1612 - 3447 3550 0
+
+//Banshee
+1612 - 3446 3547 0
+
+//Banshee
+1612 - 3445 3544 0
+
+//Banshee
+1612 - 3443 3545 0
+
+//Banshee
+1612 - 3441 3542 0
+
+//Banshee
+1612 - 3445 3540 0
+
+//Banshee
+1612 - 3448 3539 0
+
+//Banshee
+1612 - 3445 3537 0
+
+//Banshee
+1612 - 3443 3539 0
+
+//Infernal Mage
+1643 - 3445 3557 1
+
+//Infernal Mage
+1643 - 3442 3557 1
+
+//Infernal Mage
+1643 - 3440 3555 1
+
+//Infernal Mage
+1643 - 3438 3558 1
+
+//Infernal Mage
+1643 - 3438 3565 1
+
+//Infernal Mage
+1643 - 3437 3568 1
+
+//Infernal Mage
+1643 - 3441 3572 1
+
+//Infernal Mage
+1643 - 3447 3572 1
+
+//Infernal Mage
+1644 - 3450 3573 1
+
+//Infernal Mage
+1644 - 3448 3570 1
+
+//Infernal Mage
+1644 - 3444 3569 1
+
+//Infernal Mage
+1644 - 3445 3565 1
+
+//Infernal Mage
+1644 - 3445 3562 1
+
+//Infernal Mage
+1645 - 3437 3563 1
+
+//Infernal Mage
+1645 - 3433 3560 1
+
+//Infernal Mage
+1645 - 3434 3556 1
+
+//Infernal Mage
+1645 - 3431 3556 1
+
+//Infernal Mage
+1645 - 3432 3565 1
+
+//Infernal Mage
+1646 - 3435 3564 1
+
+//Infernal Mage
+1646 - 3437 3567 1
+
+//Infernal Mage
+1646 - 3435 3574 1
+
+//Infernal Mage
+1647 - 3437 3574 1
+
+//Infernal Mage
+1647 - 3442 3574 1
+
+//Infernal Mage
+1647 - 3444 3576 1
+
+//Infernal Mage
+1647 - 3446 3576 1
+
+//Bloodveld
+1618 - 3424 3573 1
+
+//Bloodveld
+1618 - 3420 3573 1
+
+//Bloodveld
+1618 - 3416 3573 1
+
+//Bloodveld
+1618 - 3412 3576 1
+
+//Bloodveld
+1618 - 3418 3567 1
+
+//Bloodveld
+1618 - 3421 3565 1
+
+//Bloodveld
+1618 - 3426 3566 1
+
+//Bloodveld
+1619 - 3426 3560 1
+
+//Bloodveld
+1619 - 3423 3558 1
+
+//Bloodveld
+1619 - 3419 3559 1
+
+//Bloodveld
+1619 - 3415 3561 1
+
+//Bloodveld
+1619 - 3410 3559 1
+
+//Bloodveld
+1619 - 3411 3569 1
+
+//Bloodveld
+1619 - 3408 3574 1
+
+//Bloodveld
+1619 - 3411 3574 1
+
+//Aberrant spectre
+1604 - 3439 3551 1
+
+//Aberrant spectre
+1604 - 3442 3548 1
+
+//Aberrant spectre
+1604 - 3443 3545 1
+
+//Aberrant spectre
+1604 - 3441 3544 1
+
+//Aberrant spectre
+1604 - 3426 3552 1
+
+//Aberrant spectre
+1604 - 3414 3553 1
+
+//Aberrant spectre
+1604 - 3421 3538 1
+
+//Aberrant spectre
+1605 - 3428 3542 1
+
+//Aberrant spectre
+1605 - 3426 3544 1
+
+//Aberrant spectre
+1605 - 3426 3540 1
+
+//Aberrant spectre
+1605 - 3420 3541 1
+
+//Aberrant spectre
+1606 - 3420 3543 1
+
+//Aberrant spectre
+1606 - 3415 3545 1
+
+//Aberrant spectre
+1606 - 3412 3550 1
+
+//Aberrant spectre
+1606 - 3411 3554 1
+
+//Aberrant spectre
+1607 - 3411 3549 1
+
+//Aberrant spectre
+1607 - 3412 3546 1
+
+//Aberrant spectre
+1607 - 3426 3550 1
+
+//Aberrant spectre
+1607 - 3432 3549 1
+
+//Aberrant spectre
+1607 - 3436 3544 1
+
+//Aberrant spectre
+1607 - 3440 3551 1
+
+//Gargoyle
+1610 - 3433 3539 2
+
+//Gargoyle
+1610 - 3435 3536 2
+
+//Gargoyle
+1610 - 3441 3536 2
+
+//Gargoyle
+1610 - 3443 3535 2
+
+//Gargoyle
+1610 - 3448 3534 2
+
+//Gargoyle
+1610 - 3448 3538 2
+
+//Gargoyle
+1610 - 3444 3543 2
+
+//Gargoyle
+1610 - 3440 3543 2
+
+//Gargoyle
+1610 - 3439 3547 2
+
+//Gargoyle
+1610 - 3439 3551 2
+
+//Gargoyle
+1610 - 3443 3550 2
+
+//Gargoyle
+1610 - 3445 3548 2
+
+//Gargoyle
+1610 - 3446 3545 2
+
+//Gargoyle
+1610 - 3434 3547 2
+
+//Gargoyle
+1610 - 3432 3549 2
+
+//Gargoyle
+1610 - 3433 3546 2
+
+//Nechryael
+1613 - 3444 3559 2
+
+//Nechryael
+1613 - 3443 3559 2
+
+//Nechryael
+1613 - 3444 3562 2
+
+//Nechryael
+1613 - 3440 3563 2
+
+//Nechryael
+1613 - 3439 3564 2
+
+//Nechryael
+1613 - 3439 3567 2
+
+//Nechryael
+1613 - 3437 3569 2
+
+//Nechryael
+1613 - 3439 3571 2
+
+//Nechryael
+1613 - 3442 3571 2
+
+//Nechryael
+1613 - 3444 3573 2
+
+//Nechryael
+1613 - 3447 3573 2
+
+//Nechryael
+1613 - 3448 3571 2
+
+//Nechryael
+1613 - 3446 3569 2
+
+//Nechryael
+1613 - 3444 3566 2
+
+//Nechryael
+1613 - 3435 3569 2
+
+//Nechryael
+1613 - 3435 3571 2
+
+//Nechryael
+1613 - 3437 3574 2
+
+//Nechryael
+1613 - 3435 3564 2
+
+//Nechryael
+1613 - 3437 3559 2
+
+//Nechryael
+1613 - 3438 3557 2
+
+//Nechryael
+1613 - 3435 3557 2
+
+//Abyssal demon
+1615 - 3410 3558 2
+
+//Abyssal demon
+1615 - 3412 3560 2
+
+//Abyssal demon
+1615 - 3412 3563 2
+
+//Abyssal demon
+1615 - 3415 3564 2
+
+//Abyssal demon
+1615 - 3416 3566 2
+
+//Abyssal demon
+1615 - 3413 3568 2
+
+//Abyssal demon
+1615 - 3413 3570 2
+
+//Abyssal demon
+1615 - 3409 3572 2
+
+//Abyssal demon
+1615 - 3409 3575 2
+
+//Abyssal demon
+1615 - 3411 3576 2
+
+//Abyssal demon
+1615 - 3413 3576 2
+
+//Abyssal demon
+1615 - 3414 3572 2
+
+//Abyssal demon
+1615 - 3418 3571 2
+
+//Abyssal demon
+1615 - 3420 3574 2
+
+//Abyssal demon
+1615 - 3423 3572 2
+
+//Abyssal demon
+1615 - 3426 3571 2
+
+//Abyssal demon
+1615 - 3428 3569 2
+
+//Abyssal demon
+1615 - 3429 3572 2
+
+//Abyssal demon
+1615 - 3427 3567 2
+
+//Abyssal demon
+1615 - 3429 3564 2
+
+//Abyssal demon
+1615 - 3425 3564 2
+
+//Abyssal demon
+1615 - 3422 3564 2
+
+//Abyssal demon
+1615 - 3419 3562 2
+
+//Abyssal demon
+1615 - 3418 3558 2
+
+//Abyssal demon
+1615 - 3416 3559 2
+
+//Abyssal demon
+1615 - 3413 3558 2
+
+//Abyssal demon
+1615 - 3415 3556 2

@@ -1,0 +1,122 @@
+//Lesser demon
+4694 - 2835 9602 0
+
+//Lesser demon
+4694 - 2839 9610 0
+
+//Lesser demon
+4695 - 2839 9610 0
+
+//Lesser demon
+4695 - 2843 9608 0
+
+//Lesser demon
+4696 - 2840 9605 0
+
+//Lesser demon
+4696 - 2836 9603 0
+
+//Lesser demon
+4697 - 2839 9603 0
+
+//Lesser demon
+4697 - 2839 9612 0
+
+//Giant skeleton
+5359 - 2840 9631 0
+
+//Giant skeleton
+5359 - 2841 9630 0
+
+//Giant skeleton
+5359 - 2842 9633 0
+
+//Giant skeleton
+5359 - 2843 9630 0
+
+//Giant skeleton
+5359 - 2844 9629 0
+
+//Giant skeleton
+5359 - 2844 9633 0
+
+//Giant skeleton
+5359 - 2840 9632 0
+
+//Giant skeleton
+5359 - 2844 9636 0
+
+//Giant skeleton
+5359 - 2844 9634 0
+
+//Giant skeleton
+5359 - 2843 9638 0
+
+//Giant skeleton
+5359 - 2844 9639 0
+
+//Giant skeleton
+5359 - 2844 9641 0
+
+//Giant skeleton
+5359 - 2842 9641 0
+
+//Giant skeleton
+5359 - 2840 9639 0
+
+//Giant skeleton
+5359 - 2840 9642 0
+
+//Giant skeleton
+5359 - 2842 9644 0
+
+//Giant skeleton
+5359 - 2843 9647 0
+
+//Giant skeleton
+5359 - 2841 9649 0
+
+//Giant skeleton
+5359 - 2838 9649 0
+
+//Giant skeleton
+5359 - 2836 9653 0
+
+//Giant skeleton
+5359 - 2839 9653 0
+
+//Giant skeleton
+5359 - 2836 9651 0
+
+//Giant skeleton
+5359 - 2834 9653 0
+
+//Giant skeleton
+5359 - 2835 9657 0
+
+//Giant skeleton
+5359 - 2832 9655 0
+
+//Giant skeleton
+5359 - 2832 9659 0
+
+//Giant skeleton
+5359 - 2830 9657 0
+
+//Elvarg
+742 - 2849 9637 0
+
+//Elvarg
+742 - 2850 9635 0
+
+//Elvarg
+742 - 2853 9632 0
+
+//Elvarg
+742 - 2857 9637 0
+
+//Elvarg
+742 - 2851 9640 0
+
+//Elvarg
+742 - 2850 9635 0

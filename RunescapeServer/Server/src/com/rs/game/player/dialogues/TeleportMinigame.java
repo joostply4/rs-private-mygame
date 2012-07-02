@@ -13,7 +13,7 @@ public class TeleportMinigame extends Dialogue {
 	@Override
 	public void start() {
 		sendDialogue(SEND_5_OPTIONS, "Minigame Teleports", "Duel Arena",
-				"Castle Wars", "Soul Wars", "Dominion Tower", "More Options");
+				"Castle Wars", "Soul Wars", "Dominion Tower", "Dungeoneering");
 	}
 
 	@Override
