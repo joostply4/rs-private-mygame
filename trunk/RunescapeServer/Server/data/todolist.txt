@@ -1,9 +1,5 @@
 TODO:
 
--- Misc --
--Bankers
-	- Spawn all bankers
-
 -- Home --
 -Spawns
 	- Spawn all shop keepers we are going to use
@@ -54,6 +50,9 @@ TODO:
 	- Make a list of coords where there are good spots for skilling (each skill should be a different location?)
 	
 DONE:
+
+-- Misc --
+-Spawn all non combat npcs
 
 -Barrows
 	- Fix Drops from chest
