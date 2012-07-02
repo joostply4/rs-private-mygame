@@ -1,5 +1,63 @@
 TODO:
 
+-- Misc --
+-Bankers
+	- Spawn all bankers
+
+-- Home --
+-Spawns
+	- Spawn all shop keepers we are going to use
+	- Create new shops for all the shop keepers
+
+-- MiniGames --
+-Godwars (2871 5279 2)
+	- Access Armadyl
+		- Spawn Armadyl
+	- Access Bandos
+		- Spawn Bandos
+	- Access Saradomin
+		- Spawn Saradomin
+	- Access Zamorak
+		- Spawn Zamorak
+	- Add Killcount Counter
+		- Spawn Creatures to gain kill count
+		
+-Barrows (Couble be saved for an update)
+	- Fix animations
+	- Fix enemy combat
+		- Create combat scripts for all the barrows champions
+			- Combat Scripts are how the enemy attacks (special skills, lower ability, extra dmg on low health, etc.)
+	
+-- Skills --
+- Slayer (Some of this can be saved for an update to the server later on)
+	- Fix Monsters combat 
+		- Animation/Look and feel
+			- Abberant Spectors
+				- If no nose peg -- lower skills
+				- Use magic projectile
+			- Gargoyles
+				- Keep health at 1
+				- Ability to "Smash"
+			- Abyssal Demons
+				- Teleport players to them or however that works
+		- Basic Combat Scripts
+			- "Slayer Only" monsters all need combat scripts that disallow combat if your slayer level doesnt meet the requirement
+		- Thinking about adding Wyrms and their abilities
+		- Other Slayer monsters
+	- Add all current monsters spawned to the slayer task list (Needs to be done)
+	- Fix first task issue (cows? or w\e) was this an issue?
+	- When changing tasks the monsters that are chosen are the "Weak Monsters"
+	- When getting a NEW task the monsters chosen are slayer level based
+
+-Skills Teleport
+	- Add teleport locations to different skilling locations
+	- Make a list of coords where there are good spots for skilling (each skill should be a different location?)
+	
+DONE:
+
+-Barrows
+	- Fix Drops from chest
+	
 -- Monster Areas -- (Make a teleport button with all these teleports in it)
 -Rock Crabs (2694 3726)
 	- Rock Crabs
@@ -15,10 +73,12 @@ TODO:
 	- Scorpions [107]
 	- Chaos Dwarves [119] 
 	- Hill Giants [4689 - 4693]
-	- Lessar Demons [10492 - 10495]
+	- Lessar Demons [4694 - 4697]
 	- Blue Dragons [4681 - 4684]
 	- Black Demons [4702 - 4705]
 	- Hellhounds [6210]
+	- Chaos Druid [181]
+	- Magic Axe [127]
 	- Black Dragons [54]
 
 -Slayer Tower (3429 3538) (doors kind of work)
@@ -28,11 +88,11 @@ TODO:
 	- Second Floor
 		- Infernal Mages [1643 - 1647]
 		- Bloodvelds [1618, 1619]
-		- Aberant Spectors [1604 - 1607]
+		- Aberant Spectors [npc 1607 - 1607]
 	- Third Floor (Need to fix the position of player when entering third floor)
 		- Gargoyles [1610]
-		- Nechs [1613]
-		- Abbysal Demons [1615]
+		- Nechs [npc 1613]
+		- Abbysal Demons [npc 1615]
 
 -Brimhaven Dungeon (2710 9466)
 	- Bronze Dragons [1590]
@@ -40,28 +100,16 @@ TODO:
 	- Steel Dragons [1592]
 	
 -Under Karamja (2863 9570) (fix wall - able to open)
-	- Lessar Demons [10492 - 10495]
-	- Skeletons [5332 - 5341]
-	- Elvarg [742]
+	- Lessar Demons [4694 - 4697]
+	- Giant Skeletons [5359]
+	- Deadly Red Spiders [63]
+	- Elvarg [npc 742]
 	
 -Green Dragons [Wildy Lv 13 West] (2979 3617)
-	- Green Dragons [4677 - 4680]
+	- Green Dragons [npc 4679 - 4680]
 
 -Green Dragons [Wildy Lv 20 East] (3350 3675)
 	- Green Dragons [4677 - 4680]
 	
--- Bosses --
+-- Bosses -- (2258 4709)
 -King Black Dragon [50]
-
--- MiniGames --
--Godwars (2871 5279 2)
-	- Access Armadyl
-		- Spawn Armadyl
-	- Access Bandos
-		- Spawn Bandos
-	- Access Saradomin
-		- Spawn Saradomin
-	- Access Zamorak
-		- Spawn Zamorak
-	- Add Killcount Counter
-		- Spawn Creatures to gain kill count

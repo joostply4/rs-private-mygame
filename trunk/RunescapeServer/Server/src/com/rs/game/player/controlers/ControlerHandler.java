@@ -30,9 +30,9 @@ public class ControlerHandler {
 			//Class<Controler> value7 = (Class<Controler>) Class;
 					//.forName(StartTutorial.class.getCanonicalName());
 			//handledControlers.put("StartTutorial", value7);
-			//Class<Controler> value8 = (Class<Controler>) Class
-			//		.forName(Barrows.class.getCanonicalName());
-			//handledControlers.put("Barrows", value8);
+			Class<Controler> value8 = (Class<Controler>) Class
+					.forName(Barrows.class.getCanonicalName());
+			handledControlers.put("Barrows", value8);
 			Class<Controler> value9 = (Class<Controler>) Class
 					.forName(Duelarena.class.getCanonicalName());
 			handledControlers.put("Duelarena", value9);

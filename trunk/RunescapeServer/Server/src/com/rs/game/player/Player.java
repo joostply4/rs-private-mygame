@@ -256,6 +256,8 @@ public class Player extends Entity {
 			slayerTask = new SlayerTask();
 		if (auraManager == null)
 			auraManager = new AuraManager();
+		if (controlerManager == null)
+			controlerManager = new ControlerManager();
 		this.session = session;
 		this.username = username;
 		this.displayMode = displayMode;

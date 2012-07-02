@@ -503,12 +503,12 @@ public class Region {
 						loadRegionMap();
 						setLoadMapStage(2);
 						if (!isLoadedObjectSpawns()) {
-							loadObjectSpawns();
 							setLoadedObjectSpawns(true);
+							loadObjectSpawns();
 						}
 						if (!isLoadedNPCSpawns()) {
-							loadNPCSpawns();
 							setLoadedNPCSpawns(true);
+							loadNPCSpawns();
 						}
 					} catch (Throwable e) {
 						Logger.handle(e);

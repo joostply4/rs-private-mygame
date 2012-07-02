@@ -60,7 +60,8 @@ public class NPCSpawnsDumper {
 				
 				NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcId);
 				
-				FileWriter fstream = new FileWriter("data/npcs/unpacked/unpackedSpawnsPackableList.txt",true);
+				
+				FileWriter fstream = new FileWriter("data/npcs/unpacked/ChangeMe.txt",true);
 				BufferedWriter output = new BufferedWriter(fstream);
 				output.write("//" + def.name);
 				output.newLine();
@@ -70,6 +71,7 @@ public class NPCSpawnsDumper {
 				output.close();
 				
 				writtenCount++;
+				
 			}
 			channel.close();
 			in.close();

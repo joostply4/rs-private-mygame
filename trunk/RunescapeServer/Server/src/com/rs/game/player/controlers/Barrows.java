@@ -427,19 +427,15 @@ public class Barrows extends Controler {
 
 	private int[] BARROW_REWARDS = { 4708, 4710, 4712, 4714, 4716, 4718, 4720,
 			4722, 4724, 4726, 4728, 4730, 4732, 4734, 4736, 4738, 4745, 4747,
-			4749, 4751, 4753, 4755, 4757, 4749, };
-
-	private int[] NOTED_LOOT = { 1080, 1114, 1148, 1164, 1202, 1214, 1276,
-			1304, 1320, 1334, 1402, 1404, 562, 563, 564, 565, };
-
-private final int[] COMMON_LOOT = {  558, 560, 562, 565, 4740, 995 };
-			
-	private final int[] UNCOMMON_LOOT = { 165, 159, 141, 129, 6969};
+			4749, 4751, 4753, 4755, 4757, 4759, 21736, 21744, 21752, 21760 };
 	
-	private final int[] RARE_LOOT = { 4708, 4710, 4712, 4714, 4716, 4718, 4720,
-			4722, 4724, 4726, 4728, 4730, 4732, 4734, 4736, 4738, 4745, 4747,
-			4749, 4751, 4753, 4755, 4757, 4749, };
-	
+	// If you want to improve the chance of getting runes/cash just repeat the numbers in here
+	private int[] NOTED_LOOT_AND_RUNES_AND_CASH = { 1080, 1114, 1148, 1164,
+			1202, 1214, 1276, 1304, 1320, 1334, 1402, 1404, 562, 563, 564, 565,
+			558, 560, 4740, 995, 562, 563, 564, 565, 558, 560, 4740, 995 }; 
+
+	private final int[] UNCOMMON_LOOT = { 165, 159, 141, 129, 6969 };
+
 	private final int[] VERYRARE_LOOT = { 1149, 985, 987, };
 
 	private final int[][] HEAD_INDEXES = {
@@ -456,99 +452,124 @@ private final int[] COMMON_LOOT = {  558, 560, 562, 565, 4740, 995 };
 			rewards();
 		} else {
 			spawnLastBrother();
+		}
 	}
-}
 
 	private void addItems(int i, int j, int k, int l) {
-			player.getInventory().addItem(i, j);
-			player.getInventory().addItem(k, l);
-			player.getTemporaryAttributtes().remove("canLoot");
-			player.getTemporaryAttributtes().put("lootedChest", Boolean.TRUE);
-			player.getPackets().sendCameraShake(3, 25, 50, 25, 50);
-			player.getPackets().sendSpawnedObject(
-					new WorldObject(6775, 10, 0, 3551, 9695, 0));
-			sentEarthquake = true;
-			this.reset();
-	
+		player.getInventory().addItem(i, j);
+		player.getInventory().addItem(k, l);
+		player.getTemporaryAttributtes().remove("canLoot");
+		player.getTemporaryAttributtes().put("lootedChest", Boolean.TRUE);
+		player.getPackets().sendCameraShake(3, 25, 50, 25, 50);
+		player.getPackets().sendSpawnedObject(
+				new WorldObject(6775, 10, 0, 3551, 9695, 0));
+		sentEarthquake = true;
+		this.reset();
+
 	}
 
 	private void rewards() {
-			int[] reward = new int[2];
-			int[] rewardN = new int[2];
-			boolean[] stages = new boolean[2];
-			//Reward 1
-			int chance = Utils.getRandom(20);
-			if (chance <= 6 && !stages[0])  {
-				reward[0] = COMMON_LOOT[Utils.getRandom(COMMON_LOOT.length - 1)];
-				if (reward[0] == 558) {
-					rewardN[0] = Utils.getRandom(1795);
-				} else if (reward[0] == 560) {
-					rewardN[0] = Utils.getRandom(391);
-				} else if (reward[0] == 562) {
-					rewardN[0] = Utils.getRandom(773);
-				} else if (reward[0] == 565) {
-					rewardN[0] = Utils.getRandom(164);
-				} else if (reward[0] == 4740) {
-					rewardN[0] = Utils.getRandom(188);
-				} else if (reward[0] == 995) {
-					rewardN[0] = Utils.getRandom(4162);
-				}
-				stages[0] = true;
-			} else if (6 < chance && chance <= 12 && !stages[0]) {
-				reward[0] = UNCOMMON_LOOT[Utils.getRandom(UNCOMMON_LOOT.length - 1)];
-				if (reward[0] == 6969) {
-					rewardN[0] = 4;
-				} else {
-					rewardN[0] = 1;
-				}
-				stages[0] = true;
-			} else if (12 < chance && chance <= 18) {
-				reward[0] = RARE_LOOT[Utils.getRandom(RARE_LOOT.length - 1)];
+		int[] reward = new int[2];
+		int[] rewardN = new int[2];
+		boolean[] stages = new boolean[2];
+
+		double percent = (double) player.getBarrowsKillCount() / 5.0;
+
+		// Reward 1
+		double chance = Utils.getRandom(5) + Utils.getRandom(5)
+				+ Utils.getRandom(5) + Utils.getRandom(5);
+		chance *= percent;
+
+		if (chance <= 12 && !stages[0]) {
+			reward[0] = NOTED_LOOT_AND_RUNES_AND_CASH[Utils
+					.getRandom(NOTED_LOOT_AND_RUNES_AND_CASH.length - 1)];
+			if (reward[0] == 558) {
+				rewardN[0] = Utils.getRandom(17950);
+			} else if (reward[0] == 560) {
+				rewardN[0] = Utils.getRandom(1910);
+			} else if (reward[0] == 562) {
+				rewardN[0] = Utils.getRandom(1730);
+			} else if (reward[0] == 565) {
+				rewardN[0] = Utils.getRandom(1640);
+			} else if (reward[0] == 563) {
+				rewardN[0] = Utils.getRandom(1640);
+			} else if (reward[0] == 564) {
+				rewardN[0] = Utils.getRandom(1640);
+			} else if (reward[0] == 4740) {
+				rewardN[0] = Utils.getRandom(1880);
+			} else if (reward[0] == 995) {
+				rewardN[0] = Utils.getRandom(416200);
+			} else {
 				rewardN[0] = 1;
-				stages[0] = true;
-			} else if (18 < chance && chance <= 20) {
-				reward[0] = VERYRARE_LOOT[Utils.getRandom(VERYRARE_LOOT.length - 1)];
+			}
+			stages[0] = true;
+		} else if (chance > 12 && chance <= 16 && !stages[0]) {
+			reward[0] = UNCOMMON_LOOT[Utils.getRandom(UNCOMMON_LOOT.length - 1)];
+			if (reward[0] == 6969) {
+				rewardN[0] = 4;
+			} else {
 				rewardN[0] = 1;
-				stages[0] = true;
 			}
-			//Reward 2
-			chance = Utils.getRandom(20);
-			if (chance <= 6 && !stages[1])  {
-				reward[0] = COMMON_LOOT[Utils.getRandom(COMMON_LOOT.length - 1)];
-				if (reward[1] == 558) {
-					rewardN[1] = Utils.getRandom(1795);
-				} else if (reward[1] == 560) {
-					rewardN[1] = Utils.getRandom(391);
-				} else if (reward[1] == 562) {
-					rewardN[1] = Utils.getRandom(773);
-				} else if (reward[1] == 565) {
-					rewardN[1] = Utils.getRandom(164);
-				} else if (reward[1] == 4740) {
-					rewardN[1] = Utils.getRandom(188);
-				} else if (reward[1] == 995) {
-					rewardN[1] = Utils.getRandom(4162);
-				}
-				stages[1] = true;
-			} else if (6 < chance && chance <= 12  && !stages[1]) {
-				reward[1] = UNCOMMON_LOOT[Utils.getRandom(UNCOMMON_LOOT.length - 1)];
-				if (reward[1] == 6969) {
-					rewardN[1] = 4;
-				} else {
-					rewardN[1] = 1;
-				}
-				stages[1] = true;
-			} else if (12 < chance && chance <= 18 && !stages[1]) {
-				reward[1] = RARE_LOOT[Utils.getRandom(RARE_LOOT.length - 1)];
+			stages[0] = true;
+		} else if (chance > 16 && chance <= 18) {
+			reward[0] = BARROW_REWARDS[Utils
+					.getRandom(BARROW_REWARDS.length - 1)];
+			rewardN[0] = 1;
+			stages[0] = true;
+		} else if (chance > 18) {
+			reward[0] = VERYRARE_LOOT[Utils.getRandom(VERYRARE_LOOT.length - 1)];
+			rewardN[0] = 1;
+			stages[0] = true;
+		}
+
+		// Reward 2
+		chance = Utils.getRandom(5) + Utils.getRandom(5) + Utils.getRandom(5)
+				+ Utils.getRandom(5);
+		chance *= percent;
+		if (chance <= 12 && !stages[1]) {
+			reward[1] = NOTED_LOOT_AND_RUNES_AND_CASH[Utils
+					.getRandom(NOTED_LOOT_AND_RUNES_AND_CASH.length - 1)];
+			if (reward[1] == 558) {
+				rewardN[1] = Utils.getRandom(17950);
+			} else if (reward[1] == 560) {
+				rewardN[1] = Utils.getRandom(500);
+			} else if (reward[1] == 562) {
+				rewardN[1] = Utils.getRandom(350);
+			} else if (reward[1] == 565) {
+				rewardN[1] = Utils.getRandom(320);
+			} else if (reward[1] == 563) {
+				rewardN[1] = Utils.getRandom(320);
+			} else if (reward[1] == 564) {
+				rewardN[1] = Utils.getRandom(320);
+			} else if (reward[1] == 4740) {
+				rewardN[1] = Utils.getRandom(400);
+			} else if (reward[1] == 995) {
+				rewardN[1] = Utils.getRandom(416200);
+			} else {
 				rewardN[1] = 1;
-				stages[1] = true;
-			} else if (18 < chance && chance <= 20 && !stages[1]) {
-				reward[1] = VERYRARE_LOOT[Utils.getRandom(VERYRARE_LOOT.length - 1)];
+			}
+			stages[1] = true;
+		} else if (chance > 12 && chance <= 16 && !stages[1]) {
+			reward[1] = UNCOMMON_LOOT[Utils.getRandom(UNCOMMON_LOOT.length - 1)];
+			if (reward[1] == 6969) {
+				rewardN[1] = 4;
+			} else {
 				rewardN[1] = 1;
-				stages[1] = true;
 			}
-			
-			if (stages[0] && stages[1]) {
-				addItems(reward[0], rewardN[0], reward[1], rewardN[1]);
-			}
+			stages[1] = true;
+		} else if (chance > 16 && chance <= 18) {
+			reward[1] = BARROW_REWARDS[Utils
+					.getRandom(BARROW_REWARDS.length - 1)];
+			rewardN[1] = 1;
+			stages[1] = true;
+		} else if (chance > 18) {
+			reward[1] = VERYRARE_LOOT[Utils.getRandom(VERYRARE_LOOT.length - 1)];
+			rewardN[1] = 1;
+			stages[1] = true;
+		}
+
+		if (stages[0] && stages[1]) {
+			addItems(reward[0], rewardN[0], reward[1], rewardN[1]);
+		}
 	}
 }

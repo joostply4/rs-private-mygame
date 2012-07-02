@@ -378,7 +378,7 @@ public final class Commands {
 					BufferedWriter output = new BufferedWriter(fstream);
 					output.write("//" + def.name);
 					output.newLine();
-					output.write(npcID + " - " + player.getLocation().getX() + " " + player.getLocation().getY() + " 0");
+					output.write(npcID + " - " + player.getLocation().getX() + " " + player.getLocation().getY() + " " + player.getLocation().getPlane());
 					output.newLine();
 					output.newLine();
 					output.close();
