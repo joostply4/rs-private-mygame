@@ -54,7 +54,7 @@ public class NPCSpawning {
 //		World.spawnNPC(14301, new WorldTile(4212, 5710, 0), -1, true, true);
 //		World.spawnNPC(14301, new WorldTile(4212, 5718, 0), -1, true, true);
 		
-		World.spawnNPC(1265, new WorldTile(2694, 3726, 0), -1, true, false);
+		//World.spawnNPC(1265, new WorldTile(2694, 3726, 0), -1, true, false);
 
 		/*
 		 * World.spawnNPC(14301, new WorldTile(14301, 5710, 0), -1, true, true);
