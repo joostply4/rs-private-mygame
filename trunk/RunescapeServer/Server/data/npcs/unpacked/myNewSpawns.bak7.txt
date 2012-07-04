@@ -1,0 +1,1173 @@
+//Aviansie
+6234 - 2890 5316 2
+
+//Aviansie
+6236 - 2894 5317 2
+
+//Spiritual warrior
+6229 - 2863 5314 2
+
+//Spiritual warrior
+6229 - 2857 5315 2
+
+//Aviansie
+6235 - 2894 5313 2
+
+//Aviansie
+6234 - 2884 5319 2
+
+//Aviansie
+6234 - 2879 5330 2
+
+//Spiritual warrior
+6229 - 2856 5312 2
+
+//Spiritual warrior
+6229 - 2858 5328 2
+
+//Spiritual warrior
+6229 - 2864 5325 2
+
+//Aviansie
+6235 - 2891 5323 2
+
+//Aviansie
+6235 - 2868 5329 2
+
+//Aviansie
+6235 - 2887 5316 2
+
+//Spiritual ranger
+6230 - 2865 5335 2
+
+//Aviansie
+6236 - 2885 5312 2
+
+//Aviansie
+6236 - 2864 5333 2
+
+//Aviansie
+6236 - 2874 5308 2
+
+//Aviansie
+6236 - 2876 5302 2
+
+//Spiritual ranger
+6230 - 2865 5340 2
+
+//Aviansie
+6237 - 2891 5306 2
+
+//Aviansie
+6237 - 2893 5300 2
+
+//Aviansie
+6237 - 2899 5292 2
+
+//Spiritual ranger
+6230 - 2869 5345 2
+
+//Spiritual ranger
+6230 - 2874 5344 2
+
+//Aviansie
+6238 - 2898 5304 2
+
+//Aviansie
+6238 - 2886 5304 2
+
+//Spiritual mage
+6231 - 2883 5297 2
+
+//Spiritual mage
+6231 - 2866 5340 2
+
+//Spiritual mage
+6231 - 2872 5330 2
+
+//Spiritual mage
+6231 - 2879 5328 2
+
+//Aviansie
+6243 - 2882 5288 2
+
+//Aviansie
+6243 - 2876 5291 2
+
+//Aviansie
+6243 - 2874 5287 2
+
+//Aviansie
+6244 - 2872 5299 2
+
+//Aviansie
+6244 - 2870 5293 2
+
+//Aviansie
+6244 - 2862 5290 2
+
+//Spiritual mage
+6231 - 2868 5312 2
+
+//Aviansie
+6245 - 2864 5302 2
+
+//Aviansie
+6245 - 2859 5296 2
+
+//Spiritual mage
+6231 - 2863 5308 2
+
+//Aviansie
+6245 - 2854 5302 2
+
+//Aviansie
+6246 - 2866 5305 2
+
+//Aviansie
+6232 - 2859 5307 2
+
+//Aviansie
+6246 - 2863 5308 2
+
+//Aviansie
+6246 - 2865 5312 2
+
+//Aviansie
+6232 - 2861 5297 2
+
+//Aviansie
+6233 - 2867 5297 2
+
+//Aviansie
+6233 - 2871 5305 2
+
+//Knight of Saradomin
+6258 - 2872 5320 2
+
+//Knight of Saradomin
+6258 - 2868 5323 2
+
+//Knight of Saradomin
+6258 - 2868 5329 2
+
+//Aviansie
+6239 - 2879 5305 2
+
+//Knight of Saradomin
+6258 - 2876 5330 2
+
+//Knight of Saradomin
+6258 - 2888 5325 2
+
+//Aviansie
+6239 - 2890 5311 2
+
+//Knight of Saradomin
+6258 - 2887 5317 2
+
+//Knight of Saradomin
+6259 - 2881 5307 2
+
+//Knight of Saradomin
+6259 - 2877 5304 2
+
+//Aviansie
+6241 - 2894 5310 2
+
+//Knight of Saradomin
+6259 - 2876 5298 2
+
+//Aviansie
+6241 - 2896 5306 2
+
+//Knight of Saradomin
+6259 - 2876 5292 2
+
+//Knight of Saradomin
+6259 - 2868 5288 2
+
+//Knight of Saradomin
+6259 - 2868 5289 2
+
+//Aviansie
+6242 - 2897 5303 2
+
+//Saradomin priest
+6254 - 2867 5298 2
+
+//Saradomin priest
+6254 - 2867 5306 2
+
+//Saradomin priest
+6254 - 2868 5307 2
+
+//Aviansie
+6242 - 2898 5288 2
+
+//Saradomin priest
+6254 - 2865 5316 2
+
+//Saradomin priest
+6254 - 2866 5324 2
+
+//Saradomin priest
+6254 - 2860 5326 2
+
+//Spiritual warrior
+6255 - 2896 5292 2
+
+//Spiritual warrior
+6255 - 2892 5290 2
+
+//Spiritual warrior
+6255 - 2888 5290 2
+
+//Spiritual warrior
+6255 - 2883 5294 2
+
+//Spiritual warrior
+6255 - 2876 5291 2
+
+//Spiritual warrior
+6255 - 2874 5288 2
+
+//Spiritual mage
+6257 - 2871 5286 2
+
+//Spiritual mage
+6257 - 2868 5284 2
+
+//Spiritual mage
+6257 - 2865 5289 2
+
+//Spiritual mage
+6257 - 2859 5293 2
+
+//Spiritual mage
+6257 - 2854 5300 2
+
+//Spiritual ranger
+6256 - 2855 5300 2
+
+//Spiritual ranger
+6256 - 2860 5297 2
+
+//Spiritual ranger
+6256 - 2874 5308 2
+
+//Spiritual ranger
+6256 - 2873 5312 2
+
+//Spiritual ranger
+6256 - 2873 5320 2
+
+//Spiritual ranger
+6256 - 2876 5318 2
+
+//Spiritual ranger
+6256 - 2877 5322 2
+
+//Spiritual ranger
+6256 - 2882 5325 2
+
+//Spiritual ranger
+6256 - 2886 5323 2
+
+//Werewolf
+6213 - 2880 5288 2
+
+//Werewolf
+6213 - 2884 5284 2
+
+//Werewolf
+6213 - 2890 5288 2
+
+//Spiritual warrior
+6219 - 2888 5291 2
+
+//Imp
+6211 - 2891 5318 2
+
+//Imp
+6211 - 2894 5312 2
+
+//Spiritual warrior
+6219 - 2882 5294 2
+
+//Imp
+6211 - 2894 5306 2
+
+//Spiritual warrior
+6219 - 2874 5290 2
+
+//Imp
+6211 - 2893 5300 2
+
+//Imp
+6211 - 2896 5297 2
+
+//Imp
+6211 - 2900 5295 2
+
+//Spiritual ranger
+6220 - 2870 5284 2
+
+//Imp
+6211 - 2894 5292 2
+
+//Spiritual ranger
+6220 - 2868 5288 2
+
+//Imp
+6211 - 2891 5290 2
+
+//Spiritual ranger
+6220 - 2878 5294 2
+
+//Pyrefiend
+6216 - 2890 5288 2
+
+//Spiritual mage
+6221 - 2882 5301 2
+
+//Spiritual mage
+6221 - 2882 5307 2
+
+//Pyrefiend
+6216 - 2885 5294 2
+
+//Spiritual mage
+6221 - 2875 5312 2
+
+//Pyrefiend
+6216 - 2881 5291 2
+
+//Pyrefiend
+6216 - 2879 5286 2
+
+//Pyrefiend
+6216 - 2875 5287 2
+
+//Hellhound
+6210 - 2871 5316 2
+
+//Pyrefiend
+6216 - 2872 5289 2
+
+//Pyrefiend
+6216 - 2864 5293 2
+
+//Hellhound
+6210 - 2882 5320 2
+
+//Pyrefiend
+6216 - 2863 5299 2
+
+//Hellhound
+6210 - 2885 5316 2
+
+//Hellhound
+6210 - 2891 5308 2
+
+//Vampyre
+6214 - 2858 5320 2
+
+//Vampyre
+6214 - 2856 5322 2
+
+//Vampyre
+6214 - 2855 5325 2
+
+//Vampyre
+6214 - 2857 5329 2
+
+//Gorak
+6218 - 2882 5296 2
+
+//Vampyre
+6214 - 2862 5333 2
+
+//Gorak
+6218 - 2876 5305 2
+
+//Bloodveld
+6215 - 2866 5333 2
+
+//Bloodveld
+6215 - 2870 5332 2
+
+//Bloodveld
+6215 - 2873 5329 2
+
+//Bloodveld
+6215 - 2867 5324 2
+
+//Bloodveld
+6215 - 2872 5314 2
+
+//Bloodveld
+6215 - 2872 5307 2
+
+//Werewolf
+6212 - 2878 5305 2
+
+//Werewolf
+6212 - 2880 5299 2
+
+//Werewolf
+6212 - 2885 5305 2
+
+//Werewolf
+6212 - 2897 5304 2
+
+//Spiritual warrior
+6277 - 2897 5293 2
+
+//Spiritual warrior
+6277 - 2893 5292 2
+
+//Spiritual warrior
+6277 - 2887 5289 2
+
+//Hobgoblin
+6275 - 2868 5307 2
+
+//Spiritual mage
+6278 - 2879 5286 2
+
+//Spiritual mage
+6278 - 2876 5286 2
+
+//Hobgoblin
+6275 - 2860 5307 2
+
+//Spiritual mage
+6278 - 2868 5289 2
+
+//Hobgoblin
+6275 - 2861 5298 2
+
+//Spiritual mage
+6278 - 2861 5297 2
+
+//Jogre
+6268 - 2872 5288 2
+
+//Jogre
+6268 - 2878 5288 2
+
+//Spiritual ranger
+6276 - 2859 5308 2
+
+//Jogre
+6268 - 2886 5292 2
+
+//Spiritual ranger
+6276 - 2855 5312 2
+
+//Spiritual ranger
+6276 - 2852 5316 2
+
+//Cyclops
+6269 - 2891 5305 2
+
+//Spiritual ranger
+6276 - 2853 5324 2
+
+//Cyclops
+6269 - 2888 5309 2
+
+//Cyclops
+6269 - 2885 5310 2
+
+//Spiritual ranger
+6276 - 2862 5325 2
+
+//Spiritual ranger
+6276 - 2870 5327 2
+
+//Cyclops
+6270 - 2878 5310 2
+
+//Spiritual ranger
+6276 - 2873 5321 2
+
+//Cyclops
+6270 - 2874 5312 2
+
+//Spiritual ranger
+6276 - 2878 5322 2
+
+//Cyclops
+6270 - 2870 5312 2
+
+//Spiritual ranger
+6276 - 2879 5319 2
+
+//Ork
+6271 - 2865 5317 2
+
+//Spiritual ranger
+6276 - 2883 5319 2
+
+//Ork
+6271 - 2861 5303 2
+
+//Goblin
+6279 - 2883 5324 2
+
+//Ork
+6271 - 2852 5305 2
+
+//Goblin
+6279 - 2885 5323 2
+
+//Goblin
+6279 - 2882 5317 2
+
+//Ork
+6272 - 2862 5297 2
+
+//Goblin
+6279 - 2880 5306 2
+
+//Ork
+6272 - 2866 5291 2
+
+//Goblin
+6279 - 2874 5305 2
+
+//Ork
+6272 - 2876 5287 2
+
+//Goblin
+6279 - 2874 5306 2
+
+//Goblin
+6279 - 2876 5297 2
+
+//Ork
+6273 - 2885 5283 2
+
+//Goblin
+6279 - 2880 5299 2
+
+//Ork
+6273 - 2882 5288 2
+
+//Goblin
+6280 - 2882 5300 2
+
+//Goblin
+6280 - 2880 5295 2
+
+//Ork
+6274 - 2873 5287 2
+
+//Goblin
+6280 - 2876 5291 2
+
+//Ork
+6274 - 2875 5283 2
+
+//Ork
+6274 - 2878 5282 2
+
+//Goblin
+6280 - 2867 5291 2
+
+//Ork
+6274 - 2886 5283 2
+
+//Goblin
+6281 - 2861 5292 2
+
+//Goblin
+6281 - 2856 5297 2
+
+//Goblin
+6281 - 2854 5301 2
+
+//Goblin
+6281 - 2857 5304 2
+
+//Goblin
+6281 - 2859 5310 2
+
+//Goblin
+6281 - 2861 5314 2
+
+//Goblin
+6282 - 2861 5314 2
+
+//Goblin
+6282 - 2859 5318 2
+
+//Goblin
+6282 - 2858 5322 2
+
+//Goblin
+6282 - 2861 5325 2
+
+//Goblin
+6282 - 2866 5325 2
+
+//Goblin
+6283 - 2870 5327 2
+
+//Goblin
+6283 - 2873 5329 2
+
+//Goblin
+6283 - 2877 5328 2
+
+//Goblin
+6283 - 2881 5328 2
+
+//Goblin
+6283 - 2887 5315 2
+
+//Goblin
+6283 - 2877 5292 2
+
+//Goblin
+6283 - 2874 5290 2
+
+//Goblin
+6283 - 2864 5293 2
+
+//Imp
+6211 - 2887 5358 2
+
+//Imp
+6211 - 2893 5361 2
+
+//Imp
+6211 - 2901 5357 2
+
+//Pyrefiend
+6216 - 2903 5350 2
+
+//Pyrefiend
+6216 - 2906 5348 2
+
+//Pyrefiend
+6216 - 2912 5348 2
+
+//Pyrefiend
+6216 - 2918 5351 2
+
+//Vampyre
+6214 - 2923 5350 2
+
+//Vampyre
+6214 - 2927 5344 2
+
+//Vampyre
+6214 - 2919 5340 2
+
+//Vampyre
+6214 - 2914 5341 2
+
+//Bloodveld
+6215 - 2913 5349 2
+
+//Bloodveld
+6215 - 2905 5349 2
+
+//Bloodveld
+6215 - 2902 5362 2
+
+//Werewolf
+6212 - 2892 5353 2
+
+//Werewolf
+6212 - 2887 5362 2
+
+//Werewolf
+6212 - 2908 5357 2
+
+//Werewolf
+6213 - 2915 5355 2
+
+//Werewolf
+6213 - 2921 5347 2
+
+//Werewolf
+6213 - 2927 5343 2
+
+//Spiritual warrior
+6219 - 2931 5345 2
+
+//Spiritual warrior
+6219 - 2935 5351 2
+
+//Spiritual warrior
+6219 - 2929 5356 2
+
+//Spiritual ranger
+6220 - 2921 5357 2
+
+//Spiritual ranger
+6220 - 2918 5351 2
+
+//Spiritual ranger
+6220 - 2910 5349 2
+
+//Spiritual mage
+6221 - 2908 5345 2
+
+//Spiritual mage
+6221 - 2913 5337 2
+
+//Spiritual mage
+6221 - 2919 5342 2
+
+//Spiritual mage
+6221 - 2924 5348 2
+
+//Spiritual mage
+6221 - 2921 5360 2
+
+//Hellhound
+6210 - 2911 5357 2
+
+//Hellhound
+6210 - 2901 5349 2
+
+//Hellhound
+6210 - 2893 5352 2
+
+//Gorak
+6218 - 2889 5358 2
+
+//Gorak
+6218 - 2895 5363 2
+
+//Gorak
+6218 - 2924 5355 2
+
+//Aviansie
+6239 - 2867 5268 2
+
+//Aviansie
+6239 - 2863 5269 2
+
+//Aviansie
+6239 - 2859 5269 2
+
+//Aviansie
+6239 - 2857 5269 2
+
+//Aviansie
+6240 - 2853 5267 2
+
+//Spiritual warrior
+6277 - 2844 5332 2
+
+//Aviansie
+6240 - 2852 5265 2
+
+//Aviansie
+6240 - 2847 5264 2
+
+//Spiritual warrior
+6277 - 2841 5326 2
+
+//Spiritual warrior
+6277 - 2832 5320 2
+
+//Aviansie
+6241 - 2844 5262 2
+
+//Aviansie
+6241 - 2840 5264 2
+
+//Spiritual mage
+6278 - 2828 5333 2
+
+//Aviansie
+6241 - 2838 5266 2
+
+//Aviansie
+6241 - 2837 5269 2
+
+//Spiritual mage
+6278 - 2833 5339 2
+
+//Aviansie
+6241 - 2838 5273 2
+
+//Spiritual mage
+6278 - 2841 5333 2
+
+//Aviansie
+6242 - 2840 5275 2
+
+//Spiritual ranger
+6276 - 2843 5346 2
+
+//Aviansie
+6242 - 2842 5279 2
+
+//Aviansie
+6242 - 2844 5281 2
+
+//Spiritual ranger
+6276 - 2848 5349 2
+
+//Aviansie
+6242 - 2848 5281 2
+
+//Spiritual ranger
+6276 - 2846 5352 2
+
+//Goblin
+6279 - 2839 5354 2
+
+//Goblin
+6279 - 2838 5348 2
+
+//Aviansie
+6243 - 2849 5278 2
+
+//Goblin
+6279 - 2843 5340 2
+
+//Aviansie
+6243 - 2852 5277 2
+
+//Aviansie
+6243 - 2850 5273 2
+
+//Aviansie
+6243 - 2848 5271 2
+
+//Goblin
+6280 - 2853 5351 2
+
+//Goblin
+6280 - 2860 5353 2
+
+//Aviansie
+6244 - 2844 5270 2
+
+//Aviansie
+6244 - 2839 5268 2
+
+//Aviansie
+6244 - 2841 5267 2
+
+//Goblin
+6280 - 2858 5359 2
+
+//Aviansie
+6244 - 2847 5270 2
+
+//Goblin
+6281 - 2842 5358 2
+
+//Goblin
+6281 - 2852 5359 2
+
+//Aviansie
+6245 - 2850 5272 2
+
+//Aviansie
+6245 - 2851 5274 2
+
+//Goblin
+6281 - 2851 5351 2
+
+//Aviansie
+6245 - 2859 5264 2
+
+//Aviansie
+6245 - 2860 5260 2
+
+//Goblin
+6282 - 2849 5345 2
+
+//Goblin
+6282 - 2848 5340 2
+
+//Aviansie
+6246 - 2861 5262 2
+
+//Goblin
+6282 - 2843 5332 2
+
+//Aviansie
+6246 - 2865 5261 2
+
+//Aviansie
+6246 - 2867 5258 2
+
+//Aviansie
+6246 - 2871 5260 2
+
+//Goblin
+6283 - 2838 5327 2
+
+//Goblin
+6283 - 2842 5330 2
+
+//Goblin
+6283 - 2834 5326 2
+
+//Spiritual warrior
+6229 - 2872 5265 2
+
+//Spiritual warrior
+6229 - 2868 5265 2
+
+//Spiritual warrior
+6229 - 2866 5270 2
+
+//Spiritual warrior
+6229 - 2862 5270 2
+
+//Hobgoblin
+6275 - 2830 5319 2
+
+//Spiritual warrior
+6229 - 2850 5270 2
+
+//Hobgoblin
+6275 - 2840 5320 2
+
+//Spiritual ranger
+6230 - 2843 5270 2
+
+//Spiritual ranger
+6230 - 2837 5272 2
+
+//Spiritual ranger
+6230 - 2839 5278 2
+
+//Spiritual ranger
+6230 - 2840 5285 2
+
+//Spiritual ranger
+6230 - 2836 5287 2
+
+//Spiritual mage
+6231 - 2831 5284 2
+
+//Spiritual mage
+6231 - 2834 5283 2
+
+//Spiritual mage
+6231 - 2834 5287 2
+
+//Hobgoblin
+6275 - 2842 5331 2
+
+//Aviansie
+6232 - 2833 5290 2
+
+//Jogre
+6268 - 2842 5342 2
+
+//Aviansie
+6232 - 2835 5290 2
+
+//Aviansie
+6232 - 2841 5289 2
+
+//Jogre
+6268 - 2856 5352 2
+
+//Aviansie
+6232 - 2844 5287 2
+
+//Jogre
+6268 - 2854 5364 2
+
+//Aviansie
+6233 - 2841 5291 2
+
+//Cyclops
+6269 - 2842 5360 2
+
+//Aviansie
+6233 - 2841 5288 2
+
+//Cyclops
+6269 - 2832 5353 2
+
+//Cyclops
+6269 - 2842 5343 2
+
+//Cyclops
+6270 - 2841 5335 2
+
+//Cyclops
+6270 - 2833 5327 2
+
+//Aviansie
+6234 - 2842 5286 2
+
+//Aviansie
+6234 - 2846 5284 2
+
+//Cyclops
+6270 - 2840 5320 2
+
+//Aviansie
+6234 - 2846 5280 2
+
+//Aviansie
+6234 - 2841 5275 2
+
+//Ork
+6271 - 2844 5330 2
+
+//Ork
+6271 - 2837 5348 2
+
+//Ork
+6271 - 2843 5363 2
+
+//Ork
+6271 - 2852 5358 2
+
+//Ork
+6272 - 2856 5351 2
+
+//Ork
+6272 - 2849 5343 2
+
+//Ork
+6272 - 2845 5329 2
+
+//Ork
+6273 - 2837 5322 2
+
+//Ork
+6273 - 2842 5336 2
+
+//Ork
+6273 - 2838 5348 2
+
+//Ork
+6274 - 2847 5349 2
+
+//Ork
+6274 - 2853 5351 2
+
+//Ork
+6274 - 2856 5360 2
+
+//Spiritual warrior
+6255 - 2919 5274 0
+
+//Spiritual warrior
+6255 - 2918 5273 0
+
+//Spiritual warrior
+6255 - 2915 5271 0
+
+//Spiritual warrior
+6255 - 2912 5271 0
+
+//Spiritual mage
+6257 - 2911 5266 0
+
+//Spiritual mage
+6257 - 2911 5264 0
+
+//Spiritual mage
+6257 - 2914 5267 0
+
+//Spiritual mage
+6257 - 2913 5271 0
+
+//Spiritual mage
+6257 - 2917 5270 0
+
+//Spiritual ranger
+6256 - 2916 5269 0
+
+//Spiritual ranger
+6256 - 2913 5270 0
+
+//Spiritual ranger
+6256 - 2910 5270 0
+
+//Spiritual ranger
+6256 - 2912 5266 0
+
+//Knight of Saradomin
+6258 - 2913 5266 0
+
+//Knight of Saradomin
+6258 - 2915 5270 0
+
+//Knight of Saradomin
+6258 - 2918 5272 0
+
+//Knight of Saradomin
+6258 - 2916 5274 0
+
+//Knight of Saradomin
+6259 - 2910 5270 0
+
+//Knight of Saradomin
+6259 - 2914 5269 0
+
+//Knight of Saradomin
+6259 - 2912 5268 0
+
+//Knight of Saradomin
+6259 - 2911 5264 0
+
+//Saradomin priest
+6254 - 2917 5271 0
+
+//Saradomin priest
+6254 - 2919 5273 0
+
+//Saradomin priest
+6254 - 2918 5271 0
+
+//Saradomin priest
+6254 - 2912 5271 0
+
+//Starlight
+6248 - 2899 5261 0
+
+//Wingman Skree
+6223 - 2828 5301 2
+
+//Growler
+6250 - 2896 5269 0
+
+//Flockleader Geerin
+6225 - 2837 5301 2
+
+//Bree
+6252 - 2904 5262 0
+
+//Flight Kilisa
+6227 - 2833 5296 2
+
+//Commander Zilyana
+6247 - 2900 5265 0
+
+//Kree'arra
+6222 - 2832 5304 2
+
+//Tstanon Karlak
+6204 - 2932 5328 2
+
+//Zakl'n Gritch
+6206 - 2932 5322 2
+
+//Balfrug Kreeyath
+6208 - 2924 5321 2
+
+//K'ril Tsutsaroth
+6203 - 2923 5324 2
+
