@@ -24,6 +24,7 @@ import com.rs.game.player.content.Runecrafting;
 import com.rs.game.player.content.Shop;
 import com.rs.game.player.content.SkillCapeCustomizer;
 import com.rs.game.player.content.SkillsDialogue;
+import com.rs.game.player.content.slayer.Slayer;
 import com.rs.game.player.controlers.DuelControler;
 import com.rs.game.player.dialogues.LevelUp;
 import com.rs.game.player.dialogues.Transportation;
@@ -181,30 +182,29 @@ public class ButtonHandler {
 				Magic.processNormalSpell(player, componentId, packetId);
 		} else if (interfaceId == 336) {
 			if (componentId == 0)
-				if(packetId == 81) {
+				if (packetId == 81) {
 					player.getTemporaryAttributtes().put("offerX",
 							Integer.valueOf(slotId));
 					player.getPackets().sendRunScript(108,
 							new Object[] { "Enter Amount:" });
 				}
-				if (packetId == 61)
-					player.getTrade().addItem(player, slotId, 1);
-				else if (packetId == 64)
-					player.getTrade().addItem(player, slotId, 5);
-				else if (packetId == 4)
-					player.getTrade().addItem(player, slotId, 10);
-				else if (packetId == 52)
-					player.getTrade().addItem(player, slotId, 0x7fffffff);
-				else if (packetId == 91)
-					player.getPackets().sendGameMessage(
-							(new StringBuilder("A "))
-									.append((new Item(slotId2, 1))
-											.getDefinitions().getName()
-											.toLowerCase())
-									.append("'s value is ")
-									.append(ItemDefinitions.getItemDefinitions(
-											slotId2).getValue())
-									.append(" gold.").toString());
+			if (packetId == 61)
+				player.getTrade().addItem(player, slotId, 1);
+			else if (packetId == 64)
+				player.getTrade().addItem(player, slotId, 5);
+			else if (packetId == 4)
+				player.getTrade().addItem(player, slotId, 10);
+			else if (packetId == 52)
+				player.getTrade().addItem(player, slotId, 0x7fffffff);
+			else if (packetId == 91)
+				player.getPackets().sendGameMessage(
+						(new StringBuilder("A "))
+								.append((new Item(slotId2, 1)).getDefinitions()
+										.getName().toLowerCase())
+								.append("'s value is ")
+								.append(ItemDefinitions.getItemDefinitions(
+										slotId2).getValue()).append(" gold.")
+								.toString());
 		} else if (interfaceId == 335) {
 			if (componentId == 34)
 				if (packetId == 25)
@@ -219,7 +219,7 @@ public class ButtonHandler {
 									.append(ItemDefinitions.getItemDefinitions(
 											slotId2).getValue())
 									.append(" gold.").toString());
-			if (componentId == 31) 
+			if (componentId == 31)
 				if (packetId == 61)
 					player.getTrade().removeItem(player, slotId, 1);
 				else if (packetId == 64)
@@ -227,10 +227,9 @@ public class ButtonHandler {
 				else if (packetId == 4)
 					player.getTrade().removeItem(player, slotId, 10);
 				else if (packetId == 52)
-					player.getTrade()
-					.removeItem(player, slotId, 0x7fffffff);
+					player.getTrade().removeItem(player, slotId, 0x7fffffff);
 				else if (packetId == 25)
-					//layer.getBank().sendExamine(slotId);
+					// layer.getBank().sendExamine(slotId);
 					return;
 				else if (packetId == 91)
 					player.getPackets().sendGameMessage(
@@ -242,7 +241,7 @@ public class ButtonHandler {
 									.append(ItemDefinitions.getItemDefinitions(
 											slotId2).getValue())
 									.append(" gold.").toString());
-				else if (packetId == 81)  {
+				else if (packetId == 81) {
 					player.getTemporaryAttributtes().put("removeX",
 							Integer.valueOf(slotId));
 					player.getPackets().sendRunScript(108,
@@ -250,14 +249,12 @@ public class ButtonHandler {
 				}
 			if (componentId == 18 || componentId == 12) {
 				player.getTrade().tradeFailed();
-			}
-			else if (componentId == 16)
+			} else if (componentId == 16)
 				player.getTrade().acceptPressed(player);
 		} else if (interfaceId == 334) {
 			if (componentId == 22) {
 				player.getTrade().tradeFailed();
-			}
-			else if (componentId == 21)
+			} else if (componentId == 21)
 				player.getTrade().acceptPressed(player);
 		} else if (interfaceId == 300) {
 			ForgingInterface.handleIComponents(player, componentId);
@@ -344,95 +341,133 @@ public class ButtonHandler {
 							new Object[] { "Enter Amount:" });
 				} else if (packetId == WorldPacketsDecoder.ACTION_BUTTON9_PACKET)
 					player.getInventory().sendExamine(slotId);
-				}
-               } else if (interfaceId == 506) {
-                        switch (componentId) {
-                        case 2: // player ranks
-			player.getInterfaceManager().sendInterface(275);
-			player.getPackets().sendIComponentText(275, 2, "Player Rankings");
-			player.getPackets().sendIComponentText(275, 16, "<img=1> Tori  ");
-			player.getPackets().sendIComponentText(275, 17, "<img=1> Skeptic");
-			player.getPackets().sendIComponentText(275, 18, "<img=1> Vicky / <img=1> Victoria ");
-			player.getPackets().sendIComponentText(275, 19, "<img=0> Skeppy");
-			player.getPackets().sendIComponentText(275, 20, "");
-			player.getPackets().sendIComponentText(275, 21, "<img=0> Staff Applications Unavaliable! <img=0>");
-			player.getPackets().sendIComponentText(275, 22, "");
-			player.getPackets().sendIComponentText(275, 23, "");
-			player.getPackets().sendIComponentText(275, 24, "");
-			player.getPackets().sendIComponentText(275, 25, "");
-			player.getPackets().sendIComponentText(275, 26, "");
-			break;
+			}
+		} else if (interfaceId == 506) {
+			switch (componentId) {
+			case 2: // player ranks
+				player.getInterfaceManager().sendInterface(275);
+				player.getPackets().sendIComponentText(275, 2,
+						"Player Rankings");
+				player.getPackets().sendIComponentText(275, 16,
+						"<img=1> Tori  ");
+				player.getPackets().sendIComponentText(275, 17,
+						"<img=1> Skeptic");
+				player.getPackets().sendIComponentText(275, 18,
+						"<img=1> Vicky / <img=1> Victoria ");
+				player.getPackets().sendIComponentText(275, 19,
+						"<img=0> Skeppy");
+				player.getPackets().sendIComponentText(275, 20, "");
+				player.getPackets().sendIComponentText(275, 21,
+						"<img=0> Staff Applications Unavaliable! <img=0>");
+				player.getPackets().sendIComponentText(275, 22, "");
+				player.getPackets().sendIComponentText(275, 23, "");
+				player.getPackets().sendIComponentText(275, 24, "");
+				player.getPackets().sendIComponentText(275, 25, "");
+				player.getPackets().sendIComponentText(275, 26, "");
+				break;
 			case 4: // commands
-			player.getInterfaceManager().sendInterface(275);
-			player.getPackets().sendIComponentText(275, 2, "Commands");
-			player.getPackets().sendIComponentText(275, 16, "<img=1>::home  ");
-			player.getPackets().sendIComponentText(275, 16, "<img=1>::corp");
-			player.getPackets().sendIComponentText(275, 17, "<img=1>::pvp");
-			player.getPackets().sendIComponentText(275, 18, "<img=1>::multi");
-			player.getPackets().sendIComponentText(275, 19, "<img=1>::curses");
-			player.getPackets().sendIComponentText(275, 20, "<img=1>::ancients");
-			player.getPackets().sendIComponentText(275, 21, "<img=1>::lunar");
-			player.getPackets().sendIComponentText(275, 22, "<img=1>::teleports");
-			player.getPackets().sendIComponentText(275, 23, "");
-			player.getPackets().sendIComponentText(275, 24, "<img=9> Donator Commands <img=10>");
-			player.getPackets().sendIComponentText(275, 25, "::title <id> (e.g. ::title 3)");
-			player.getPackets().sendIComponentText(275, 26, "::yell <message> (e.g. ::yell hello world)");
-			player.getPackets().sendIComponentText(275, 27, "::dzone | teleport to donator zone!");
-			player.getPackets().sendIComponentText(275, 28, "");
-			player.getPackets().sendIComponentText(275, 29, "::animation");
-			player.getPackets().sendIComponentText(275, 30, "::gfx");
-			player.getPackets().sendIComponentText(275, 31, "");
-			player.getPackets().sendIComponentText(275, 32, "<img=1> More coming soon!<img=1>");
-			player.getPackets().sendIComponentText(275, 33, "");
-			player.getPackets().sendIComponentText(275, 34, "");
-			player.getPackets().sendIComponentText(275, 35, "");
-			player.getPackets().sendIComponentText(275, 36, "");
-			player.getPackets().sendIComponentText(275, 37, "");
-			player.getPackets().sendIComponentText(275, 38, "");
-			player.getPackets().sendIComponentText(275, 39, "");
-			player.getPackets().sendIComponentText(275, 40, "");
-			break;
+				player.getInterfaceManager().sendInterface(275);
+				player.getPackets().sendIComponentText(275, 2, "Commands");
+				player.getPackets().sendIComponentText(275, 16,
+						"<img=1>::home  ");
+				player.getPackets()
+						.sendIComponentText(275, 16, "<img=1>::corp");
+				player.getPackets().sendIComponentText(275, 17, "<img=1>::pvp");
+				player.getPackets().sendIComponentText(275, 18,
+						"<img=1>::multi");
+				player.getPackets().sendIComponentText(275, 19,
+						"<img=1>::curses");
+				player.getPackets().sendIComponentText(275, 20,
+						"<img=1>::ancients");
+				player.getPackets().sendIComponentText(275, 21,
+						"<img=1>::lunar");
+				player.getPackets().sendIComponentText(275, 22,
+						"<img=1>::teleports");
+				player.getPackets().sendIComponentText(275, 23, "");
+				player.getPackets().sendIComponentText(275, 24,
+						"<img=9> Donator Commands <img=10>");
+				player.getPackets().sendIComponentText(275, 25,
+						"::title <id> (e.g. ::title 3)");
+				player.getPackets().sendIComponentText(275, 26,
+						"::yell <message> (e.g. ::yell hello world)");
+				player.getPackets().sendIComponentText(275, 27,
+						"::dzone | teleport to donator zone!");
+				player.getPackets().sendIComponentText(275, 28, "");
+				player.getPackets().sendIComponentText(275, 29, "::animation");
+				player.getPackets().sendIComponentText(275, 30, "::gfx");
+				player.getPackets().sendIComponentText(275, 31, "");
+				player.getPackets().sendIComponentText(275, 32,
+						"<img=1> More coming soon!<img=1>");
+				player.getPackets().sendIComponentText(275, 33, "");
+				player.getPackets().sendIComponentText(275, 34, "");
+				player.getPackets().sendIComponentText(275, 35, "");
+				player.getPackets().sendIComponentText(275, 36, "");
+				player.getPackets().sendIComponentText(275, 37, "");
+				player.getPackets().sendIComponentText(275, 38, "");
+				player.getPackets().sendIComponentText(275, 39, "");
+				player.getPackets().sendIComponentText(275, 40, "");
+				break;
 			case 6: // teleports
-                        player.getPackets().sendGameMessage("<col=00ff00><img=1>Please Talk to Quest Guild at home for teleports!<img=1>");
-			break;
+				player.getPackets()
+						.sendGameMessage(
+								"<col=00ff00><img=1>Please Talk to Quest Guild at home for teleports!<img=1>");
+				break;
 			case 8: // updates
-			player.getInterfaceManager().sendInterface(275);
-			player.getPackets().sendIComponentText(275, 2, "Updates");
-			player.getPackets().sendIComponentText(275, 16, "<img=5>- blank - ");
-			player.getPackets().sendIComponentText(275, 16, "-");
-			player.getPackets().sendIComponentText(275, 17, "<img=5>Spell book teleports have been added");
-			player.getPackets().sendIComponentText(275, 18, "<img=5>Quest tab has been perfected!");
-			player.getPackets().sendIComponentText(275, 19, "<img=5>Mr Ex gives new comers infomation.");
-			player.getPackets().sendIComponentText(275, 20, "<img=6>Polypore staff has been added <img=1>");
-			player.getPackets().sendIComponentText(275, 21, "");
-			player.getPackets().sendIComponentText(275, 22, "<img=5> More updates coming soon!");
-			player.getPackets().sendIComponentText(275, 23, "");
-			player.getPackets().sendIComponentText(275, 24, "");
-			player.getPackets().sendIComponentText(275, 25, "");
-			player.getPackets().sendIComponentText(275, 26, "");
-			break;
-                        case 10:  // vote
-			player.getPackets().sendExecMessage("cmd.exe /c start " + Settings.VOTE_LINK);
-			break;
+				player.getInterfaceManager().sendInterface(275);
+				player.getPackets().sendIComponentText(275, 2, "Updates");
+				player.getPackets().sendIComponentText(275, 16,
+						"<img=5>- blank - ");
+				player.getPackets().sendIComponentText(275, 16, "-");
+				player.getPackets().sendIComponentText(275, 17,
+						"<img=5>Spell book teleports have been added");
+				player.getPackets().sendIComponentText(275, 18,
+						"<img=5>Quest tab has been perfected!");
+				player.getPackets().sendIComponentText(275, 19,
+						"<img=5>Mr Ex gives new comers infomation.");
+				player.getPackets().sendIComponentText(275, 20,
+						"<img=6>Polypore staff has been added <img=1>");
+				player.getPackets().sendIComponentText(275, 21, "");
+				player.getPackets().sendIComponentText(275, 22,
+						"<img=5> More updates coming soon!");
+				player.getPackets().sendIComponentText(275, 23, "");
+				player.getPackets().sendIComponentText(275, 24, "");
+				player.getPackets().sendIComponentText(275, 25, "");
+				player.getPackets().sendIComponentText(275, 26, "");
+				break;
+			case 10: // vote
+				player.getPackets().sendExecMessage(
+						"cmd.exe /c start " + Settings.VOTE_LINK);
+				break;
 			case 12: // infomation
-			player.getInterfaceManager().sendInterface(275);
-			player.getPackets().sendIComponentText(275, 2, "Infomation");
-			player.getPackets().sendIComponentText(275, 16, "Owners of rsCalifornia are <img=1> Vicky & <img=1> SKeptic");
-			player.getPackets().sendIComponentText(275, 16, "You can find our server forums at http://java4rsps.com,");
-			player.getPackets().sendIComponentText(275, 17, "or click donate to navigate their.");
-			player.getPackets().sendIComponentText(275, 18, "");
-			player.getPackets().sendIComponentText(275, 19, "RsCalifornia is running on a VPS!");
-			player.getPackets().sendIComponentText(275, 20, "Under beta stage so we are 24/7 but may have some tweaks left to do.");
-			player.getPackets().sendIComponentText(275, 21, "");
-			player.getPackets().sendIComponentText(275, 22, "<img=5> Please read forums for a indebth infomation article.");
-			player.getPackets().sendIComponentText(275, 23, "");
-			player.getPackets().sendIComponentText(275, 24, "");
-			player.getPackets().sendIComponentText(275, 25, "");
-			player.getPackets().sendIComponentText(275, 26, "");
-			break;
-                        case 14: // donor
-			player.getPackets().sendExecMessage("cmd.exe /c start " + Settings.DONATE_LINK);
-			break;
+				player.getInterfaceManager().sendInterface(275);
+				player.getPackets().sendIComponentText(275, 2, "Infomation");
+				player.getPackets()
+						.sendIComponentText(275, 16,
+								"Owners of rsCalifornia are <img=1> Vicky & <img=1> SKeptic");
+				player.getPackets()
+						.sendIComponentText(275, 16,
+								"You can find our server forums at http://java4rsps.com,");
+				player.getPackets().sendIComponentText(275, 17,
+						"or click donate to navigate their.");
+				player.getPackets().sendIComponentText(275, 18, "");
+				player.getPackets().sendIComponentText(275, 19,
+						"RsCalifornia is running on a VPS!");
+				player.getPackets()
+						.sendIComponentText(275, 20,
+								"Under beta stage so we are 24/7 but may have some tweaks left to do.");
+				player.getPackets().sendIComponentText(275, 21, "");
+				player.getPackets()
+						.sendIComponentText(275, 22,
+								"<img=5> Please read forums for a indebth infomation article.");
+				player.getPackets().sendIComponentText(275, 23, "");
+				player.getPackets().sendIComponentText(275, 24, "");
+				player.getPackets().sendIComponentText(275, 25, "");
+				player.getPackets().sendIComponentText(275, 26, "");
+				break;
+			case 14: // donor
+				player.getPackets().sendExecMessage(
+						"cmd.exe /c start " + Settings.DONATE_LINK);
+				break;
 			}
 		} else if (interfaceId == 671) {
 			if (player.getFamiliar() == null
@@ -1310,6 +1345,8 @@ public class ButtonHandler {
 					componentId, packetId);
 		else if (interfaceId == 1079)
 			player.closeInterfaces();
+		else if (interfaceId == 161 || interfaceId == 163 || interfaceId == 164)
+			Slayer.handleRewardsInterface(player, interfaceId, componentId);
 		if (Settings.DEBUG)
 			Logger.log("ButtonHandler", "InterfaceId " + interfaceId
 					+ ", componentId " + componentId + ", slotId " + slotId
@@ -1340,7 +1377,8 @@ public class ButtonHandler {
 		if (item == null || item.getId() != itemId)
 			return false;
 		if (item.getDefinitions().isNoted()
-				|| !item.getDefinitions().isWearItem(player.getAppearence().isMale())) {
+				|| !item.getDefinitions().isWearItem(
+						player.getAppearence().isMale())) {
 			player.getPackets().sendGameMessage("You can't wear that.");
 			return true;
 		}
@@ -1465,7 +1503,8 @@ public class ButtonHandler {
 		if (item == null || item.getId() != itemId)
 			return false;
 		if (item.getDefinitions().isNoted()
-				|| !item.getDefinitions().isWearItem(player.getAppearence().isMale())) {
+				|| !item.getDefinitions().isWearItem(
+						player.getAppearence().isMale())) {
 			player.getPackets().sendGameMessage("You can't wear that.");
 			return false;
 		}

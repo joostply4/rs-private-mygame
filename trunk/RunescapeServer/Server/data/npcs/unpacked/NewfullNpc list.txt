@@ -1,0 +1,5752 @@
+//Rock Crabs
+1265 - 2712 3709 0
+1265 - 2703 3717 0
+1265 - 2710 3719 0
+1265 - 2698 3715 0
+1265 - 2710 3710 0
+1265 - 2710 3711 0
+1265 - 2702 3724 0
+1265 - 2695 3711 0
+1265 - 2705 3715 0
+1265 - 2709 3707 0
+1265 - 2705 3707 0
+1265 - 2699 3721 0
+1265 - 2697 3719 0
+1265 - 2709 3717 0
+1265 - 2696 3725 0
+1265 - 2703 3721 0
+1265 - 2712 3725 0
+1265 - 2709 3708 0
+1265 - 2712 3719 0
+1265 - 2713 3710 0
+1265 - 2711 3711 0
+1265 - 2700 3718 0
+1265 - 2711 3724 0
+1265 - 2712 3723 0
+1265 - 2700 3723 0
+1265 - 2709 3709 0
+1265 - 2703 3718 0
+1265 - 2711 3707 0
+1265 - 2700 3716 0
+1265 - 2708 3708 0
+1265 - 2694 3722 0
+1265 - 2708 3714 0
+1265 - 2699 3720 0
+1265 - 2713 3707 0
+1265 - 2699 3721 0
+1265 - 2697 3716 0
+1265 - 2702 3715 0
+1265 - 2703 3725 0
+1265 - 2694 3709 0
+1265 - 2709 3707 0
+1265 - 2702 3710 0
+//Hill Giant
+4689 - 3100 9835 0
+//Hill Giant
+4690 - 3098 9833 0
+//Hill Giant
+4691 - 3099 9830 0
+//Hill Giant
+4692 - 3105 9829 0
+//Hill Giant
+4693 - 3109 9832 0
+//Hill Giant
+4689 - 3107 9836 0
+//Hill Giant
+4690 - 3109 9842 0
+//Hill Giant
+4691 - 3107 9839 0
+//Hill Giant
+4692 - 3114 9833 0
+//Hill Giant
+4693 - 3118 9833 0
+//Hill Giant
+4689 - 3116 9837 0
+//Hill Giant
+4690 - 3118 9841 0
+//Hill Giant
+4691 - 3116 9844 0
+//Hill Giant
+4692 - 3122 9846 0
+//Hill Giant
+4693 - 3118 9849 0
+//Hill Giant
+4689 - 3114 9849 0
+//Zombie
+5293 - 3131 9862 0
+//Zombie
+5294 - 3130 9861 0
+//Zombie
+5295 - 3128 9861 0
+//Zombie
+5296 - 3128 9863 0
+//Zombie
+5297 - 3127 9865 0
+//Zombie
+5298 - 3126 9866 0
+//Zombie
+5299 - 3125 9863 0
+//Zombie
+5300 - 3126 9862 0
+//Zombie
+5301 - 3124 9862 0
+//Zombie
+5302 - 3124 9863 0
+//Zombie
+5303 - 3126 9866 0
+//Zombie
+5304 - 3126 9864 0
+//Zombie
+5305 - 3124 9862 0
+//Zombie
+5306 - 3124 9863 0
+//Zombie
+5307 - 3124 9864 0
+//Hobgoblin
+6275 - 3118 9871 0
+//Hobgoblin
+6275 - 3120 9873 0
+//Hobgoblin
+6275 - 3122 9874 0
+//Hobgoblin
+6275 - 3122 9876 0
+//Hobgoblin
+6275 - 3123 9879 0
+//Hobgoblin
+6275 - 3124 9879 0
+//Hobgoblin
+6275 - 3125 9877 0
+//Hobgoblin
+6275 - 3126 9875 0
+//Hobgoblin
+6275 - 3124 9873 0
+//Hobgoblin
+6275 - 3123 9874 0
+//Hobgoblin
+6275 - 3126 9875 0
+//Hobgoblin
+6275 - 3128 9873 0
+//Hobgoblin
+6275 - 3130 9874 0
+//Skeleton
+5332 - 3135 9876 0
+//Skeleton
+5333 - 3136 9878 0
+//Skeleton
+5334 - 3137 9877 0
+//Skeleton
+5335 - 3140 9878 0
+//Skeleton
+5336 - 3141 9877 0
+//Skeleton
+5337 - 3142 9875 0
+//Skeleton
+5338 - 3141 9873 0
+//Skeleton
+5339 - 3139 9873 0
+//Skeleton
+5340 - 3142 9870 0
+//Skeleton
+5341 - 3144 9869 0
+//Skeleton
+5332 - 3139 9869 0
+//Skeleton
+5333 - 3136 9870 0
+//Skeleton
+5334 - 3137 9869 0
+//Skeleton
+5335 - 3138 9871 0
+//Blue dragon
+4681 - 2896 9800 0
+//Blue dragon
+4682 - 2903 9798 0
+//Blue dragon
+4683 - 2905 9803 0
+//Blue dragon
+4684 - 2910 9804 0
+//Blue dragon
+4681 - 2912 9800 0
+//Blue dragon
+4682 - 2918 9803 0
+//Blue dragon
+4683 - 2919 9800 0
+//Blue dragon
+4684 - 2912 9799 0
+//Baby blue dragon
+52 - 2899 9763 0
+//Baby blue dragon
+52 - 2900 9766 0
+//Baby blue dragon
+52 - 2898 9769 0
+//Baby blue dragon
+52 - 2897 9772 0
+//Baby blue dragon
+52 - 2895 9771 0
+//Baby blue dragon
+52 - 2894 9769 0
+//Baby blue dragon
+52 - 2892 9768 0
+//Baby blue dragon
+52 - 2892 9772 0
+//Baby blue dragon
+52 - 2894 9771 0
+//Baby blue dragon
+52 - 2889 9768 0
+//Baby blue dragon
+52 - 2890 9771 0
+//Baby blue dragon
+52 - 2893 9770 0
+//Baby blue dragon
+52 - 2894 9766 0
+//Baby blue dragon
+52 - 2896 9765 0
+//Baby blue dragon
+52 - 2898 9766 0
+//Black demon
+4702 - 2873 9778 0
+//Black demon
+4703 - 2870 9776 0
+//Black demon
+4704 - 2868 9772 0
+//Black demon
+4705 - 2865 9770 0
+//Black demon
+4702 - 2863 9767 0
+//Black demon
+4703 - 2861 9765 0
+//Black demon
+4704 - 2858 9766 0
+//Black demon
+4705 - 2856 9771 0
+//Black demon
+4702 - 2854 9772 0
+//Black demon
+4703 - 2853 9775 0
+//Black demon
+4704 - 2851 9776 0
+//Black demon
+4705 - 2856 9780 0
+//Black demon
+4702 - 2861 9781 0
+//Black demon
+4703 - 2861 9784 0
+//Black demon
+4704 - 2865 9785 0
+//Black demon
+4705 - 2867 9783 0
+//Black demon
+4702 - 2872 9783 0
+//Black demon
+4703 - 2875 9781 0
+//Black demon
+4704 - 2869 9779 0
+//Black demon
+4705 - 2864 9776 0
+//Black demon
+4702 - 2861 9777 0
+//Black demon
+4703 - 2859 9777 0
+//Black demon
+4704 - 2856 9776 0
+//Black demon
+4705 - 2861 9772 0
+//Black demon
+4702 - 2867 9779 0
+//Hellhound
+6210 - 2870 9828 0
+
+//Hellhound
+6210 - 2869 9831 0
+
+//Hellhound
+6210 - 2868 9837 0
+
+//Hellhound
+6210 - 2867 9841 0
+
+//Hellhound
+6210 - 2866 9849 0
+
+//Hellhound
+6210 - 2862 9852 0
+
+//Hellhound
+6210 - 2857 9851 0
+
+//Hellhound
+6210 - 2855 9849 0
+
+//Hellhound
+6210 - 2856 9846 0
+
+//Hellhound
+6210 - 2860 9844 0
+
+//Hellhound
+6210 - 2859 9841 0
+
+//Hellhound
+6210 - 2856 9840 0
+
+//Hellhound
+6210 - 2862 9840 0
+
+//Hellhound
+6210 - 2862 9837 0
+
+//Hellhound
+6210 - 2859 9837 0
+
+//Hellhound
+6210 - 2855 9837 0
+
+//Hellhound
+6210 - 2856 9835 0
+
+//Hellhound
+6210 - 2858 9839 0
+
+//Black dragon
+54 - 2838 9824 0
+
+//Black dragon
+54 - 2835 9825 0
+
+//Black dragon
+54 - 2831 9826 0
+
+//Black dragon
+54 - 2830 9825 0
+
+//Skeleton
+5332 - 2882 9813 0
+
+//Skeleton
+5333 - 2883 9815 0
+
+//Skeleton
+5334 - 2886 9818 0
+
+//Skeleton
+5335 - 2883 9820 0
+
+//Skeleton
+5336 - 2881 9823 0
+
+//Skeleton
+5337 - 2884 9825 0
+
+//Skeleton
+5338 - 2887 9827 0
+
+//Skeleton
+5339 - 2883 9827 0
+
+//Skeleton
+5340 - 2884 9825 0
+
+//Skeleton
+5341 - 2886 9828 0
+
+//Chaos druid
+181 - 2910 9830 0
+
+//Chaos druid
+181 - 2908 9830 0
+
+//Chaos druid
+181 - 2905 9830 0
+
+//Chaos druid
+181 - 2904 9833 0
+
+//Chaos druid
+181 - 2904 9837 0
+
+//Chaos druid
+181 - 2906 9839 0
+
+//Chaos druid
+181 - 2909 9840 0
+
+//Chaos druid
+181 - 2912 9840 0
+
+//Chaos druid
+181 - 2914 9840 0
+
+//Chaos druid
+181 - 2917 9839 0
+
+//Chaos druid
+181 - 2920 9837 0
+
+//Chaos druid
+181 - 2921 9835 0
+
+//Chaos druid
+181 - 2924 9833 0
+
+//Chaos druid
+181 - 2927 9832 0
+
+//Chaos druid
+181 - 2927 9830 0
+
+//Chaos druid
+181 - 2927 9827 0
+
+//Chaos druid
+181 - 2926 9824 0
+
+//Chaos druid
+181 - 2922 9824 0
+
+//Chaos druid
+181 - 2919 9826 0
+
+//Chaos druid
+181 - 2917 9827 0
+
+//Chaos druid
+181 - 2913 9827 0
+
+//Chaos druid
+181 - 2911 9828 0
+
+//Chaos druid
+181 - 2907 9827 0
+
+//Chaos druid
+181 - 2905 9825 0
+
+//Chaos druid
+181 - 2904 9829 0
+
+//Chaos druid
+181 - 2907 9831 0
+
+//Chaos druid
+181 - 2909 9832 0
+
+//Chaos druid
+181 - 2907 9835 0
+
+//Chaos druid
+181 - 2910 9833 0
+
+//Chaos druid
+181 - 2912 9830 0
+
+//Chaos druid
+181 - 2915 9827 0
+
+//Magic axe
+127 - 2958 9786 0
+
+//Magic axe
+127 - 2956 9786 0
+
+//Magic axe
+127 - 2956 9790 0
+
+//Magic axe
+127 - 2954 9790 0
+
+//Magic axe
+127 - 2953 9786 0
+
+//Magic axe
+127 - 2954 9784 0
+
+//Magic axe
+127 - 2953 9781 0
+
+//Magic axe
+127 - 2954 9779 0
+
+//Magic axe
+127 - 2954 9776 0
+
+//Magic axe
+127 - 2955 9774 0
+
+//Magic axe
+127 - 2956 9772 0
+
+//Magic axe
+127 - 2959 9772 0
+
+//Magic axe
+127 - 2959 9774 0
+
+//Magic axe
+127 - 2957 9776 0
+
+//Magic axe
+127 - 2959 9778 0
+
+//Magic axe
+127 - 2961 9780 0
+
+//Magic axe
+127 - 2961 9782 0
+
+//Magic axe
+127 - 2960 9784 0
+
+//Magic axe
+127 - 2960 9787 0
+
+//Magic axe
+127 - 2959 9789 0
+
+//Magic axe
+127 - 2956 9791 0
+
+//Magic axe
+127 - 2954 9795 0
+
+//Magic axe
+127 - 2957 9796 0
+
+//Magic axe
+127 - 2959 9795 0
+
+//Magic axe
+127 - 2960 9794 0
+
+//Magic axe
+127 - 2961 9790 0
+
+//Scorpion
+107 - 2964 9791 0
+
+//Scorpion
+107 - 2964 9788 0
+
+//Scorpion
+107 - 2962 9786 0
+
+//Scorpion
+107 - 2961 9784 0
+
+//Scorpion
+107 - 2962 9780 0
+
+//Scorpion
+107 - 2964 9776 0
+
+//Scorpion
+107 - 2962 9776 0
+
+//Scorpion
+107 - 2965 9775 0
+
+//Scorpion
+107 - 2968 9776 0
+
+//Scorpion
+107 - 2967 9780 0
+
+//Scorpion
+107 - 2967 9784 0
+
+//Scorpion
+107 - 2968 9787 0
+
+//Scorpion
+107 - 2966 9791 0
+
+//Scorpion
+107 - 2963 9791 0
+
+//Scorpion
+107 - 2965 9794 0
+
+//Scorpion
+107 - 2968 9793 0
+
+//Scorpion
+107 - 2967 9788 0
+
+//Scorpion
+107 - 2963 9785 0
+
+//Chaos dwarf
+119 - 2924 9756 0
+
+//Chaos dwarf
+119 - 2921 9755 0
+
+//Chaos dwarf
+119 - 2918 9757 0
+
+//Chaos dwarf
+119 - 2916 9758 0
+
+//Chaos dwarf
+119 - 2918 9761 0
+
+//Chaos dwarf
+119 - 2920 9760 0
+
+//Chaos dwarf
+119 - 2922 9760 0
+
+//Chaos dwarf
+119 - 2924 9759 0
+
+//Chaos dwarf
+119 - 2925 9761 0
+
+//Chaos dwarf
+119 - 2927 9760 0
+
+//Chaos dwarf
+119 - 2927 9763 0
+
+//Chaos dwarf
+119 - 2924 9763 0
+
+//Chaos dwarf
+119 - 2923 9761 0
+
+//Chaos dwarf
+119 - 2924 9765 0
+
+//Chaos dwarf
+119 - 2924 9768 0
+
+//Chaos dwarf
+119 - 2926 9768 0
+
+//Chaos dwarf
+119 - 2925 9770 0
+
+//Chaos dwarf
+119 - 2925 9766 0
+
+//Lesser demon
+4694 - 2935 9789 0
+
+//Lesser demon
+4695 - 2933 9790 0
+
+//Lesser demon
+4696 - 2934 9793 0
+
+//Lesser demon
+4697 - 2931 9794 0
+
+//Lesser demon
+4694 - 2931 9798 0
+
+//Lesser demon
+4695 - 2935 9798 0
+
+//Lesser demon
+4696 - 2937 9796 0
+
+//Lesser demon
+4697 - 2937 9793 0
+
+//Lesser demon
+4694 - 2933 9790 0
+
+//Lesser demon
+4695 - 2930 9801 0
+
+//Lesser demon
+4696 - 2928 9802 0
+
+//Lesser demon
+4697 - 2926 9802 0
+
+//Lesser demon
+4694 - 2928 9805 0
+
+//Lesser demon
+4695 - 2931 9808 0
+
+//Lesser demon
+4696 - 2933 9809 0
+
+//Hill Giant
+4689 - 2909 9739 0
+
+//Hill Giant
+4690 - 2907 9739 0
+
+//Hill Giant
+4691 - 2905 9738 0
+
+//Hill Giant
+4692 - 2903 9737 0
+
+//Hill Giant
+4693 - 2901 9734 0
+
+//Hill Giant
+4689 - 2903 9733 0
+
+//Hill Giant
+4690 - 2906 9733 0
+
+//Hill Giant
+4691 - 2908 9733 0
+
+//Hill Giant
+4692 - 2912 9732 0
+
+//Hill Giant
+4693 - 2913 9735 0
+
+//Hill Giant
+4689 - 2911 9736 0
+
+//Hill Giant
+4690 - 2908 9735 0
+
+//Moss giant
+4688 - 2908 9735 0
+
+//Moss giant
+4688 - 2908 9732 0
+
+//Moss giant
+4688 - 2908 9729 0
+
+//Moss giant
+4688 - 2906 9727 0
+
+//Moss giant
+4688 - 2911 9726 0
+
+//Moss giant
+4688 - 2914 9728 0
+
+//Moss giant
+4688 - 2908 9725 0
+
+//Moss giant
+4688 - 2906 9726 0
+
+//Moss giant
+4688 - 2903 9728 0
+
+//Moss giant
+4688 - 2904 9730 0
+
+//Greater demon
+4698 - 2908 9691 0
+
+//Greater demon
+4698 - 2905 9692 0
+
+//Greater demon
+4698 - 2903 9689 0
+
+//Greater demon
+4698 - 2901 9686 0
+
+//Greater demon
+4698 - 2901 9681 0
+
+//Greater demon
+4698 - 2896 9682 0
+
+//Greater demon
+4698 - 2896 9678 0
+
+//Greater demon
+4698 - 2898 9676 0
+
+//Greater demon
+4699 - 2901 9675 0
+
+//Greater demon
+4699 - 2905 9674 0
+
+//Greater demon
+4699 - 2909 9676 0
+
+//Greater demon
+4699 - 2912 9675 0
+
+//Greater demon
+4699 - 2917 9678 0
+
+//Greater demon
+4700 - 2917 9680 0
+
+//Greater demon
+4700 - 2911 9683 0
+
+//Greater demon
+4700 - 2912 9688 0
+
+//Greater demon
+4700 - 2916 9692 0
+
+//Greater demon
+4701 - 2922 9693 0
+
+//Greater demon
+4701 - 2919 9691 0
+
+//Greater demon
+4701 - 2909 9689 0
+
+//Greater demon
+4701 - 2906 9687 0
+
+//Greater demon
+4701 - 2897 9692 0
+
+//Greater demon
+4701 - 2897 9687 0
+
+//Crawling Hand
+1648 - 3410 3535 0
+
+//Crawling Hand
+1648 - 3409 3534 0
+
+//Crawling Hand
+1648 - 3408 3536 0
+
+//Crawling Hand
+1648 - 3409 3539 0
+
+//Crawling Hand
+1649 - 3412 3539 0
+
+//Crawling Hand
+1649 - 3413 3535 0
+
+//Crawling Hand
+1649 - 3410 3536 0
+
+//Crawling Hand
+1649 - 3411 3545 0
+
+//Crawling Hand
+1648 - 3410 3547 0
+
+//Crawling Hand
+1648 - 3411 3550 0
+
+//Crawling Hand
+1648 - 3414 3550 0
+
+//Crawling Hand
+1648 - 3414 3546 0
+
+//Crawling Hand
+1649 - 3416 3544 0
+
+//Crawling Hand
+1649 - 3416 3545 0
+
+//Crawling Hand
+1650 - 3419 3543 0
+
+//Crawling Hand
+1650 - 3419 3545 0
+
+//Crawling Hand
+1650 - 3421 3542 0
+
+//Crawling Hand
+1650 - 3423 3546 0
+
+//Crawling Hand
+1651 - 3421 3549 0
+
+//Crawling Hand
+1651 - 3420 3552 0
+
+//Crawling Hand
+1652 - 3430 3544 0
+
+//Crawling Hand
+1652 - 3431 3542 0
+
+//Crawling Hand
+1653 - 3434 3543 0
+
+//Crawling Hand
+1653 - 3427 3548 0
+
+//Crawling Hand
+1654 - 3426 3552 0
+
+//Crawling Hand
+1654 - 3428 3554 0
+
+//Crawling Hand
+1655 - 3425 3555 0
+
+//Crawling Hand
+1655 - 3426 3558 0
+
+//Crawling Hand
+1655 - 3422 3557 0
+
+//Crawling Hand
+1656 - 3420 3555 0
+
+//Crawling Hand
+1657 - 3415 3558 0
+
+//Crawling Hand
+1655 - 3414 3555 0
+
+//Crawling Hand
+1656 - 3411 3556 0
+
+//Crawling Hand
+1656 - 3411 3560 0
+
+//Crawling Hand
+1657 - 3411 3563 0
+
+//Crawling Hand
+1657 - 3413 3564 0
+
+//Crawling Hand
+1655 - 3412 3559 0
+
+//Banshee
+1612 - 3440 3565 0
+
+//Banshee
+1612 - 3441 3563 0
+
+//Banshee
+1612 - 3440 3561 0
+
+//Banshee
+1612 - 3439 3563 0
+
+//Banshee
+1612 - 3438 3565 0
+
+//Banshee
+1612 - 3435 3563 0
+
+//Banshee
+1612 - 3437 3562 0
+
+//Banshee
+1612 - 3435 3560 0
+
+//Banshee
+1612 - 3431 3564 0
+
+//Banshee
+1612 - 3428 3564 0
+
+//Banshee
+1612 - 3434 3554 0
+
+//Banshee
+1612 - 3433 3551 0
+
+//Banshee
+1612 - 3436 3549 0
+
+//Banshee
+1612 - 3438 3546 0
+
+//Banshee
+1612 - 3441 3547 0
+
+//Banshee
+1612 - 3444 3550 0
+
+//Banshee
+1612 - 3447 3550 0
+
+//Banshee
+1612 - 3446 3547 0
+
+//Banshee
+1612 - 3445 3544 0
+
+//Banshee
+1612 - 3443 3545 0
+
+//Banshee
+1612 - 3441 3542 0
+
+//Banshee
+1612 - 3445 3540 0
+
+//Banshee
+1612 - 3448 3539 0
+
+//Banshee
+1612 - 3445 3537 0
+
+//Banshee
+1612 - 3443 3539 0
+
+//Infernal Mage
+1643 - 3445 3557 1
+
+//Infernal Mage
+1643 - 3442 3557 1
+
+//Infernal Mage
+1643 - 3440 3555 1
+
+//Infernal Mage
+1643 - 3438 3558 1
+
+//Infernal Mage
+1643 - 3438 3565 1
+
+//Infernal Mage
+1643 - 3437 3568 1
+
+//Infernal Mage
+1643 - 3441 3572 1
+
+//Infernal Mage
+1643 - 3447 3572 1
+
+//Infernal Mage
+1644 - 3450 3573 1
+
+//Infernal Mage
+1644 - 3448 3570 1
+
+//Infernal Mage
+1644 - 3444 3569 1
+
+//Infernal Mage
+1644 - 3445 3565 1
+
+//Infernal Mage
+1644 - 3445 3562 1
+
+//Infernal Mage
+1645 - 3437 3563 1
+
+//Infernal Mage
+1645 - 3433 3560 1
+
+//Infernal Mage
+1645 - 3434 3556 1
+
+//Infernal Mage
+1645 - 3431 3556 1
+
+//Infernal Mage
+1645 - 3432 3565 1
+
+//Infernal Mage
+1646 - 3435 3564 1
+
+//Infernal Mage
+1646 - 3437 3567 1
+
+//Infernal Mage
+1646 - 3435 3574 1
+
+//Infernal Mage
+1647 - 3437 3574 1
+
+//Infernal Mage
+1647 - 3442 3574 1
+
+//Infernal Mage
+1647 - 3444 3576 1
+
+//Infernal Mage
+1647 - 3446 3576 1
+
+//Bloodveld
+1618 - 3424 3573 1
+
+//Bloodveld
+1618 - 3420 3573 1
+
+//Bloodveld
+1618 - 3416 3573 1
+
+//Bloodveld
+1618 - 3412 3576 1
+
+//Bloodveld
+1618 - 3418 3567 1
+
+//Bloodveld
+1618 - 3421 3565 1
+
+//Bloodveld
+1618 - 3426 3566 1
+
+//Bloodveld
+1619 - 3426 3560 1
+
+//Bloodveld
+1619 - 3423 3558 1
+
+//Bloodveld
+1619 - 3419 3559 1
+
+//Bloodveld
+1619 - 3415 3561 1
+
+//Bloodveld
+1619 - 3410 3559 1
+
+//Bloodveld
+1619 - 3411 3569 1
+
+//Bloodveld
+1619 - 3408 3574 1
+
+//Bloodveld
+1619 - 3411 3574 1
+
+//Aberrant spectre
+1604 - 3439 3551 1
+
+//Aberrant spectre
+1604 - 3442 3548 1
+
+//Aberrant spectre
+1604 - 3443 3545 1
+
+//Aberrant spectre
+1604 - 3441 3544 1
+
+//Aberrant spectre
+1604 - 3426 3552 1
+
+//Aberrant spectre
+1604 - 3414 3553 1
+
+//Aberrant spectre
+1604 - 3421 3538 1
+
+//Aberrant spectre
+1605 - 3428 3542 1
+
+//Aberrant spectre
+1605 - 3426 3544 1
+
+//Aberrant spectre
+1605 - 3426 3540 1
+
+//Aberrant spectre
+1605 - 3420 3541 1
+
+//Aberrant spectre
+1606 - 3420 3543 1
+
+//Aberrant spectre
+1606 - 3415 3545 1
+
+//Aberrant spectre
+1606 - 3412 3550 1
+
+//Aberrant spectre
+1606 - 3411 3554 1
+
+//Aberrant spectre
+1607 - 3411 3549 1
+
+//Aberrant spectre
+1607 - 3412 3546 1
+
+//Aberrant spectre
+1607 - 3426 3550 1
+
+//Aberrant spectre
+1607 - 3432 3549 1
+
+//Aberrant spectre
+1607 - 3436 3544 1
+
+//Aberrant spectre
+1607 - 3440 3551 1
+
+//Gargoyle
+1610 - 3433 3539 2
+
+//Gargoyle
+1610 - 3435 3536 2
+
+//Gargoyle
+1610 - 3441 3536 2
+
+//Gargoyle
+1610 - 3443 3535 2
+
+//Gargoyle
+1610 - 3448 3534 2
+
+//Gargoyle
+1610 - 3448 3538 2
+
+//Gargoyle
+1610 - 3444 3543 2
+
+//Gargoyle
+1610 - 3440 3543 2
+
+//Gargoyle
+1610 - 3439 3547 2
+
+//Gargoyle
+1610 - 3439 3551 2
+
+//Gargoyle
+1610 - 3443 3550 2
+
+//Gargoyle
+1610 - 3445 3548 2
+
+//Gargoyle
+1610 - 3446 3545 2
+
+//Gargoyle
+1610 - 3434 3547 2
+
+//Gargoyle
+1610 - 3432 3549 2
+
+//Gargoyle
+1610 - 3433 3546 2
+
+//Nechryael
+1613 - 3444 3559 2
+
+//Nechryael
+1613 - 3443 3559 2
+
+//Nechryael
+1613 - 3444 3562 2
+
+//Nechryael
+1613 - 3440 3563 2
+
+//Nechryael
+1613 - 3439 3564 2
+
+//Nechryael
+1613 - 3439 3567 2
+
+//Nechryael
+1613 - 3437 3569 2
+
+//Nechryael
+1613 - 3439 3571 2
+
+//Nechryael
+1613 - 3442 3571 2
+
+//Nechryael
+1613 - 3444 3573 2
+
+//Nechryael
+1613 - 3447 3573 2
+
+//Nechryael
+1613 - 3448 3571 2
+
+//Nechryael
+1613 - 3446 3569 2
+
+//Nechryael
+1613 - 3444 3566 2
+
+//Nechryael
+1613 - 3435 3569 2
+
+//Nechryael
+1613 - 3435 3571 2
+
+//Nechryael
+1613 - 3437 3574 2
+
+//Nechryael
+1613 - 3435 3564 2
+
+//Nechryael
+1613 - 3437 3559 2
+
+//Nechryael
+1613 - 3438 3557 2
+
+//Nechryael
+1613 - 3435 3557 2
+
+//Abyssal demon
+1615 - 3410 3558 2
+
+//Abyssal demon
+1615 - 3412 3560 2
+
+//Abyssal demon
+1615 - 3412 3563 2
+
+//Abyssal demon
+1615 - 3415 3564 2
+
+//Abyssal demon
+1615 - 3416 3566 2
+
+//Abyssal demon
+1615 - 3413 3568 2
+
+//Abyssal demon
+1615 - 3413 3570 2
+
+//Abyssal demon
+1615 - 3409 3572 2
+
+//Abyssal demon
+1615 - 3409 3575 2
+
+//Abyssal demon
+1615 - 3411 3576 2
+
+//Abyssal demon
+1615 - 3413 3576 2
+
+//Abyssal demon
+1615 - 3414 3572 2
+
+//Abyssal demon
+1615 - 3418 3571 2
+
+//Abyssal demon
+1615 - 3420 3574 2
+
+//Abyssal demon
+1615 - 3423 3572 2
+
+//Abyssal demon
+1615 - 3426 3571 2
+
+//Abyssal demon
+1615 - 3428 3569 2
+
+//Abyssal demon
+1615 - 3429 3572 2
+
+//Abyssal demon
+1615 - 3427 3567 2
+
+//Abyssal demon
+1615 - 3429 3564 2
+
+//Abyssal demon
+1615 - 3425 3564 2
+
+//Abyssal demon
+1615 - 3422 3564 2
+
+//Abyssal demon
+1615 - 3419 3562 2
+
+//Abyssal demon
+1615 - 3418 3558 2
+
+//Abyssal demon
+1615 - 3416 3559 2
+
+//Abyssal demon
+1615 - 3413 3558 2
+
+//Abyssal demon
+1615 - 3415 3556 2
+//Bronze dragon
+1590 - 2728 9485 0
+
+//Bronze dragon
+1590 - 2726 9487 0
+
+//Bronze dragon
+1590 - 2734 9492 0
+
+//Bronze dragon
+1590 - 2740 9493 0
+
+//Bronze dragon
+1590 - 2741 9490 0
+
+//Bronze dragon
+1590 - 2740 9487 0
+
+//Bronze dragon
+1590 - 2737 9485 0
+
+//Bronze dragon
+1590 - 2732 9482 0
+
+//Iron dragon
+1591 - 2713 9461 0
+
+//Iron dragon
+1591 - 2719 9461 0
+
+//Iron dragon
+1591 - 2725 9457 0
+
+//Iron dragon
+1591 - 2732 9456 0
+
+//Iron dragon
+1591 - 2736 9453 0
+
+//Iron dragon
+1591 - 2731 9447 0
+
+//Iron dragon
+1591 - 2728 9450 0
+
+//Iron dragon
+1591 - 2722 9450 0
+
+//Iron dragon
+1591 - 2716 9455 0
+
+//Iron dragon
+1591 - 2710 9455 0
+
+//Iron dragon
+1591 - 2704 9456 0
+
+//Iron dragon
+1591 - 2707 9451 0
+
+//Iron dragon
+1591 - 2707 9446 0
+
+//Iron dragon
+1591 - 2712 9447 0
+
+//Iron dragon
+1591 - 2718 9447 0
+
+//Iron dragon
+1591 - 2730 9445 0
+
+//Steel dragon
+1592 - 2734 9443 0
+
+//Steel dragon
+1592 - 2735 9439 0
+
+//Steel dragon
+1592 - 2739 9436 0
+
+//Steel dragon
+1592 - 2736 9429 0
+
+//Steel dragon
+1592 - 2733 9428 0
+
+//Steel dragon
+1592 - 2727 9426 0
+
+//Steel dragon
+1592 - 2725 9428 0
+
+//Steel dragon
+1592 - 2721 9427 0
+
+//Steel dragon
+1592 - 2723 9424 0
+
+//Steel dragon
+1592 - 2719 9424 0
+
+//Steel dragon
+1592 - 2715 9424 0
+
+//Steel dragon
+1592 - 2713 9428 0
+
+//Steel dragon
+1592 - 2712 9434 0
+
+//Steel dragon
+1592 - 2718 9439 0
+
+//Steel dragon
+1592 - 2720 9441 0
+
+//Steel dragon
+1592 - 2725 9441 0
+
+//Steel dragon
+1592 - 2712 9441 0
+
+//Steel dragon
+1592 - 2711 9436 0
+//Iron dragon
+1591 - 2704 9437 0
+
+//Iron dragon
+1591 - 2703 9435 0
+
+//Iron dragon
+1591 - 2703 9439 0
+
+//Iron dragon
+1591 - 2701 9453 0
+
+//Iron dragon
+1591 - 2713 9453 0
+
+//Bronze dragon
+1590 - 2717 9480 0
+
+//Bronze dragon
+1590 - 2718 9485 0
+
+//Bronze dragon
+1590 - 2712 9488 0
+
+//Bronze dragon
+1590 - 2706 9488 0
+
+//Bronze dragon
+1590 - 2703 9484 0
+
+//Bronze dragon
+1590 - 2701 9482 0
+
+//Giant skeleton
+5359 - 2865 9572 0
+
+//Giant skeleton
+5359 - 2865 9569 0
+
+//Giant skeleton
+5359 - 2862 9568 0
+
+//Giant skeleton
+5359 - 2861 9572 0
+
+//Giant skeleton
+5359 - 2861 9576 0
+
+//Giant skeleton
+5359 - 2859 9579 0
+
+//Giant skeleton
+5359 - 2857 9577 0
+
+//Giant skeleton
+5359 - 2855 9574 0
+
+//Giant skeleton
+5359 - 2857 9573 0
+
+//Giant skeleton
+5359 - 2859 9572 0
+
+//Giant skeleton
+5359 - 2861 9573 0
+
+//Giant skeleton
+5359 - 2862 9576 0
+
+//Giant skeleton
+5359 - 2861 9578 0
+
+//Giant skeleton
+5359 - 2855 9576 0
+
+//Giant skeleton
+5359 - 2855 9573 0
+
+//Giant skeleton
+5359 - 2852 9572 0
+
+//Deadly red spider
+63 - 2838 9584 0
+
+//Deadly red spider
+63 - 2839 9582 0
+
+//Deadly red spider
+63 - 2842 9581 0
+
+//Deadly red spider
+63 - 2841 9584 0
+
+//Deadly red spider
+63 - 2841 9582 0
+
+//Deadly red spider
+63 - 2840 9584 0
+
+//Deadly red spider
+63 - 2839 9581 0
+
+//Deadly red spider
+63 - 2838 9582 0
+
+//Deadly red spider
+63 - 2837 9580 0
+
+//Deadly red spider
+63 - 2838 9579 0
+
+//Deadly red spider
+63 - 2835 9580 0
+
+//Deadly red spider
+63 - 2833 9581 0
+
+//Deadly red spider
+63 - 2834 9583 0
+
+//Deadly red spider
+63 - 2835 9584 0
+
+//Deadly red spider
+63 - 2836 9584 0
+
+//Deadly red spider
+63 - 2833 9585 0
+
+//Deadly red spider
+63 - 2837 9582 0
+
+//Lesser demon
+4694 - 2837 9568 0
+
+//Lesser demon
+4694 - 2834 9565 0
+
+//Lesser demon
+4694 - 2839 9558 0
+
+//Lesser demon
+4695 - 2843 9559 0
+
+//Lesser demon
+4695 - 2838 9555 0
+
+//Lesser demon
+4696 - 2837 9559 0
+
+//Lesser demon
+4696 - 2836 9562 0
+
+//Lesser demon
+4697 - 2833 9562 0
+
+//Lesser demon
+4697 - 2835 9566 0
+
+//Lesser demon
+4697 - 2831 9564 0
+
+//Lesser demon
+4697 - 2839 9559 0
+
+//Lesser demon
+4697 - 2843 9559 0
+
+//Lesser demon
+4694 - 2835 9602 0
+
+//Lesser demon
+4694 - 2839 9610 0
+
+//Lesser demon
+4695 - 2839 9610 0
+
+//Lesser demon
+4695 - 2843 9608 0
+
+//Lesser demon
+4696 - 2840 9605 0
+
+//Lesser demon
+4696 - 2836 9603 0
+
+//Lesser demon
+4697 - 2839 9603 0
+
+//Lesser demon
+4697 - 2839 9612 0
+
+//Giant skeleton
+5359 - 2840 9631 0
+
+//Giant skeleton
+5359 - 2841 9630 0
+
+//Giant skeleton
+5359 - 2842 9633 0
+
+//Giant skeleton
+5359 - 2843 9630 0
+
+//Giant skeleton
+5359 - 2844 9629 0
+
+//Giant skeleton
+5359 - 2844 9633 0
+
+//Giant skeleton
+5359 - 2840 9632 0
+
+//Giant skeleton
+5359 - 2844 9636 0
+
+//Giant skeleton
+5359 - 2844 9634 0
+
+//Giant skeleton
+5359 - 2843 9638 0
+
+//Giant skeleton
+5359 - 2844 9639 0
+
+//Giant skeleton
+5359 - 2844 9641 0
+
+//Giant skeleton
+5359 - 2842 9641 0
+
+//Giant skeleton
+5359 - 2840 9639 0
+
+//Giant skeleton
+5359 - 2840 9642 0
+
+//Giant skeleton
+5359 - 2842 9644 0
+
+//Giant skeleton
+5359 - 2843 9647 0
+
+//Giant skeleton
+5359 - 2841 9649 0
+
+//Giant skeleton
+5359 - 2838 9649 0
+
+//Giant skeleton
+5359 - 2836 9653 0
+
+//Giant skeleton
+5359 - 2839 9653 0
+
+//Giant skeleton
+5359 - 2836 9651 0
+
+//Giant skeleton
+5359 - 2834 9653 0
+
+//Giant skeleton
+5359 - 2835 9657 0
+
+//Giant skeleton
+5359 - 2832 9655 0
+
+//Giant skeleton
+5359 - 2832 9659 0
+
+//Giant skeleton
+5359 - 2830 9657 0
+
+//Elvarg
+742 - 2849 9637 0
+
+//Elvarg
+742 - 2850 9635 0
+
+//Elvarg
+742 - 2853 9632 0
+
+//Elvarg
+742 - 2857 9637 0
+
+//Elvarg
+742 - 2851 9640 0
+
+//Elvarg
+742 - 2850 9635 0
+//Green dragon
+4677 - 2979 3609 0
+
+//Green dragon
+4677 - 2973 3611 0
+
+//Green dragon
+4677 - 2971 3617 0
+
+//Green dragon
+4678 - 2976 3622 0
+
+//Green dragon
+4678 - 2981 3624 0
+
+//Green dragon
+4678 - 2983 3618 0
+
+//Green dragon
+4679 - 2982 3615 0
+
+//Green dragon
+4679 - 2987 3613 0
+
+//Green dragon
+4680 - 2972 3618 0
+
+//Green dragon
+4680 - 2972 3614 0
+
+//Green dragon
+4680 - 2978 3614 0
+
+//Green dragon
+4680 - 2982 3621 0
+
+//Green dragon
+4677 - 3358 3675 0
+
+//Green dragon
+4677 - 3358 3680 0
+
+//Green dragon
+4677 - 3364 3684 0
+
+//Green dragon
+4677 - 3370 3679 0
+
+//Green dragon
+4677 - 3371 3671 0
+
+//Green dragon
+4677 - 3367 3665 0
+
+//Green dragon
+4678 - 3364 3662 0
+
+//Green dragon
+4678 - 3361 3660 0
+
+//Green dragon
+4678 - 3358 3657 0
+
+//Green dragon
+4678 - 3354 3658 0
+
+//Green dragon
+4678 - 3351 3656 0
+
+//Green dragon
+4678 - 3356 3667 0
+
+//Green dragon
+4679 - 3354 3676 0
+
+//Green dragon
+4679 - 3362 3674 0
+
+//Green dragon
+4679 - 3365 3672 0
+
+//Green dragon
+4679 - 3358 3686 0
+
+//Green dragon
+4679 - 3353 3683 0
+
+//Green dragon
+4679 - 3352 3675 0
+
+//King Black Dragon
+50 - 2273 4694 0
+//Sergeant Strongstack
+6261 - 2873 5357 2
+
+//Sergeant Steelwill
+6263 - 2873 5363 2
+
+//Sergeant Grimspike
+6265 - 2868 5354 2
+
+//General Graardor
+6260 - 2872 5356 2
+
+//Wizard
+8035 - 1648 5408 0
+
+//Wizard
+8033 - 1648 5408 0
+
+//Wizard Elriss
+8032 - 1694 5462 0
+
+//Larriar
+13632 - 1692 5465 0
+
+//Wizard
+8034 - 1703 5468 0
+
+//Wizard
+8036 - 1702 5466 0
+
+//Wizard
+8038 - 1692 5469 0
+
+//Wizard
+8037 - 1703 5469 0
+
+//Wizard
+8040 - 1691 5473 0
+
+//Wizard Korvak
+8029 - 1699 5471 0
+
+//Wizard Acantha
+8031 - 1693 5473 0
+
+//Wizard
+8039 - 1703 5464 0
+
+//Wizard Vief
+8030 - 1698 5474 0
+
+//null
+8593 - 1886 3231 0
+
+//null
+3778 - 1867 4233 0
+
+//Renegade knight
+6188 - 1901 4271 0
+
+//Sir Kay
+6168 - 1904 4274 0
+
+//Sir Pelleas
+6166 - 1904 4279 0
+
+//Guard
+6190 - 1906 4270 0
+
+//Sir Gawain
+6167 - 1906 4277 0
+
+//null
+3780 - 1906 4281 0
+
+//Renegade knight
+6188 - 1909 4271 0
+
+//null
+3318 - 2401 4378 0
+
+//Fungi
+3345 - 2412 4370 0
+
+//Fungi
+3345 - 2416 4376 0
+
+//Fungi
+3345 - 2419 4374 0
+
+//Fungi
+3345 - 2420 4377 0
+
+//Fungi
+3345 - 2421 4370 0
+
+//null
+11417 - 2373 4447 0
+
+//null
+11420 - 2375 4448 0
+
+//Fairy shopkeeper
+534 - 2375 4449 0
+
+//null
+11421 - 2376 4446 0
+
+//Fairy shop assistant
+535 - 2376 4447 0
+
+//null
+4422 - 2377 4450 0
+
+//null
+11308 - 2377 4468 0
+
+//Banker
+498 - 2379 4457 0
+
+//Banker
+909 - 2379 4459 0
+
+//null
+11419 - 2381 4423 0
+
+//null
+4422 - 2381 4459 0
+
+//null
+11422 - 2383 4456 0
+
+//null
+11415 - 2386 4431 0
+
+//Fairy chef
+3322 - 2386 4439 0
+
+//null
+4423 - 2387 4456 0
+
+//null
+4422 - 2388 4425 0
+
+//null
+4431 - 2388 4470 0
+
+//null
+11416 - 2391 4453 0
+
+//null
+11418 - 2393 4447 0
+
+//null
+4422 - 2394 4440 0
+
+//Butterfly
+154 - 2394 4453 0
+
+//Butterfly
+154 - 2394 4457 0
+
+//null
+11415 - 2395 4461 0
+
+//null
+4424 - 2396 4455 0
+
+//null
+11416 - 2396 4457 0
+
+//null
+11419 - 2398 4447 0
+
+//null
+4425 - 2398 4453 0
+
+//null
+11317 - 2401 4452 0
+
+//Butterfly
+154 - 2406 4447 0
+
+//null
+11417 - 2408 4445 0
+
+//Fairy Fixit
+4455 - 2410 4434 0
+
+//Sheep
+5164 - 2410 4456 0
+
+//null
+11421 - 2412 4437 0
+
+//Fungi
+3344 - 2412 4470 0
+
+//Fungi
+3344 - 2414 4467 0
+
+//Sheep
+5164 - 2415 4429 0
+
+//null
+11419 - 2415 4438 0
+
+//Sheep
+3310 - 2415 4451 0
+
+//Butterfly
+153 - 2415 4466 0
+
+//Fungi
+3344 - 2415 4475 0
+
+//Sheep
+3310 - 2416 4435 0
+
+//null
+11416 - 2418 4437 0
+
+//null
+4422 - 2418 4447 0
+
+//Butterfly
+153 - 2419 4427 0
+
+//null
+11416 - 2419 4465 0
+
+//Fungi
+3344 - 2419 4467 0
+
+//Fungi
+3344 - 2419 4474 0
+
+//Butterfly
+153 - 2421 4468 0
+
+//Sheep
+3310 - 2423 4432 0
+
+//null
+4423 - 2423 4461 0
+
+//Wandering impling
+6073 - 2424 4436 0
+
+//Butterfly
+153 - 2426 4431 0
+
+//null
+11419 - 2426 4433 0
+
+//Fairy Aeryka
+6072 - 2426 4442 0
+
+//null
+4422 - 2427 4461 0
+
+//null
+11420 - 2431 4452 0
+
+//null
+11418 - 2431 4457 0
+
+//Wimpy bird
+7031 - 2499 2820 0
+
+//Platypus
+7022 - 2503 2821 0
+
+//Diseased kebbit
+7039 - 2503 2824 0
+
+//Platypus
+7021 - 2510 2822 0
+
+//Tropical wagtail
+5072 - 2510 2876 0
+
+//Wimpy bird
+7031 - 2511 2819 0
+
+//Thuddley
+7072 - 2517 2840 0
+
+//Tropical wagtail
+5072 - 2517 2878 0
+
+//Diseased kebbit
+7039 - 2518 2824 0
+
+//Snert
+7067 - 2518 2842 0
+
+//Baby platypus
+7024 - 2523 2823 0
+
+//Wimpy bird
+7031 - 2525 2820 0
+
+//null
+7091 - 2525 2852 0
+
+//null
+7092 - 2526 2854 0
+
+//Wimpy bird
+7031 - 2527 2818 0
+
+//null
+7094 - 2527 2851 0
+
+//null
+7093 - 2527 2853 0
+
+//Tropical wagtail
+5072 - 2527 2877 0
+
+//Tyke
+7068 - 2531 2850 0
+
+//Grr'bah
+7073 - 2533 2848 0
+
+//Diseased kebbit
+7039 - 2534 2821 0
+
+//null
+7034 - 2536 2839 0
+
+//Baby platypus
+7025 - 2537 2820 0
+
+//null
+7036 - 2538 2841 0
+
+//null
+7032 - 2539 2838 0
+
+//null
+7033 - 2541 2837 0
+
+//Wimpy bird
+7031 - 2542 2819 0
+
+//null
+7035 - 2542 2839 0
+
+//Baby platypus
+7026 - 2543 2822 0
+
+//Frawd
+7048 - 2545 2836 0
+
+//Chief Tess
+7051 - 2547 2852 0
+
+//Diseased kebbit
+7039 - 2548 2823 0
+
+//Dawg
+7104 - 2549 2852 0
+
+//Wimpy bird
+7031 - 2551 2817 0
+
+//null
+7042 - 2551 2863 0
+
+//Platypus
+7023 - 2552 2821 0
+
+//Ogress banker
+7050 - 2553 2837 0
+
+//Ogress banker
+7049 - 2553 2839 0
+
+//null
+7043 - 2553 2862 0
+
+//Wimpy bird
+7031 - 2554 2819 0
+
+//Chomp
+7074 - 2556 2858 0
+
+//Balnea
+7047 - 2557 2836 0
+
+//Wimpy bird
+7031 - 2559 2819 0
+
+//null
+7055 - 2559 2851 0
+
+//Snarrl
+7069 - 2559 2858 0
+
+//Child
+355 - 2504 3318 0
+
+//Mourner
+717 - 2513 3294 0
+
+//Nurse Sarah
+373 - 2516 3274 0
+
+//Child
+6345 - 2518 3275 0
+
+//Mourner
+717 - 2518 3320 0
+
+//Child
+356 - 2523 3307 0
+
+//Clerk
+713 - 2526 3319 0
+
+//Priest
+358 - 2529 3285 0
+
+//Mourner
+717 - 2530 3274 0
+
+//Mourner
+3216 - 2534 3273 0
+
+//Mourner
+717 - 2535 3296 0
+
+//Man
+729 - 2536 3308 0
+
+//Mourner
+3216 - 2539 3273 0
+
+//Head mourner
+716 - 2540 3286 0
+
+//Jethick
+725 - 2540 3305 0
+
+//Man
+728 - 2540 3308 0
+
+//Recruiter
+720 - 2542 3306 0
+
+//Child
+6339 - 2547 3277 0
+
+//Kilron
+349 - 2556 3266 0
+
+//Omart
+350 - 2559 3266 0
+
+//Bravek
+711 - 2536 3314 0
+
+//Mourner
+372 - 2559 3303 0
+
+//Mourner
+372 - 2559 3305 0
+
+//Banker
+7605 - 2534 4714 0
+
+//Diseased kebbit
+7039 - 2560 2822 0
+
+//null
+7056 - 2560 2851 0
+
+//null
+7041 - 2562 2863 0
+
+//null
+7040 - 2563 2862 0
+
+//Wimpy bird
+7031 - 2566 2820 0
+
+//Diseased kebbit
+7039 - 2570 2823 0
+
+//Muggh
+7062 - 2571 2840 0
+
+//Seegud
+7052 - 2571 2855 0
+
+//Wimpy bird
+7031 - 2575 2818 0
+
+//null
+7102 - 2576 2840 0
+
+//Wimpy bird
+7031 - 2578 2819 0
+
+//null
+7103 - 2579 2843 0
+
+//Snarrk
+7070 - 2581 2866 0
+
+//Diseased kebbit
+7039 - 2582 2824 0
+
+//null
+7103 - 2582 2843 0
+
+//Grubb
+7075 - 2583 2865 0
+
+//null
+7101 - 2585 2842 0
+
+//null
+7099 - 2585 2844 0
+
+//null
+7100 - 2586 2840 0
+
+//Wimpy bird
+7031 - 2587 2819 0
+
+//Diseased kebbit
+7039 - 2588 2828 0
+
+//Wimpy bird
+7031 - 2595 2821 0
+
+//Wimpy bird
+7031 - 2595 2826 0
+
+//Snurgh
+7057 - 2596 2845 0
+
+//Grunther
+7076 - 2596 2865 0
+
+//I'rk
+7071 - 2598 2864 0
+
+//null
+7095 - 2609 2863 0
+
+//null
+7096 - 2610 2865 0
+
+//null
+7097 - 2611 2862 0
+
+//null
+7098 - 2611 2864 0
+
+//Glum
+7077 - 2617 2856 0
+
+//null
+7066 - 2619 2856 0
+
+//null
+7065 - 2621 2857 0
+
+//Mourner
+719 - 2560 3288 0
+
+//Bones
+2945 - 2562 3319 0
+
+//Jimmy Dazzler
+2949 - 2562 3320 0
+
+//Ceril Carnillean
+885 - 2565 3271 0
+
+//Philipe Carnillean
+888 - 2565 3273 0
+
+//Butler Jones
+890 - 2569 3272 0
+
+//Guard
+887 - 2570 3275 0
+
+//Henryeta Carnillean
+889 - 2571 3270 0
+
+//null
+8345 - 2573 3321 0
+
+//Bartender
+738 - 2574 3319 0
+
+//null
+8468 - 2574 3321 0
+
+//null
+7574 - 2592 3264 0
+
+//Monkey minder
+1469 - 2595 3277 0
+
+//null
+8693 - 2596 3266 0
+
+//Penguin
+5445 - 2596 3270 0
+
+//null
+7580 - 2597 3265 0
+
+//Penguin keeper
+6891 - 2598 3272 0
+
+//Monkey
+1463 - 2600 3276 0
+
+//Monkey
+1463 - 2601 3276 0
+
+//Monkey
+1463 - 2601 3277 0
+
+//Monkey
+1463 - 2601 3278 0
+
+//Monkey minder
+7572 - 2602 3274 0
+
+//Monkey
+1463 - 2602 3279 0
+
+//Monkey
+1463 - 2602 3282 0
+
+//Zookeeper
+7571 - 2603 3284 0
+
+//Monkey
+1463 - 2604 3276 0
+
+//Monkey
+1463 - 2605 3280 0
+
+//Monkey
+1463 - 2605 3281 0
+
+//Monkey
+1463 - 2606 3280 0
+
+//Charlie
+5138 - 2607 3264 0
+
+//Monkey minder
+7573 - 2608 3279 0
+
+//Zookeeper
+28 - 2611 3269 0
+
+//Parroty Pete
+1216 - 2611 3285 0
+
+//Parrots
+1215 - 2612 3287 0
+
+//Jerico
+366 - 2612 3324 0
+
+//Parrots
+1215 - 2613 3287 0
+
+//Aemad
+590 - 2613 3294 0
+
+//Doctor Orbon
+290 - 2614 3306 0
+
+//Camel
+80 - 2615 3266 0
+
+//Kortan
+591 - 2615 3292 0
+
+//Priest
+31 - 2616 3308 0
+
+//Councillor Halgrive
+289 - 2617 3299 0
+
+//Camel
+80 - 2619 3265 0
+
+//Zookeeper
+7570 - 2619 3279 0
+
+//Camel
+80 - 2621 3266 0
+
+//Mourner
+372 - 2561 3303 0
+
+//Mourner
+372 - 2561 3305 0
+
+//Ambassador Gimblewap
+4580 - 2572 3299 0
+
+//Ceril Carnillean
+885 - 2573 3268 0
+
+//Butler Jones
+890 - 2573 3269 0
+
+//King Lathas
+364 - 2577 3298 0
+
+//Tool leprechaun
+7563 - 2632 3313 0
+
+//Horacio
+845 - 2635 3311 0
+
+//Estate agent
+4247 - 2639 3291 0
+
+//Circus barker
+8081 - 2641 3283 0
+
+//RPDT employee
+843 - 2644 3274 0
+
+//RPDT employee
+843 - 2644 3276 0
+
+//RPDT employee
+843 - 2647 3271 0
+
+//Silk merchant
+574 - 2655 3302 0
+
+//Baker
+571 - 2655 3310 0
+
+//Banker
+495 - 2657 3280 0
+
+//Banker
+494 - 2657 3283 0
+
+//Banker
+494 - 2657 3286 0
+
+//null
+9167 - 2658 3273 0
+
+//Marion
+9166 - 2659 3272 0
+
+//Spice seller
+572 - 2659 3296 0
+
+//Silver merchant
+569 - 2659 3316 0
+
+//Zenesha
+589 - 2660 3291 0
+
+//Fur trader
+573 - 2664 3296 0
+
+//Town crier
+6138 - 2665 3311 0
+
+//null
+9169 - 2666 3273 0
+
+//Sparky
+9170 - 2666 3277 0
+
+//Gem merchant
+570 - 2669 3302 0
+
+//Baker
+571 - 2669 3310 0
+
+//Guard
+11271 - 2680 3290 0
+
+//Registrar
+11272 - 2682 3288 0
+
+//null
+844 - 2683 3323 0
+
+//null
+6386 - 2683 3326 0
+
+//null
+381 - 2679 3275 0
+
+//null
+4961 - 2683 3275 0
+
+//null
+4953 - 2684 3274 0
+
+//Cave goblin
+5758 - 2693 5332 0
+
+//Cave goblin
+5765 - 2694 5333 0
+
+//Cave goblin
+5767 - 2695 5331 0
+
+//Barlak
+5828 - 2697 5316 0
+
+//Cave goblin
+5753 - 2697 5332 0
+
+//Moths
+5827 - 2699 5329 0
+
+//Moths
+5827 - 2699 5335 0
+
+//Banker
+5777 - 2699 5348 0
+
+//Banker
+5776 - 2699 5349 0
+
+//Cave goblin
+5783 - 2701 5348 0
+
+//null
+6394 - 2703 5366 0
+
+//null
+8656 - 2703 5367 0
+
+//null
+5787 - 2704 5366 0
+
+//Gundik
+5796 - 2711 5314 0
+
+//Cave goblin
+5752 - 2711 5331 0
+
+//Durgok
+5794 - 2712 5321 0
+
+//Cave goblin
+5764 - 2712 5342 0
+
+//Gourmet
+5790 - 2715 5313 0
+
+//Ur-taal
+5772 - 2716 5359 0
+
+//Lurgon
+5798 - 2717 5315 0
+
+//null
+425 - 2717 5332 0
+
+//Ur-zek
+5770 - 2717 5359 0
+
+//Gourmet
+5789 - 2718 5313 0
+
+//Cave goblin
+5767 - 2719 5331 0
+
+//Reldak
+5780 - 2722 5313 0
+
+//Ur-vass
+5771 - 2722 5333 0
+
+//Miltog
+5781 - 2723 5321 0
+
+//Cave goblin
+5755 - 2723 5336 0
+
+//null
+8654 - 2723 5359 0
+
+//null
+424 - 2724 5359 0
+
+//Cave goblin
+5761 - 2725 5349 0
+
+//Cave goblin
+5758 - 2729 5329 0
+
+//null
+423 - 2731 5340 0
+
+//Cave goblin
+5757 - 2743 5358 0
+
+//null
+5869 - 2744 5344 0
+
+//Moths
+5827 - 2747 5342 0
+
+//Cave goblin
+5766 - 2701 5352 0
+
+//Cave goblin
+5756 - 2702 5352 0
+
+//Goblin scribe
+5786 - 2712 5369 0
+
+//Cave goblin
+5785 - 2726 5372 0
+
+//Ur-tag
+5799 - 2730 5365 0
+
+//null
+5832 - 2730 5366 0
+
+//null
+1722 - 2735 5344 0
+
+//null
+439 - 2736 5346 0
+
+//null
+1720 - 2737 5342 0
+
+//null
+443 - 2737 5343 0
+
+//null
+441 - 2737 5344 0
+
+//null
+5887 - 2737 5351 0
+
+//Kenti
+5821 - 2740 5334 0
+
+//Bozin
+5807 - 2741 5334 0
+
+//Fandon
+5809 - 2741 5341 0
+
+//Young 'un
+5803 - 2741 5344 0
+
+//Lorzan
+5813 - 2742 5338 0
+
+//Mernik
+5782 - 2742 5339 0
+
+//Caldi
+5815 - 2743 5341 0
+
+//Nipper
+5805 - 2743 5345 0
+
+//Tyke
+5804 - 2744 5333 0
+
+//Inglin
+5819 - 2744 5336 0
+
+//Elzik
+5817 - 2744 5338 0
+
+//Horgon
+5811 - 2744 5342 0
+
+//null
+5802 - 2744 5353 0
+
+//null
+8655 - 2745 5353 0
+
+//Nipper
+5806 - 2746 5333 0
+
+//Goblin
+6465 - 2764 4251 0
+
+//Goblin
+6450 - 2764 4266 0
+
+//Goblin
+6454 - 2765 4253 0
+
+//Goblin
+6417 - 2765 4264 0
+
+//Goblin
+6406 - 2765 4267 0
+
+//Priest
+6487 - 2765 4268 0
+
+//Priest
+6485 - 2766 4250 0
+
+//Goblin
+6432 - 2766 4255 0
+
+//Goblin
+6410 - 2766 4257 0
+
+//Goblin
+6439 - 2766 4265 0
+
+//Goblin
+6443 - 2767 4252 0
+
+//Goblin
+6421 - 2768 4254 0
+
+//Goblin
+6428 - 2768 4268 0
+
+//Goblin
+6430 - 2769 4236 0
+
+//Goblin
+6408 - 2770 4238 0
+
+//Goblin
+6419 - 2771 4237 0
+
+//Goblin
+6441 - 2771 4241 0
+
+//Goblin
+6452 - 2772 4235 0
+
+//Guard
+6501 - 2772 4256 0
+
+//Goblin
+6463 - 2773 4238 0
+
+//Priest
+6486 - 2774 4236 0
+
+//Guard
+6502 - 2775 4247 0
+
+//Guard
+6503 - 2775 4265 0
+
+//Goblin
+6443 - 2776 4250 0
+
+//Goblin
+6429 - 2776 4252 0
+
+//Goblin
+6441 - 2777 4252 0
+
+//Goblin
+6417 - 2777 4260 0
+
+//Goblin
+6459 - 2778 4264 0
+
+//Goblin
+6463 - 2779 4248 0
+
+//Goblin
+6454 - 2779 4256 0
+
+//Goblin
+6450 - 2781 4261 0
+
+//Goblin
+6460 - 2783 4251 0
+
+//Goblin
+6458 - 2784 4249 0
+
+//Goblin
+6459 - 2784 4252 0
+
+//Goblin
+6462 - 2785 4248 0
+
+//Goblin
+6463 - 2785 4250 0
+
+//Goblin
+6462 - 2786 4251 0
+
+//Goblin
+6461 - 2787 4250 0
+
+//Goblin
+6409 - 2787 4262 0
+
+//null
+6489 - 2787 4266 0
+
+//Goblin
+6440 - 2789 4248 0
+
+//Goblin
+6460 - 2789 4264 0
+
+//Goblin
+6438 - 2790 4254 0
+
+//Goblin
+6461 - 2791 4249 0
+
+//null
+6396 - 2791 4279 0
+
+//Goblin
+6449 - 2792 4252 0
+
+//Goblin
+6431 - 2792 4260 0
+
+//Goblin
+6409 - 2792 4275 0
+
+//Guard
+6499 - 2793 4247 0
+
+//Guard
+6500 - 2793 4265 0
+
+//Goblin
+6442 - 2795 4273 0
+
+//Priest
+6484 - 2795 4276 0
+
+//Guard
+6498 - 2796 4256 0
+
+//Goblin
+6464 - 2796 4267 0
+
+//Goblin
+6431 - 2796 4275 0
+
+//Goblin
+6420 - 2796 4277 0
+
+//Goblin
+6453 - 2797 4272 0
+
+//Goblin
+6418 - 2799 4243 0
+
+//Goblin
+6405 - 2799 4260 0
+
+//Goblin
+6449 - 2800 4254 0
+
+//Goblin
+6438 - 2800 4256 0
+
+//Goblin
+6462 - 2801 4242 0
+
+//Goblin
+6460 - 2801 4252 0
+
+//Goblin
+6416 - 2801 4258 0
+
+//Priest
+6482 - 2801 4260 0
+
+//Goblin
+6451 - 2802 4243 0
+
+//Goblin
+6440 - 2802 4244 0
+
+//Goblin
+6407 - 2802 4246 0
+
+//Goblin
+6427 - 2802 4259 0
+
+//Priest
+6483 - 2804 4246 0
+
+//Goblin
+6429 - 2805 4242 0
+
+//Preacher
+6488 - 2784 4255 0
+
+//Fishing spot
+312 - 2836 3431 0
+
+//Fishing spot
+312 - 2853 3423 0
+
+//Fishing spot
+312 - 2846 3429 0
+
+//null
+14348 - 2912 3304 0
+
+//Sir Amik Varze
+608 - 2912 3304 0
+
+//null
+12264 - 2912 3304 0
+
+//Master Crafter
+805 - 2936 3290 0
+
+//Master Crafter
+2733 - 2934 3287 0
+
+//null
+5065 - 2925 3303 0
+
+//Master Crafter
+2732 - 2936 3282 0
+
+//Sheep
+1765 - 2923 3318 0
+
+//Sheep
+1765 - 2919 3319 0
+
+//Sheep
+5161 - 2924 3320 0
+
+//Sheep
+5161 - 2923 3320 0
+
+//Li'l lamb
+5146 - 2931 3319 0
+
+//Sheep
+43 - 2923 3322 0
+
+//Sheep
+43 - 2927 3322 0
+
+//Frog
+2689 - 2918 3319 0
+
+//Make-over Mage
+2676 - 2914 3322 0
+
+//Iconis
+8879 - 2930 3326 0
+
+//Sheep
+43 - 2924 3327 0
+
+//Banker
+6200 - 2912 3344 0
+
+//Ducklings
+6112 - 2912 3344 0
+
+//Gaius
+586 - 2885 3449 0
+
+//Sylas
+5987 - 2891 3454 0
+
+//Jatix
+587 - 2899 3427 0
+
+//Ivy Sophista
+8417 - 2909 3450 0
+
+//Tegid
+1213 - 2913 3417 0
+
+//Pet shop owner
+6893 - 2923 3435 0
+
+//The Lady of the Lake
+250 - 2924 3405 0
+
+//null
+6989 - 2924 3444 0
+
+//Pikkupstix
+6988 - 2925 3444 0
+
+//Labrador
+6895 - 2927 3432 0
+
+//Terrier
+6894 - 2928 3432 0
+
+//Alain
+2339 - 2933 3438 0
+
+//null
+5062 - 2938 3422 0
+
+//Tool leprechaun
+7562 - 2938 3437 0
+
+//Sanfew
+454 - 2897 3426 0
+
+//null
+8420 - 2904 3449 0
+
+//null
+8072 - 2928 3416 0
+
+//Tool leprechaun
+7562 - 2940 3434 0
+
+//null
+6202 - 2912 3749 0
+
+//null
+8076 - 2933 3772 0
+
+//Ashuelot Reis
+13455 - 2902 5206 0
+
+//null
+11665 - 2944 3147 0
+
+//null
+11654 - 2945 3147 0
+
+//Gull
+2727 - 2969 3146 0
+
+//A pile of broken glass
+2800 - 2981 3190 0
+
+//null
+2795 - 2983 3196 0
+
+//Fishing spot
+325 - 2986 3176 0
+
+//Gull
+2726 - 2994 3138 0
+
+//Fishing spot
+325 - 2996 3158 0
+
+//Thurgo
+604 - 3001 3144 0
+
+//Customs officer
+380 - 2953 3147 0
+
+//Trader Crewmember
+4655 - 2954 3156 0
+
+//Trader Crewmember
+4653 - 2954 3157 0
+
+//Squire
+3801 - 2976 3176 0
+
+//Rommik
+585 - 2946 3205 0
+
+//Shopkeeper
+530 - 2947 3217 0
+
+//Shop assistant
+531 - 2948 3217 0
+
+//null
+11597 - 2953 3222 0
+
+//Brian
+1860 - 2957 3203 0
+
+//null
+11598 - 2965 3214 0
+
+//Hetty
+307 - 2968 3206 0
+
+//Baby raccoon
+7276 - 2994 3256 0
+
+//null
+1770 - 2995 3209 0
+
+//Baby Raccoon
+7275 - 2995 3252 0
+
+//null
+1771 - 2996 3201 0
+
+//Baby Raccoon
+7275 - 2996 3259 0
+
+//null
+1769 - 2997 3216 0
+
+//Frog
+1772 - 2998 3205 0
+
+//Frog
+1773 - 2999 3208 0
+
+//Frog
+1774 - 2999 3211 0
+
+//null
+2678 - 3001 3202 0
+
+//Frog Princess
+1776 - 3002 3206 0
+
+//Frog Prince
+1775 - 3002 3210 0
+
+//Baby raccoon
+7276 - 3002 3250 0
+
+//Baby raccoon
+6997 - 3002 3257 0
+
+//null
+2680 - 3003 3205 0
+
+//null
+2679 - 3004 3201 0
+
+//null
+2681 - 3004 3209 0
+
+//Milk seller
+11547 - 2960 3248 0
+
+//Sheepdog
+2311 - 2960 3248 0
+
+//Baby raccoon
+7276 - 2992 3252 0
+
+//Baby Raccoon
+7275 - 2993 3250 0
+
+//Baby Raccoon
+7275 - 3000 3258 0
+
+//Baby raccoon
+7276 - 3000 3250 0
+
+//Baby raccoon
+6997 - 3007 3261 0
+
+//Town crier
+6136 - 3000 3216 0
+
+//Gourmet impling
+1030 - 3000 3216 0
+
+//Gull
+451 - 3000 3216 0
+
+//Banker
+6200 - 2952 3312 0
+
+//null
+11641 - 2952 3312 0
+
+//Scribe
+5915 - 2991 3305 0
+
+//Wayne
+581 - 2975 3314 0
+
+//Captain of the Guard
+13633 - 2984 3288 0
+
+//Sergeant-at-Arms
+5914 - 2969 3288 0
+
+//Avalani
+13827 - 2960 3264 0
+
+//Baby squirrel
+7311 - 2956 3273 0
+
+//Baby squirrel
+6921 - 2954 3273 0
+
+//Baby squirrel
+7312 - 2950 3268 0
+
+//Baby squirrel
+7309 - 2946 3280 0
+
+//Baby squirrel
+7310 - 2946 3272 0
+
+//Man
+1086 - 2967 3265 0
+
+//Malignius Mortifer
+2713 - 3001 3269 0
+
+//Squirrel
+3285 - 2952 3376 0
+
+//Miazrqa
+5988 - 2952 3376 0
+
+//Shopkeeper
+526 - 2955 3389 0
+
+//Shop assistant
+527 - 2954 3388 0
+
+//Flynn
+580 - 2952 3388 0
+
+//Cassie
+577 - 2975 3384 0
+
+//Town crier
+6137 - 2952 3381 0
+
+//Emily
+736 - 2954 3374 0
+
+//Banker
+6200 - 2947 3366 0
+
+//Kaylee
+3217 - 2954 3366 0
+
+//Banker
+6200 - 2949 3366 0
+
+//Banker
+6200 - 2946 3366 0
+
+//Banker
+6200 - 2948 3366 0
+
+//Swan
+3296 - 2957 3359 0
+
+//Swan
+3296 - 2958 3358 0
+
+//null
+8854 - 2961 3351 0
+
+//Swan
+3296 - 2967 3360 0
+
+//Swan
+3296 - 2970 3361 0
+
+//Swan
+3296 - 2973 3359 0
+
+//Swan
+3296 - 2977 3357 0
+
+//Squire
+606 - 2976 3340 0
+
+//null
+8421 - 2988 3341 0
+
+//null
+8342 - 2988 3346 0
+
+//null
+8469 - 2989 3338 0
+
+//null
+8475 - 2991 3342 0
+
+//null
+1599 - 2990 3339 0
+
+//null
+14329 - 2990 3343 0
+
+//null
+8476 - 2993 3343 0
+
+//null
+8474 - 2993 3339 0
+
+//Herquin
+584 - 2944 3332 0
+
+//Estate agent
+4247 - 2981 3370 0
+
+//Swan
+3296 - 2989 3384 0
+
+//null
+11668 - 2996 3374 0
+
+//Sir Tiffy Cashien
+2290 - 2997 3373 0
+
+//null
+11657 - 2998 3374 0
+
+//null
+12271 - 3000 3372 0
+
+//Heskel
+2340 - 3001 3373 0
+
+//Tool leprechaun
+7559 - 3007 3375 0
+
+//null
+8276 - 2997 3342 0
+
+//null
+8478 - 2997 3341 0
+
+//null
+8277 - 2997 3339 0
+
+//null
+8477 - 2996 3342 0
+
+//null
+8278 - 2994 3342 0
+
+//Kharid Scorpion
+387 - 3000 3440 0
+
+//Witch
+611 - 2960 3424 0
+
+//null
+8071 - 2960 3424 0
+
+//Raccoon
+3288 - 2987 3446 0
+
+//Raccoon
+3287 - 2987 3444 0
+
+//null
+13927 - 2977 3427 0
+
+//null
+7729 - 2995 3450 0
+
+//Mercenary leader
+14237 - 2975 3424 0
+
+//Baby squirrel
+6921 - 2974 3448 0
+
+//Mercenary ranger
+14242 - 2974 3424 0
+
+//Mercenary warrior
+14240 - 2973 3424 0
+
+//Baby squirrel
+6921 - 2971 3442 0
+
+//Mercenary mage
+14244 - 2972 3424 0
+
+//Squirrel
+3284 - 2969 3437 0
+
+//Assistant
+7726 - 2996 3451 0
+
+//Baby squirrel
+6921 - 2968 3451 0
+
+//Raccoon
+3286 - 2968 3448 0
+
+//Baby squirrel
+6921 - 2967 3439 0
+
+//Squirrel
+3283 - 2964 3455 0
+
+//Baby squirrel
+6921 - 2965 3451 0
+
+//Doric
+284 - 2953 3450 0
+
+//Wilfred
+4906 - 2952 3434 0
+
+//Young impling
+1029 - 2960 3414 0
+
+//Musician
+5442 - 2967 3412 0
+
+//null
+7735 - 2999 3469 0
+
+//Drain pipe
+5991 - 2966 3466 0
+
+//null
+5998 - 2971 3473 0
+
+//null
+4495 - 2955 3510 0
+
+//General Bentnoze
+4493 - 2956 3510 0
+
+//General Wartface
+4494 - 2957 3510 0
+
+//Trader Stan
+4650 - 3041 3194 0
+
+//Trader Crewmember
+4656 - 3038 3192 0
+
+//Trader Crewmember
+4653 - 3040 3192 0
+
+//Cap'n Hand
+2539 - 3014 3191 0
+
+//Rick Turpentine
+2476 - 3017 3190 0
+
+//Guard
+2704 - 3018 3184 0
+
+//Betty
+583 - 3011 3258 0
+
+//Brian
+559 - 3028 3252 0
+
+//Grum
+556 - 3015 3245 0
+
+//Bellemorde
+2942 - 3017 3235 0
+
+//The Face
+2950 - 3018 3230 0
+
+//Monk of Entrana
+2728 - 3042 3236 0
+
+//Monk of Entrana
+657 - 3043 3237 0
+
+//null
+377 - 3029 3223 0
+
+//null
+558 - 3013 3221 0
+
+//null
+378 - 3027 3220 0
+
+//null
+376 - 3026 3219 0
+
+//null
+11663 - 3029 3206 0
+
+//null
+11652 - 3029 3205 0
+
+//Wydin
+557 - 3012 3203 0
+
+//null
+11503 - 3042 3203 0
+
+//null
+11513 - 3040 3202 0
+
+//null
+11504 - 3043 3203 0
+
+//null
+2392 - 3043 3204 0
+
+//Klarense
+744 - 3047 3204 0
+
+//null
+734 - 3044 3255 0
+
+//Monk of Entrana
+2729 - 3047 3234 0
+
+//Stanky Morgan
+6667 - 3047 3259 0
+
+//Bard Roberts
+3509 - 3048 3259 0
+
+//Jack Seagull
+2690 - 3047 3256 0
+
+//Longbow Ben
+2691 - 3048 3258 0
+
+//Ahab
+2692 - 3049 3256 0
+
+//Flippers McGraw
+6668 - 3049 3259 0
+
+//Thaki the delivery dwarf
+7115 - 3050 3259 0
+
+//Redbeard Frank
+375 - 3053 3249 0
+
+//null
+1205 - 3054 3254 0
+
+//null
+1207 - 3055 3254 0
+
+//Frizzy Skernip
+4560 - 3062 3252 0
+
+//Tool leprechaun
+3021 - 3065 3255 0
+
+//Trogs
+8202 - 3040 3200 0
+
+//Pig
+2316 - 3015 3311 0
+
+//Pig
+2317 - 3016 3309 0
+
+//Piglet
+2319 - 3017 3309 0
+
+//Piglet
+2318 - 3017 3307 0
+
+//Rooster
+2312 - 3014 3292 0
+
+//Dog
+98 - 3019 3289 0
+
+//Sarah
+2304 - 3039 3293 0
+
+//Elstan
+2323 - 3048 3303 0
+
+//Tool leprechaun
+7557 - 3056 3310 0
+
+//Musician
+5439 - 3017 3277 0
+
+//Student
+7152 - 3064 3384 0
+
+//Philop
+782 - 3064 3384 0
+
+//null
+11646 - 3008 3355 0
+
+//null
+11644 - 3008 3354 0
+
+//Banker
+6200 - 3010 3353 0
+
+//Banker
+6200 - 3011 3353 0
+
+//Banker
+6200 - 3012 3353 0
+
+//Banker
+6200 - 3013 3353 0
+
+//Circus barker
+8080 - 3013 3356 0
+
+//Banker
+6200 - 3014 3353 0
+
+//Garden supplier
+4251 - 3020 3373 0
+
+//null
+8089 - 3030 3350 0
+
+//Herald of Falador
+13939 - 3036 3356 0
+
+//Ikis Krum
+12237 - 3048 3366 0
+
+//Dwarf
+56 - 3042 3344 0
+
+//null
+6636 - 3043 3343 0
+
+//null
+6637 - 3045 3343 0
+
+//null
+6638 - 3047 3343 0
+
+//null
+6642 - 3045 3341 0
+
+//null
+6647 - 3045 3336 0
+
+//Aksel
+6663 - 3038 3338 0
+
+//null
+6665 - 3057 3342 0
+
+//null
+6640 - 3045 3334 0
+
+//null
+6641 - 3047 3334 0
+
+//null
+6639 - 3043 3334 0
+
+//Dwarf
+65 - 3048 3333 0
+
+//Dwarf
+3294 - 3022 3338 0
+
+//Dwarf
+3295 - 3019 3337 0
+
+//Suak
+6654 - 3060 3339 0
+
+//null
+5576 - 3063 3348 0
+
+//Dwarf
+382 - 3017 3339 0
+
+//Richard
+1783 - 3040 3440 0
+
+//Baby raccoon
+6997 - 3058 3429 0
+
+//Baby raccoon
+6997 - 3059 3420 0
+
+//Squirrel
+3285 - 3039 3427 0
+
+//Squirrel
+3283 - 3043 3429 0
+
+//Squirrel
+3284 - 3047 3427 0
+
+//Squirrel
+3284 - 3037 3425 0
+
+//Squirrel
+3284 - 3058 3419 0
+
+//Squirrel
+3283 - 3039 3424 0
+
+//Baby raccoon
+6997 - 3059 3425 0
+
+//Baby raccoon
+6997 - 3049 3429 0
+
+//Baby squirrel
+7309 - 3023 3410 0
+
+//Raccoon
+3288 - 3034 3437 0
+
+//Baby squirrel
+7310 - 3015 3409 0
+
+//Squirrel
+3285 - 3025 3442 0
+
+//Raccoon
+3286 - 3034 3450 0
+
+//Engineering assistant
+3281 - 3018 3450 0
+
+//Rolad
+1841 - 3020 3452 0
+
+//Raccoon
+3287 - 3046 3453 0
+
+//Engineering assistant
+3280 - 3015 3451 0
+
+//Raccoon
+3286 - 3057 3447 0
+
+//null
+7728 - 3009 3433 0
+
+//Engineer
+3282 - 3008 3442 0
+
+//Musician
+8698 - 3057 3472 0
+
+//Abbot Langley
+801 - 3059 3484 0
+
+//Rock
+8109 - 3045 3497 0
+
+//Brother Althric
+2588 - 3047 3503 0
+
+//Brother Jered
+802 - 3046 3486 0
+
+//null
+2386 - 3051 3496 0
+
+//null
+7732 - 3009 3466 0
+
+//null
+7734 - 3009 3487 0
+
+//null
+7733 - 3008 3479 0
+
+//null
+7731 - 3008 3466 0
+
+//Oracle
+746 - 3013 3496 0
+
+//Black Knight captain
+610 - 3027 3506 0
+
+//Greldo
+612 - 3028 3510 0
+
+//Black Cat
+4607 - 3030 3505 0
+
+//null
+12311 - 3019 3516 0
+
+//Fat Tony
+596 - 3037 3705 0
+
+//Fishing spot
+326 - 3062 3710 0
+
+//Rock
+8109 - 3031 3721 0
+
+//Rock
+8109 - 3059 3893 0
+
+//Darren
+1781 - 3008 3862 0
+
+//Elof
+6653 - 3043 9719 0
+
+//null
+6666 - 3057 9709 0
+
+//Sten
+69 - 3059 9712 0
+
+//Dwarf
+6655 - 3038 9696 0
+
+//Dwarf
+6656 - 3038 9694 0
+
+//Isak
+6652 - 3030 9690 0
+
+//RuneScape guide
+945 - 3093 3107 0
+
+//Survival expert
+943 - 3103 3096 0
+
+//Fishing spot
+233 - 3100 3091 0
+
+//Wizard
+13945 - 3099 3168 0
+
+//Ariane
+13942 - 3099 3169 0
+
+//Professor Onglewip
+4585 - 3115 3160 0
+
+//null
+2385 - 3112 3159 0
+
+//Wizard
+1263 - 3109 3159 0
+
+//Traiborn
+881 - 3112 3162 0
+
+//null
+8655 - 3105 3161 0
+
+//Wizard Mizgog
+706 - 3103 3163 0
+
+//null
+707 - 3113 3160 0
+
+//Pig
+4611 - 3076 3259 0
+
+//Piglet
+2242 - 3075 3256 0
+
+//Piglet
+2243 - 3077 3260 0
+
+//Aggie
+922 - 3086 3261 0
+
+//null
+3820 - 3088 3255 0
+
+//Piglet
+2242 - 3077 3255 0
+
+//null
+11570 - 3089 3255 0
+
+//Olivia
+2233 - 3079 3253 0
+
+//Martin the Master Gardener
+3299 - 3079 3253 0
+
+//null
+11572 - 3090 3250 0
+
+//Fortunato
+3671 - 3085 3250 0
+
+//Bank guard
+2574 - 3087 3248 0
+
+//Diango
+970 - 3081 3247 0
+
+//Master Farmer
+2234 - 3081 3247 0
+
+//Crow
+1756 - 3085 3248 0
+
+//Banker
+4456 - 3090 3245 0
+
+//Banker
+4458 - 3090 3244 0
+
+//Man
+4593 - 3094 3258 0
+
+//Miss Schism
+2634 - 3095 3252 0
+
+//Banker
+4459 - 3090 3241 0
+
+//Banker
+4457 - 3090 3242 0
+
+//Ned
+918 - 3100 3260 0
+
+//Gull
+451 - 3077 3234 0
+
+//Crow
+1754 - 3107 3250 0
+
+//Musician
+30 - 3110 3253 0
+
+//Crow
+1754 - 3110 3262 0
+
+//null
+915 - 3113 3263 0
+
+//Prince Ali
+920 - 3121 3243 0
+
+//Crow
+2252 - 3100 3243 0
+
+//Joe
+916 - 3122 3245 0
+
+//Crow
+2252 - 3122 3253 0
+
+//Crow
+4571 - 3109 3234 0
+
+//Lady Keli
+919 - 3130 3246 0
+
+//Babe
+8204 - 3113 3220 0
+
+//Norman
+8203 - 3111 3219 0
+
+//Maggie
+8078 - 3105 3216 0
+
+//Wendy
+8201 - 3100 3216 0
+
+//Fishing spot
+327 - 3086 3227 0
+
+//Fishing spot
+327 - 3086 3228 0
+
+//Fishing spot
+327 - 3085 3231 0
+
+//Fishing spot
+327 - 3085 3230 0
+
+//Gull
+450 - 3081 3220 0
+
+//Gull
+450 - 3081 3222 0
+
+//Bush
+8105 - 3072 3287 0
+
+//Crow
+2252 - 3079 3273 0
+
+//Crow
+1755 - 3084 3268 0
+
+//Crow
+1755 - 3086 3265 0
+
+//Crow
+4570 - 3096 3264 0
+
+//Morgan
+755 - 3100 3268 0
+
+//Crow
+1756 - 3116 3279 0
+
+//Crow
+4570 - 3115 3270 0
+
+//Crow
+1754 - 3117 3278 0
+
+//Woman
+4590 - 3100 3281 0
+
+//Crow
+1756 - 3096 3283 0
+
+//Potter
+4579 - 3093 3283 0
+
+//Crow
+1755 - 3118 3281 0
+
+//Crow
+4571 - 3103 3294 0
+
+//Farmer
+1761 - 3121 3274 0
+
+//null
+5576 - 3072 3336 0
+
+//Tool leprechaun
+3021 - 3087 3352 0
+
+//null
+5199 - 3093 3357 0
+
+//null
+5201 - 3099 3370 0
+
+//null
+9352 - 3100 3360 0
+
+//null
+152 - 3103 3347 0
+
+//null
+152 - 3107 3337 0
+
+//null
+152 - 3107 3342 0
+
+//null
+152 - 3107 3344 0
+
+//null
+152 - 3108 3346 0
+
+//null
+9350 - 3108 3359 0
+
+//Veronica
+285 - 3110 3330 0
+
+//null
+152 - 3111 3339 0
+
+//null
+152 - 3111 3348 0
+
+//Armour
+9354 - 3113 3363 0
+
+//null
+152 - 3115 3344 0
+
+//Armour
+9354 - 3119 3366 0
+
+//null
+152 - 3120 3344 0
+
+//null
+152 - 3122 3335 0
+
+//null
+9351 - 3122 3357 0
+
+//Armour
+9354 - 3105 3369 0
+
+//null
+9350 - 3107 3368 0
+
+//Armour
+9354 - 3114 3373 0
+
+//null
+3290 - 3110 3366 0
+
+//Professor Oddenstein
+286 - 3110 3367 0
+
+//Banker
+2759 - 3104 3368 0
+
+//Stray dog
+5918 - 3104 3368 0
+
+//null
+152 - 3122 3335 0
+
+//null
+152 - 3107 3337 0
+
+//null
+152 - 3111 3339 0
+
+//null
+152 - 3107 3342 0
+
+//null
+152 - 3120 3344 0
+
+//null
+152 - 3115 3344 0
+
+//null
+152 - 3107 3344 0
+
+//null
+152 - 3108 3346 0
+
+//null
+152 - 3103 3347 0
+
+//null
+152 - 3111 3348 0
+
+//Fishing spot
+328 - 3110 3432 0
+
+//Fishing spot
+328 - 3104 3425 0
+
+//Sigurd
+3329 - 3112 3414 0
+
+//null
+1168 - 3098 3422 0
+
+//null
+2646 - 3083 3417 0
+
+//Tassie Slipcast
+1793 - 3083 3409 0
+
+//null
+2864 - 3082 3415 0
+
+//null
+2866 - 3082 3417 0
+
+//Litara
+4376 - 3081 3425 0
+
+//null
+2872 - 3079 3414 0
+
+//Peksa
+538 - 3076 3429 0
+
+//null
+2876 - 3078 3444 0
+
+//Raccoon
+3287 - 3073 3443 0
+
+//Student
+7153 - 3081 3453 0
+
+//Student
+7157 - 3077 3453 0
+
+//Student
+7155 - 3079 3455 0
+
+//Quest guide
+949 - 3093 3505 0
+
+//Banker
+553 - 3096 3491 0
+
+//Banker
+2759 - 3096 3493 0
+
+//Doris
+3381 - 3081 3495 0
+
+//null
+637 - 3106 3500 0
+
+//Shop assistant
+529 - 3079 3507 0
+
+//Banker
+2759 - 3097 3494 0
+
+//Mandrith
+6537 - 3091 3495 0
+
+//Mr Ex
+3709 - 3088 3507 0
+
+//Banker
+553 - 3096 3489 0
+
+//Shopkeeper
+528 - 3078 3512 0
+
+//null
+8070 - 3089 3515 0
+
+//Hari
+3330 - 3132 3508 0
+
+//null
+8347 - 3125 3483 0
+
+//null
+8468 - 3129 3484 0
+
+//Student
+7154 - 3079 3457 0
+
+//Student
+7156 - 3077 3457 0
+
+//Professor Henry
+7143 - 3082 3459 0
+
+//null
+2257 - 3110 3556 0
+
+//Banker
+45 - 3148 3448 0
+
+//Banker
+44 - 3147 3448 0
+
+//Romily Weaklax
+3205 - 3139 3448 0
+
+//Head chef
+847 - 3143 3447 0
+
+//null
+7744 - 3149 3411 0
+
+//Gertrude
+780 - 3151 3410 0
+
+//Musician
+8699 - 3153 3422 0
+
+//Kanel
+784 - 3155 3406 0
+
+//Caleb
+666 - 3158 3405 0
+
+//null
+2648 - 3159 3434 0
+
+//null
+2869 - 3161 3433 0
+
+//Banker
+2759 - 3180 3438 0
+
+//Banker
+553 - 3180 3436 0
+
+//Banker
+553 - 3180 3440 0
+
+//Banker
+2759 - 3180 3442 0
+
+//Sani
+4905 - 3186 3423 0
+
+//Banker
+553 - 3180 3444 0
+
+//Banker
+553 - 3191 3443 0
+
+//Banker
+2759 - 3191 3441 0
+
+//Banker
+553 - 3191 3439 0
+
+//Banker
+2759 - 3191 3437 0
+
+//Banker
+553 - 3191 3435 0
+
+//Banker
+2759 - 3191 3445 0
+
+//Grand Exchange clerk
+2241 - 3147 3505 0
+
+//Banker
+3418 - 3148 3503 0
+
+//Banker
+2718 - 3149 3506 0
+
+//Musician
+3463 - 3145 3472 0
+
+//Raccoon
+6914 - 3147 3481 0
+
+//Banker
+3293 - 3148 3477 0
+
+//Grand Exchange clerk
+1419 - 3147 3479 0
+
+//Banker
+3416 - 3149 3480 0
+
+//Grand Exchange clerk
+2593 - 3150 3478 0
+
+//null
+13482 - 3184 3488 0
+
+//Odovacar
+5383 - 3194 4569 0
+
+//Fremennik shipmaster
+9708 - 3254 3170 0
+
+//Sheep
+43 - 3201 3262 0
+
+//Sheep
+5156 - 3202 3263 0
+
+//Explorer Jack
+7969 - 3204 3242 0
+
+//Sheep
+1765 - 3204 3262 0
+
+//Li'l lamb
+5146 - 3205 3263 0
+
+//Hans
+0 - 3207 3233 0
+
+//Melee instructor
+705 - 3207 3251 0
+
+//Sheep
+43 - 3207 3261 0
+
+//Guardsman Peale
+7890 - 3208 3227 0
+
+//Ranged instructor
+1861 - 3208 3255 0
+
+//Cook
+278 - 3209 3215 0
+
+//Lamb
+5147 - 3209 3263 0
+
+//Sheep
+1765 - 3210 3262 0
+
+//null
+3384 - 3211 3225 0
+
+//null
+5423 - 3212 3263 0
+
+//Magic instructor
+4707 - 3213 3252 0
+
+//Shopkeeper
+520 - 3214 3240 0
+
+//Shop assistant
+521 - 3214 3243 0
+
+//Donie
+2238 - 3217 3254 0
+
+//Gee
+2237 - 3219 3230 0
+
+//Ozan
+7888 - 3221 3219 0
+
+//Nastroth
+6539 - 3222 3213 0
+
+//Julian
+7869 - 3224 3241 0
+
+//null
+1770 - 3224 3261 0
+
+//Lachtopher
+7870 - 3225 3238 0
+
+//Apprentice smith
+4904 - 3227 3253 0
+
+//Wilfred
+4906 - 3228 3245 0
+
+//Victoria
+7872 - 3231 3207 0
+
+//Doomsayer
+3777 - 3231 3227 0
+
+//Bob
+519 - 3232 3203 0
+
+//Circus barker
+8081 - 3233 3214 0
+
+//Musician
+29 - 3233 3233 0
+
+//Butterfly
+155 - 3235 3222 0
+
+//Donie
+2238 - 3235 3225 0
+
+//Iain
+7868 - 3236 3202 0
+
+//Lumbridge Sage
+2244 - 3238 3219 0
+
+//Ducklings
+6112 - 3238 3239 0
+
+//Ducklings
+6112 - 3238 3247 0
+
+//Fishing spot
+329 - 3238 3252 0
+
+//Fishing spot
+329 - 3239 3241 0
+
+//Priest Yauchomi
+4903 - 3243 3213 0
+
+//Father Aereck
+456 - 3244 3205 0
+
+//Barfy Bill
+3331 - 3244 3237 0
+
+//Balloon animal
+2276 - 3244 3245 0
+
+//Balloon animal
+2275 - 3244 3246 0
+
+//Prison Pete
+2274 - 3244 3247 0
+
+//Balloon animal
+2277 - 3245 3244 0
+
+//Gee
+2237 - 3245 3261 0
+
+//Balloon animal
+2278 - 3246 3246 0
+
+//null
+2281 - 3247 3245 0
+
+//null
+2280 - 3247 3246 0
+
+//null
+2279 - 3247 3247 0
+
+//null
+1769 - 3249 3243 0
+
+//null
+1770 - 3250 3238 0
+
+//Frog
+1772 - 3252 3228 0
+
+//null
+1771 - 3253 3234 0
+
+//Frog
+1773 - 3255 3223 0
+
+//Butterfly
+155 - 3255 3226 0
+
+//null
+1771 - 3255 3249 0
+
+//Frog
+1772 - 3255 3252 0
+
+//Frog
+1774 - 3258 3223 0
+
+//Frog
+1773 - 3258 3228 0
+
+//null
+1769 - 3258 3245 0
+
+//null
+1770 - 3258 3249 0
+
+//Fishing spot
+6267 - 3259 3203 0
+
+//Fishing spot
+6267 - 3259 3204 0
+
+//Fishing spot
+6267 - 3259 3205 0
+
+//Frog
+1774 - 3260 3233 0
+
+//Frog Prince
+1775 - 3260 3237 0
+
+//Frog Princess
+1776 - 3260 3240 0
+
+//Frog
+1772 - 3262 3219 0
+
+//Guardsman DeShawn
+7886 - 3206 3214 0
+
+//null
+2079 - 3209 3219 0
+
+//Cadmus
+4900 - 3210 3212 0
+
+//Guardsman Dante
+7885 - 3211 3227 0
+
+//Duke Horacio
+741 - 3212 3220 0
+
+//Guardsman Pazel
+7889 - 3213 3210 0
+
+//Guardsman Brawn
+7887 - 3215 3219 0
+
+//null
+4473 - 3227 3240 0
+
+//Banker
+4907 - 3208 3222 0
+
+//null
+7968 - 3210 3218 0
+
+//Sheep
+8876 - 3201 3272 0
+
+//Sheep
+8876 - 3202 3265 0
+
+//Sheep
+5160 - 3202 3271 0
+
+//Sheep
+5157 - 3205 3266 0
+
+//Sheep
+8876 - 3206 3269 0
+
+//Crow
+4571 - 3207 3299 0
+
+//Crow
+2252 - 3208 3301 0
+
+//Crow
+4570 - 3209 3300 0
+
+//Sheep
+8876 - 3210 3265 0
+
+//Sheep
+5161 - 3210 3274 0
+
+//Seth Groats
+452 - 3223 3293 0
+
+//null
+4315 - 3224 3286 0
+
+//Vasquen
+2333 - 3226 3311 0
+
+//null
+4317 - 3230 3285 0
+
+//Tool leprechaun
+7565 - 3231 3320 0
+
+//null
+7566 - 3231 3321 0
+
+//Farmer
+1759 - 3250 3310 0
+
+//Gillie Groats
+3807 - 3254 3274 0
+
+//Crow
+1756 - 3258 3315 0
+
+//Crow
+1754 - 3258 3317 0
+
+//Crow
+1755 - 3260 3317 0
+
+//Tarquin
+3328 - 3203 3344 0
+
+//Charlie the Tramp
+641 - 3208 3391 0
+
+//Sheep
+5148 - 3230 3346 0
+
+//Sheep
+5161 - 3233 3343 0
+
+//Sheep
+5149 - 3234 3349 0
+
+//Sheep
+5148 - 3238 3345 0
+
+//Sheep
+43 - 3238 3349 0
+
+//Sheep
+42 - 3240 3342 0
+
+//Master Farmer
+2235 - 3240 3345 0
+
+//Sheep
+5161 - 3243 3347 0
+
+//Sheep
+5160 - 3247 3344 0
+
+//null
+2260 - 3260 3383 0
+
+//Stray dog
+5917 - 3200 3399 0
+
+//Gypsy Aris
+9362 - 3202 3424 0
+
+//Shopkeeper
+551 - 3203 3397 0
+
+//Zaff
+546 - 3203 3433 0
+
+//Naff
+359 - 3203 3435 0
+
+//Thessalia
+548 - 3204 3417 0
+
+//Iffie
+2778 - 3204 3419 0
+
+//Shop assistant
+552 - 3205 3399 0
+
+//Dealga
+11475 - 3206 3400 0
+
+//Market guard
+11269 - 3214 3425 0
+
+//Shop assistant
+523 - 3217 3411 0
+
+//Baraek
+547 - 3217 3435 0
+
+//Shopkeeper
+522 - 3218 3415 0
+
+//Benny
+5925 - 3219 3432 0
+
+//Shilop
+781 - 3221 3434 0
+
+//Wilough
+783 - 3221 3435 0
+
+//Dr Harlow
+756 - 3222 3397 0
+
+//Urist Loric
+11270 - 3222 3424 0
+
+//Bartender
+733 - 3226 3399 0
+
+//Tramp
+2792 - 3228 3412 0
+
+//Horvik
+549 - 3229 3438 0
+
+//Cook
+5910 - 3230 3401 0
+
+//Lowe
+550 - 3232 3423 0
+
+//Stray dog
+5918 - 3233 3394 0
+
+//Tramp
+11 - 3235 3401 0
+
+//null
+8124 - 3238 3412 0
+
+//Cleaner
+5916 - 3250 3429 0
+
+//Banker
+553 - 3251 3418 0
+
+//Banker
+553 - 3252 3418 0
+
+//Aubury
+5913 - 3253 3402 0
+
+//Banker
+553 - 3253 3418 0
+
+//Town crier
+6135 - 3253 3429 0
+
+//Information clerk
+5938 - 3253 3454 0
+
+//Banker
+2759 - 3254 3418 0
+
+//Marius Giste
+5933 - 3254 3443 0
+
+//Banker
+2759 - 3255 3418 0
+
+//Barnabus Hurma
+5932 - 3255 3442 0
+
+//Banker
+2759 - 3256 3418 0
+
+//Circus barker
+8079 - 3256 3428 0
+
+//Curator Haig Halen
+646 - 3257 3447 0
+
+//Caden Azro
+5934 - 3259 3443 0
+
+//Thias Leacke
+5935 - 3260 3442 0
+
+//Museum guard
+5941 - 3260 3447 0
+
+//Teacher and pupil
+5947 - 3260 3452 0
+
+//Schoolboy
+5946 - 3261 3455 0
+
+//Stray dog
+5917 - 3262 3410 0
+
+//Guard
+368 - 3263 3407 0
+
+//Museum guard
+5943 - 3263 3441 0
+
+//Schoolgirl
+5984 - 3263 3452 0
+
+//Torrcs
+5939 - 3253 3453 0
+
+//Marfet
+5940 - 3262 3442 0
+
+//Ernie
+2414 - 3263 3400 0
+
+//Art Critic Jacques
+5930 - 3257 3454 0
+
+//Teacher and pupil
+5947 - 3261 3451 0
+
+//Museum guard
+4405 - 3262 3455 0
+
+//null
+8068 - 3234 3526 0
+
+//null
+2389 - 3219 3677 0
+
+//William
+1778 - 3260 3859 0
+
+//Fishing spot
+330 - 3267 3148 0
+
+//null
+2897 - 3271 3159 0
+
+//Circus barker
+8079 - 3274 3162 0
+
+//Al the Camel
+2809 - 3274 3168 0
+
+//Fishing spot
+330 - 3275 3140 0
+
+//Fremennik warrior
+9709 - 3275 3175 0
+
+//null
+1027 - 3278 3155 0
+
+//null
+5282 - 3286 3180 0
+
+//Zeke
+541 - 3288 3190 0
+
+//null
+2819 - 3295 3193 0
+
+//Hassan
+923 - 3302 3163 0
+
+//null
+2817 - 3306 3197 0
+
+//Louie Legs
+542 - 3316 3175 0
+
+//Shop assistant
+525 - 3316 3182 0
+
+//Shopkeeper
+524 - 3316 3184 0
+
+//Apprentice
+5532 - 3321 3139 0
+
+//Banker
+496 - 3267 3164 0
+
+//Banker
+497 - 3267 3166 0
+
+//Banker
+496 - 3267 3167 0
+
+//Banker
+497 - 3267 3168 0
+
+//Banker
+496 - 3267 3169 0
+
+//Karim
+543 - 3272 3182 0
+
+//Ellis
+2824 - 3275 3193 0
+
+//null
+2816 - 3301 3190 0
+
+//Ranael
+544 - 3316 3164 0
+
+//Sorceress
+5531 - 3319 3138 0
+
+//Dommik
+545 - 3322 3194 0
+
+//Border Guard
+925 - 3266 3229 0
+
+//Border Guard
+925 - 3267 3226 0
+
+//Border Guard
+926 - 3268 3226 0
+
+//Border Guard
+926 - 3269 3229 0
+
+//Captain Dalbur
+3809 - 3284 3212 0
+
+//null
+2813 - 3285 3201 0
+
+//Gem trader
+540 - 3288 3212 0
+
+//Ollie the Camel
+2811 - 3289 3209 0
+
+//Musician
+8707 - 3292 3212 0
+
+//Cam the Camel
+2812 - 3296 3227 0
+
+//Silk trader
+539 - 3299 3204 0
+
+//Faruq
+9159 - 3301 3208 0
+
+//null
+2818 - 3303 3204 0
+
+//Ali Morrisane
+1862 - 3304 3211 0
+
+//Elly the Camel
+2810 - 3311 3208 0
+
+//Tool leprechaun
+7564 - 3318 3203 0
+
+//Estocada
+3670 - 3318 3238 0
+
+//Mubariz
+957 - 3314 3240 0
+
+//Jiggling crate
+7740 - 3298 3514 0
+
+//null
+8067 - 3280 3524 0
+
+//Black salamander
+5116 - 3291 3675 0
+
+//Black salamander
+5116 - 3293 3678 0
+
+//Black salamander
+5116 - 3302 3671 0
+
+//Black salamander
+5116 - 3299 3666 0
+
+//Black salamander
+5116 - 3319 3662 0
+
+//Black salamander
+5116 - 3309 3661 0
+
+//Black salamander
+5116 - 3321 3661 0
+
+//Fishing spot
+3804 - 3349 3793 0
+
+//Assistant archaeologist Kerner
+6787 - 3408 2813 0
+
+//Lead archaeologist Abigail
+6786 - 3409 2812 0
+
+//null
+8065 - 3399 3467 0
+
+//null
+3076 - 3403 3492 0
+
+//null
+3074 - 3404 3492 0
+
+//Hiylik Myna
+1514 - 3432 3487 0
+
+//null
+1519 - 3433 3486 0
+
+//null
+1517 - 3434 3483 0
+
+//null
+1520 - 3434 3486 0
+
+//null
+1518 - 3435 3483 0
+
+//null
+1048 - 3437 3486 0
+
+//null
+1516 - 3437 3487 0
+
+//null
+1515 - 3438 3487 0
+
+//Ulizius
+1054 - 3444 3459 0
+
+//Tool leprechaun
+7563 - 3449 3474 0
+
+//null
+1047 - 3415 3489 0
+
+//Chicken
+11257 - 3426 3687 0
+
+//Wiglaf
+9716 - 3428 3698 0
+
+//Chicken
+11256 - 3429 3678 0
+
+//null
+4732 - 3429 3701 0
+
+//Estrith
+9714 - 3433 3680 0
+
+//Thok, Master of Dungeoneering
+9713 - 3439 3698 0
+
+//Rewards trader
+9711 - 3443 3698 0
+
+//null
+9722 - 3392 3713 0
+
+//Cormorant
+9718 - 3393 3774 0
+
+//null
+9723 - 3395 3757 0
+
+//null
+9723 - 3418 3717 0
+
+//null
+9723 - 3426 3753 0
+
+//null
+9722 - 3428 3773 0
+
+//Fremennik banker
+9710 - 3448 3720 0
+
+//Dungeoneering tutor
+9712 - 3452 3720 0
+
+//Mound
+9462 - 3436 5668 0
+
+//Mound
+9462 - 3439 5665 0
+
+//Mound
+9462 - 3437 5662 0
+
+//Mound
+9462 - 3433 5662 0
+
+//Mound
+9462 - 3432 5659 0
+
+//Mound
+9462 - 3434 5656 0
+
+//Mound
+9462 - 3429 5656 0
+
+//Mound
+9462 - 3432 5652 0
+
+//Mound
+9462 - 3429 5651 0
+
+//Mound
+9462 - 3424 5654 0
+
+//Mound
+9462 - 3419 5654 0
+
+//Mound
+9462 - 3415 5654 0
+
+//Mound
+9462 - 3414 5659 0
+
+//Mound
+9462 - 3417 5660 0
+
+//Mound
+9462 - 3415 5664 0
+
+//Mound
+9462 - 3417 5668 0
+
+//Mound
+9462 - 3417 5672 0
+
+//Mound
+9462 - 3414 5673 0
+
+//Mound
+9462 - 3413 5677 0
+
+//Mound
+9462 - 3412 5674 0
+
+//Mound
+9462 - 3422 5677 0
+
+//Mound
+9462 - 3425 5673 0
+
+//Drezel
+1049 - 3440 9895 0
+
+//Will o' the wisp
+1043 - 3459 3457 0
+
+//Will o' the wisp
+1043 - 3460 3462 0
+
+//Will o' the wisp
+1043 - 3462 3459 0
+
+//Will o' the wisp
+1043 - 3463 3490 0
+
+//Will o' the wisp
+1043 - 3464 3511 0
+
+//Will o' the wisp
+1043 - 3465 3466 0
+
+//Will o' the wisp
+1043 - 3466 3495 0
+
+//Will o' the wisp
+1043 - 3466 3497 0
+
+//Will o' the wisp
+1043 - 3467 3485 0
+
+//Will o' the wisp
+1043 - 3467 3497 0
+
+//Will o' the wisp
+1043 - 3467 3509 0
+
+//Will o' the wisp
+1043 - 3469 3470 0
+
+//Will o' the wisp
+1043 - 3470 3469 0
+
+//Will o' the wisp
+1043 - 3471 3477 0
+
+//Will o' the wisp
+1043 - 3474 3505 0
+
+//Fidelio
+1040 - 3475 3497 0
+
+//Will o' the wisp
+1043 - 3476 3507 0
+
+//Will o' the wisp
+1043 - 3479 3511 0
+
+//Will o' the wisp
+1043 - 3480 3468 0
+
+//Will o' the wisp
+1043 - 3480 3470 0
+
+//Will o' the wisp
+1043 - 3482 3469 0
+
+//Will o' the wisp
+1043 - 3483 3511 0
+
+//Will o' the wisp
+1043 - 3484 3464 0
+
+//Will o' the wisp
+1043 - 3485 3509 0
+
+//Will o' the wisp
+1043 - 3490 3461 0
+
+//Will o' the wisp
+1043 - 3491 3460 0
+
+//Roavar
+1042 - 3493 3471 0
+
+//Will o' the wisp
+1043 - 3494 3461 0
+
+//Will o' the wisp
+1043 - 3494 3512 0
+
+//Malak
+1920 - 3497 3478 0
+
+//Will o' the wisp
+1043 - 3498 3461 0
+
+//Will o' the wisp
+1043 - 3499 3513 0
+
+//Will o' the wisp
+1043 - 3501 3513 0
+
+//Will o' the wisp
+1043 - 3502 3464 0
+
+//null
+2020 - 3503 3477 0
+
+//Will o' the wisp
+1043 - 3504 3463 0
+
+//Will o' the wisp
+1043 - 3506 3512 0
+
+//Will o' the wisp
+1043 - 3506 3515 0
+
+//Will o' the wisp
+1043 - 3507 3515 0
+
+//Will o' the wisp
+1043 - 3509 3512 0
+
+//Will o' the wisp
+1043 - 3511 3488 0
+
+//null
+8481 - 3511 3509 0
+
+//null
+8482 - 3512 3509 0
+
+//Will o' the wisp
+1043 - 3513 3467 0
+
+//Will o' the wisp
+1043 - 3513 3487 0
+
+//Will o' the wisp
+1043 - 3513 3489 0
+
+//Will o' the wisp
+1043 - 3513 3503 0
+
+//Will o' the wisp
+1043 - 3514 3490 0
+
+//Will o' the wisp
+1043 - 3515 3495 0
+
+//Will o' the wisp
+1043 - 3515 3499 0
+
+//Will o' the wisp
+1043 - 3516 3469 0
+
+//Taxidermist
+4246 - 3480 3484 0
+
+//Sbott
+1041 - 3490 3503 0
+
+//Barker
+1039 - 3499 3506 0
+
+//Rufus
+1038 - 3507 3496 0
+
+//Banker
+1036 - 3514 3479 0
+
+//Banker
+1036 - 3514 3481 0
+
+//null
+9722 - 3456 3683 0
+
+//null
+9723 - 3459 3655 0
+
+//null
+9722 - 3463 3671 0
+
+//null
+9723 - 3472 3681 0
+
+//Chicken
+11257 - 3474 3678 0
+
+//Rook
+9719 - 3474 3691 0
+
+//Cormorant
+9718 - 3492 3648 0
+
+//Rook
+9719 - 3497 3697 0
+
+//Sonje
+9715 - 3501 3696 0
+
+//Gull
+9717 - 3506 3679 0
+
+//null
+9722 - 3510 3665 0
+
+//Cormorant
+9718 - 3510 3705 0
+
+//Fremennik shipmaster
+9707 - 3513 3694 0
+
+//null
+9723 - 3489 3762 0
+
+//Cormorant
+9718 - 3505 3774 0
+
+//null
+9722 - 3506 3731 0
+
+//Cormorant
+9718 - 3515 3747 0
+
+//Gull
+9717 - 3515 3760 0
+
+//null
+7637 - 3588 9768 0
+
+//null
+7639 - 3592 9766 0
+
+//null
+7637 - 3600 9768 0
+
+//null
+7639 - 3603 9770 0
+
+//null
+7639 - 3605 9757 0
+
+//null
+7637 - 3606 9780 0
+
+//null
+7639 - 3611 9749 0
+
+//null
+7639 - 3611 9766 0
+
+//null
+7637 - 3612 9729 0
+
+//null
+7637 - 3613 9764 0
+
+//null
+7637 - 3614 9740 0
+
+//null
+7637 - 3614 9750 0
+
+//null
+7639 - 3616 9737 0
+
+//null
+7639 - 3616 9756 0
+
+//null
+7639 - 3616 9762 0
+
+//null
+7639 - 3617 9779 0
+
+//Fishing spot
+7636 - 3618 9736 0
+
+//Fishing spot
+7636 - 3620 9732 0
+
+//null
+7637 - 3621 9748 0
+
+//null
+7639 - 3621 9754 0
+
+//Fishing spot
+7636 - 3624 9736 0
+
+//Fishing spot
+7636 - 3625 9738 0
+
+//null
+7637 - 3629 9737 0
+
+//Puffin
+5614 - 3779 2826 0
+
+//Monk
+5611 - 3784 2824 0
+
+//Monk
+5610 - 3785 2827 0
+
+//null
+5668 - 3787 2824 0
+
+//null
+5669 - 3787 2827 0
+
+//Puffin
+5614 - 3789 2817 0
+
+//Puffin
+5614 - 3794 2821 0
+
+//Tool leprechaun
+7560 - 3796 2837 0
+
+//Puffin
+5614 - 3808 2823 0
+
+//Puffin
+5614 - 3812 2861 0
+
+//Puffin
+5614 - 3813 2822 0
+
+//Puffin
+5614 - 3818 2862 0
+
+//Puffin
+5614 - 3819 2870 0
+
+//Puffin
+5614 - 3821 2824 0
+
+//Puffin
+5614 - 3831 2828 0
+
+//Monk
+5609 - 3786 2824 0
+
+//null
+5670 - 3786 2827 0
+
+//null
+5671 - 3788 2826 0
+
+//Monk
+5608 - 3786 2827 0
+
+//null
+5672 - 3788 2825 0
+
+//Junior Cadet Mina
+8969 - 4128 5917 0
+

@@ -67,7 +67,6 @@ public class Player extends Entity {
 
 	private static final long serialVersionUID = 2011932556974180375L;
 
-
 	public String title;
 
 	// transient stuff
@@ -119,7 +118,7 @@ public class Player extends Entity {
 	private transient Runnable interfaceListenerEvent;// used for static
 	private transient List<Integer> switchItemCache;
 	private transient boolean disableEquip;
-	
+
 	// interface
 
 	// saving stuff
@@ -164,11 +163,13 @@ public class Player extends Entity {
 	private int banKillCount;
 	private int zamKillCount;
 	private int sarKillCount;
+	private int slayerPoints;
+	private String[] removedSlayerTasks;
 
 	private boolean donator;
 	private long donatorTill;
-	
-	//Recovery ques. & ans.
+
+	// Recovery ques. & ans.
 	private String recovQuestion;
 	private String recovAnswer;
 
@@ -190,29 +191,27 @@ public class Player extends Entity {
 	private String currentFriendChatOwner;
 	private int summoningLeftClickOption;
 	private List<String> ownedObjectsManagerKeys;
-		public void sendMessage(String string) {
+
+	public void sendMessage(String string) {
 		getPackets().sendGameMessage(string);
 	}
+
 	public void init(Session session, String string) {
-		//isinLobby = true;
-		
-		
-		//if (dominionTower == null)
-			//dominionTower = new DominionTower();
+		// isinLobby = true;
+
+		// if (dominionTower == null)
+		// dominionTower = new DominionTower();
 		username = string;
 		this.session = session;
-		//packetsDecoderPing = System.currentTimeMillis();
-		//World.addPlayer(this);
-		//World.updateEntityRegion(this);
+		// packetsDecoderPing = System.currentTimeMillis();
+		// World.addPlayer(this);
+		// World.updateEntityRegion(this);
 		if (Settings.DEBUG)
-			Logger.log(this, new StringBuilder("Inited Player: ").append
-					(string).append
-					(", pass: ").append
-					(password).toString());
+			Logger.log(this, new StringBuilder("Inited Player: ")
+					.append(string).append(", pass: ").append(password)
+					.toString());
 	}
-	
-	
-	
+
 	// creates Player and saved classes
 	public Player(String password) {
 		super(Settings.START_PLAYER_LOCATION);
@@ -243,6 +242,12 @@ public class Player extends Entity {
 		banKillCount = 0;
 		zamKillCount = 0;
 		sarKillCount = 0;
+		slayerPoints = 0;
+		removedSlayerTasks = new String[5];
+		for (String s : removedSlayerTasks) {
+			s = "-";
+		}
+
 		SkillCapeCustomizer.resetSkillCapes(this);
 		ownedObjectsManagerKeys = new LinkedList<String>();
 	}
@@ -292,12 +297,25 @@ public class Player extends Entity {
 				.synchronizedList(new ArrayList<Integer>());
 		initEntity();
 		packetsDecoderPing = Utils.currentTimeMillis();
+
+		if (removedSlayerTasks == null) {
+			removedSlayerTasks = new String[5];
+			for (int i = 0; i < removedSlayerTasks.length; i++) {
+				removedSlayerTasks[i] = "-";
+			}
+		} else if (removedSlayerTasks[0] == null) {
+			removedSlayerTasks = new String[5];
+			for (int i = 0; i < removedSlayerTasks.length; i++) {
+				removedSlayerTasks[i] = "-";
+			}
+		}
+
 		// inited so lets add it
 		World.addPlayer(this);
 		World.updateEntityRegion(this);
 		if (Settings.DEBUG)
 			Logger.log(this, "Player Logged in: " + username + ", pass: "
-					+ password);				
+					+ password);
 	}
 
 	public void setWildernessSkull() {
@@ -314,7 +332,7 @@ public class Player extends Entity {
 
 	private int wGuildTokens;
 
-        public int getWGuildTokens() {
+	public int getWGuildTokens() {
 		return wGuildTokens;
 	}
 
@@ -332,7 +350,7 @@ public class Player extends Entity {
 
 	public int setSkullDelay(int delay) {
 		return this.skullDelay = delay;
-	} 
+	}
 
 	public void refreshSpawnedItems() {
 		for (int regionId : getMapRegionsIds()) {
@@ -599,9 +617,11 @@ public class Player extends Entity {
 		appendStarter();
 		getEmotesManager().unlockAllEmotes();
 		getPackets()
-				.sendGameMessage("<col=FFFFFF>Welcome to PvP Paradise by <img=1>Will, and <img=1>Bobby!");
+				.sendGameMessage(
+						"<col=FFFFFF>Welcome to PvP Paradise by <img=1>Will, and <img=1>Bobby!");
 		getPackets()
-				.sendGameMessage("<col=960000><img=2>[Announcment] This is a new server so there may be some glitches!");
+				.sendGameMessage(
+						"<col=960000><img=2>[Announcment] This is a new server so there may be some glitches!");
 		if (donator || donatorTill != 0) {
 			if (!donator && donatorTill < Utils.currentTimeMillis())
 				getPackets().sendGameMessage("Your donator rank expired.");
@@ -849,8 +869,9 @@ public class Player extends Entity {
 	}
 
 	public String getDisplayName() {
-		/*if (displayName != null)
-			return displayName;*/
+		/*
+		 * if (displayName != null) return displayName;
+		 */
 		return Utils.formatPlayerNameForDisplay(username);
 	}
 
@@ -1698,7 +1719,7 @@ public class Player extends Entity {
 					getPackets().sendGameMessage("Oh dear, you have died.");
 				} else if (loop == 3) {
 					Player killer = getMostDamageReceivedSourcePlayer();
-						//killer.inventory.addItem(24158, 2);
+					// killer.inventory.addItem(24158, 2);
 					if (killer != null) {
 						killer.removeDamage(thisPlayer);
 						killer.increaseKillCount(thisPlayer);
@@ -2300,7 +2321,7 @@ public class Player extends Entity {
 	public DominionTower getDominionTower() {
 		return dominionTower;
 	}
-	
+
 	public SlayerTask getSlayerTask() {
 		return slayerTask;
 	}
@@ -2557,7 +2578,7 @@ public class Player extends Entity {
 	public void setDisableEquip(boolean equip) {
 		disableEquip = equip;
 	}
-	
+
 	public boolean isEquipDisabled() {
 		return disableEquip;
 	}
@@ -2565,42 +2586,51 @@ public class Player extends Entity {
 	public void addDisplayTime(long i) {
 		this.displayTime = i + Utils.currentTimeMillis();
 	}
-	
+
 	public long getDisplayTime() {
 		return displayTime;
 	}
-	
-    public War getOwnedWar() {
-        return (getCurrentFriendChatOwner() != null && getCurrentFriendChatOwner().equalsIgnoreCase(getUsername()) && getCurrentFriendChat().getWar() != null) ? getCurrentFriendChat().getWar() : null;
-    }
 
-    public Player getTradePartner() {  
+	public War getOwnedWar() {
+		return (getCurrentFriendChatOwner() != null
+				&& getCurrentFriendChatOwner().equalsIgnoreCase(getUsername()) && getCurrentFriendChat()
+				.getWar() != null) ? getCurrentFriendChat().getWar() : null;
+	}
 
-    	return tradePartner; 
+	public Player getTradePartner() {
+		return tradePartner;
+	}
 
-    	} 
-    	 
+	public void setTradePartner(Player tradePartner) {
+		this.tradePartner = tradePartner;
+	}
 
-    	public void setTradePartner(Player tradePartner) {  
+	public Trade getTradeSession() {
+		return tradeSession;
+	}
 
-    	this.tradePartner = tradePartner; 
-    	 
+	public void setTradeSession(Trade session2) {
+		this.tradeSession = session2;
+	}
 
-    	}
+	public void setSlayerPoints(int slayerPoints) {
+		this.slayerPoints = slayerPoints;
+	}
 
+	public int getSlayerPoints() {
+		return slayerPoints;
+	}
 
-public Trade getTradeSession() {  
+	public String[] getRemovedSlayerTasks() {
+		return removedSlayerTasks;
+	}
 
-return tradeSession; 
+	public void setRemovedSlayerTasks(String[] removedSlayerTasks) {
+		this.removedSlayerTasks = removedSlayerTasks;
+	}
 
-} 
- 
-
-public void setTradeSession(Trade session2) {  
-
-this.tradeSession = session2; 
- 
-
-}
+	public void setRemovedSlayerTasks(int id, String s) {
+		this.removedSlayerTasks[id] = s;
+	}
 
 }

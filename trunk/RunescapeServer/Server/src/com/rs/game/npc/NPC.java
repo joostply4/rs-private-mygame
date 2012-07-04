@@ -609,6 +609,22 @@ public class NPC extends Entity implements Serializable {
 		resetWalkSteps();
 		combat.removeTarget();
 		setNextAnimation(null);
+
+		if (source instanceof Player) {
+			Player killer = (Player) source;
+			if (killer.slayerTask.getTaskMonstersLeft() > 0) {
+				for (String m : killer.slayerTask.getTask().slayable) {
+					if (getDefinitions().name.toLowerCase().equals(m.toLowerCase())) {
+						killer.slayerTask.onMonsterDeath(killer, this);
+						break;
+					} else {
+						killer.getPackets().sendGameMessage(
+								getDefinitions().name.toLowerCase() + " is not " + m.toLowerCase());
+					}
+				}
+			}
+		}
+
 		WorldTasksManager.schedule(new WorldTask() {
 			int loop;
 
@@ -638,14 +654,6 @@ public class NPC extends Entity implements Serializable {
 			Player killer = getMostDamageReceivedSourcePlayer();
 			if (killer == null)
 				return;
-			if (killer.slayerTask.getTaskMonstersLeft() > 0) {
-				for (String m : killer.slayerTask.getTask().slayable) {
-					if (getDefinitions().name.equals(m)) {
-						killer.slayerTask.onMonsterDeath(killer, this);
-						break;
-					}
-				}
-			}
 			Drop[] possibleDrops = new Drop[drops.length];
 			int possibleDropsCount = 0;
 			for (Drop drop : drops) {

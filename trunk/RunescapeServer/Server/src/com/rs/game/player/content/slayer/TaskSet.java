@@ -8,5 +8,7 @@ package com.rs.game.player.content.slayer;
  * 
  */
 public enum TaskSet {
-	TURAEL; // Very Easy
+	EASY,
+	MEDIUM,
+	HARD;
 }
