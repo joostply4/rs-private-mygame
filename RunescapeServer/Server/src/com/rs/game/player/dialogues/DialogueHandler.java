@@ -152,8 +152,8 @@ public final class DialogueHandler {
 					.forName(TeleportTraining.class.getCanonicalName());
 			handledDialogues.put("TeleportTraining", value46);
 			Class<Dialogue> value47 = (Class<Dialogue>) Class
-					.forName(Turael.class.getCanonicalName());
-			handledDialogues.put("Turael", value47);
+					.forName(Kuradal.class.getCanonicalName());
+			handledDialogues.put("Kuradal", value47);
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

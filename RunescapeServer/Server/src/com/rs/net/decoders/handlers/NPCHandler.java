@@ -12,6 +12,7 @@ import com.rs.game.player.actions.PickPocketAction;
 import com.rs.game.player.actions.PickPocketableNPC;
 import com.rs.game.player.actions.Fishing.FishingSpots;
 import com.rs.game.player.content.PlayerLook;
+import com.rs.game.player.content.slayer.Slayer;
 import com.rs.game.player.dialogues.FremennikShipmaster;
 import com.rs.io.InputStream;
 import com.rs.utils.ShopsHandler;
@@ -51,7 +52,7 @@ public class NPCHandler {
 				if (!player.getControlerManager().processNPCClick1(npc))
 					return;
 				if (npc.getId() == 1569)
-					player.getDialogueManager().startDialogue("Veliaf", 
+					player.getDialogueManager().startDialogue("Veliaf",
 							npc.getId());
 				if (npc.getId() == 3709)
 					player.getDialogueManager().startDialogue("MrEx",
@@ -70,30 +71,31 @@ public class NPCHandler {
 				else if (npc.getId() == 9708)
 					player.getDialogueManager().startDialogue(
 							"FremennikShipmaster", npc.getId(), false);
-				if (npc.getId() == 8461)
-					player.getDialogueManager().startDialogue("Turael", npc.getId());
+				if (npc.getId() == 9085)
+					player.getDialogueManager().startDialogue("Kuradal",
+							npc.getId());
 				else if (npc.getId() == 6537)
 					ShopsHandler.openShop(player, 19);
 				else if (npc.getId() == 6537)
 					ShopsHandler.openShop(player, 22);
 				else if (npc.getId() == 564)
-                    ShopsHandler.openShop(player, 30);
+					ShopsHandler.openShop(player, 30);
 				else if (npc.getId() == 2253)
-                    ShopsHandler.openShop(player, 26);
+					ShopsHandler.openShop(player, 26);
 				else if (npc.getId() == 2830)
 					ShopsHandler.openShop(player, 29);
 				else if (npc.getId() == 576)
-					ShopsHandler.openShop(player, 22);	
+					ShopsHandler.openShop(player, 22);
 				else if (npc.getId() == 948)
-					ShopsHandler.openShop(player, 23);	
+					ShopsHandler.openShop(player, 23);
 				else if (npc.getId() == 445)
-					ShopsHandler.openShop(player, 23);	
+					ShopsHandler.openShop(player, 23);
 				else if (npc.getId() == 637)
-					ShopsHandler.openShop(player, 25);	
+					ShopsHandler.openShop(player, 25);
 				else if (npc.getId() == 2732)
-					ShopsHandler.openShop(player, 26);	
+					ShopsHandler.openShop(player, 26);
 				else if (npc.getId() == 4906)
-					ShopsHandler.openShop(player, 27);						
+					ShopsHandler.openShop(player, 27);
 				else if (npc.getId() == 2676)
 					player.getDialogueManager().startDialogue("MakeOverMage",
 							npc.getId(), 0);
@@ -228,7 +230,13 @@ public class NPCHandler {
 					ShopsHandler.openShop(player, 21);
 				else if (npc.getId() == 2676)
 					PlayerLook.openMageMakeOver(player);
-				else {
+				else if (npc.getId() == 9085) {
+					if (player.getSlayerTask().getTaskMonstersLeft() <= 0) {
+						Slayer.assignTask(player);
+					} else {
+						Slayer.reassignTask(player);
+					}
+				} else {
 					player.getPackets().sendGameMessage(
 							"Nothing interesting happens.");
 					if (Settings.DEBUG)
@@ -238,5 +246,47 @@ public class NPCHandler {
 				}
 			}
 		}, npc.getSize()));
+	}
+
+	public static void handleOption3(Player player, InputStream stream) {
+		@SuppressWarnings("unused")
+		boolean unknown = stream.readByte128() == 1;
+		int npcIndex = stream.readUnsignedShort128();
+		final NPC npc = World.getNPCs().get(npcIndex);
+		if (npc == null || npc.isCantInteract() || npc.isDead()
+				|| npc.hasFinished()
+				|| !player.getMapRegionsIds().contains(npc.getRegionId()))
+			return;
+		player.stopAll(false);
+		
+		if (npc.getId() == 9085) { //Open Slayer Shop
+			
+		}
+
+		if (Settings.DEBUG)
+			System.out.println("cliked 3 at npc id : " + npc.getId() + ", "
+					+ npc.getX() + ", " + npc.getY() + ", " + npc.getPlane());
+	}
+
+	public static void handleOption4(Player player, InputStream stream) {
+		@SuppressWarnings("unused")
+		boolean unknown = stream.readByte128() == 1;
+		int npcIndex = stream.readUnsignedShort128();
+		final NPC npc = World.getNPCs().get(npcIndex);
+		if (npc == null || npc.isCantInteract() || npc.isDead()
+				|| npc.hasFinished()
+				|| !player.getMapRegionsIds().contains(npc.getRegionId()))
+			return;
+		player.stopAll(false);
+		
+		if (npc.getId() == 9085) { //Open Slayer Rewards
+			//interfaces 161, 163, 164
+			//assignment, learn, buy
+			Slayer.initInterface(player, 161);
+		}
+
+		if (Settings.DEBUG)
+			System.out.println("cliked 4 at npc id : " + npc.getId() + ", "
+					+ npc.getX() + ", " + npc.getY() + ", " + npc.getPlane());
 	}
 }

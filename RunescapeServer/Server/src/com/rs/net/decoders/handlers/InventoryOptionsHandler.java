@@ -32,6 +32,7 @@ import com.rs.game.player.content.Burying;
 import com.rs.game.player.content.Foods;
 import com.rs.game.player.content.ItemOnItemHandler;
 import com.rs.game.player.content.ItemOnItemHandler.ItemOnItem;
+import com.rs.game.player.content.slayer.Slayer;
 import com.rs.game.player.content.Magic;
 import com.rs.game.player.content.Pots;
 import com.rs.game.player.content.Runecrafting;
@@ -65,6 +66,8 @@ public class InventoryOptionsHandler {
 		} else if (itemId == 15098) {
 			// DiceGame.handleItem(player, Rolls.FRIENDS_ROLL);
 			return;
+		} else if (itemId == 4155) {
+			Slayer.messageKillsLeft(player);
 		} else {
 			if (player.isEquipDisabled())
 				return;
@@ -114,7 +117,8 @@ public class InventoryOptionsHandler {
 			// DiceGame.handleItem(player, Rolls.PRIVATE_ROLL);
 			return;
 		}
-		if (!player.getControlerManager().handleItemOption1(player, slotId, itemId, item))
+		if (!player.getControlerManager().handleItemOption1(player, slotId,
+				itemId, item))
 			return;
 		if (Pots.pot(player, item, slotId))
 			return;
@@ -132,12 +136,31 @@ public class InventoryOptionsHandler {
 			return;
 		}
 		if (itemId == 6199) {
-		int[] RandomItems = {11732, 4151, 11283, 385, 2347, 1712, 1712, 6585, 1712, 6585, 11732, 11732, 3105, 6918, 6920, 6922, 6924, 6570, 10828, 1079, 1127, 20072, 20072, 8850, 10551, 10548, 4087, 15332, 15332, 4712, 4714, 4716, 4718, 4720, 4722, 4724, 4726, 4728, 4730, 4732, 4734, 4736, 4738, 4745, 4747, 4749, 4751, 4753, 4755, 4757, 4759, 6585, 5698, 1704, 7378, 7370, 7390, 6737, 6731, 6733, 11716, 6199, 6199, 7386, 7394, 11846, 11850, 11852, 2673, 2669, 2671, 6889, 6914, 2653, 2655, 2657, 1837, 10330, 11848, 11854, 11856, 10332, 10334, 10336, 542, 4087, 4585, 6568, 6568, 10338, 10340, 10342, 10344, 10346, 10348, 10350, 10352, 2581, 13736, 6916, 6918, 6920, 6922, 6924, 3481, 3483, 3486, 2577, 2665, 10452, 10454, 10456, 9470, 2661, 10450, 10446, 10448, 1037, 14595, 14603, 1050, 23679, 23680, 23681, 23682, 23683, 23684, 23685, 23686, 23687, 23688, 23689, 23690, 23691, 23692, 23693, 23694, 23695, 23696, 23697, 23698, 23699, 23700, 1040, 1042, 1044, 1046, 1048, 1050, 1053, 1055, 1057, 11732, 3105, 1712, 		1704, 1706, 1079, 1127, 6585, 6570, }; //Other ids go in there as well
-		player.getInventory().deleteItem(6199, 1);
-		for (int i = 0; i < RandomItems.length; i++) 
-		player.getInventory().addItem(RandomItems[i], 1);
-		player.getPackets().sendGameMessage("You've recieved an item from the Mystery Box!");
-		return;
+			int[] RandomItems = { 11732, 4151, 11283, 385, 2347, 1712, 1712,
+					6585, 1712, 6585, 11732, 11732, 3105, 6918, 6920, 6922,
+					6924, 6570, 10828, 1079, 1127, 20072, 20072, 8850, 10551,
+					10548, 4087, 15332, 15332, 4712, 4714, 4716, 4718, 4720,
+					4722, 4724, 4726, 4728, 4730, 4732, 4734, 4736, 4738, 4745,
+					4747, 4749, 4751, 4753, 4755, 4757, 4759, 6585, 5698, 1704,
+					7378, 7370, 7390, 6737, 6731, 6733, 11716, 6199, 6199,
+					7386, 7394, 11846, 11850, 11852, 2673, 2669, 2671, 6889,
+					6914, 2653, 2655, 2657, 1837, 10330, 11848, 11854, 11856,
+					10332, 10334, 10336, 542, 4087, 4585, 6568, 6568, 10338,
+					10340, 10342, 10344, 10346, 10348, 10350, 10352, 2581,
+					13736, 6916, 6918, 6920, 6922, 6924, 3481, 3483, 3486,
+					2577, 2665, 10452, 10454, 10456, 9470, 2661, 10450, 10446,
+					10448, 1037, 14595, 14603, 1050, 23679, 23680, 23681,
+					23682, 23683, 23684, 23685, 23686, 23687, 23688, 23689,
+					23690, 23691, 23692, 23693, 23694, 23695, 23696, 23697,
+					23698, 23699, 23700, 1040, 1042, 1044, 1046, 1048, 1050,
+					1053, 1055, 1057, 11732, 3105, 1712, 1704, 1706, 1079,
+					1127, 6585, 6570, }; // Other ids go in there as well
+			player.getInventory().deleteItem(6199, 1);
+			for (int i = 0; i < RandomItems.length; i++)
+				player.getInventory().addItem(RandomItems[i], 1);
+			player.getPackets().sendGameMessage(
+					"You've recieved an item from the Mystery Box!");
+			return;
 		}
 		if (itemId == 952) {// spade
 			player.resetWalkSteps();
@@ -167,7 +190,7 @@ public class InventoryOptionsHandler {
 		else if (itemId == 1856) {// Information Book
 			player.getInterfaceManager().sendInterface(275);
 			player.getPackets()
-			.sendIComponentText(275, 2, Settings.SERVER_NAME);
+					.sendIComponentText(275, 2, Settings.SERVER_NAME);
 			player.getPackets().sendIComponentText(275, 16,
 					"Welcome to " + Settings.SERVER_NAME + ".");
 			player.getPackets().sendIComponentText(275, 17,
@@ -235,95 +258,96 @@ public class InventoryOptionsHandler {
 
 	public static void handleItemOnItem(final Player player, InputStream stream) {
 		int interfaceId = stream.readIntV1() >> 16;
-			int itemUsedId = stream.readUnsignedShort128();
-			int fromSlot = stream.readUnsignedShortLE128();
-			int interfaceId2 = stream.readIntV2() >> 16;
-			int itemUsedWithId = stream.readUnsignedShort128();
-			int toSlot = stream.readUnsignedShortLE();
-			if ((interfaceId2 == 747 || interfaceId2 == 662)
-					&& interfaceId == Inventory.INVENTORY_INTERFACE) {
-				if (player.getFamiliar() != null) {
-					player.getFamiliar().setSpecial(true);
-					if (player.getFamiliar().getSpecialAttack() == SpecialAttack.ITEM) {
-						if (player.getFamiliar().hasSpecialOn())
-							player.getFamiliar().submitSpecial(toSlot);
-					}
+		int itemUsedId = stream.readUnsignedShort128();
+		int fromSlot = stream.readUnsignedShortLE128();
+		int interfaceId2 = stream.readIntV2() >> 16;
+		int itemUsedWithId = stream.readUnsignedShort128();
+		int toSlot = stream.readUnsignedShortLE();
+		if ((interfaceId2 == 747 || interfaceId2 == 662)
+				&& interfaceId == Inventory.INVENTORY_INTERFACE) {
+			if (player.getFamiliar() != null) {
+				player.getFamiliar().setSpecial(true);
+				if (player.getFamiliar().getSpecialAttack() == SpecialAttack.ITEM) {
+					if (player.getFamiliar().hasSpecialOn())
+						player.getFamiliar().submitSpecial(toSlot);
 				}
+			}
+			return;
+		}
+		if (interfaceId == Inventory.INVENTORY_INTERFACE
+				&& interfaceId == interfaceId2
+				&& !player.getInterfaceManager().containsInventoryInter()) {
+			if (toSlot >= 28 || fromSlot >= 28)
+				return;
+			Item usedWith = player.getInventory().getItem(toSlot);
+			Item itemUsed = player.getInventory().getItem(fromSlot);
+			if (itemUsed == null || usedWith == null
+					|| itemUsed.getId() != itemUsedId
+					|| usedWith.getId() != itemUsedWithId)
+				return;
+			player.stopAll();
+			if (!player.getControlerManager().canUseItemOnItem(itemUsed,
+					usedWith))
+				return;
+			Fletch fletch = Fletching.isFletching(usedWith, itemUsed);
+			if (fletch != null) {
+				player.getDialogueManager().startDialogue("FletchingD", fletch);
 				return;
 			}
-			if (interfaceId == Inventory.INVENTORY_INTERFACE
-					&& interfaceId == interfaceId2
-					&& !player.getInterfaceManager().containsInventoryInter()) {
-				if (toSlot >= 28 || fromSlot >= 28)
-					return;
-				Item usedWith = player.getInventory().getItem(toSlot);
-				Item itemUsed = player.getInventory().getItem(fromSlot);
-				if (itemUsed == null || usedWith == null
-						|| itemUsed.getId() != itemUsedId
-						|| usedWith.getId() != itemUsedWithId)
-					return;
-				player.stopAll();
-				if (!player.getControlerManager().canUseItemOnItem(itemUsed,
-						usedWith))
-					return;
-				Fletch fletch = Fletching.isFletching(usedWith, itemUsed);
-				if (fletch != null) {
-					player.getDialogueManager().startDialogue("FletchingD", fletch);
-					return;
-				}
-				int herblore = Herblore.isHerbloreSkill(itemUsed, usedWith);
-				if (herblore > -1) {
-					player.getDialogueManager().startDialogue("HerbloreD",
-							herblore, itemUsed, usedWith);
-					return;
-				}
-				if (itemUsed.getId() == LeatherCrafting.NEEDLE.getId()
-						|| usedWith.getId() == LeatherCrafting.NEEDLE.getId()) {
-					if (LeatherCrafting
-							.handleItemOnItem(player, itemUsed, usedWith)) {
-						return;
-					}
-				}
-				Sets set = ArmourSets.getArmourSet(itemUsedId, itemUsedWithId);
-				if (set != null) {
-					ArmourSets.exchangeSets(player, set);
-					return;
-				}
-				ItemOnItem itemOnItem = ItemOnItem.forId(itemUsedId);
-				if (itemOnItem != null) {
-					if (itemUsedWithId == itemOnItem.getItem2())
-						ItemOnItemHandler.handleItemOnItem(player, itemOnItem, usedWith.getId(), itemUsed.getId());
-					return;
-				}
-				if (Firemaking.isFiremaking(player, itemUsed, usedWith))
-					return;
-				else if (contains(1755, Gem.OPAL.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.OPAL);
-				else if (contains(1755, Gem.JADE.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.JADE);
-				else if (contains(1755, Gem.RED_TOPAZ.getUncut(), itemUsed,
-						usedWith))
-					GemCutting.cut(player, Gem.RED_TOPAZ);
-				else if (contains(1755, Gem.SAPPHIRE.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.SAPPHIRE);
-				else if (contains(1755, Gem.EMERALD.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.EMERALD);
-				else if (contains(1755, Gem.RUBY.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.RUBY);
-				else if (contains(1755, Gem.DIAMOND.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.DIAMOND);
-				else if (contains(1755, Gem.DRAGONSTONE.getUncut(), itemUsed,
-						usedWith))
-					GemCutting.cut(player, Gem.DRAGONSTONE);
-				else if (contains(1755, Gem.ONYX.getUncut(), itemUsed, usedWith))
-					GemCutting.cut(player, Gem.ONYX);
-				else
-					player.getPackets().sendGameMessage(
-							"Nothing interesting happens.");
-				if (Settings.DEBUG)
-					Logger.log("ItemHandler", "Used:" + itemUsed.getId()
-							+ ", With:" + usedWith.getId());
+			int herblore = Herblore.isHerbloreSkill(itemUsed, usedWith);
+			if (herblore > -1) {
+				player.getDialogueManager().startDialogue("HerbloreD",
+						herblore, itemUsed, usedWith);
+				return;
 			}
+			if (itemUsed.getId() == LeatherCrafting.NEEDLE.getId()
+					|| usedWith.getId() == LeatherCrafting.NEEDLE.getId()) {
+				if (LeatherCrafting
+						.handleItemOnItem(player, itemUsed, usedWith)) {
+					return;
+				}
+			}
+			Sets set = ArmourSets.getArmourSet(itemUsedId, itemUsedWithId);
+			if (set != null) {
+				ArmourSets.exchangeSets(player, set);
+				return;
+			}
+			ItemOnItem itemOnItem = ItemOnItem.forId(itemUsedId);
+			if (itemOnItem != null) {
+				if (itemUsedWithId == itemOnItem.getItem2())
+					ItemOnItemHandler.handleItemOnItem(player, itemOnItem,
+							usedWith.getId(), itemUsed.getId());
+				return;
+			}
+			if (Firemaking.isFiremaking(player, itemUsed, usedWith))
+				return;
+			else if (contains(1755, Gem.OPAL.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.OPAL);
+			else if (contains(1755, Gem.JADE.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.JADE);
+			else if (contains(1755, Gem.RED_TOPAZ.getUncut(), itemUsed,
+					usedWith))
+				GemCutting.cut(player, Gem.RED_TOPAZ);
+			else if (contains(1755, Gem.SAPPHIRE.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.SAPPHIRE);
+			else if (contains(1755, Gem.EMERALD.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.EMERALD);
+			else if (contains(1755, Gem.RUBY.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.RUBY);
+			else if (contains(1755, Gem.DIAMOND.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.DIAMOND);
+			else if (contains(1755, Gem.DRAGONSTONE.getUncut(), itemUsed,
+					usedWith))
+				GemCutting.cut(player, Gem.DRAGONSTONE);
+			else if (contains(1755, Gem.ONYX.getUncut(), itemUsed, usedWith))
+				GemCutting.cut(player, Gem.ONYX);
+			else
+				player.getPackets().sendGameMessage(
+						"Nothing interesting happens.");
+			if (Settings.DEBUG)
+				Logger.log("ItemHandler", "Used:" + itemUsed.getId()
+						+ ", With:" + usedWith.getId());
+		}
 	}
 
 	public static void handleItemOption3(Player player, int slotId, int itemId,
@@ -335,6 +359,8 @@ public class InventoryOptionsHandler {
 		player.stopAll(false);
 		if (itemId == 20767 || itemId == 20769 || itemId == 20771)
 			SkillCapeCustomizer.startCustomizing(player, itemId);
+		else if (itemId == Slayer.RING_OF_SLAYING[0])
+			Slayer.messageKillsLeft(player);
 		else if (Equipment.getItemSlot(itemId) == Equipment.SLOT_AURA)
 			player.getAuraManager().sendTimeRemaining(itemId);
 	}
@@ -380,8 +406,8 @@ public class InventoryOptionsHandler {
 					new WorldTile(3293, 3163, 0), itemId);
 		else if (itemId == 1704 || itemId == 10352)
 			player.getPackets()
-			.sendGameMessage(
-					"The amulet has ran out of charges. You need to recharge it if you wish it use it once more.");
+					.sendGameMessage(
+							"The amulet has ran out of charges. You need to recharge it if you wish it use it once more.");
 		else if (itemId >= 3853 && itemId <= 3867)
 			player.getDialogueManager().startDialogue("Transportation",
 					"Burthrope Games Room", new WorldTile(2880, 3559, 0),
@@ -423,7 +449,7 @@ public class InventoryOptionsHandler {
 			if (player.getPet() != null) {
 				player.sendMessage("You already have a pet spawned, please dissmis it to spawn another.");
 				return;
-			}			
+			}
 			player.setPetId(21512);
 			new Pets(3604, player, new WorldTile(player.getX() + 1,
 					player.getY() + 1, player.getPlane()), 0, false);

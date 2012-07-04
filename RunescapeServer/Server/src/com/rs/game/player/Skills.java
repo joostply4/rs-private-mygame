@@ -169,19 +169,22 @@ public final class Skills implements Serializable {
 		player.getPackets().sendSkillLevel(skill);
 	}
 
-	public void addXp(int skill, double exp) {
+	public void addXp(int skill, double exp, boolean useExpMultipliers) {
 		player.getControlerManager().trackXP(skill, (int) exp);
-		if (skill != ATTACK && skill != DEFENCE && skill != STRENGTH
-				&& skill != MAGIC && skill != RANGE && skill != HITPOINTS)
-			exp *= Settings.SKILLING_XP_RATE;
-		else
-			exp *= Settings.COMBAT_XP_RATE;
 		
-		exp *= Settings.XP_RATE;
-		
-		if (player.getAuraManager().usingWisdom())
-			exp *= 1.025;
+		if (useExpMultipliers) {
+			if (skill != ATTACK && skill != DEFENCE && skill != STRENGTH
+					&& skill != MAGIC && skill != RANGE && skill != HITPOINTS)
+				exp *= Settings.SKILLING_XP_RATE;
+			else
+				exp *= Settings.COMBAT_XP_RATE;
 
+			exp *= Settings.XP_RATE;
+
+			if (player.getAuraManager().usingWisdom())
+				exp *= 1.025;
+		}
+		
 		int oldLevel = getLevelForXp(skill);
 		xp[skill] += exp;
 		xpCounter += exp;
@@ -202,6 +205,10 @@ public final class Skills implements Serializable {
 				player.getAppearence().generateAppearenceData();
 		}
 		refresh(skill);
+	}
+
+	public void addXp(int skill, double exp) {
+		addXp(skill, exp, true);
 	}
 
 	public void addSkillXpRefresh(int skill, double xp) {

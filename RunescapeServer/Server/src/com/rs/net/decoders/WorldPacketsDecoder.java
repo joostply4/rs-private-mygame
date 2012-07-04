@@ -84,6 +84,8 @@ public final class WorldPacketsDecoder extends Decoder {
 	private final static int OBJECT_EXAMINE_PACKET = 47;
 	private final static int NPC_CLICK1_PACKET = 9;
 	private final static int NPC_CLICK2_PACKET = 31;
+	private final static int NPC_CLICK3_PACKET = 67;
+	private final static int NPC_CLICK4_PACKET = 28;
 	private final static int ATTACK_NPC = 66;
 	private final static int PLAYER_OPTION_1_PACKET = 14;
 	private final static int PLAYER_OPTION_2_PACKET = 53;
@@ -120,6 +122,8 @@ public final class WorldPacketsDecoder extends Decoder {
 		PACKET_SIZES[36] = -1;
 		PACKET_SIZES[74] = -1;
 		PACKET_SIZES[31] = 3;
+		PACKET_SIZES[67] = 3;
+		PACKET_SIZES[28] = 3;
 		PACKET_SIZES[54] = 6;
 		PACKET_SIZES[12] = -1;
 		PACKET_SIZES[23] = 1;
@@ -344,10 +348,7 @@ public final class WorldPacketsDecoder extends Decoder {
 			}
 			player.stopAll(false);
 			player.getActionManager().setSkill(new PlayerCombat(p2));
-			
-			
 
-			
 		} else if (packetId == ATTACK_NPC) {
 			if (!player.hasStarted() || !player.clientHasLoadedMapRegion()
 					|| player.isDead())
@@ -659,7 +660,7 @@ public final class WorldPacketsDecoder extends Decoder {
 					return;
 				if (!player.getControlerManager().processItemOnNPC(npc, item))
 					return;
-				//InventoryOptionsHandler.handleItemOnNPC(npc, item);
+				// InventoryOptionsHandler.handleItemOnNPC(npc, item);
 				break;
 			case 662:
 			case 747:
@@ -833,6 +834,10 @@ public final class WorldPacketsDecoder extends Decoder {
 			NPCHandler.handleOption1(player, stream);
 		else if (packetId == NPC_CLICK2_PACKET)
 			NPCHandler.handleOption2(player, stream);
+		else if (packetId == NPC_CLICK3_PACKET)
+			NPCHandler.handleOption3(player, stream);
+		else if (packetId == NPC_CLICK4_PACKET)
+			NPCHandler.handleOption4(player, stream);
 		else if (packetId == OBJECT_CLICK1_PACKET)
 			ObjectHandler.handleOption1(player, stream);
 		else if (packetId == OBJECT_CLICK2_PACKET)
@@ -891,8 +896,8 @@ public final class WorldPacketsDecoder extends Decoder {
 			stream.readInt();
 		} else if (packetId == ITEM_ON_ITEM_PACKET) {
 			InventoryOptionsHandler.handleItemOnItem(player, stream);
-			
- 		} else if (packetId == PLAYER_TRADE_OPTION_PACKET) {
+
+		} else if (packetId == PLAYER_TRADE_OPTION_PACKET) {
 			long currentTime = System.currentTimeMillis();
 			boolean unknown2 = stream.readByte() == 1;
 			int playerIndex = stream.readUnsignedShort();
@@ -1012,7 +1017,7 @@ public final class WorldPacketsDecoder extends Decoder {
 						Boolean.TRUE);
 				player.getTemporaryAttributtes().put("tradeWithIndex",
 						other.getIndex());
-				}	
+			}
 		} else if (packetId == MAGIC_ON_GROUND_PACKET) {
 			int inventoryInter = stream.readInt() >> 16;
 			int itemId = stream.readShort();
@@ -1241,22 +1246,21 @@ public final class WorldPacketsDecoder extends Decoder {
 				player.getSkills().setXp(skillId, Skills.getXPForLevel(value));
 				player.getAppearence().generateAppearenceData();
 				player.getDialogueManager().finishDialogue();
-	} else {
-				player.getTrade()
-						.getState();
+			} else {
+				player.getTrade().getState();
 				if (player.getTemporaryAttributtes().get("offerX") != null
-								&& player.getInterfaceManager().containsInterface(335)
-								&& player.getTrade().getState() == TradeState.STATE_ONE) {
-							player.getTrade().addItem(
-									player,
-									(Integer) player.getTemporaryAttributtes()
-											.get("offerX"), value);
-							player.getTemporaryAttributtes().remove("offerX");
-						} else {
-					player.getTrade()
-							.getState();
+						&& player.getInterfaceManager().containsInterface(335)
+						&& player.getTrade().getState() == TradeState.STATE_ONE) {
+					player.getTrade().addItem(
+							player,
+							(Integer) player.getTemporaryAttributtes().get(
+									"offerX"), value);
+					player.getTemporaryAttributtes().remove("offerX");
+				} else {
+					player.getTrade().getState();
 					if (player.getTemporaryAttributtes().get("removeX") != null
-							&& player.getInterfaceManager().containsInterface(335)
+							&& player.getInterfaceManager().containsInterface(
+									335)
 							&& player.getTrade().getState() == TradeState.STATE_ONE) {
 						player.getTrade().removeItem(
 								player,
@@ -1344,6 +1348,8 @@ public final class WorldPacketsDecoder extends Decoder {
 				|| packetId == INTERFACE_ON_NPC
 				|| packetId == NPC_CLICK1_PACKET
 				|| packetId == NPC_CLICK2_PACKET
+				|| packetId == NPC_CLICK3_PACKET
+				|| packetId == NPC_CLICK4_PACKET
 				|| packetId == OBJECT_CLICK1_PACKET
 				|| packetId == SWITCH_INTERFACE_ITEM_PACKET
 				|| packetId == OBJECT_CLICK2_PACKET

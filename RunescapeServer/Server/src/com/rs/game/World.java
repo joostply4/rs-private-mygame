@@ -75,16 +75,20 @@ public final class World {
 		addMessageCheckTask();
 	}
 
-	
 	private static void addLogicPacketsTask() {
-	 CoresManager.fastExecutor.scheduleAtFixedRate(new TimerTask() {
-	  
-	  @Override public void run() { for(Player player : World.getPlayers()) {
-	  if(!player.hasStarted() || player.hasFinished()) continue;
-	  player.processLogicPackets(); } }
-	  
-	  }, 300, 300); }
-	
+		CoresManager.fastExecutor.scheduleAtFixedRate(new TimerTask() {
+
+			@Override
+			public void run() {
+				for (Player player : World.getPlayers()) {
+					if (!player.hasStarted() || player.hasFinished())
+						continue;
+					player.processLogicPackets();
+				}
+			}
+
+		}, 300, 300);
+	}
 
 	private static void addOwnedObjectsTask() {
 		CoresManager.slowExecutor.scheduleWithFixedDelay(new Runnable() {
@@ -275,7 +279,7 @@ public final class World {
 	public static final Region getRegion(int id) {
 		return getRegion(id, false);
 	}
-	
+
 	public static final Region getRegion(int id, boolean load) {
 		// synchronized (lock) {
 		Region region = regions.get(id);
@@ -283,7 +287,7 @@ public final class World {
 			region = new Region(id);
 			regions.put(id, region);
 		}
-		if(load)
+		if (load)
 			region.checkLoadMap();
 		return region;
 		// }
@@ -329,8 +333,8 @@ public final class World {
 			n = new GodwarsSaradominFaction(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
 		else if (id == 8528)
-			n = new Nomad(id, tile, mapAreaNameHash,
-					canBeAttackFromOutOfArea, spawned);
+			n = new Nomad(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
+					spawned);
 		else if (id == 6261 || id == 6263 || id == 6265)
 			n = GodWarsBosses.graardorMinions[(id - 6261) / 2] = new GodWarMinion(
 					id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
@@ -390,9 +394,15 @@ public final class World {
 			n = new TormentedDemon(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
 		else if (id == 14301)
-			n = new Glacor(id, tile, mapAreaNameHash,
-					canBeAttackFromOutOfArea, spawned);
-		else
+			n = new Glacor(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
+					spawned);
+		else if (id == 9085) {// Kuradal Slayer Master -- Enforce a strict
+								// "No Moving Around" policy here
+			n = new NPC(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
+					spawned);
+			n.setRandomWalk(false);
+			n.setNextFaceWorldTile(new WorldTile(n.getLocation().getX(), n.getLocation().getY() - 1, n.getLocation().getPlane()));
+		} else
 			n = new NPC(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
 					spawned);
 		return n;

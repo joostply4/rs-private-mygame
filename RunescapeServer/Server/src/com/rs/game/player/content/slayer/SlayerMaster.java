@@ -10,7 +10,7 @@ import java.util.Map;
  * 
  */
 public enum SlayerMaster {
-	TURAEL(TaskSet.TURAEL, 8273, 3);
+	TURAEL(8273, 3);
 
 	/**
 	 * The slayer master map Integer is the npc id
@@ -24,20 +24,10 @@ public enum SlayerMaster {
 	 * @return
 	 */
 	public static SlayerMaster getMaster(int id) {
-		return SLAYER_MASTERS.get(id);
+		return TURAEL;
 	}
 
-	/**
-	 * Populate the mapping.
-	 */
-	static {
-		for (SlayerMaster master : SlayerMaster.values()) {
-			SLAYER_MASTERS.put(master.npcId, master);
-		}
-	}
-
-	private SlayerMaster(TaskSet type, int npcId, int requiredCombatLevel) {
-		this.type = type;
+	private SlayerMaster(int npcId, int requiredCombatLevel) {
 		this.npcId = npcId;
 		this.requiredCombatLevel = requiredCombatLevel;
 	}
