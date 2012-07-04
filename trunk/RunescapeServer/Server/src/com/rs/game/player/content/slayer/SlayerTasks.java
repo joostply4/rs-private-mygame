@@ -51,8 +51,8 @@ public enum SlayerTasks {
 	BLOODVELDS("Bloodvelds", TaskSet.HARD, 50, 60, 170, "Bloodveld", "Mutated Bloodveld"),
 	ABERRANT_SPECTRES("Aberrant Spectres", TaskSet.HARD, 60, 65, 180, "Aberrant Spectre"),
 	GARGOYLES("Gargoyles", TaskSet.HARD, 75, 70, 190, "Gargoyle"),
-	NECHRYAEL("Necryaels", TaskSet.HARD, 80, 80, 199, "Necryael"),
-	ABYSSAL_DEMONS("Abyssal Demons", TaskSet.HARD, 85, 90, 225, "Abyssal Demons");
+	NECHRYAEL("Nechryaels", TaskSet.HARD, 80, 80, 199, "Nechryael"),
+	ABYSSAL_DEMONS("Abyssal Demons", TaskSet.HARD, 85, 90, 225, "Abyssal Demon");
 	
 	private SlayerTasks(String simpleName, TaskSet type, int requiredLevel, int min, int max,
 			String... monsters) {
