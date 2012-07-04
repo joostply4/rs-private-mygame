@@ -957,9 +957,32 @@ public class ButtonHandler {
 				ButtonHandler.sendRemove(player, Equipment.SLOT_HANDS);
 			else if (componentId == 30)
 				ButtonHandler.sendRemove(player, Equipment.SLOT_FEET);
-			else if (componentId == 33)
-				ButtonHandler.sendRemove(player, Equipment.SLOT_RING);
-			else if (componentId == 36)
+			else if (componentId == 33) {
+				int ringID = player.getEquipment().getRingId();
+
+				if (packetId == WorldPacketsDecoder.ACTION_BUTTON1_PACKET) {
+					ButtonHandler.sendRemove(player, Equipment.SLOT_RING);
+				} else if (packetId == WorldPacketsDecoder.ACTION_BUTTON2_PACKET) {
+					if (ringID == 13281) {
+
+					} else {
+						player.getPackets().sendGameMessage(
+								"Nothing interesting happens.");
+					}
+				} else if (packetId == WorldPacketsDecoder.ACTION_BUTTON3_PACKET) {
+					if (ringID == 13281) {
+						Slayer.messageKillsLeft(player);
+					} else {
+						player.getPackets().sendGameMessage(
+								"Nothing interesting happens.");
+					}
+				} else if (packetId == WorldPacketsDecoder.ACTION_BUTTON4_PACKET) {
+
+				} else if (packetId == WorldPacketsDecoder.ACTION_BUTTON5_PACKET) {
+
+				}
+
+			} else if (componentId == 36)
 				ButtonHandler.sendRemove(player, Equipment.SLOT_ARROWS);
 			else if (componentId == 45) {
 				if (packetId == WorldPacketsDecoder.ACTION_BUTTON4_PACKET) {
