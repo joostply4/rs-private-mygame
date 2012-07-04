@@ -60,6 +60,7 @@ public class KreeArra extends NPC {
 		resetWalkSteps();
 		getCombat().removeTarget();
 		setNextAnimation(null);
+		
 		WorldTasksManager.schedule(new WorldTask() {
 			int loop;
 
@@ -74,6 +75,7 @@ public class KreeArra extends NPC {
 					finish();
 					setRespawnTask();
 					stop();
+					
 				}
 				loop++;
 			}

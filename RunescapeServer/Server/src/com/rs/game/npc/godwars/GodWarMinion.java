@@ -7,6 +7,7 @@ import com.rs.game.Animation;
 import com.rs.game.Entity;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
+import com.rs.game.minigames.GodWars;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
 import com.rs.game.player.Player;
@@ -53,7 +54,7 @@ public class GodWarMinion extends NPC {
 	 * gotta override else setRespawnTask override doesnt work
 	 */
 	@Override
-	public void sendDeath(Entity source) {
+	public void sendDeath(final Entity source) {
 		final NPCCombatDefinitions defs = getCombatDefinitions();
 		resetWalkSteps();
 		getCombat().removeTarget();
@@ -72,6 +73,10 @@ public class GodWarMinion extends NPC {
 					finish();
 					setRespawnTask();
 					stop();
+					
+					if (source instanceof Player){
+						GodWars.handlePointIncrement((Player) source, getId());
+					}
 				}
 				loop++;
 			}

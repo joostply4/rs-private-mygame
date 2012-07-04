@@ -12,6 +12,7 @@ import com.rs.Settings;
 import com.rs.cores.CoresManager;
 import com.rs.game.item.FloorItem;
 import com.rs.game.item.Item;
+import com.rs.game.minigames.GodWars;
 import com.rs.game.minigames.GodWarsBosses;
 import com.rs.game.minigames.ZarosGodwars;
 import com.rs.game.npc.NPC;
@@ -369,6 +370,10 @@ public final class World {
 		else if (id == 6247)
 			n = new CommanderZilyana(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
+		else if (GodWars.isGWNPC(id, tile))
+			n = new GodWarMinion(
+					id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
+					spawned); 
 		else if (id == 8133)
 			n = new CorporealBeast(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
