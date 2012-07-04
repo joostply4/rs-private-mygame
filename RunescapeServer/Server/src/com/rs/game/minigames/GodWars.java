@@ -168,35 +168,41 @@ public class GodWars {
 			player.getControlerManager().startControler("GodWars");
 			return true;
 		} else if (id == 26444) {
-			player.setNextWorldTile(new WorldTile(2908, 5265, 0));
+			if (player.getSkills().getLevel(Skills.AGILITY) >= 70) {
+				player.setNextWorldTile(new WorldTile(2908, 5265, 0));
+			} else {
+				player.getPackets()
+						.sendGameMessage(
+								"You need an agility level of 70 to go to Saradomin Boss.");
+			}
 		}
 
 		switch (objDef.name.toLowerCase()) {
 		case "armadyl altar":
 			if (id == 26439) {
-
+				player.getPackets().sendGameMessage("HAHA YOUR FUCKEEDDD");
 			}
 			break;
 		case "bandos altar":
 			if (id == 26289) {
-
+				player.getPackets().sendGameMessage("HAHA YOUR FUCKEEDDD");
 			}
 			break;
 		case "zamorak altar":
 			if (id == 26286) {
-
+				player.getPackets().sendGameMessage("HAHA YOUR FUCKEEDDD");
 			}
 			break;
 		case "saradomin altar":
 			if (id == 26287) {
-
+				player.getPackets().sendGameMessage("HAHA YOUR FUCKEEDDD");
 			}
 			break;
 
 		case "ice bridge":
 			// zammy bridge
 			if (id == 26439) {
-				if (player.getSkills().getLevel(Skills.AGILITY) >= 70) {
+				if (player.getHitpoints() >= 700) {
 					if (player.getLocation().getX() == 2885
 							&& player.getLocation().getY() == 5333
 							&& player.getLocation().getPlane() == 2) {
@@ -205,25 +211,33 @@ public class GodWars {
 					} else {
 						player.setNextWorldTile(new WorldTile(2885, 5333, 2));
 					}
+				} else {
+					player.getPackets().sendGameMessage(
+							"You need atleast 700 hitpoints to enter Zamorak.");
 				}
 			}
 			break;
 		case "big door":
 			// First door to bandos
 			if (id == 26384) {
-				if (player.getLocation().getX() == 2851
-						&& player.getLocation().getY() == 5333
-						&& player.getLocation().getPlane() == 2) {
-					if (player.getInventory().containsItem(2347, 1)) {
-						player.setNextWorldTile(new WorldTile(2850, 5333, 2));
+				if (player.getSkills().getLevel(Skills.STRENGTH) >= 70) {
+					if (player.getLocation().getX() == 2851
+							&& player.getLocation().getY() == 5333
+							&& player.getLocation().getPlane() == 2) {
+						if (player.getInventory().containsItem(2347, 1)) {
+							player.setNextWorldTile(new WorldTile(2850, 5333, 2));
+						} else {
+							player.getPackets().sendGameMessage(
+									"You need a Hammer.");
+						}
 					} else {
-						player.getPackets().sendGameMessage(
-								"You need a Hammer.");
+						player.setNextWorldTile(new WorldTile(2851, 5333, 2));
 					}
+					return true;
 				} else {
-					player.setNextWorldTile(new WorldTile(2851, 5333, 2));
+					player.getPackets().sendGameMessage(
+							"You need a strength level of 70 to enter Bandos.");
 				}
-				return true;
 			}
 
 			// sara boss door
@@ -233,14 +247,20 @@ public class GodWars {
 							&& player.getLocation().getY() == 5265
 							&& player.getLocation().getPlane() == 0) {
 						player.setNextWorldTile(new WorldTile(2907, 5265, 0));
-						
+
 						player.setSarKillCount(0);
+						player.getPackets()
+								.sendGameMessage(
+										"Your Saradomin killcount was reset upon entering the boss chamber.");
 						modifyInterfaceText(player);
 					} else if (player.getLocation().getX() == 2907
 							&& player.getLocation().getY() == 5265
 							&& player.getLocation().getPlane() == 0) {
 						player.setNextWorldTile(new WorldTile(2912, 5300, 2));
 					}
+				} else {
+					player.getPackets().sendGameMessage(
+							"You need a Saradomin killcount of 40 to enter.");
 				}
 			}
 
@@ -251,12 +271,18 @@ public class GodWars {
 							&& player.getLocation().getY() == 5295
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2839, 5296, 2));
-						
+
 						player.setArmKillCount(0);
+						player.getPackets()
+								.sendGameMessage(
+										"Your Armadyl killcount was reset upon entering the boss chamber.");
 						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2839, 5295, 2));
 					}
+				} else {
+					player.getPackets().sendGameMessage(
+							"You need a Armadyl killcount of 40 to enter.");
 				}
 			}
 
@@ -267,12 +293,18 @@ public class GodWars {
 							&& player.getLocation().getY() == 5354
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2864, 5354, 2));
-						
+
 						player.setBanKillCount(0);
+						player.getPackets()
+								.sendGameMessage(
+										"Your Bandos killcount was reset upon entering the boss chamber.");
 						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2863, 5354, 2));
 					}
+				} else {
+					player.getPackets().sendGameMessage(
+							"You need a Bandos killcount of 40 to enter.");
 				}
 			}
 
@@ -283,12 +315,18 @@ public class GodWars {
 							&& player.getLocation().getY() == 5332
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2925, 5331, 2));
-						
+
 						player.setZamKillCount(0);
+						player.getPackets()
+								.sendGameMessage(
+										"Your Zamorak killcount was reset upon entering the boss chamber.");
 						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2925, 5332, 2));
 					}
+				} else {
+					player.getPackets().sendGameMessage(
+							"You need a Zamorak killcount of 40 to enter.");
 				}
 			}
 			break;
@@ -296,19 +334,24 @@ public class GodWars {
 		case "pillar":
 			// arma grapple
 			if (id == 26303) {
-				if (player.getLocation().getX() == 2871
-						&& player.getLocation().getY() == 5279
-						&& player.getLocation().getPlane() == 2) {
-					if (player.getInventory().containsItem(9418, 1)) {
-						player.setNextWorldTile(new WorldTile(2871, 5269, 2));
+				if (player.getSkills().getLevel(Skills.RANGE) >= 70) {
+					if (player.getLocation().getX() == 2871
+							&& player.getLocation().getY() == 5279
+							&& player.getLocation().getPlane() == 2) {
+						if (player.getInventory().containsItem(9418, 1)) {
+							player.setNextWorldTile(new WorldTile(2871, 5269, 2));
+						} else {
+							player.getPackets().sendGameMessage(
+									"You need a Mith grapple.");
+						}
 					} else {
-						player.getPackets().sendGameMessage(
-								"You need a Mith grapple.");
+						player.setNextWorldTile(new WorldTile(2871, 5279, 2));
 					}
+					return true;
 				} else {
-					player.setNextWorldTile(new WorldTile(2871, 5279, 2));
+					player.getPackets().sendGameMessage(
+							"You need a range level of 70 to enter Armadyl.");
 				}
-				return true;
 			}
 			break;
 		}
