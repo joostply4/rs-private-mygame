@@ -617,6 +617,18 @@ public class ObjectHandler {
 
 				} else {
 					switch (objectDef.name.toLowerCase()) {
+					case "strange floor":
+						if(id == 9294) {
+							if(player.getLocation().getX() == 2880 
+									&& player.getLocation().getY() == 9813
+									&& player.getLocation().getPlane() == 0);
+							player.setNextWorldTile(new WorldTile(2878, 9813, 0));
+							break;
+						} else {
+							player.setNextWorldTile(new WorldTile(2880, 9813, 0));
+							break;
+						}
+					
 					case "underwall tunnel":
 						if (id == 9311) { // entering GE
 							player.setNextWorldTile(new WorldTile(3143, 3513, 0));

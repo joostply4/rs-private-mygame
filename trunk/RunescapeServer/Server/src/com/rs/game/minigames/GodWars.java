@@ -30,26 +30,30 @@ public class GodWars {
 	public static void handlePointIncrement(Player player, int npcID) {
 		if (isZammyMinion(npcID)) {
 			player.setZamKillCount(player.getZamKillCount() + 1);
-			player.getPackets().sendGameMessage(
-					"Zammy Kill Count: " + player.getZamKillCount());
+			//player.getPackets().sendGameMessage(
+			//		"Zammy Kill Count: " + player.getZamKillCount());
 		}
 
 		if (isArmadylMinion(npcID)) {
 			player.setArmKillCount(player.getArmKillCount() + 1);
-			player.getPackets().sendGameMessage(
-					"Armadyl Kill Count: " + player.getArmKillCount());
+			//player.getPackets().sendGameMessage(
+			//		"Armadyl Kill Count: " + player.getArmKillCount());
 		}
 
 		if (isBandosMinion(npcID)) {
 			player.setBanKillCount(player.getBanKillCount() + 1);
-			player.getPackets().sendGameMessage(
-					"Bandos Kill Count: " + player.getBanKillCount());
+			//player.getPackets().sendGameMessage(
+			//		"Bandos Kill Count: " + player.getBanKillCount());
 		}
 
 		if (isSaraMinion(npcID)) {
 			player.setSarKillCount(player.getSarKillCount() + 1);
-			player.getPackets().sendGameMessage(
-					"Saradomin Kill Count: " + player.getSarKillCount());
+			//player.getPackets().sendGameMessage(
+			//		"Saradomin Kill Count: " + player.getSarKillCount());
+		}
+		
+		if (player.getControlerManager().getControler() != null) {
+			
 		}
 
 		if (Settings.DEBUG)
