@@ -36,14 +36,25 @@ public class GodWars extends Controler {
 		player.getInterfaceManager().sendTab(
 				player.getInterfaceManager().hasRezizableScreen() ? 9 : 8,
 				getInterface());
+		modifyInterface();
+	}
+	
+	public void modifyInterface() {
+		player.getPackets().sendIComponentText(601, 2, "Kill Count");
+		//3, 4, 5, 6 -- boss names
+		player.getPackets().sendIComponentText(601, 3, "Armadyl");
+		player.getPackets().sendIComponentText(601, 4, "Bandos");
+		player.getPackets().sendIComponentText(601, 5, "Saradomin");
+		player.getPackets().sendIComponentText(601, 6, "Zamorak");
+		//8, 9 , 10, 11 -- kill counts
+		player.getPackets().sendIComponentText(601, 8, "" + player.getArmKillCount());
+		player.getPackets().sendIComponentText(601, 9, "" + player.getBanKillCount());
+		player.getPackets().sendIComponentText(601, 10, "" + player.getSarKillCount());
+		player.getPackets().sendIComponentText(601, 11, "" + player.getZamKillCount());
 	}
 
 	private int getInterface() {
 		switch ((Integer) getArguments()[0]) {
-		case 1: // zamorak area
-			return 599;
-		case 2:// zamorak boss area
-			return 598;
 		default:
 			return 601;
 		}
