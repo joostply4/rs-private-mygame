@@ -64,6 +64,8 @@ public class GodWars extends Controler {
 	public boolean sendDeath() {
 		remove();
 		removeControler();
+		
+		player.resetKillCount();
 		return true;
 	}
 
@@ -71,6 +73,7 @@ public class GodWars extends Controler {
 	public void magicTeleported(int type) {
 		remove();
 		removeControler();
+		player.resetKillCount();
 	}
 
 	@Override

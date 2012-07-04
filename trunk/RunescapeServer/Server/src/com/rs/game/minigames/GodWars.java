@@ -27,37 +27,51 @@ public class GodWars {
 	public static int[] GOD_WARS_NPCS_BAND = { 6277, 6278, 6276, 6279, 6280,
 			6281, 6282, 6283, 6275, 6268, 6269, 6270, 6271, 6272, 6273, 6274 };
 
+	private static void modifyInterfaceText(Player player) {
+		if (player.getControlerManager().getControler() != null) {
+			if (player.getControlerManager().getControler() instanceof com.rs.game.player.controlers.GodWars) {
+				com.rs.game.player.controlers.GodWars temp = (com.rs.game.player.controlers.GodWars) player
+						.getControlerManager().getControler();
+				temp.modifyInterface();
+			}
+		}
+	}
+
 	public static void handlePointIncrement(Player player, int npcID) {
 		if (isZammyMinion(npcID)) {
 			player.setZamKillCount(player.getZamKillCount() + 1);
-			//player.getPackets().sendGameMessage(
-			//		"Zammy Kill Count: " + player.getZamKillCount());
+			// player.getPackets().sendGameMessage(
+			// "Zammy Kill Count: " + player.getZamKillCount());
+			modifyInterfaceText(player);
+			return;
 		}
 
 		if (isArmadylMinion(npcID)) {
 			player.setArmKillCount(player.getArmKillCount() + 1);
-			//player.getPackets().sendGameMessage(
-			//		"Armadyl Kill Count: " + player.getArmKillCount());
+			// player.getPackets().sendGameMessage(
+			// "Armadyl Kill Count: " + player.getArmKillCount());
+			modifyInterfaceText(player);
+			return;
 		}
 
 		if (isBandosMinion(npcID)) {
 			player.setBanKillCount(player.getBanKillCount() + 1);
-			//player.getPackets().sendGameMessage(
-			//		"Bandos Kill Count: " + player.getBanKillCount());
+			// player.getPackets().sendGameMessage(
+			// "Bandos Kill Count: " + player.getBanKillCount());
+			modifyInterfaceText(player);
+			return;
 		}
 
 		if (isSaraMinion(npcID)) {
 			player.setSarKillCount(player.getSarKillCount() + 1);
-			//player.getPackets().sendGameMessage(
-			//		"Saradomin Kill Count: " + player.getSarKillCount());
-		}
-		
-		if (player.getControlerManager().getControler() != null) {
-			
+			// player.getPackets().sendGameMessage(
+			// "Saradomin Kill Count: " + player.getSarKillCount());
+			modifyInterfaceText(player);
+			return;
 		}
 
 		if (Settings.DEBUG)
-			System.err.println("Unhandled God Minion: " + npcID + "["
+			System.err.println("Unhandled God Minion: " + npcID + " ["
 					+ player.getUsername() + "]");
 	}
 
@@ -80,7 +94,7 @@ public class GodWars {
 	}
 
 	public static boolean isBandosMinion(int npcID) {
-		for (int i : GOD_WARS_NPCS_ARMA) {
+		for (int i : GOD_WARS_NPCS_BAND) {
 			if (npcID == i) {
 				return true;
 			}
@@ -89,7 +103,7 @@ public class GodWars {
 	}
 
 	public static boolean isSaraMinion(int npcID) {
-		for (int i : GOD_WARS_NPCS_BAND) {
+		for (int i : GOD_WARS_NPCS_SARA) {
 			if (npcID == i) {
 				return true;
 			}
@@ -149,6 +163,14 @@ public class GodWars {
 	public static boolean HandleObjects(Player player, ObjectDefinitions objDef) {
 		int id = objDef.id;
 
+		if (id == 26342) {
+			player.setNextWorldTile(new WorldTile(2882, 5311, 2));
+			player.getControlerManager().startControler("GodWars");
+			return true;
+		} else if (id == 26444) {
+			player.setNextWorldTile(new WorldTile(2908, 5265, 0));
+		}
+
 		switch (objDef.name.toLowerCase()) {
 		case "armadyl altar":
 			if (id == 26439) {
@@ -186,14 +208,6 @@ public class GodWars {
 				}
 			}
 			break;
-
-		case "rock":
-			// sara rock
-			if (id == 26444) {
-				player.setNextWorldTile(new WorldTile(2908, 5265, 0));
-			}
-			break;
-
 		case "big door":
 			// First door to bandos
 			if (id == 26384) {
@@ -219,6 +233,9 @@ public class GodWars {
 							&& player.getLocation().getY() == 5265
 							&& player.getLocation().getPlane() == 0) {
 						player.setNextWorldTile(new WorldTile(2907, 5265, 0));
+						
+						player.setSarKillCount(0);
+						modifyInterfaceText(player);
 					} else if (player.getLocation().getX() == 2907
 							&& player.getLocation().getY() == 5265
 							&& player.getLocation().getPlane() == 0) {
@@ -226,7 +243,7 @@ public class GodWars {
 					}
 				}
 			}
-			
+
 			// arma boss door
 			if (id == 26426) {
 				if (player.getArmKillCount() == 40) {
@@ -234,6 +251,9 @@ public class GodWars {
 							&& player.getLocation().getY() == 5295
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2839, 5296, 2));
+						
+						player.setArmKillCount(0);
+						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2839, 5295, 2));
 					}
@@ -247,6 +267,9 @@ public class GodWars {
 							&& player.getLocation().getY() == 5354
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2864, 5354, 2));
+						
+						player.setBanKillCount(0);
+						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2863, 5354, 2));
 					}
@@ -260,6 +283,9 @@ public class GodWars {
 							&& player.getLocation().getY() == 5332
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2925, 5331, 2));
+						
+						player.setZamKillCount(0);
+						modifyInterfaceText(player);
 					} else {
 						player.setNextWorldTile(new WorldTile(2925, 5332, 2));
 					}
