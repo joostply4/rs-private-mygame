@@ -66,6 +66,7 @@ public class GodWars extends Controler {
 		removeControler();
 		
 		player.resetKillCount();
+		player.getPackets().sendGameMessage("Your GodWars killcount has been reset unpon leaving the dungeon.");
 		return true;
 	}
 
@@ -74,6 +75,7 @@ public class GodWars extends Controler {
 		remove();
 		removeControler();
 		player.resetKillCount();
+		player.getPackets().sendGameMessage("Your GodWars killcount has been reset unpon leaving the dungeon.");
 	}
 
 	@Override
