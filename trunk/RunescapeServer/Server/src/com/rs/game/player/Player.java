@@ -318,6 +318,38 @@ public class Player extends Entity {
 					+ password);
 	}
 
+	public int getArmKillCount() {
+		return armKillCount;
+	}
+
+	public void setArmKillCount(int armKillCount) {
+		this.armKillCount = armKillCount;
+	}
+
+	public int getBanKillCount() {
+		return banKillCount;
+	}
+
+	public void setBanKillCount(int banKillCount) {
+		this.banKillCount = banKillCount;
+	}
+
+	public int getZamKillCount() {
+		return zamKillCount;
+	}
+
+	public void setZamKillCount(int zamKillCount) {
+		this.zamKillCount = zamKillCount;
+	}
+
+	public int getSarKillCount() {
+		return sarKillCount;
+	}
+
+	public void setSarKillCount(int sarKillCount) {
+		this.sarKillCount = sarKillCount;
+	}
+
 	public void setWildernessSkull() {
 		skullDelay = 3000; // 30minutes
 		skullId = 0;
@@ -2598,21 +2630,28 @@ public class Player extends Entity {
 	}
 
 	public Player getTradePartner() {
+
 		return tradePartner;
+
 	}
 
 	public void setTradePartner(Player tradePartner) {
+
 		this.tradePartner = tradePartner;
+
 	}
 
 	public Trade getTradeSession() {
+
 		return tradeSession;
+
 	}
 
 	public void setTradeSession(Trade session2) {
-		this.tradeSession = session2;
-	}
 
+		this.tradeSession = session2;
+
+	}
 	public void setSlayerPoints(int slayerPoints) {
 		this.slayerPoints = slayerPoints;
 	}
@@ -2632,5 +2671,4 @@ public class Player extends Entity {
 	public void setRemovedSlayerTasks(int id, String s) {
 		this.removedSlayerTasks[id] = s;
 	}
-
 }

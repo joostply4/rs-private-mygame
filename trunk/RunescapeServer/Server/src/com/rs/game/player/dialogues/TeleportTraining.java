@@ -34,14 +34,15 @@ public class TeleportTraining extends Dialogue {
 						3538, 0));
 			} else if (componentId == 5) {
 				stage = 1;
-				sendDialogue(SEND_5_OPTIONS, "Training Teleports", "Brimhaven Dungeon",
-						"Under Karamja", "Green Drags(lvl 13 wildy)",
+				sendDialogue(SEND_5_OPTIONS, "Training Teleports",
+						"Brimhaven Dungeon", "Under Karamja",
+						"Green Drags(lvl 13 wildy)",
 						"Green Drags(lvl 20 wildy)", "More Options");
 			}
-		} else if(stage == 1) {
+		} else if (stage == 1) {
 			if (componentId == 1) {
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(2710,
-					9466, 0));
+						9466, 0));
 			} else if (componentId == 2) {
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(2857,
 						9569, 0));
@@ -53,9 +54,9 @@ public class TeleportTraining extends Dialogue {
 						3675, 0));
 			} else if (componentId == 5) {
 				stage = 0;
-				sendDialogue(SEND_5_OPTIONS, "Training Teleports", "Rock Crabs",
-						"Hill Giants", "Taverly Dungeon", "Slayer Tower",
-						"More Options");
+				sendDialogue(SEND_5_OPTIONS, "Training Teleports",
+						"Rock Crabs", "Hill Giants", "Taverly Dungeon",
+						"Slayer Tower", "More Options");
 			}
 		}
 	}
