@@ -2671,4 +2671,11 @@ public class Player extends Entity {
 	public void setRemovedSlayerTasks(int id, String s) {
 		this.removedSlayerTasks[id] = s;
 	}
+
+	public void resetKillCount() {
+		this.armKillCount = 0;
+		this.sarKillCount = 0;
+		this.banKillCount = 0;
+		this.zamKillCount = 0;
+	}
 }

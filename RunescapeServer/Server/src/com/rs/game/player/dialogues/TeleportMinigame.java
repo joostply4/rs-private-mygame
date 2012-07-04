@@ -30,7 +30,6 @@ public class TeleportMinigame extends Dialogue {
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(1886,
 						3178, 0));
 			} else if (componentId == 4) {
-				player.getControlerManager().startControler("GodWars");
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(3366,
 						3083, 0));
 			} else if (componentId == 5) {
@@ -44,10 +43,12 @@ public class TeleportMinigame extends Dialogue {
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(3447,
 						3697, 0));
 			} else if (componentId == 2) {
-				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(2882,
-						5311, 2));
+				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(2916,
+						3745, 0));
 			} else if (componentId == 3) {
+
 			} else if (componentId == 4) {
+
 			} else if (componentId == 5) {
 				stage = 0;
 				sendDialogue(SEND_5_OPTIONS, "Minigame Teleports",
