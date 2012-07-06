@@ -198,15 +198,13 @@ public class NPCHandler {
 					player.getBank().openBank();
 				else if (npc.getId() == 528 || npc.getId() == 529)
 					ShopsHandler.openShop(player, 1);
-				else if (npc.getId() == 519)
-					ShopsHandler.openShop(player, 24);
 				else if (npc.getId() == 537)
 					ShopsHandler.openShop(player, 25);
 				else if (npc.getId() == 445)
 					ShopsHandler.openShop(player, 11);
 				else if (npc.getId() == 3381)
 					ShopsHandler.openShop(player, 12);
-				else if (npc.getId() == 520 || npc.getId() == 521)
+				else if (npc.getId() == 521)
 					ShopsHandler.openShop(player, 4);
 				else if (npc.getId() == 538)
 					ShopsHandler.openShop(player, 6);
@@ -218,16 +216,10 @@ public class NPCHandler {
 					ShopsHandler.openShop(player, 9);
 				else if (npc.getId() == 551)
 					ShopsHandler.openShop(player, 13);
-				else if (npc.getId() == 550)
-					ShopsHandler.openShop(player, 14);
-				else if (npc.getId() == 549)
-					ShopsHandler.openShop(player, 15);
 				else if (npc.getId() == 548)
 					ShopsHandler.openShop(player, 18);
 				else if (npc.getId() == 2233 || npc.getId() == 3671)
 					ShopsHandler.openShop(player, 20);
-				else if (npc.getId() == 970)
-					ShopsHandler.openShop(player, 21);
 				else if (npc.getId() == 2676)
 					PlayerLook.openMageMakeOver(player);
 				else if (npc.getId() == 970)
