@@ -371,9 +371,8 @@ public final class World {
 			n = new CommanderZilyana(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
 		else if (GodWars.isGWNPC(id, tile))
-			n = new GodWarMinion(
-					id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
-					spawned); 
+			n = new GodWarMinion(id, tile, mapAreaNameHash,
+					canBeAttackFromOutOfArea, spawned);
 		else if (id == 8133)
 			n = new CorporealBeast(id, tile, mapAreaNameHash,
 					canBeAttackFromOutOfArea, spawned);
@@ -401,12 +400,16 @@ public final class World {
 		else if (id == 14301)
 			n = new Glacor(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
 					spawned);
-		else if (id == 9085) {// Kuradal Slayer Master -- Enforce a strict
-								// "No Moving Around" policy here
+		//shops, no moving
+		else if (id == 9085 || id == 14860 || id == 970 || id == 587
+				|| id == 5913 || id == 519 || id == 549 || id == 520
+				|| id == 1699 || id == 534 || id == 550 || id == 554) {
+			// "No Moving Around" policy here
 			n = new NPC(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
 					spawned);
 			n.setRandomWalk(false);
-			n.setNextFaceWorldTile(new WorldTile(n.getLocation().getX(), n.getLocation().getY() - 1, n.getLocation().getPlane()));
+			n.setNextFaceWorldTile(new WorldTile(n.getLocation().getX(), n
+					.getLocation().getY() - 1, n.getLocation().getPlane()));
 		} else
 			n = new NPC(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
 					spawned);

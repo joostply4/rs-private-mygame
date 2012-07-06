@@ -21373,7 +21373,7 @@
 
 10686 - Wizard robe (g)
 
-10687 - Wizard robe (t)
+10686 - Wizard robe (t)
 
 10688 - Enchanted top
 

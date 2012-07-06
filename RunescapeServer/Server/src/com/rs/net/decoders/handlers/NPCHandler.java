@@ -230,6 +230,26 @@ public class NPCHandler {
 					ShopsHandler.openShop(player, 21);
 				else if (npc.getId() == 2676)
 					PlayerLook.openMageMakeOver(player);
+				else if (npc.getId() == 970)
+					ShopsHandler.openShop(player, 7);
+				else if (npc.getId() == 587)
+					ShopsHandler.openShop(player, 8);
+				else if (npc.getId() == 5913)
+					ShopsHandler.openShop(player, 9);
+				else if (npc.getId() == 519)
+					ShopsHandler.openShop(player, 10);
+				else if (npc.getId() == 549)
+					ShopsHandler.openShop(player, 11);
+				else if (npc.getId() == 520)
+					ShopsHandler.openShop(player, 1);
+				else if (npc.getId() == 1699)
+					ShopsHandler.openShop(player, 2);
+				else if (npc.getId() == 534)
+					ShopsHandler.openShop(player, 3);
+				else if (npc.getId() == 550)
+					ShopsHandler.openShop(player, 4);
+				else if (npc.getId() == 554)
+					ShopsHandler.openShop(player, 5);
 				else if (npc.getId() == 9085) {
 					if (player.getSlayerTask().getTaskMonstersLeft() <= 0) {
 						Slayer.assignTask(player);
@@ -261,6 +281,8 @@ public class NPCHandler {
 		
 		if (npc.getId() == 9085) { //Open Slayer Shop
 			
+		} else if (npc.getId() == 14860) {
+			ShopsHandler.openShop(player, 6);
 		}
 
 		if (Settings.DEBUG)
