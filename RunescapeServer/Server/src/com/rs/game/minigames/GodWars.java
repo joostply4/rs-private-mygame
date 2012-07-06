@@ -14,18 +14,31 @@ public class GodWars {
 	public static int GW_MIN_Z = 0;
 	public static int GW_MAX_Z = 2;
 
-	public static int[] GOD_WARS_NPCS_ARMA = { 6229, 6230, 6231, 6232, 6233,
-			6234, 6235, 6236, 6237, 6238, 6239, 6240, 6241, 6242, 6243, 6244,
-			6245, 6246 };
+	public static int[] GOD_WARS_NPCS_ARMA = { 
+		6229, 6230, 6231, 6232, 6233,
+		6234, 6235, 6236, 6237, 6238, 
+		6239, 6240, 6241, 6242,
+		6243, 6244, 6245, 6246 
+	};
 
-	public static int[] GOD_WARS_NPCS_SARA = { 6255, 6257, 6256, 6258, 6259,
-			6254 };
+	public static int[] GOD_WARS_NPCS_SARA = {
+		6255, 6257, 6256,
+		6258, 6259, 6254
+	};
 
-	public static int[] GOD_WARS_NPCS_ZAMM = { 6211, 6216, 6214, 6215, 6212,
-			6213, 6219, 6220, 6221, 6210, 6218 };
+	public static int[] GOD_WARS_NPCS_ZAMM = {
+		6211, 6216, 6214,
+		6215, 6212,
+		6213, 6219, 6220, 
+		6221, 6210, 6218
+	};
 
-	public static int[] GOD_WARS_NPCS_BAND = { 6277, 6278, 6276, 6279, 6280,
-			6281, 6282, 6283, 6275, 6268, 6269, 6270, 6271, 6272, 6273, 6274 };
+	public static int[] GOD_WARS_NPCS_BAND = { 
+		6277, 6278, 6276, 6279, 6280,
+		6281, 6282, 6283,
+		6275, 6268, 6269, 6270, 6271,
+		6272, 6273, 6274 
+	};
 
 	private static void modifyInterfaceText(Player player) {
 		if (player.getControlerManager().getControler() != null) {
@@ -204,12 +217,12 @@ public class GodWars {
 			if (id == 26439) {
 				if (player.getHitpoints() >= 700) {
 					if (player.getLocation().getX() == 2885
-							&& player.getLocation().getY() == 5333
+							&& player.getLocation().getY() == 5332
 							&& player.getLocation().getPlane() == 2) {
 						player.setNextWorldTile(new WorldTile(2885, 5345, 2));
 						return true;
 					} else {
-						player.setNextWorldTile(new WorldTile(2885, 5333, 2));
+						player.setNextWorldTile(new WorldTile(2885, 5332, 2));
 					}
 				} else {
 					player.getPackets().sendGameMessage(
