@@ -8,6 +8,7 @@ import com.rs.game.Animation;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
+import com.rs.game.item.RandomItemGeneration;
 import com.rs.game.npc.familiar.Familiar.SpecialAttack;
 import com.rs.game.player.Equipment;
 import com.rs.game.player.Inventory;
@@ -135,6 +136,11 @@ public class InventoryOptionsHandler {
 			Runecrafting.fillPouch(player, pouch);
 			return;
 		}
+		
+		if (RandomItemGeneration.HandleInventoryItemInteraction(player, itemId)) {
+			return;
+		}
+		
 		if (itemId == 6199) {
 			int[] RandomItems = { 11732, 4151, 11283, 385, 2347, 1712, 1712,
 					6585, 1712, 6585, 11732, 11732, 3105, 6918, 6920, 6922,

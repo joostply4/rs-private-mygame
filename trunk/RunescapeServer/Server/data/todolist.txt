@@ -4,9 +4,6 @@ TODO:
 -Spawns
 	- Spawn all shop keepers we are going to use
 	- Create new shops for all the shop keepers
-	
--Godwars
-	-Spawn shit
 		
 -Barrows (Couble be saved for an update)
 	- Fix animations

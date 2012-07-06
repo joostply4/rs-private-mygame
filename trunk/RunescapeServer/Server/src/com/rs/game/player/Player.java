@@ -174,7 +174,7 @@ public class Player extends Entity {
 	private String recovAnswer;
 
 	// honor
-	private int killCount, deathCount;
+	private int killCount, deathCount, pkPoints;
 	private ChargesManager charges;
 	// barrows
 	private boolean[] killedBarrowBrothers;
@@ -243,9 +243,11 @@ public class Player extends Entity {
 		zamKillCount = 0;
 		sarKillCount = 0;
 		slayerPoints = 0;
+		setPkPoints(0);
 		removedSlayerTasks = new String[5];
-		for (String s : removedSlayerTasks) {
-			s = "-";
+
+		for (int i = 0; i < removedSlayerTasks.length; i++){
+			removedSlayerTasks[i] = "-";
 		}
 
 		SkillCapeCustomizer.resetSkillCapes(this);
@@ -1837,6 +1839,7 @@ public class Player extends Entity {
 		if (killed.getSession().getIP().equals(getSession().getIP()))
 			return;
 		killCount++;
+		pkPoints++;
 		getPackets().sendGameMessage(
 				"<col=ff0000>You have killed " + killed.getDisplayName()
 						+ ", you have now " + killCount + " kills.");
@@ -2677,5 +2680,13 @@ public class Player extends Entity {
 		this.sarKillCount = 0;
 		this.banKillCount = 0;
 		this.zamKillCount = 0;
+	}
+
+	public int getPkPoints() {
+		return pkPoints;
+	}
+
+	public void setPkPoints(int pkPoints) {
+		this.pkPoints = pkPoints;
 	}
 }
