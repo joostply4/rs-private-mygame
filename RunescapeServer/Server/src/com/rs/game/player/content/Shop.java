@@ -19,7 +19,6 @@ public class Shop {
 
 	private static final int MAX_SHOP_ITEMS = 40;
 	public static final int COINS = 995;
-	public static final int SANTA_HAT = 1050;
 
 	private String name;
 	private Item[] mainStock;
@@ -378,484 +377,495 @@ public class Shop {
 
 	}
 
-	  public int getBuyPrice(Item item, int dq) {
-                switch (item.getId()) {
-                case 1050://item id
-                        item.getDefinitions().setValue(5000000);//buying price
-                        break;
-                
-            
-        }
+	public int getBuyPrice(Item item, int dq) {
 		switch (item.getId()) {
-	/* --------------------   Custom item prices ------------------------------ */
-				case 11694: // ags
-                        item.getDefinitions().setValue(15000); // 15k
-                        break;
-				case 11696: // bgs
-                        item.getDefinitions().setValue(10000); // 10k
-                        break;
-				case 6570: // fcape
-                        item.getDefinitions().setValue(1000); // 1k
-                        break;
-				case 21371: // vine whip
-                        item.getDefinitions().setValue(3000); // 3k
-                        break;
-				case 4151: // whip
-                        item.getDefinitions().setValue(100); // 100
-                        break;
-				case 19335: // fury (or)
-                        item.getDefinitions().setValue(1000); // 1k
-                        break;
-				case 18335: // arcane stream 
-                        item.getDefinitions().setValue(5000); // 5k
-                        break;
-				case 15220: // bring (i)
-                        item.getDefinitions().setValue(1000);// 1k
-                        break;
-				case 13899: // vls
-                        item.getDefinitions().setValue(8000); // 8k
-                        break;
-				case 13905: // vesta's spear
-                        item.getDefinitions().setValue(8000); // 8k
-                        break;
-				case 13896: // stat helm
-                        item.getDefinitions().setValue(3000); // 3k
-                        break;
-				case 13902: // stat hammer
-                        item.getDefinitions().setValue(6000); //6k
-                        break;
-				case 18349: // rapier
-                        item.getDefinitions().setValue(20000); // 20k
-                        break;
-				case 18351: // cls
-                        item.getDefinitions().setValue(20000); // 20k
-                        break;
-				case 18353: // cmaul
-                        item.getDefinitions().setValue(20000); // 20k
-                        break;
-				case 18357: // cbow
-                        item.getDefinitions().setValue(20000); // 20k
-                        break;
-				case 1050: // santa
-                        item.getDefinitions().setValue(500); //500
-                        break;
-				case 7462: // bgloves
-                        item.getDefinitions().setValue(100); // 100
-                        break;
-				case 7458: // mith gloves
-                        item.getDefinitions().setValue(50); // 50
-                        break;
-				case 15386: // sol
-                        item.getDefinitions().setValue(5000); // 5k
-                        break;
-				case 6889: // mbook
-                        item.getDefinitions().setValue(1500); // 1.5k
-                        break;
-				case 13734: // sprit shield
-                        item.getDefinitions().setValue(2500); // 2.5k
-                        break;
-				case 13736: // blessed
-                        item.getDefinitions().setValue(2500); // 2.5k
-                        break;
-				case 13738: // arcane
-                        item.getDefinitions().setValue(25000); // 25k
-                        break;
-				case 13740: // divine
-                        item.getDefinitions().setValue(25000); // 25k
-                        break;
-				case 13742: // ely
-                        item.getDefinitions().setValue(25000); // 25k
-                        break;
-				case 13744: // spec
-                        item.getDefinitions().setValue(25000); // 25k
-                        break;
-				case 22494: // polypore
-                        item.getDefinitions().setValue(30000); // 30k
-                        break;
-				case 20748: // compelt
-                        item.getDefinitions().setValue(10000); // 10k
-                        break;
+		case 1050:// item id
+			item.getDefinitions().setValue(5000000);// buying price
+			break;
 
- 	/* ---------------------- End --------------------------------------------- */
-				case 11724:
-                        item.getDefinitions().setValue(85000000);
-                        break;						
-                case 11726:
-                        item.getDefinitions().setValue(90000000);
-                        break;
-                case 11728:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 4708://barrows starts here
-                        item.getDefinitions().setValue(10000000);//10m a pice
-                        break;
-                case 4710:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4712:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4714:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4716:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4718:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4720:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4722:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4724:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4726:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4728:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4730:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4732:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4734:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4736:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4738:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4745:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                 case 9790:
-                        item.getDefinitions().setValue(200000);
-                        break;
-	case 11700:
-                        item.getDefinitions().setValue(50000);
-                        break;
-	case 14484:
-                        item.getDefinitions().setValue(100000);
-                        break;
-	case 1044:
-                        item.getDefinitions().setValue(1000000);
-                        break;
-	case 4747:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4749:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4751:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4753:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4755:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4757:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4759:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21736:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21744:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21752:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21760:
-                        item.getDefinitions().setValue(10000000);
-                        break;//barrows ends
-               case 6585:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 11718:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 11720:
-                        item.getDefinitions().setValue(65000000);
-                        break;
-                case 11722:
-                        item.getDefinitions().setValue(65000000);
-                        break;
-                case 6685:
-                        item.getDefinitions().setValue(10000);
-                        break;
-                case 11698:
-                        item.getDefinitions().setValue(25000000);
-                        break;
-                case 11730:
-                        item.getDefinitions().setValue(14000000);
-                        break;
-                case 11716:
-                        item.getDefinitions().setValue(10000000);
-                        break; // edge shop ends	
-                case 15486://mage shop starts here
-                        item.getDefinitions().setValue(5000000);
-                        break;
-				case 6916:
-                        item.getDefinitions().setValue(5000000);
-                        break;						
-                case 6918:
-                        item.getDefinitions().setValue(17000000);
-                        break;
-                case 6924:
-                        item.getDefinitions().setValue(12000000);
-                        break;
-                case 6922:
-                        item.getDefinitions().setValue(17000000);
-                        break;
-                case 6920:
-                        item.getDefinitions().setValue(3000000);
-                        break;
-                case 6914:
-                        item.getDefinitions().setValue(6000000);
-                        break; // mage ends here	
-                case 2497://range shop starts here
-                        item.getDefinitions().setValue(2000);
-                        break;
-                case 2491:
-                        item.getDefinitions().setValue(5000);
-                        break;
-                case 2581:
-                        item.getDefinitions().setValue(2500000);
-                        break;
-                case 2577:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 11235:
-                        item.getDefinitions().setValue(5000000);
-                        break;
-                case 11212:
-                        item.getDefinitions().setValue(500);
-                        break;
-                case 9341:
-                        item.getDefinitions().setValue(300);
-                        break;
-                case 4212:
-                        item.getDefinitions().setValue(200000);
-                        break;
-                case 10499:
-                        item.getDefinitions().setValue(100000);
-                        break;
-                case 9144:
-                        item.getDefinitions().setValue(800);
-                        break;//range shop ends
-                
+		}
+		switch (item.getId()) {
+		/*
+		 * -------------------- Custom item prices
+		 * ------------------------------
+		 */
+		case 8009:
+		case 8008:
+		case 8007:
+		case 8010:
+		case 8011:
+			item.getDefinitions().setValue(950);
+		case 11694: // ags
+			item.getDefinitions().setValue(15000); // 15k
+			break;
+		case 11696: // bgs
+			item.getDefinitions().setValue(10000); // 10k
+			break;
+		case 6570: // fcape
+			item.getDefinitions().setValue(1000); // 1k
+			break;
+		case 21371: // vine whip
+			item.getDefinitions().setValue(3000); // 3k
+			break;
+		case 4151: // whip
+			item.getDefinitions().setValue(100); // 100
+			break;
+		case 19335: // fury (or)
+			item.getDefinitions().setValue(1000); // 1k
+			break;
+		case 18335: // arcane stream
+			item.getDefinitions().setValue(5000); // 5k
+			break;
+		case 15220: // bring (i)
+			item.getDefinitions().setValue(1000);// 1k
+			break;
+		case 13899: // vls
+			item.getDefinitions().setValue(8000); // 8k
+			break;
+		case 13905: // vesta's spear
+			item.getDefinitions().setValue(8000); // 8k
+			break;
+		case 13896: // stat helm
+			item.getDefinitions().setValue(3000); // 3k
+			break;
+		case 13902: // stat hammer
+			item.getDefinitions().setValue(6000); // 6k
+			break;
+		case 18349: // rapier
+			item.getDefinitions().setValue(20000); // 20k
+			break;
+		case 18351: // cls
+			item.getDefinitions().setValue(20000); // 20k
+			break;
+		case 18353: // cmaul
+			item.getDefinitions().setValue(20000); // 20k
+			break;
+		case 18357: // cbow
+			item.getDefinitions().setValue(20000); // 20k
+			break;
+		case 1050: // santa
+			item.getDefinitions().setValue(500); // 500
+			break;
+		case 7462: // bgloves
+			item.getDefinitions().setValue(100); // 100
+			break;
+		case 7458: // mith gloves
+			item.getDefinitions().setValue(50); // 50
+			break;
+		case 15386: // sol
+			item.getDefinitions().setValue(5000); // 5k
+			break;
+		case 6889: // mbook
+			item.getDefinitions().setValue(1500); // 1.5k
+			break;
+		case 13734: // sprit shield
+			item.getDefinitions().setValue(2500); // 2.5k
+			break;
+		case 13736: // blessed
+			item.getDefinitions().setValue(2500); // 2.5k
+			break;
+		case 13738: // arcane
+			item.getDefinitions().setValue(25000); // 25k
+			break;
+		case 13740: // divine
+			item.getDefinitions().setValue(25000); // 25k
+			break;
+		case 13742: // ely
+			item.getDefinitions().setValue(25000); // 25k
+			break;
+		case 13744: // spec
+			item.getDefinitions().setValue(25000); // 25k
+			break;
+		case 22494: // polypore
+			item.getDefinitions().setValue(30000); // 30k
+			break;
+		case 20748: // compelt
+			item.getDefinitions().setValue(10000); // 10k
+			break;
+
+		/*
+		 * ---------------------- End
+		 * ---------------------------------------------
+		 */
+		case 11724:
+			item.getDefinitions().setValue(85000000);
+			break;
+		case 11726:
+			item.getDefinitions().setValue(90000000);
+			break;
+		case 11728:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 4708:// barrows starts here
+			item.getDefinitions().setValue(10000000);// 10m a pice
+			break;
+		case 4710:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4712:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4714:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4716:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4718:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4720:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4722:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4724:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4726:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4728:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4730:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4732:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4734:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4736:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4738:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4745:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 9790:
+			item.getDefinitions().setValue(200000);
+			break;
+		case 11700:
+			item.getDefinitions().setValue(50000);
+			break;
+		case 14484:
+			item.getDefinitions().setValue(100000);
+			break;
+		case 1044:
+			item.getDefinitions().setValue(1000000);
+			break;
+		case 4747:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4749:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4751:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4753:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4755:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4757:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4759:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21736:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21744:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21752:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21760:
+			item.getDefinitions().setValue(10000000);
+			break;// barrows ends
+		case 6585:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 11718:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 11720:
+			item.getDefinitions().setValue(65000000);
+			break;
+		case 11722:
+			item.getDefinitions().setValue(65000000);
+			break;
+		case 6685:
+			item.getDefinitions().setValue(10000);
+			break;
+		case 11698:
+			item.getDefinitions().setValue(25000000);
+			break;
+		case 11730:
+			item.getDefinitions().setValue(14000000);
+			break;
+		case 11716:
+			item.getDefinitions().setValue(10000000);
+			break; // edge shop ends
+		case 15486:// mage shop starts here
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 6916:
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 6918:
+			item.getDefinitions().setValue(17000000);
+			break;
+		case 6924:
+			item.getDefinitions().setValue(12000000);
+			break;
+		case 6922:
+			item.getDefinitions().setValue(17000000);
+			break;
+		case 6920:
+			item.getDefinitions().setValue(3000000);
+			break;
+		case 6914:
+			item.getDefinitions().setValue(6000000);
+			break; // mage ends here
+		case 2497:// range shop starts here
+			item.getDefinitions().setValue(2000);
+			break;
+		case 2491:
+			item.getDefinitions().setValue(5000);
+			break;
+		case 2581:
+			item.getDefinitions().setValue(2500000);
+			break;
+		case 2577:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 11235:
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 11212:
+			item.getDefinitions().setValue(500);
+			break;
+		case 9341:
+			item.getDefinitions().setValue(300);
+			break;
+		case 4212:
+			item.getDefinitions().setValue(200000);
+			break;
+		case 10499:
+			item.getDefinitions().setValue(100000);
+			break;
+		case 9144:
+			item.getDefinitions().setValue(800);
+			break;// range shop ends
+
 		}
 		return item.getDefinitions().getValue();
 	}
 
 	public int getSellPrice(Item item, int dq) {
 		switch (item.getId()) {
-                case 2497://range shop starts here
-                        item.getDefinitions().setValue(2000);
-                        break;
-                case 2491:
-                        item.getDefinitions().setValue(5000);
-                        break;
-                case 2581:
-                        item.getDefinitions().setValue(2500000);
-                        break;
-                case 2577:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 11235:
-                        item.getDefinitions().setValue(5000000);
-                        break;
-                case 11212:
-                        item.getDefinitions().setValue(500);
-                        break;
-                case 9341:
-                        item.getDefinitions().setValue(300);
-                        break;
-                case 4212:
-                        item.getDefinitions().setValue(200000);
-                        break;
-                case 10499:
-                        item.getDefinitions().setValue(100000);
-                        break;
-                case 9144:
-                        item.getDefinitions().setValue(800);
-                        break;//range shop ends		
-				case 11724:
-                        item.getDefinitions().setValue(85000000);
-                        break;						
-                case 11726:
-                        item.getDefinitions().setValue(90000000);
-                        break;
-                case 11728:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 4708://barrows starts here
-                        item.getDefinitions().setValue(10000000);//10m a pice
-                        break;
-                case 4710:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4712:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4714:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4716:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4718:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4720:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4722:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4724:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4726:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4728:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4730:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4732:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4734:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4736:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4738:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4745:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4747:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4749:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4751:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4753:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4755:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4757:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 4759:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21736:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21744:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21752:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 21760:
-                        item.getDefinitions().setValue(10000000);
-                        break;//barrows ends
-                case 11696://edge gen store starts here
-                        item.getDefinitions().setValue(20000000);
-                        break;
-                case 6585:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 11718:
-                        item.getDefinitions().setValue(30000000);
-                        break;
-                case 11720:
-                        item.getDefinitions().setValue(65000000);
-                        break;
-                case 11722:
-                        item.getDefinitions().setValue(65000000);
-                        break;
-                case 6685:
-                        item.getDefinitions().setValue(10000);
-                        break;
-                case 11698:
-                        item.getDefinitions().setValue(25000000);
-                        break;
-                case 11730:
-                        item.getDefinitions().setValue(14000000);
-                        break;
-                case 11700:
-                        item.getDefinitions().setValue(23000000);
-                        break;
-                case 11716:
-                        item.getDefinitions().setValue(10000000);
-                        break;
-                case 18349:
-                        item.getDefinitions().setValue(100000000);
-                        break;
-                case 18351:
-                        item.getDefinitions().setValue(100000000);
-                        break;
-                case 18353:
-                        item.getDefinitions().setValue(100000000);
-                        break;
-                case 18355:
-                        item.getDefinitions().setValue(100000000);
-                        break;
-                case 18357://edgevill shop ends
-				        item.getDefinitions().setValue(100000000);
-						break;	
-                case 15486://mage shop starts here
-                        item.getDefinitions().setValue(5000000);
-                        break;
-				case 6916:
-                        item.getDefinitions().setValue(5000000);
-                        break;						
-                case 6918:
-                        item.getDefinitions().setValue(17000000);
-                        break;
-                case 6924:
-                        item.getDefinitions().setValue(12000000);
-                        break;
-                case 6922:
-                        item.getDefinitions().setValue(17000000);
-                        break;
-                case 6920:
-                        item.getDefinitions().setValue(3000000);
-                        break;
-                case 6914:
-                        item.getDefinitions().setValue(6000000);
-                        break;
-                case 6889:
-                        item.getDefinitions().setValue(8000000);
-                        break;//mage shop ends							
+		case 2497:// range shop starts here
+			item.getDefinitions().setValue(2000);
+			break;
+		case 2491:
+			item.getDefinitions().setValue(5000);
+			break;
+		case 2581:
+			item.getDefinitions().setValue(2500000);
+			break;
+		case 2577:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 11235:
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 11212:
+			item.getDefinitions().setValue(500);
+			break;
+		case 9341:
+			item.getDefinitions().setValue(300);
+			break;
+		case 4212:
+			item.getDefinitions().setValue(200000);
+			break;
+		case 10499:
+			item.getDefinitions().setValue(100000);
+			break;
+		case 9144:
+			item.getDefinitions().setValue(800);
+			break;// range shop ends
+		case 11724:
+			item.getDefinitions().setValue(85000000);
+			break;
+		case 11726:
+			item.getDefinitions().setValue(90000000);
+			break;
+		case 11728:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 4708:// barrows starts here
+			item.getDefinitions().setValue(10000000);// 10m a pice
+			break;
+		case 4710:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4712:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4714:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4716:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4718:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4720:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4722:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4724:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4726:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4728:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4730:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4732:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4734:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4736:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4738:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4745:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4747:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4749:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4751:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4753:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4755:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4757:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 4759:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21736:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21744:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21752:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 21760:
+			item.getDefinitions().setValue(10000000);
+			break;// barrows ends
+		case 11696:// edge gen store starts here
+			item.getDefinitions().setValue(20000000);
+			break;
+		case 6585:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 11718:
+			item.getDefinitions().setValue(30000000);
+			break;
+		case 11720:
+			item.getDefinitions().setValue(65000000);
+			break;
+		case 11722:
+			item.getDefinitions().setValue(65000000);
+			break;
+		case 6685:
+			item.getDefinitions().setValue(10000);
+			break;
+		case 11698:
+			item.getDefinitions().setValue(25000000);
+			break;
+		case 11730:
+			item.getDefinitions().setValue(14000000);
+			break;
+		case 11700:
+			item.getDefinitions().setValue(23000000);
+			break;
+		case 11716:
+			item.getDefinitions().setValue(10000000);
+			break;
+		case 18349:
+			item.getDefinitions().setValue(100000000);
+			break;
+		case 18351:
+			item.getDefinitions().setValue(100000000);
+			break;
+		case 18353:
+			item.getDefinitions().setValue(100000000);
+			break;
+		case 18355:
+			item.getDefinitions().setValue(100000000);
+			break;
+		case 18357:// edgevill shop ends
+			item.getDefinitions().setValue(100000000);
+			break;
+		case 15486:// mage shop starts here
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 6916:
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 6918:
+			item.getDefinitions().setValue(17000000);
+			break;
+		case 6924:
+			item.getDefinitions().setValue(12000000);
+			break;
+		case 6922:
+			item.getDefinitions().setValue(17000000);
+			break;
+		case 6920:
+			item.getDefinitions().setValue(3000000);
+			break;
+		case 6914:
+			item.getDefinitions().setValue(6000000);
+			break;
+		case 6889:
+			item.getDefinitions().setValue(8000000);
+			break;// mage shop ends
 		}
 		return item.getDefinitions().getValue() / 2;
 	}

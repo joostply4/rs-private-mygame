@@ -1,10 +1,12 @@
 package com.rs.utils;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
@@ -42,6 +44,8 @@ public class ShopsHandler {
 				if (line == null)
 					break;
 				if (line.startsWith("//"))
+					continue;
+				if (line.isEmpty())
 					continue;
 				String[] splitedLine = line.split(" - ", 3);
 				if (splitedLine.length != 3)
@@ -94,6 +98,7 @@ public class ShopsHandler {
 				for (int i = 0; i < items.length; i++)
 					items[i] = new Item(buffer.getShort() & 0xffff,
 							buffer.getInt());
+				
 				addShop(key, new Shop(name, money, items, generalStore));
 			}
 			channel.close();

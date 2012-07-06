@@ -89,17 +89,6 @@ public final class NPCSpawns {
 					canBeAttackFromOutOfArea = buffer.get() == 1;
 				}
 
-				NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcId);
-
-				FileWriter fstream = new FileWriter(
-						"data/npcs/unpacked/unpackedSpawnsList.txt", true);
-				BufferedWriter output = new BufferedWriter(fstream);
-				output.write("//" + def.name);
-				output.newLine();
-				output.write(npcId + " " + x + " " + y + " 0");
-				output.newLine();
-				output.newLine();
-				output.close();
 
 				World.spawnNPC(npcId, new WorldTile(x, y, plane),
 						mapAreaNameHash, canBeAttackFromOutOfArea);
