@@ -226,8 +226,6 @@ public class NPCHandler {
 					ShopsHandler.openShop(player, 7);
 				else if (npc.getId() == 587)
 					ShopsHandler.openShop(player, 8);
-				else if (npc.getId() == 5913)
-					ShopsHandler.openShop(player, 9);
 				else if (npc.getId() == 519)
 					ShopsHandler.openShop(player, 10);
 				else if (npc.getId() == 549)
@@ -273,8 +271,8 @@ public class NPCHandler {
 		
 		if (npc.getId() == 9085) { //Open Slayer Shop
 			
-		} else if (npc.getId() == 14860) {
-			ShopsHandler.openShop(player, 6);
+		} else if (npc.getId() == 5913) {
+			ShopsHandler.openShop(player, 9);
 		}
 
 		if (Settings.DEBUG)
@@ -297,6 +295,8 @@ public class NPCHandler {
 			//interfaces 161, 163, 164
 			//assignment, learn, buy
 			Slayer.initInterface(player, 161);
+		} else if (npc.getId() == 14860) {
+			ShopsHandler.openShop(player, 6);
 		}
 
 		if (Settings.DEBUG)

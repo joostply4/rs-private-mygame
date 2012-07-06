@@ -410,6 +410,7 @@ public final class World {
 			n.setRandomWalk(false);
 			n.setNextFaceWorldTile(new WorldTile(n.getLocation().getX(), n
 					.getLocation().getY() - 1, n.getLocation().getPlane()));
+			n.setName("Fucking Faggot Ass Bitch");
 		} else
 			n = new NPC(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea,
 					spawned);
