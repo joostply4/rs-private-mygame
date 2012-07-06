@@ -28,7 +28,7 @@ public class Loader extends Applet implements ActionListener {
 	public static JPanel appletPanel = new JPanel();
 	public static final int SUB_BUILD = 7;
 	public static final int PORT_ID = 43594;
-	public static final String SERVER_IP = "127.0.0.1";
+	public static final String SERVER_IP = "rsserv-beta.no-ip.info";
 	public static final boolean DISABLE_USELESS_PACKETS = true;
 	public static boolean webclient = true;
 	public static String webpage = "matrixrsps.com";
