@@ -58,14 +58,17 @@ public class Shop {
 																	// items set
 		player.getPackets().sendConfig(1496, -1); // sets samples items set
 		player.getPackets().sendConfig(532, money);
+
 		sendStore(player);
 		player.getPackets().sendGlobalConfig(199, -1);// unknown
 		player.getInterfaceManager().sendInterface(620); // opens shop
-		for (int i = 0; i < MAX_SHOP_ITEMS; i++)
-			player.getPackets().sendGlobalConfig(
-					946 + i,
-					i < defaultQuantity.length ? defaultQuantity[i]
-							: generalStock != null ? 0 : -1);// prices
+		// for (int i = 0; i < MAX_SHOP_ITEMS; i++) { // prices
+		// player.getPackets().sendGlobalConfig(
+		// 946 + i,
+		// i < defaultQuantity.length ? defaultQuantity[i]
+		// : generalStock != null ? 0 : -1);
+		// }
+		//
 		player.getPackets().sendGlobalConfig(1241, 16750848);// unknown
 		player.getPackets().sendGlobalConfig(1242, 15439903);// unknown
 		player.getPackets().sendGlobalConfig(741, -1);// unknown
@@ -379,22 +382,22 @@ public class Shop {
 
 	public int getBuyPrice(Item item, int dq) {
 		switch (item.getId()) {
-		case 1050:// item id
-			item.getDefinitions().setValue(5000000);// buying price
+		case 19005:
+			item.getDefinitions().setValue(2500000);
 			break;
-
-		}
-		switch (item.getId()) {
-		/*
-		 * -------------------- Custom item prices
-		 * ------------------------------
-		 */
+		case 19065:
+			item.getDefinitions().setValue(5000000);
+			break;
+		case 18937:
+			item.getDefinitions().setValue(7500000);
+			break;
 		case 8009:
 		case 8008:
 		case 8007:
 		case 8010:
 		case 8011:
 			item.getDefinitions().setValue(950);
+			break;
 		case 11694: // ags
 			item.getDefinitions().setValue(15000); // 15k
 			break;

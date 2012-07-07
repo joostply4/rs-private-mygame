@@ -31,3 +31,6 @@
 //Fancy-dress shop owner
 554 - 3170 3481 0
 
+//Mandrith
+6537 - 3169 3479 0
+

@@ -75,27 +75,7 @@ public class NPCHandler {
 					player.getDialogueManager().startDialogue("Kuradal",
 							npc.getId());
 				else if (npc.getId() == 6537)
-					ShopsHandler.openShop(player, 19);
-				else if (npc.getId() == 6537)
-					ShopsHandler.openShop(player, 22);
-				else if (npc.getId() == 564)
-					ShopsHandler.openShop(player, 30);
-				else if (npc.getId() == 2253)
-					ShopsHandler.openShop(player, 26);
-				else if (npc.getId() == 2830)
-					ShopsHandler.openShop(player, 29);
-				else if (npc.getId() == 576)
-					ShopsHandler.openShop(player, 22);
-				else if (npc.getId() == 948)
-					ShopsHandler.openShop(player, 23);
-				else if (npc.getId() == 445)
-					ShopsHandler.openShop(player, 23);
-				else if (npc.getId() == 637)
-					ShopsHandler.openShop(player, 25);
-				else if (npc.getId() == 2732)
-					ShopsHandler.openShop(player, 26);
-				else if (npc.getId() == 4906)
-					ShopsHandler.openShop(player, 27);
+					ShopsHandler.openShop(player, 13);
 				else if (npc.getId() == 2676)
 					player.getDialogueManager().startDialogue("MakeOverMage",
 							npc.getId(), 0);
@@ -196,30 +176,30 @@ public class NPCHandler {
 					FremennikShipmaster.sail(player, false);
 				else if (npc.getId() == 13455)
 					player.getBank().openBank();
-				else if (npc.getId() == 528 || npc.getId() == 529)
-					ShopsHandler.openShop(player, 1);
-				else if (npc.getId() == 537)
-					ShopsHandler.openShop(player, 25);
-				else if (npc.getId() == 445)
-					ShopsHandler.openShop(player, 11);
+//				else if (npc.getId() == 528 || npc.getId() == 529)
+//					ShopsHandler.openShop(player, 1);
+//				else if (npc.getId() == 537)
+//					ShopsHandler.openShop(player, 25);
+//				else if (npc.getId() == 445)
+//					ShopsHandler.openShop(player, 11);
 				else if (npc.getId() == 3381)
 					ShopsHandler.openShop(player, 12);
-				else if (npc.getId() == 521)
-					ShopsHandler.openShop(player, 4);
+//				else if (npc.getId() == 521)
+//					ShopsHandler.openShop(player, 4);
 				else if (npc.getId() == 538)
 					ShopsHandler.openShop(player, 6);
-				else if (npc.getId() == 522 || npc.getId() == 523)
-					ShopsHandler.openShop(player, 8);
-				else if (npc.getId() == 546)
-					ShopsHandler.openShop(player, 10);
+//				else if (npc.getId() == 522 || npc.getId() == 523)
+//					ShopsHandler.openShop(player, 8);
+//				else if (npc.getId() == 546)
+//					ShopsHandler.openShop(player, 10);
 				else if (npc.getId() == 11475)
 					ShopsHandler.openShop(player, 9);
-				else if (npc.getId() == 551)
-					ShopsHandler.openShop(player, 13);
-				else if (npc.getId() == 548)
-					ShopsHandler.openShop(player, 18);
-				else if (npc.getId() == 2233 || npc.getId() == 3671)
-					ShopsHandler.openShop(player, 20);
+//				else if (npc.getId() == 551)
+//					ShopsHandler.openShop(player, 13);
+//				else if (npc.getId() == 548)
+//					ShopsHandler.openShop(player, 18);
+//				else if (npc.getId() == 2233 || npc.getId() == 3671)
+//					ShopsHandler.openShop(player, 20);
 				else if (npc.getId() == 2676)
 					PlayerLook.openMageMakeOver(player);
 				else if (npc.getId() == 970)
