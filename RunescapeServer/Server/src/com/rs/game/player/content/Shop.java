@@ -383,13 +383,13 @@ public class Shop {
 	public int getBuyPrice(Item item, int dq) {
 		switch (item.getId()) {
 		case 19005:
-			item.getDefinitions().setValue(2500000);
+			item.getDefinitions().setValue(1000000);
 			break;
 		case 19065:
-			item.getDefinitions().setValue(5000000);
+			item.getDefinitions().setValue(4000000);
 			break;
 		case 18937:
-			item.getDefinitions().setValue(7500000);
+			item.getDefinitions().setValue(10000000);
 			break;
 		case 8009:
 		case 8008:
@@ -398,94 +398,56 @@ public class Shop {
 		case 8011:
 			item.getDefinitions().setValue(950);
 			break;
-		case 11694: // ags
-			item.getDefinitions().setValue(15000); // 15k
+			
+			//FIST OF GUTHIX SHOP
+		case 8845:
+			item.getDefinitions().setValue(150);
 			break;
-		case 11696: // bgs
-			item.getDefinitions().setValue(10000); // 10k
+		case 8848:
+			item.getDefinitions().setValue(160);
 			break;
-		case 6570: // fcape
-			item.getDefinitions().setValue(1000); // 1k
+		case 8849: 
+			item.getDefinitions().setValue(170);
 			break;
-		case 21371: // vine whip
-			item.getDefinitions().setValue(3000); // 3k
+		case 8850:
+			item.getDefinitions().setValue(180);
 			break;
-		case 4151: // whip
-			item.getDefinitions().setValue(100); // 100
+		case 20072:
+			item.getDefinitions().setValue(200);
+			break; 
+		case 7459: 
+			item.getDefinitions().setValue(150);
 			break;
-		case 19335: // fury (or)
-			item.getDefinitions().setValue(1000); // 1k
+		case 7460:
+			item.getDefinitions().setValue(170);
+			break; 
+		case 7462:
+			item.getDefinitions().setValue(200);
 			break;
-		case 18335: // arcane stream
-			item.getDefinitions().setValue(5000); // 5k
+		case 10551:
+			item.getDefinitions().setValue(200);
 			break;
-		case 15220: // bring (i)
-			item.getDefinitions().setValue(1000);// 1k
+		case 10548:
+			item.getDefinitions().setValue(150);
 			break;
-		case 13899: // vls
-			item.getDefinitions().setValue(8000); // 8k
+		case 10555:
+			item.getDefinitions().setValue(150);
+			break; 
+		case 6585: 
+			item.getDefinitions().setValue(250);
 			break;
-		case 13905: // vesta's spear
-			item.getDefinitions().setValue(8000); // 8k
+		case 6731: 
+			item.getDefinitions().setValue(200);
+			break; 
+		case 6733:
+			item.getDefinitions().setValue(200);
 			break;
-		case 13896: // stat helm
-			item.getDefinitions().setValue(3000); // 3k
+		case 6735:
+			item.getDefinitions().setValue(150);
+			break; 
+		case 6737:
+			item.getDefinitions().setValue(200);
 			break;
-		case 13902: // stat hammer
-			item.getDefinitions().setValue(6000); // 6k
-			break;
-		case 18349: // rapier
-			item.getDefinitions().setValue(20000); // 20k
-			break;
-		case 18351: // cls
-			item.getDefinitions().setValue(20000); // 20k
-			break;
-		case 18353: // cmaul
-			item.getDefinitions().setValue(20000); // 20k
-			break;
-		case 18357: // cbow
-			item.getDefinitions().setValue(20000); // 20k
-			break;
-		case 1050: // santa
-			item.getDefinitions().setValue(500); // 500
-			break;
-		case 7462: // bgloves
-			item.getDefinitions().setValue(100); // 100
-			break;
-		case 7458: // mith gloves
-			item.getDefinitions().setValue(50); // 50
-			break;
-		case 15386: // sol
-			item.getDefinitions().setValue(5000); // 5k
-			break;
-		case 6889: // mbook
-			item.getDefinitions().setValue(1500); // 1.5k
-			break;
-		case 13734: // sprit shield
-			item.getDefinitions().setValue(2500); // 2.5k
-			break;
-		case 13736: // blessed
-			item.getDefinitions().setValue(2500); // 2.5k
-			break;
-		case 13738: // arcane
-			item.getDefinitions().setValue(25000); // 25k
-			break;
-		case 13740: // divine
-			item.getDefinitions().setValue(25000); // 25k
-			break;
-		case 13742: // ely
-			item.getDefinitions().setValue(25000); // 25k
-			break;
-		case 13744: // spec
-			item.getDefinitions().setValue(25000); // 25k
-			break;
-		case 22494: // polypore
-			item.getDefinitions().setValue(30000); // 30k
-			break;
-		case 20748: // compelt
-			item.getDefinitions().setValue(10000); // 10k
-			break;
-
 		/*
 		 * ---------------------- End
 		 * ---------------------------------------------
@@ -595,9 +557,6 @@ public class Shop {
 		case 21760:
 			item.getDefinitions().setValue(10000000);
 			break;// barrows ends
-		case 6585:
-			item.getDefinitions().setValue(10000000);
-			break;
 		case 11718:
 			item.getDefinitions().setValue(30000000);
 			break;
