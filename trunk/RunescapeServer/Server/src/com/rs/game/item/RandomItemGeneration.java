@@ -22,6 +22,7 @@ public class RandomItemGeneration {
 			10410, 10412, 10414,
 			// zammy sara guthix robes
 			10458, 10460, 10462, 10464, 10466, 10468, 10470 };
+	
 	public static int[] RANDOM_ITEMS_MEDIUM = {
 			// adamant (t) and (g)
 			2599, 2601, 2603, 2605, 2607, 2609, 2611, 2613,
@@ -35,6 +36,7 @@ public class RandomItemGeneration {
 			7370, 7372, 7378, 7380,
 			// ranger mage boots
 			2577, 2579 };
+	
 	public static int[] RANDOM_ITEMS_HARD = {
 			// rune (t) and (g) --
 			2615, 2617, 2619, 2621, 2623, 2625,

@@ -35,9 +35,9 @@ public final class Settings {
 	public static final WorldTile RESPAWN_PLAYER_LOCATION = new WorldTile(3164,3488,0); //new WorldTile(2966, 3387, 0);// //
 	public static final long MAX_PACKETS_DECODER_PING_DELAY = 30000; // 30seconds
 	public static final int WORLD_CYCLE_TIME = 600; // the speed of world in ms
-	public static final int XP_RATE = 4; // Use this for double exp weekends
-	public static final int SKILLING_XP_RATE = 5000;
-	public static final int COMBAT_XP_RATE = 5000;
+	public static final int XP_RATE = 1; // Use this for double exp weekends
+	public static final int SKILLING_XP_RATE = 45;
+	public static final int COMBAT_XP_RATE = 35;
 	public static final int AIR_GUITAR_MUSICS_COUNT = 50;
 	// mem settings
 	public static final int PLAYERS_LIMIT = 2000;
