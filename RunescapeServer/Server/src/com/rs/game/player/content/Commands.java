@@ -33,6 +33,7 @@ import com.rs.game.player.controlers.JailControler;
 import com.rs.game.player.cutscenes.HomeCutScene;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
+import com.rs.io.OutputStream;
 import com.rs.utils.DisplayName;
 import com.rs.utils.Donations;
 import com.rs.utils.IPBanL;
@@ -156,6 +157,22 @@ public final class Commands {
 						value2 += 1;
 					}
 				}, 0, 1 / 2);
+			}
+
+			if (cmd[0].equalsIgnoreCase("getest")) {
+				OutputStream stream = new OutputStream();
+
+				for (int i = 0; i < 6; i++) {
+					stream.writePacket(61);
+					stream.writeByte((byte) i);
+					stream.writeByte((byte) 2);
+					stream.writeShort(556);
+					stream.writeInt(100);
+					stream.writeInt(3000);
+					stream.writeInt(30);
+					stream.writeInt(3000);
+					player.getPackets().session.write(stream);
+				}
 			}
 
 			if (cmd[0].equalsIgnoreCase("god")) {
@@ -368,21 +385,24 @@ public final class Commands {
 			if (cmd[0].equalsIgnoreCase("npc")) {
 				try {
 					int npcID = Integer.parseInt(cmd[1]);
-					
-					World.spawnNPC(npcID, player, -1, true,
-							true);
-					
-					NPCDefinitions def = NPCDefinitions.getNPCDefinitions(npcID);
-					
-					FileWriter fstream = new FileWriter("data/npcs/unpacked/myNewSpawns.txt",true);
+
+					World.spawnNPC(npcID, player, -1, true, true);
+
+					NPCDefinitions def = NPCDefinitions
+							.getNPCDefinitions(npcID);
+
+					FileWriter fstream = new FileWriter(
+							"data/npcs/unpacked/myNewSpawns.txt", true);
 					BufferedWriter output = new BufferedWriter(fstream);
 					output.write("//" + def.name);
 					output.newLine();
-					output.write(npcID + " - " + player.getLocation().getX() + " " + player.getLocation().getY() + " " + player.getLocation().getPlane());
+					output.write(npcID + " - " + player.getLocation().getX()
+							+ " " + player.getLocation().getY() + " "
+							+ player.getLocation().getPlane());
 					output.newLine();
 					output.newLine();
 					output.close();
-					
+
 					return true;
 				} catch (NumberFormatException e) {
 					player.getPackets().sendPanelBoxMessage(

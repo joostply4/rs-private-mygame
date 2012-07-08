@@ -7,6 +7,7 @@ import com.rs.game.ForceMovement;
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
+import com.rs.game.grandexchange.GrandExchangeHandler;
 import com.rs.game.item.Item;
 import com.rs.game.minigames.CastleWars;
 import com.rs.game.minigames.GodWars;
@@ -113,6 +114,7 @@ public class ObjectHandler {
 					return;
 				if (GodWars.HandleObjects(player, objectDef))
 					return;
+				
 				/*
 				 * if (!QuestHandler.handleObject(player, object)) return;
 				 */
@@ -1043,6 +1045,10 @@ public class ObjectHandler {
 				if (!player.getControlerManager().processObjectClick3(object))
 					return;
 				player.setNextFaceWorldTile(tile);
+				
+				if (GrandExchangeHandler.HandleObjectThirdClick(player, objectDef)) 
+					return;
+				
 				switch (objectDef.name.toLowerCase()) {
 				case "gate":
 				case "metal door":

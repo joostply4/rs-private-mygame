@@ -20,6 +20,7 @@ import com.rs.game.Hit.HitLook;
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
+import com.rs.game.grandexchange.GESession;
 import com.rs.game.item.FloorItem;
 import com.rs.game.item.Item;
 import com.rs.game.minigames.ClanWars;
@@ -90,6 +91,7 @@ public class Player extends Entity {
 	private transient PriceCheckManager priceCheckManager;
 	private transient CoordsEvent coordsEvent;
 	private transient FriendChatsManager currentFriendChat;
+	private transient GESession gesession;
 
 	// used for packets logic
 	private transient ConcurrentLinkedQueue<LogicPacket> logicPackets;
@@ -2689,5 +2691,13 @@ public class Player extends Entity {
 
 	public void setPkPoints(int pkPoints) {
 		this.pkPoints = pkPoints;
+	}
+
+	public GESession getGesession() {
+		return gesession;
+	}
+
+	public void setGesession(GESession gesession) {
+		this.gesession = gesession;
 	}
 }

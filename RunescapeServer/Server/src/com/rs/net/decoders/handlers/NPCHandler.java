@@ -2,6 +2,7 @@ package com.rs.net.decoders.handlers;
 
 import com.rs.Settings;
 import com.rs.game.World;
+import com.rs.game.grandexchange.GrandExchangeHandler;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.familiar.Familiar;
 import com.rs.game.npc.slayer.Strykewyrm;
@@ -38,6 +39,13 @@ public class NPCHandler {
 			player.getDialogueManager().startDialogue("Banker", npc.getId());
 			return;
 		}
+		
+		if (npc.getDefinitions().name.toLowerCase().contains("exchange clerk")) {
+			if (GrandExchangeHandler.HandleNPCFirstClick(player, npc)) {
+				return;
+			}
+		}
+		
 		player.setCoordsEvent(new CoordsEvent(npc, new Runnable() {
 			@Override
 			public void run() {
@@ -75,7 +83,7 @@ public class NPCHandler {
 					player.getDialogueManager().startDialogue("Kuradal",
 							npc.getId());
 				else if (npc.getId() == 6537)
-					ShopsHandler.openShop(player, 13);
+					ShopsHandler.openShop(player, 12);
 				else if (npc.getId() == 2676)
 					player.getDialogueManager().startDialogue("MakeOverMage",
 							npc.getId(), 0);
@@ -110,6 +118,13 @@ public class NPCHandler {
 			player.getBank().openBank();
 			return;
 		}
+		
+		if (npc.getDefinitions().name.toLowerCase().contains("exchange clerk")) {
+			if (GrandExchangeHandler.HandleNPCSecondClick(player, npc)) {
+				return;
+			}
+		}
+		
 		player.setCoordsEvent(new CoordsEvent(npc, new Runnable() {
 			@Override
 			public void run() {
@@ -251,6 +266,13 @@ public class NPCHandler {
 			return;
 		player.stopAll(false);
 		
+		if (npc.getDefinitions().name.toLowerCase().contains("exchange clerk")) {
+			if (GrandExchangeHandler.HandleNPCThirdClick(player, npc)) {
+				return;
+			}
+		}
+		
+		
 		if (npc.getId() == 9085) { //Open Slayer Shop
 			
 		} else if (npc.getId() == 5913) {
@@ -272,6 +294,12 @@ public class NPCHandler {
 				|| !player.getMapRegionsIds().contains(npc.getRegionId()))
 			return;
 		player.stopAll(false);
+		
+		if (npc.getDefinitions().name.toLowerCase().contains("exchange clerk")) {
+			if (GrandExchangeHandler.HandleNPCFourthClick(player, npc)) {
+				return;
+			}
+		}
 		
 		if (npc.getId() == 9085) { //Open Slayer Rewards
 			//interfaces 161, 163, 164

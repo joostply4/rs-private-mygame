@@ -14,6 +14,7 @@ import com.rs.cores.CoresManager;
 import com.rs.game.Region;
 import com.rs.game.RegionBuilder;
 import com.rs.game.World;
+import com.rs.game.grandexchange.GrandExchange;
 import com.rs.game.npc.combat.CombatScriptsHandler;
 import com.rs.game.player.Player;
 import com.rs.game.player.content.FishingSpotsHandler;
@@ -96,6 +97,10 @@ public final class Launcher {
 		Logger.log("Launcher", "Initing Region Builder...");
 		RegionBuilder.init();
 		Logger.log("Launcher", "Initing Server Channel Handler...");
+		
+		Logger.log("Launcher", "Initing Grand Exchange...");
+		GrandExchange.init();
+		
 		try {
 			ServerChannelHandler.init();
 			NPCSpawning.spawnNPCS();
@@ -130,7 +135,7 @@ public final class Launcher {
 				try {
 					setWebsitePlayersOnline(World.getPlayers().size());
 				} catch (Throwable e) {
-				//	Logger.handle(e);
+					// Logger.handle(e);
 				}
 			}
 		}, 2, 2, TimeUnit.MINUTES);
@@ -183,7 +188,7 @@ public final class Launcher {
 			for (Region region : World.getRegions().values())
 				region.removeMapFromMemory();
 		}
-	for (Index index : Cache.STORE.getIndexes())
+		for (Index index : Cache.STORE.getIndexes())
 			index.resetCachedFiles();
 		CoresManager.fastExecutor.purge();
 		System.gc();
