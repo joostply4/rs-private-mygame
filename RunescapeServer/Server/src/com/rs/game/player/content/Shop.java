@@ -401,52 +401,52 @@ public class Shop {
 			
 			//FIST OF GUTHIX SHOP
 		case 8845:
-			item.getDefinitions().setValue(150);
+			item.getDefinitions().setValue(1150);
 			break;
 		case 8848:
-			item.getDefinitions().setValue(160);
+			item.getDefinitions().setValue(1160);
 			break;
 		case 8849: 
-			item.getDefinitions().setValue(170);
+			item.getDefinitions().setValue(1170);
 			break;
 		case 8850:
-			item.getDefinitions().setValue(180);
+			item.getDefinitions().setValue(1180);
 			break;
 		case 20072:
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break; 
 		case 7459: 
-			item.getDefinitions().setValue(150);
+			item.getDefinitions().setValue(1150);
 			break;
 		case 7460:
-			item.getDefinitions().setValue(170);
+			item.getDefinitions().setValue(1170);
 			break; 
 		case 7462:
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break;
 		case 10551:
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break;
 		case 10548:
-			item.getDefinitions().setValue(150);
+			item.getDefinitions().setValue(1150);
 			break;
 		case 10555:
-			item.getDefinitions().setValue(150);
+			item.getDefinitions().setValue(1150);
 			break; 
 		case 6585: 
-			item.getDefinitions().setValue(250);
+			item.getDefinitions().setValue(1250);
 			break;
 		case 6731: 
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break; 
 		case 6733:
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break;
 		case 6735:
-			item.getDefinitions().setValue(150);
+			item.getDefinitions().setValue(1150);
 			break; 
 		case 6737:
-			item.getDefinitions().setValue(200);
+			item.getDefinitions().setValue(1200);
 			break;
 		/*
 		 * ---------------------- End

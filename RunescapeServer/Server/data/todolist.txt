@@ -118,3 +118,9 @@ DONE:
 -King Black Dragon [50]
 
 
+NEW TODOLIST
+
+
+ADD Ava accumulator
+add iron armour
+remove bronze armour
