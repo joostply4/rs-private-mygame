@@ -1,10 +1,6 @@
 TODO:
 
 -- Home --
--Spawns
-	- Spawn all shop keepers we are going to use
-	- Create new shops for all the shop keepers
-		
 -Barrows (Couble be saved for an update)
 	- Fix animations
 	- Fix enemy combat
@@ -117,10 +113,11 @@ DONE:
 -- Bosses -- (2258 4709)
 -King Black Dragon [50]
 
+-Spawns
+	- Spawn all shop keepers we are going to use
+	- Create new shops for all the shop keepers
+
 
 NEW TODOLIST
 
 
-ADD Ava accumulator
-add iron armour
-remove bronze armour

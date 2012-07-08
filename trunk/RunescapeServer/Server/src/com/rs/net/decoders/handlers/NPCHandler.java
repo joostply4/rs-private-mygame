@@ -210,6 +210,8 @@ public class NPCHandler {
 					ShopsHandler.openShop(player, 10);
 				else if (npc.getId() == 549)
 					ShopsHandler.openShop(player, 11);
+				else if (npc.getId() == 851)
+					ShopsHandler.openShop(player, 13);
 				else if (npc.getId() == 520)
 					ShopsHandler.openShop(player, 1);
 				else if (npc.getId() == 1699)
