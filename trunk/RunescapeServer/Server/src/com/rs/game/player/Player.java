@@ -1827,6 +1827,7 @@ public class Player extends Entity {
 		for (Item item : keptItems) {
 			getInventory().addItem(item);
 		}
+		
 		for (Item item : containedItems) {
 			World.addGroundItem(item, getLastWorldTile(), killer, true, 180,
 					true);
