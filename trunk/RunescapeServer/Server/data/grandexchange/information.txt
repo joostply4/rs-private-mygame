@@ -1,0 +1,64 @@
+//Grand Exchange Settings
+"Exchange Opens"
+1112 -> -1
+1113 -> -1
+
+"Click Buy"
+1112 -> 0
+1113 -> 0
+
+"Click Sell"
+1112 -> 0
+1113 -> 1
+
+"Click to view current sale process"
+1109 -> sets to current tabbed item
+1112 -> 0
+1113 -> -1
+
+//Other Values
+1110 -- Quantity Value (set to 0 to reset it)
+1109 -- The currently selected Item to buy (set to -1 to reset it)
+1111 -- The current offered gold as to what you will pay per item
+1112 -- The currently selected BOX (0, 1, 2, 3, 4, 5) Null (-1)
+1113 -- Buy (0) Or Sell (1) Null (-1)
+1114 -- The current guide price of the item (displayed under the item image) [DO NOT NEED TO RESET THIS]
+
+//Default Values
+1009 -> -1
+1110 -> 0
+1111 -> 1
+1112 -> -1
+1113 -> -1
+
+//----------Packet Structure-----------
+opcode: 61
+byte: current slot [0-5]
+byte: progress [1 - submitting..., 2 - in progress]
+short: item id
+int: price you are paying for each or selling [?]
+int: total amount you are buying/selling [?]
+int: total amount that has already been traded [?]
+int: total cash received thus far [?]
+
+[?]: need to set up the GE more in order to see if 
+these packets do what they say they do
+
+although more testing IS needed -- this is the proper packet setup
+//
+
+//Collection Box Settings
+NO settings found so far..................
+
+Interface - 109
+Children -
+Boxes [ 19, 23, 27, 32, 42 ]
+Childres Children -
+1 - (Cash back if any)
+Child Stack Size: Amount of cash
+Child ID: Cash ID
+
+3 - (Object received if any)
+Child Stack Size: Amount of item
+Child ID: Object ID
+

@@ -1,36 +1,3 @@
-//Head Farmer Jones
-14860 - 3162 3481 0
-
-//Diango
-970 - 3163 3481 0
-
-//Jatix
-587 - 3164 3481 0
-
-//Aubury
-5913 - 3165 3481 0
-
-//Bob
-519 - 3166 3481 0
-
-//Horvik
-549 - 3167 3481 0
-
-//Shopkeeper
-520 - 3168 3481 0
-
-//Ghost shopkeeper
-1699 - 3169 3480 0
-
-//Fairy shopkeeper
-534 - 3160 3480 0
-
-//Lowe
-550 - 3159 3481 0
-
-//Fancy-dress shop owner
-554 - 3170 3481 0
-
-//Mandrith
-6537 - 3169 3479 0
+//Gnome Waiter
+851 - 3160 3479 0
 

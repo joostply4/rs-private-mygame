@@ -7,6 +7,7 @@ import com.rs.Settings;
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.cores.CoresManager;
 import com.rs.game.WorldTile;
+import com.rs.game.grandexchange.GrandExchangeHandler;
 import com.rs.game.item.Item;
 import com.rs.game.npc.familiar.Familiar;
 import com.rs.game.npc.familiar.Familiar.SpecialAttack;
@@ -88,6 +89,10 @@ public class ButtonHandler {
 				if (packetId == WorldPacketsDecoder.ACTION_BUTTON7_PACKET)
 					player.getSkills().resetXpCounter();
 			}
+		} else if (GrandExchangeHandler.HandleButtons(player, interfaceId,
+				componentId, slotId, slotId2, packetId)) {
+			
+			return;
 		} else if (interfaceId == 182) {
 			if (player.getInterfaceManager().containsInventoryInter())
 				return;
